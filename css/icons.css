@@ -1,0 +1,30 @@
+/* Icons - FontAwesome
+----------------------------------- */
+
+.fa.shortcode-icon {
+	width: 3.5rem;
+	font-weight: 700;
+	}
+
+.social-icons i {
+	margin: 1rem 1.5rem 0 0;
+	}
+	
+.social-icons i:hover {
+	color: #fff;
+	}
+
+.tagline i.fa {
+	color: #fff !important;
+}
+
+.tagline i.fa:hover {
+	opacity: .7;
+}	
+	
+/* Featured images
+------------------------------------ */
+
+.category #content .attachment-thumbnail {
+	background: rgba(0,0,0,0.02);
+	}

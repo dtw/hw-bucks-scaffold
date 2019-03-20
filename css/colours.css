@@ -1,0 +1,117 @@
+/* White
+-------------------------------- */
+
+body, .navbar {
+	background-color: rgba(255,255,255,1.00);
+	}
+
+footer p, footer a {
+	color: rgba(255,255,255,1.00);
+	}
+	
+h1,
+.page-header p,
+.page-header a,
+footer a:hover,
+#subfooter h2 {
+	color: #fff;
+	}
+
+
+/* Dark blue
+-------------------------------- */
+
+footer {
+	background-color: #3F7188;
+	}
+	
+#content footer {
+	background: none;
+	padding: 0;
+	}
+
+/* Medium blue
+-------------------------------- */
+	
+#subfooter {
+	background-color: #0F4F6B;
+	background: linear-gradient(#3F7188, #0F4F6B);
+	}
+	
+/* Pink
+-------------------------------- */
+
+#content a[rel="tag"],
+.text-danger, /* Helper class */
+.tagline,
+.fa-star,
+.fa-star-half-empty,
+.fa-star-o,
+.navbar-nav .current-menu-item a,	
+.navbar-nav .current_page_item a,
+.navbar-nav .current-post-ancestor a {
+	color: #e73e97;
+	}
+	
+
+/* Text shadow
+-------------------------------- */
+
+h1 {
+	text-shadow: #004f6b 1px 1px 1px;
+	}
+
+
+/* Bootstrap Buttons
+-------------------------------- */
+
+.btn {
+	border-color: rgba(0,0,0,0.10);
+	}
+
+.btn-primary {
+	background-color: #0080A4;
+	color: #fff;
+	background-image: none;
+	}
+	
+.btn-primary:hover {
+	background-color: #fff;
+	border-color: #0080A4;
+	color: #0080A4;
+	}
+
+.page-header .btn-primary {
+	background-color: #0080A4;
+	color: #fff;
+	background-image: none;
+	text-decoration: none;
+	}
+
+.page-header .btn-primary:hover {
+	background-color: #fff;
+	color: #0080A4;
+	border-color: #0080A4;
+	}
+
+
+.call-to-action,
+.call-to-action:visited {
+	color:#e73e97;
+	font-weight:bold;
+	text-decoration:none;
+	font-size: 1.2em;
+	}
+	
+.call-to-action:hover {
+	text-decoration:underline;
+	color: #e73e97;
+	}
+	
+	
+/* Needed?
+----------------------------------- */
+		
+#commentform label i.fa {
+	color: rgba(0,0,0,.50);	
+	}

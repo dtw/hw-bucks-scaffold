@@ -1,0 +1,233 @@
+/* --- Fonts --- */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #111;
+	}
+
+h1, h2, h3, h4 {
+	font-family: 'Bitter', serif;
+	}
+
+/* --- Headings --- */
+
+h1 {
+	letter-spacing: .1rem;
+	font-size: 3rem;
+	line-height: 4rem;
+	font-weight: 700;
+	}
+
+#subfooter h2 {
+	padding-bottom: 0;
+	}
+
+#sidebar h3 {
+	padding: .5rem 0 .2rem 0;
+	}
+
+.post h3 {
+	padding: 0 0 .5rem 0;
+	margin: 0;
+	}
+	
+.loop-taxonomy h3 {
+	margin-top: .5rem;
+	}
+
+
+#sidebar > h2,
+#sidebar > .widget h2,
+.page #content h2:first-child,
+.single #content h2:first-child {
+	margin-top: 0;
+	padding-top: 0;
+	}
+
+
+/* Font sizes and line heights
+----------------------------------- */
+
+p, li {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	}
+
+h3 {
+	font-size: 1.9rem;
+	line-height: 2.6rem;
+	}
+
+#sidebar h3 {
+	font-size: 1.8rem;
+	line-height: 2.4rem;	
+	}
+
+.page-header p {
+	font-size: 2rem;
+	text-shadow: none;
+	line-height: 3rem;
+	}
+		
+input[type="submit"] {
+	font-size: 2.4rem;
+	}
+
+h2 {
+	font-size: 2.5rem;
+	padding: 2rem 0 1rem 0;
+	margin-bottom: 2rem;
+	line-height: 3rem;
+	}
+
+#content h2 {
+	padding-bottom: 0;
+	}
+
+.post h2 {
+	padding-top: 0;
+	margin-top: 0;
+	}
+
+h3 {
+	padding: 2rem 0;
+	}
+
+footer h3 {
+	font-size: 2.4rem;
+	padding-bottom: 1rem;
+	}
+
+#footer-mailchimp h2 {
+	color: #fff;
+	}
+	
+.loop-taxonomy h3 {
+	padding: 0 0 0 0;
+	}
+
+h4 {
+	padding-top: 2rem;
+	line-height: 2.6rem;
+	}
+	
+footer p, footer li {
+	font-size: 1.7rem;
+	}
+
+p.lead {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	}
+	
+.home p.lead {
+	border: none;
+	}
+
+
+.date {
+	padding-top: 1.5rem;
+	margin: auto;
+	}
+
+.date span {
+	font-size: 1.5rem;
+	display: block;
+	}
+
+/* Horizontal rule
+----------------------------------- */
+	
+hr {
+	margin: 3rem 0 2rem 0;
+	border-top: #777 1px dashed;
+	clear: both;
+	}
+
+/* Lists
+----------------------------------- */
+
+#content ul li,
+#content ol li {
+	padding-bottom: 1rem;
+	}
+
+
+/* Blockquote
+----------------------------------- */
+	
+blockquote {
+	border: none;
+	font-size: 1.6rem;
+	border-radius: 5px;
+	margin: 2em 0;
+	padding: 2rem;
+	font-style: italic;
+	border-left: 5px solid #e73e97;	
+	background: #f9f9f9;
+	}
+
+blockquote br {
+	margin: 2rem;
+	content: "";
+	display: block;
+	}
+
+
+blockquote.e-description {
+	border: none;
+	}
+		
+div.comment-content {
+	padding: 2rem;
+	background: #f9f9f9;
+	}
+		
+blockquote p:first-child:before,
+div.comment-content p:first-child:before {
+	content:"\201C";
+	color:rgba(0,0,0,0.50);
+	margin-right: .5rem;
+	font-weight: bold;
+	font-family: Bitter;
+	font-style: italic;
+	}
+
+blockquote p:last-child:after,
+div.comment-content p:last-child:after {
+	content:"\201D";
+	margin-left: .5rem;
+	color:rgba(0,0,0,0.50);
+	font-weight: bold;
+	font-family: Bitter;
+	font-style: italic;
+	}
+
+.response blockquote {
+	padding-left: 0;
+	}
+	
+.response blockquote:after,
+.response blockquote:before {
+	padding: 0;
+	margin: 0;
+	content: "";
+	}
+
+.screen-reader-text {
+	}
+
+/* Links
+----------------------------------- */
+
+a {
+	color:  #0080A4;
+	}
+
+#subfooter a {
+	text-decoration: none !important;
+	}
+
+#subfooter a:hover {
+	text-decoration: underline !important;
+	}

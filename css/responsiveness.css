@@ -1,0 +1,180 @@
+/* Media queries
+------------------------------------- */
+
+/* LARGE --- lg --- 1,200px and above --- */
+
+@media (min-width: 1200px) {
+	}
+
+
+/* MEDIUM --- md --- 992px and above --- */
+
+@media (min-width: 992px) {
+.no-gutter {
+	padding-left: 0;
+	padding-right: 0;
+	}	
+	}
+
+/* SMALL to MEDIUM --- xs --- 768px and above --- */
+	
+@media (min-width: 768px) {		
+	}
+
+/* 1024px and below --- */
+
+@media (max-width: 1224px) {
+	.navbar-nav > li > a {
+		padding-left: .7rem;
+		padding-right: .7rem;
+		font-size: 1.5rem;
+		}
+	}
+
+/* SMALL --- sm --- 992px and below --- */
+
+@media (max-width: 992px) {
+
+
+	.tagline .email {
+		text-align: right;
+	}
+
+	.navbar-nav > li > a {
+		font-size: 1.4rem;
+	}
+
+	.navbar-brand img {		
+		max-width: 160px;
+		}
+		
+	body {
+		padding-top: 12rem !important;
+		}
+
+	h1 {
+		font-size: 2rem;
+		line-height: 3rem;
+		}
+		
+	.page-header p {
+		font-size: 1.8rem;
+		line-height: 2.6rem;
+		}
+
+	}
+
+
+/* EXTRA SMALL --- xs --- 768px and below --- 
+The point at which the nav menu COLLAPSES (vertically stacks)
+*/
+	
+@media only screen and (max-width: 767px) {
+
+	/* Mobile menu */
+
+	.tagline .email {
+		text-align: left;
+	}
+
+	.navbar-collapse {
+		float: none !important;
+		width: 100%;
+		margin: auto !important;
+		}
+
+	.navbar-collapse li {
+		background-color: #3075AD;
+		border-bottom: 1px solid #5C9DD1;
+		}
+
+	.navbar-collapse a {
+		color: #fff;
+		padding: 1rem !important;
+		}
+
+	.navbar-collapse li:hover {
+		background-color: #5C9DD1;
+		}
+
+	.navbar-collapse a:hover {
+		color: #fff !important;
+		}
+
+	#subfooter .text-right {
+		text-align: left;
+		}
+		
+	.navbar-brand {
+		padding-top: 2rem;
+		}
+		
+	.btn,
+	input[type="submit"] {
+		font-size: 1.4rem !important;
+		}
+		
+	.date {
+		margin-bottom: 1rem;
+		}
+		
+	.date span {
+		display: inline;
+		}
+/* PT add */
+	#signpost-categories ul {
+		justify-content: space-between;
+		}
+
+	#signpost-categories ul li a {
+		font-size: 1.5rem;
+		}
+	}
+	
+/* 480px and below --- */
+	
+@media (max-width: 480px) {
+
+	.navbar-brand img {		
+		max-width: 140px;
+		}
+	
+	.tagline {
+		/* Phil did this
+		display: none;
+		font-size: 1.1rem;
+		line-height: 2rem;
+		text-align: left; */
+		}
+
+	.navbar-toggle {
+		font-size: 2rem;
+		}
+		
+	h2 {
+		font-size: 2rem;
+		}
+
+	div[class*='ajaxsearchpro'] ::-webkit-input-placeholder {
+		font-size: 1.2rem !important;
+		display: none;
+		}
+
+	div[class*='ajaxsearchpro'] ::-webkit-input-placeholder:before {
+		content:"Text goes here";
+		display: inline;
+		}
+		
+	/* Phil added these 3 styles */
+	.home .widget_search {
+		margin: 2rem;
+		}
+		
+	.home .widget_search:before {
+		font-size: 2rem;
+		}
+	
+	#text-8 h2{
+		padding: 0;
+		}
+	}

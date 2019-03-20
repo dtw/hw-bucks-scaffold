@@ -1,0 +1,257 @@
+/* Navigation for MAIN MENU
+--------------------------------- */
+
+/* Structure */
+
+.navbar-collapse {
+	float: right;
+	}
+	
+.navbar {
+	border-bottom: none;
+	padding-bottom: 1.6rem;
+	}
+	
+.tagline {
+	font-size: 1.6rem;
+	font-family: Bitter;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 2rem;
+	background-color: rgb(35, 82, 124);
+	padding: .6rem .2rem 0 .2rem;
+	}
+	
+.tagline div {
+	max-height: 3.2rem;
+	}
+
+.tagline .widget-beside-tagline-container {
+	text-align: right;
+	}
+
+.tagline .widget-beside-tagline {
+	margin-left: 2rem;
+	}
+
+.tagline .widget-beside-tagline,
+.tagline .widget-beside-tagline .textwidget {
+	display: inline;
+	}
+
+.tagline .phone {
+	text-align: left;	
+	}
+
+.tagline .email {
+	text-align: left;
+	}
+
+.tagline .email a {
+	color:inherit;
+	}
+.separator {
+	padding:0 1rem;
+	}
+.navbar-nav {
+	padding-top: 1.5rem;
+	}
+	
+.navbar-brand {
+	padding: 0;
+	}
+
+/* Links */
+
+.navbar-nav > li > a {
+	text-shadow: none;
+	letter-spacing: .03rem;
+	font-weight: 700;
+	font-family: Bitter, serif;
+	}	
+
+.navbar-nav > li:first-child > a {
+	padding-left: 0;
+	}	
+	
+.navbar-nav > li:last-child > a {
+	padding-right: 0;
+	}	
+
+/* Toggle Menu */
+	
+.navbar-toggle {
+	font-size: 2.8rem;
+	margin-right: 0;
+	}
+
+.navbar-toggle:after {
+	content: "\f00d";
+	color: #004f6b;
+	font-size: 2.8rem;
+	font-family: FontAwesome;
+	}
+	
+.navbar-toggle.collapsed:after {
+	content: "\f0c9";
+	color: #004f6b;
+	font-size: 2.8rem;
+	font-family: FontAwesome;
+	}
+
+.navbar-toggle:hover:after {
+	color: #e73e97;	
+ 	}
+
+.navbar-toggle.collapsed {
+	transform: none;
+	}
+
+/* Navigation current page and hover effects */
+	
+.navbar li:hover a {
+	opacity: .5;
+	background: none;
+	}
+
+.navbar-brand img:hover {
+	opacity: .7;
+	}
+
+/* Navigation for CHILDREN SHORTCODE MENU
+------------------------------------------- */
+
+#content a.child-link {
+	font-weight: 700;
+	}
+	
+#content a.child-link:after {
+	content: " »";
+	}
+
+
+/* Navigation for FOOTER MENU
+------------------------------------------- */
+	
+#footer-menu {
+	padding-left: 0 !important;
+	}
+
+#menu-footer-menu li a {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	}
+
+#menu-footer-menu li a:hover {
+	text-decoration: underline;
+	}
+	
+/* Navigation for CHILD PAGES WIDGET
+------------------------------------------- */
+
+.advanced-sidebar-menu,
+.advanced-sidebar-menu ul,
+#sidebar ul.child-menu,
+#sidebar ul.child-menu ul {
+	padding-left: 0;
+	font-family: "Bitter", serif;
+	background-color: rgba(0,0,0,0.005);
+	}
+
+.advanced-sidebar-menu li,
+#sidebar ul.child-menu li {
+	padding:0;
+	list-style: none;
+	}
+	
+.advanced-sidebar-menu li ul a,
+#sidebar ul.child-menu li a {
+	padding: 1rem .75rem;
+	border-bottom: 1px dotted rgba(0,0,0,0.1); 
+	display: block;
+	font-weight: 400;
+	}
+
+
+.advanced-sidebar-menu li ul li:last-child a,
+#sidebar ul.child-menu li:last-child a {
+	border-bottom: none; 
+	}
+
+
+.advanced-sidebar-menu li li,
+#sidebar ul.child-menu li li {
+	padding: 0;
+	}
+
+.advanced-sidebar-menu ul.child-menu ul.children,
+#sidebar ul.child-menu ul.children {
+	margin-bottom: 0;
+	}
+
+.advanced-sidebar-menu .current_page_parent,
+#sidebar ul.child-menu li a.child-menu-parent {
+	font-weight: 700;
+	border-bottom: 3px solid rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.03);
+	}
+
+.advanced-sidebar-menu ul.child-menu-children ul li a,
+#sidebar ul.child-menu-children ul li a {
+	padding-bottom: .6rem;
+	padding-left: 3rem;
+	}
+
+ul.child-sidebar-menu li.has_children ul.children li a {
+	padding-left: 1.5rem;	
+}
+
+#sidebar ul.child-menu-children {
+	padding-left: 0;	
+	}
+	
+#sidebar ul.child-menu-children li.current_page_item a,
+#sidebar ul.child-menu li.current-cat a {
+	background-color: rgba(0,0,0,0.05);	
+	font-weight: 700;
+	}
+
+#sidebar ul.child-menu a:hover {
+	background-color: rgba(0,0,0,0.07) !important;	
+}
+	
+#sidebar a.child-menu-parent:hover:after {
+	content: "\f077";
+	font-family: "fontAwesome";
+	float: right;
+	opacity: .3;
+}
+
+#sidebar li.current_page_ancestor {
+	font-weight: 700;
+	font-size: 2rem;
+	padding: 2rem 0 6rem 2rem;
+	}
+
+#sidebar .current_page_item a {
+	font-weight: 700;
+	}
+
+
+/* Navigation for CHILD NAVIGATION SHORTCODE
+------------------------------------------------- */
+
+div.child-nav div.child-nav-item {
+	min-height: 260px;
+	}
+	
+/* Breadcrumbs
+------------------------------------------------- */
+	
+#content #breadcrumbs {
+	padding: 1rem;
+	margin-bottom: 2rem;
+	background-color: rgba(0,0,0,.02);
+	/* margin-bottom: 2rem;
+	background: rgba(0,0,0,.2); */
+	}
