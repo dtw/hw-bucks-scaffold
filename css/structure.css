@@ -378,11 +378,6 @@ ul#local-services-selector li:last-child {
 	color: rgba(0,0,0,0.5);
 	}
 
-#content a[href*="sharepoint"]:after {
-	content: " / SharePoint";
-	color: rgba(0,0,0,0.5);
-	}
-
 #content a[href$=".doc"]:after,
 #content a[href$=".docx"]:after {
 	content: " / Word";
