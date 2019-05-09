@@ -1,7 +1,9 @@
 /* Icons - FontAwesome
 ----------------------------------- */
 
-.fa.shortcode-icon {
+.fa.shortcode-icon,
+.far.shortcode-icon,
+.fab.shortcode-icon {
 	width: 3.5rem;
 	font-weight: 700;
 	}
@@ -14,11 +16,13 @@
 	color: #fff;
 	}
 
-.tagline i.fa {
+.tagline i.fa,
+.tagline i.fab {
 	color: #fff !important;
 }
 
-.tagline i.fa:hover {
+.tagline i.fa:hover,
+.tagline i.fab:hover {
 	opacity: .7;
 }	
 	

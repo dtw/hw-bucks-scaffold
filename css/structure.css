@@ -365,7 +365,6 @@ ul#local-services-selector li:last-child {
 #content a[href$=".pdf"]:before,
 #content a[href$=".doc"]:before,
 #content a[href$=".docx"]:before {
-	font-family: "FontAwesome";
 	padding-right: 2rem;
 	display: block;
 	font-weight: normal;
@@ -412,16 +411,22 @@ ul#local-services-selector li:last-child {
 	}
 
 #content a[href*="sharepoint"]:before {
-	content:"\f0ed ";
+	content: "\f381";
+	font-family: 'Font Awesome\ 5 Free';
+	font-weight: 900;
 	}
 
 a[href$=".pdf"]:before {
+	font-family: 'Font Awesome\ 5 Free';
 	content:"\f1c1 ";
+	font-weight: 900;
 	}
 
 a[href$=".doc"]:before,
 a[href$=".docx"]:before {
+	font-family: 'Font Awesome\ 5 Free';
 	content:"\f1c2 ";
+	font-weight: 900;
 	}
 		
 /* Buttons
@@ -438,7 +443,7 @@ a[href$=".docx"]:before {
 	
 .btn:after {
 	content: " \f105";
-	font-family: FontAwesome;
+	font-family: 'Font Awesome\ 5 Free';
 	padding-left: .5rem;
 	color: rgba(255,255,255,.6);
 	}
