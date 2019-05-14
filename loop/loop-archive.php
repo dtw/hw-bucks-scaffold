@@ -65,43 +65,15 @@ You can make a difference too. Join in by searching for a services below and sha
          echo  $terms;
          echo "</div>";
        }
-
-
-
-
-
-			}
-			?>
-
-
-
-
-
-
-	        <p><?php echo get_the_excerpt(); ?></p>
-
-
-			<?php get_template_part('elements/post-meta'); ?>
-
-
-		<?php the_tags( '<div class="the-tags-archive">', ' ', '' );
-      echo "</div>";
-    ?>
-
-
-
-
-		</div><!-- end of 2nd col (post) -->
-
-
-
-
-
-            	</div><!-- end of row -->
-            		</div><!-- end of Post -->
-
-
-	<?php endwhile; ?>
+     }?>
+     <p><?php echo get_the_excerpt(); ?></p>
+     <?php get_template_part('elements/post-meta'); ?>
+     <?php the_tags( '<div class="the-tags-archive">', ' ', '' );
+     echo "</div>";?>
+   </div><!-- end of 2nd col (post) -->
+ </div><!-- end of row -->
+</div><!-- end of Post -->
+<?php endwhile; ?>
 
 			<?php get_template_part('elements/pagination'); ?>
 
