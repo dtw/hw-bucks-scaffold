@@ -39,7 +39,7 @@ You can make a difference too. Join in by searching for a services below and sha
 
     <div class="col-md-9 col-sm-9">
 
-        <h2><a href="<?php echo the_permalink(''); ?>"><?php the_title(); ?></a></h2>
+        <div class="post-title"><h2><a href="<?php echo the_permalink(''); ?>"><?php the_title(); ?></a></h2></div>
 
 
        <?php if (is_tag()) {
