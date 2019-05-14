@@ -12,13 +12,13 @@
 body {
 	padding-top: 14rem;
 	}
-	
+
 .page-header {
 	background-color: #23527c;
 	padding-bottom: 2rem;
 	margin-bottom: 2rem;
 	}
- 
+
 #content {
 	border-radius: 5px;
 	border-top-right-radius: 0;
@@ -26,11 +26,11 @@ body {
 	padding: 1rem 0;
 	padding-right: 3rem;
 	}
-	
+
 .home #content {
 	padding-right: 0;
 	}
-	
+
 /* Signposts ---------------- */
 
 #signposts-selector {
@@ -40,7 +40,7 @@ body {
 
 #ajaxsearchpro3_1 {
 	}
-	
+
 #signpost-categories {
 	margin: 2rem 0;
 	}
@@ -80,7 +80,7 @@ body {
 #sidebar {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	padding-top: 1.5rem; 
+	padding-top: 1.5rem;
 	}
 
 .service-type {
@@ -91,15 +91,15 @@ body {
 .service-type:last-child {
 	border: none;
 	}
-	
-	
+
+
 /* Posts ---------------- */
 
 .post {
 	 margin-top: 4rem;
 	 margin-bottom: 4rem;
 	 }
-	 
+
 .social-sharing {
 	border-top: #CCC 1px dotted;
 	margin: 4rem 0;
@@ -117,16 +117,16 @@ body {
 .yarpp-related ul {
 	list-style: none;
 	}
-		
+
 .the-tags {
 	background-color: rgba(0,0,0,.04);
 	padding: 2rem 1rem 1rem 1rem;
 	text-align: center;
 	}
-	
-	 
+
+
 /* Footer ---------------- */
-	
+
 #subfooter {
 	margin: 5rem 0 0 0;
 	}
@@ -135,11 +135,11 @@ footer,
 #subfooter {
 	padding: 5rem 0 5rem 0;
 	}
-		
+
 footer ul li {
 	margin-bottom: 1rem;
 	}
-	
+
 #copyright {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
@@ -148,7 +148,7 @@ footer ul li {
 
 /* Comments
 ----------------------------------- */
-	
+
 .comment {
 	padding-top: 1rem;
 	}
@@ -164,7 +164,7 @@ footer ul li {
 .home #content a:hover img.wp-post-image {
 	opacity: .6;
 	}
-	
+
 #home-services-guide h2,
 .recent-posts-headliner h2 {
 	padding-bottom: 0;
@@ -216,7 +216,7 @@ footer ul li {
 ----------------------------------- */
 
 .wp-post-image,
-.size-auto, 
+.size-auto,
 .size-full,
 .size-large,
 .size-medium,
@@ -232,7 +232,7 @@ footer ul li {
 .aligncenter {
 	float: right;
 	}
-	
+
 #content img {
 	border-radius: 5px;
 	}
@@ -260,13 +260,13 @@ h2 img.alignright {
 
 /* Galleries */
 
-	
+
 .wp-caption {
 	}
 
 .wp-caption-text {
 	}
-	
+
 .gallery-caption {
 	padding: 1rem 0;
 	}
@@ -283,7 +283,7 @@ iframe {
 	}
 
 iframe:hover {
-	border: solid rgba(0,0,0,0.3) 5px;	
+	border: solid rgba(0,0,0,0.3) 5px;
 	}
 
 /* CQC Widget
@@ -292,33 +292,33 @@ iframe:hover {
 #view1 iframe {
 	/* Need to force width as default iframe width is huge! */
 	width: 100%;
-}	
+}
 
 /* Bootstrap helper classes
 ----------------------------------- */
 
 .text-muted {
 	}
-	
+
 
 
 /* ---- LOOP: Local Services Selector ----- */
-	
+
 ul#local-services-selector li {
 	padding: .5rem 0;
 	border-bottom: 1px dotted #ccc;
-	}	
+	}
 
 ul#local-services-selector li a {
 	padding: 1.2rem 0;
 	display: block;
 	font-weight: bold;
-	}	
+	}
 
 ul#local-services-selector li:last-child {
 	border: none;
 	}
-	
+
 /* ---- LOOP: Archive Short ----- */
 
 .loop-archive-short ul li {
@@ -330,16 +330,16 @@ ul#local-services-selector li:last-child {
 
 	margin: 2.5rem 0;
 	}
-	
 
-	
+
+
 /* Links
 ----------------------------------- */
 
 #content a, footer a {
 	font-weight: 700;
 	}
-	
+
 #content h2 a {
 	font-weight: normal;
 	}
@@ -372,7 +372,7 @@ ul#local-services-selector li:last-child {
 	float: left;
 	color: rgba(0,0,0,0.60);
 	}
-	
+
 #content a[href$=".pdf"]:after {
 	content: " / PDF";
 	color: rgba(0,0,0,0.5);
@@ -383,7 +383,7 @@ ul#local-services-selector li:last-child {
 	content: " / Word";
 	color: rgba(0,0,0,0.5);
 	}
-	
+
 #content a[href*="sharepoint"]:hover,
 #content a[href$=".pdf"]:hover,
 #content a[href$=".doc"]:hover,
@@ -423,7 +423,7 @@ a[href$=".docx"]:before {
 	content:"\f1c2 ";
 	font-weight: 900;
 	}
-		
+
 /* Buttons
 ----------------------------------- */
 
@@ -435,7 +435,7 @@ a[href$=".docx"]:before {
 	font-size: 1.8rem;
 	font-weight: 700;
 	}
-	
+
 .btn:after {
 	content: " \f105";
 	font-family: 'Font Awesome\ 5 Free';
@@ -472,25 +472,25 @@ a[href$=".docx"]:before {
 	background-size: contain;
 	width: 100%;
 	}
-		
+
 .carousel-caption h2 {
 	font-size: 6rem;
 	text-transform: uppercase;
 	color: rgba(255,255,255,0.80);
 	text-align: left;
 	}
-	
+
 .carousel-control {
 	font-size: 12rem;
 	}
-	
+
 
 	/* ------ Agnosia Carousel FADE ------ */
 
     .carousel-inner .item {
             transition-property: opacity;
         }
-        
+
     .carousel-inner .item,
     .carousel-inner .active.left,
     .carousel-inner .active.right {
@@ -514,20 +514,20 @@ a[href$=".docx"]:before {
     .carousel-control {
         z-index: 2;
     }
-	
-/* Tables 
+
+/* Tables
 ------------------------------------ */
 
 #content table {
 	width: 100%;
 	}
-	
-	
+
+
 /* Media (Bootstrap)
 ------------------------------------- */
 
 .media {
-    background-color: rgba(0,0,0,:;);	
+    background-color: rgba(0,0,0,:;);
 	padding: 2rem;
 	border-top: 5px solid rgba(0,0,0,0.06);
 	}
@@ -542,7 +542,7 @@ a[href$=".docx"]:before {
 .media-body {
 	margin-bottom: 1rem;
 	}
-	
+
 img.media-object {
 	max-width: none;
 	}
@@ -556,7 +556,7 @@ img.media-object {
 	max-width: 100px;
 	}
 
-	
+
 /* Alerts
 ------------------------------------- */
 .alert {
@@ -575,7 +575,7 @@ img.media-object {
 .alert button span {
 	font-weight: bold;
 	}
-	
+
 /* Clips
 ---------------------------------------- */
 
@@ -591,13 +591,13 @@ img.media-object {
 .staff-member-info-wrap {
 	width: 90% !important;
 	}
-	
+
 .staff-member-info-wrap img {
 	float: right !important;
 	padding: 0 0 1rem 1rem;
 	border-radius: 50% 50% !important;
 	}
-	
+
 div.staff-member {
 	margin-bottom: 2rem;
 	}
@@ -605,7 +605,7 @@ div.staff-member {
 	margin: 0;
 	padding: 0 0 1rem 0 !important;
 	}
-	
+
 /* Calendar
 ---------------------------------------- */
 
@@ -614,13 +614,13 @@ div.staff-member {
 	float: left !important;
 	height: auto !important;
 	}
-	
+
 .yarpp-thumbnail > img, .yarpp-thumbnail-default {
 	width: 20% !important;
 	height: auto !important;
 	float: left !important;
 	}
-	
+
 .yarpp-thumbnails-horizontal .yarpp-thumbnail-title {
 	max-height: none !important;
 	width: 70% !important;

@@ -6,12 +6,12 @@
 .navbar-collapse {
 	float: right;
 	}
-	
+
 .navbar {
 	border-bottom: none;
 	padding-bottom: 1.6rem;
 	}
-	
+
 .tagline {
 	font-size: 1.6rem;
 	font-family: Bitter;
@@ -21,7 +21,7 @@
 	background-color: rgb(35, 82, 124);
 	padding: .6rem .2rem 0 .2rem;
 	}
-	
+
 .tagline div {
 	max-height: 3.2rem;
 	}
@@ -40,7 +40,7 @@
 	}
 
 .tagline .phone {
-	text-align: left;	
+	text-align: left;
 	}
 
 .tagline .email {
@@ -56,7 +56,7 @@
 .navbar-nav {
 	padding-top: 1.5rem;
 	}
-	
+
 .navbar-brand {
 	padding: 0;
 	}
@@ -68,18 +68,18 @@
 	letter-spacing: .03rem;
 	font-weight: 700;
 	font-family: Bitter, serif;
-	}	
+	}
 
 .navbar-nav > li:first-child > a {
 	padding-left: 0;
-	}	
-	
+	}
+
 .navbar-nav > li:last-child > a {
 	padding-right: 0;
-	}	
+	}
 
 /* Toggle Menu */
-	
+
 .navbar-toggle {
 	font-size: 2.8rem;
 	margin-right: 0;
@@ -91,7 +91,7 @@
 	font-size: 2.8rem;
 	font-family: FontAwesome;
 	}
-	
+
 .navbar-toggle.collapsed:after {
 	content: "\f0c9";
 	color: #004f6b;
@@ -100,7 +100,7 @@
 	}
 
 .navbar-toggle:hover:after {
-	color: #e73e97;	
+	color: #e73e97;
  	}
 
 .navbar-toggle.collapsed {
@@ -108,7 +108,7 @@
 	}
 
 /* Navigation current page and hover effects */
-	
+
 .navbar li:hover a {
 	opacity: .5;
 	background: none;
@@ -124,7 +124,7 @@
 #content a.child-link {
 	font-weight: 700;
 	}
-	
+
 #content a.child-link:after {
 	content: " »";
 	}
@@ -132,7 +132,7 @@
 
 /* Navigation for FOOTER MENU
 ------------------------------------------- */
-	
+
 #footer-menu {
 	padding-left: 0 !important;
 	}
@@ -145,7 +145,7 @@
 #menu-footer-menu li a:hover {
 	text-decoration: underline;
 	}
-	
+
 /* Navigation for CHILD PAGES WIDGET
 ------------------------------------------- */
 
@@ -163,11 +163,11 @@
 	padding:0;
 	list-style: none;
 	}
-	
+
 .advanced-sidebar-menu li ul a,
 #sidebar ul.child-menu li a {
 	padding: 1rem .75rem;
-	border-bottom: 1px dotted rgba(0,0,0,0.1); 
+	border-bottom: 1px dotted rgba(0,0,0,0.1);
 	display: block;
 	font-weight: 400;
 	}
@@ -175,7 +175,7 @@
 
 .advanced-sidebar-menu li ul li:last-child a,
 #sidebar ul.child-menu li:last-child a {
-	border-bottom: none; 
+	border-bottom: none;
 	}
 
 
@@ -203,23 +203,23 @@
 	}
 
 ul.child-sidebar-menu li.has_children ul.children li a {
-	padding-left: 1.5rem;	
+	padding-left: 1.5rem;
 }
 
 #sidebar ul.child-menu-children {
-	padding-left: 0;	
+	padding-left: 0;
 	}
-	
+
 #sidebar ul.child-menu-children li.current_page_item a,
 #sidebar ul.child-menu li.current-cat a {
-	background-color: rgba(0,0,0,0.05);	
+	background-color: rgba(0,0,0,0.05);
 	font-weight: 700;
 	}
 
 #sidebar ul.child-menu a:hover {
-	background-color: rgba(0,0,0,0.07) !important;	
+	background-color: rgba(0,0,0,0.07) !important;
 }
-	
+
 #sidebar a.child-menu-parent:hover:after {
 	content: "\f077";
 	font-family: "fontAwesome";
@@ -244,10 +244,10 @@ ul.child-sidebar-menu li.has_children ul.children li a {
 div.child-nav div.child-nav-item {
 	min-height: 260px;
 	}
-	
+
 /* Breadcrumbs
 ------------------------------------------------- */
-	
+
 #content #breadcrumbs {
 	padding: 1rem;
 	margin-bottom: 2rem;
