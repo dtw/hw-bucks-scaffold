@@ -8,7 +8,7 @@
         
 	<?php the_content(); ?>
 
-		<?php the_tags( '<div class="the-tags"><p>Topics: ', ', ', '</p></div>' ); ?>
+		<?php the_tags( '<div class="the-tags"><p>Explore more ', ' ', '</p></div>' ); ?>
 
 	<?php endwhile; ?>
 	

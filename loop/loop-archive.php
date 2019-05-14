@@ -39,11 +39,11 @@ You can make a difference too. Join in by searching for a services below and sha
 
     <div class="col-md-9 col-sm-9">
 
-        <h2><a href="<?php echo the_permalink(''); ?>"><?php the_title(); ?></a>
+        <h2><a href="<?php echo the_permalink(''); ?>"><?php the_title(); ?></a></h2>
 
-        
-       <?php if (is_tag()) { 
-         echo "<small>&laquo; "; 
+
+       <?php if (is_tag()) {
+         echo "<div class='category-terms'>";
 
 
 
@@ -54,8 +54,8 @@ You can make a difference too. Join in by searching for a services below and sha
 $post_terms = wp_get_object_terms( $post->ID, $taxonomy, array( 'fields' => 'ids' ) );
  
 // Separator between links.
-$separator = ', ';
- 
+$separator = ' ';
+
 if ( ! empty( $post_terms ) && ! is_wp_error( $post_terms ) ) {
  
     $term_ids = implode( ',' , $post_terms );
@@ -80,22 +80,24 @@ if ( ! empty( $post_terms ) && ! is_wp_error( $post_terms ) ) {
 
 
 
-			}  
-	echo "</small>"; 
+			}
+	echo "</div>";
 			?>
 
 
 
 
-        </h2>
-            
+
+
 	        <p><?php echo get_the_excerpt(); ?></p>
 
 
 			<?php get_template_part('elements/post-meta'); ?>        				
 
 
-		<?php the_tags( '<p><small>Topics: ', ', ', '</small></p>' ); ?>
+		<?php the_tags( '<div class="the-tags-archive">', ' ', '' );
+      echo "</div>";
+    ?>
 
 
 
