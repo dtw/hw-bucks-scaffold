@@ -62,14 +62,15 @@ You can make a difference too. Join in by searching for a services below and sha
          );
          $terms = rtrim( trim( str_replace( '<br />',  $separator, $terms ) ), $separator );
          // Display post categories.
-         echo  $terms;}
+         echo  $terms;
+         echo "</div>";
+       }
 
 
 
 
 
 			}
-	echo "</div>";
 			?>
 
 
