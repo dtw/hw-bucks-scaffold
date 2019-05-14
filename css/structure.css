@@ -336,7 +336,23 @@ ul#local-services-selector li:last-child {
 	margin: 2.5rem 0;
 	}
 
+/* ---- LOOP -----*/
 
+.loop-default ul {
+  list-style: none; /* Remove default bullets */
+	margin-left: -10px;
+}
+
+.loop-default ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #e73e97; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+	font-size: 1.5em;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+	vertical-align: text-bottom;
+}
 
 /* Links
 ----------------------------------- */
