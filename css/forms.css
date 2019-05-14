@@ -1,5 +1,5 @@
 /* Forms
------------------------------------ */	
+----------------------------------- */
 
 form {
 	margin: 3rem 0;
@@ -14,9 +14,9 @@ form li {
 	}
 
 form legend, form label {
-	font-family: Bitter, serif;	
+	font-family: Bitter, serif;
 	}
-		
+
 form fieldset {
 	margin: 3rem 0;
 	}
@@ -53,14 +53,14 @@ form input[type="submit"] {
 	font-size: 1.8rem;
 	margin-top: 1rem;
 	}
-		
+
 form input[type="submit"]:hover {
 	background-color: #e73e97; /* Pink */
 	}
 
 /* Search form
 ------------------------------------------------------------- */
-		
+
 #searchform input[type="submit"] {
 	padding: 0;
 	width: 100%;
@@ -73,9 +73,9 @@ form input[type="submit"]:hover {
 	border-bottom-right-radius: 0;
 	border-right: none;
 	}
-	
+
 /* Ajax autocompleting search form
------------------------------------ */	
+----------------------------------- */
 .widget_search {
 	background-color: rgb(238,238,238);
 	padding: 1rem;
@@ -108,27 +108,27 @@ form input[type="submit"]:hover {
 	margin: 3rem 0 2rem 0;
 	border-style: none;
 	}
-	
+
 .home .widget_search:before,
 .page-template-template-home-php .widget_search:before {
 	content: "Want your say on services in Bucks? Want to see what others said?";
 	background-color: transparent;
 	font-size: 2.2rem;
-	margin-bottom: 2rem; 
+	margin-bottom: 2rem;
 	color: #fff;
 	display: block;
 	}
-	
+
 .home .widget_search:after,
 .page-template-template-home-php .widget_search:after {
 	content: "Rate & review 500 GPs, dentists, pharmacists, care homes and hospitals";
 	background-color: transparent;
 	font-size: 1.8rem;
-	margin-top: 2rem; 
+	margin-top: 2rem;
 	color: #fff;
 	display: block;
 	}
-	
+
 div[class*='ajaxsearchpro'] {
 	margin: 0 auto !important;
 	border-radius: 5px !important;
@@ -139,7 +139,7 @@ footer .AjaxSearchProWidget h3 {
 	}
 
 /* Gravity Forms
------------------------------------ */	
+----------------------------------- */
 
 ul.gform_fields {
 	list-style: none;
@@ -150,13 +150,13 @@ ul.gform_fields {
 ul.gform_fields li {
 	margin: 1rem 0 2rem 0;
 	}
-	
+
 form .validation_error,
 form .validation_message {
 	color: #e73e97;
 	font-weight: bold;
 	}
-	
+
 form span.name_first, form span.name_last {
 	width: 48%;
 	}
@@ -164,15 +164,15 @@ form span.name_first, form span.name_last {
 form span.name_first {
 	float: left;
 	}
-	
+
 form span.name_last {
 	float: right;
 	}
-	
+
 form span label {
 	font-weight: normal;
 	}
-	
+
 form .gfield_required {
 	color: #e73e97; /* Pink */
 	margin-left: .5rem;
@@ -181,33 +181,33 @@ form .gfield_required {
 .ginput_complex span {
 	margin-bottom: 2rem;
 	}
-		
+
 .gform_description {
 	padding-bottom: 2rem;
 	display: block;
 	}
-	
+
 .gform_confirmation_wrapper {
 	font-weight: bold;
 	margin-top: 3rem;
 	font-size: 3rem;
 	color: #e73e97; /* Core pink */
 	}
-	
+
 .g-recaptcha iframe {
 	width: 100%;
 	}
-	
+
 #gglcptch_error {
 	width: 100%;
 	font-size: 3rem;
 	}
-	
+
 .gfield_description {
 	font-style: italic;
-	padding-bottom: .5rem;	
+	padding-bottom: .5rem;
 	}
-	
+
 #content ul.gfield_checkbox li {
 	padding-bottom: 0;
 	}
@@ -224,7 +224,7 @@ ul.gfield_checkbox li label {
 	font-weight: normal;
 	padding: 0;
 	}
-	
+
 .gfield_required {
 	display: none;
 	}
@@ -256,7 +256,7 @@ ul.gfield_checkbox li label {
 	background-position: 99% 60%;
 }
 
-#content .gfield_contains_required ul { 
+#content .gfield_contains_required ul {
 	border: #e73e97 1px solid; /* Pink */
 	border-radius: 5px;
 }
@@ -268,7 +268,7 @@ ul.gfield_checkbox li label {
 #content input:required,
 #content .gfield_contains_required input,
 #content .gfield_contains_required textarea,
-#content .gfield_contains_required select { 
+#content .gfield_contains_required select {
 	background-image: url(../images/asterisk.png);
 	background-repeat: no-repeat;
 	background-position: 98% 50%;
@@ -277,15 +277,15 @@ ul.gfield_checkbox li label {
 
 #content select:required,
 #content select[aria-required=true] {
-	background-position: 94% 50%;	
+	background-position: 94% 50%;
 	}
 
 #content textarea:required,
 #content textarea[aria-required=true] {
-	background-position: 98% 10px;	
+	background-position: 98% 10px;
 	}
-	
-	
+
+
 
 /* MailChimp
 ------------------------------------------------- */
@@ -313,7 +313,7 @@ form#mc-embedded-subscribe-form input[type="submit"] {
 form#mc-embedded-subscribe-form input[type="submit"]:hover {
 	background-color: #e73e97; /* pink */
 	}
-	
+
 form#mc-embedded-subscribe-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #3F7188; }
 form#mc-embedded-subscribe-form ::-moz-placeholder { /* Firefox 19+ */
@@ -322,13 +322,12 @@ form#mc-embedded-subscribe-form :-ms-input-placeholder { /* IE 10+ */
   color: #3F7188; }
 form#mc-embedded-subscribe-form :-moz-placeholder { /* Firefox 18- */
   color: #3F7188; }
-  
- 
+
+
  /* COMMENT FORM
  ---------------------------------------------------- */
- 
+
  #commentform {
 	 background-color: #f9f9f9;
 	 padding: 1rem;
 	 }
-
