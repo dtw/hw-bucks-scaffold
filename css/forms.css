@@ -101,6 +101,7 @@ form input[type="submit"]:hover {
 
 /* end */
 
+.widget_search,
 .home .widget_search,
 .page-template-template-home-php .widget_search {
 	background-color: #0080A4;
