@@ -133,10 +133,6 @@ div[class*='ajaxsearchpro'] {
 	margin: 0 auto !important;
 	border-radius: 5px !important;
 	}
-
-.home div[class*='ajaxsearchpro'] {
-	max-width: 600px !important;	
-	}
 	
 footer .AjaxSearchProWidget h3 {
 	display: none;
