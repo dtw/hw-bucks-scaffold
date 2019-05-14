@@ -595,7 +595,7 @@ img.media-object {
 .staff-member-info-wrap img {
 	float: right !important;
 	padding: 0 0 1rem 1rem;
-	border-radius: 50% 50% !important;
+	border-radius: 0px !important;
 	}
 
 div.staff-member {
