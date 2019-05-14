@@ -89,14 +89,16 @@
 	content: "\f00d";
 	color: #004f6b;
 	font-size: 2.8rem;
-	font-family: FontAwesome;
+	font-family: 'Font Awesome\ 5 Free';
+	font-weight: 400;
 	}
 
 .navbar-toggle.collapsed:after {
 	content: "\f0c9";
 	color: #004f6b;
 	font-size: 2.8rem;
-	font-family: FontAwesome;
+	font-family: 'Font Awesome\ 5 Free';
+	font-weight: 400;
 	}
 
 .navbar-toggle:hover:after {
@@ -222,7 +224,8 @@ ul.child-sidebar-menu li.has_children ul.children li a {
 
 #sidebar a.child-menu-parent:hover:after {
 	content: "\f077";
-	font-family: "fontAwesome";
+	font-family: 'Font Awesome\ 5 Free';
+	font-weight: 400;
 	float: right;
 	opacity: .3;
 }
