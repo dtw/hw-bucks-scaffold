@@ -44,37 +44,25 @@ You can make a difference too. Join in by searching for a services below and sha
 
        <?php if (is_tag()) {
          echo "<div class='category-terms'>";
-
-
-
-
-	$taxonomy = 'category';
- 
-// Get the term IDs assigned to post.
-$post_terms = wp_get_object_terms( $post->ID, $taxonomy, array( 'fields' => 'ids' ) );
- 
-// Separator between links.
-$separator = ' ';
-
-if ( ! empty( $post_terms ) && ! is_wp_error( $post_terms ) ) {
- 
-    $term_ids = implode( ',' , $post_terms );
- 
-    $terms = wp_list_categories( array(
-        'title_li' => '',
-		'depth' => 1,
-        'style'    => 'none',
-        'echo'     => false,
-        'taxonomy' => $taxonomy,
-        'include'  => $term_ids
-    ) );
- 
-    $terms = rtrim( trim( str_replace( '<br />',  $separator, $terms ) ), $separator );
- 
-    // Display post categories.
-    echo  $terms;
-	
-}
+         $taxonomy = 'category';
+         // Get the term IDs assigned to post.
+         $post_terms = wp_get_object_terms( $post->ID, $taxonomy, array( 'fields' => 'ids' ) );
+         // Separator between links.
+         $separator = ' ';
+         if ( ! empty( $post_terms ) && ! is_wp_error( $post_terms ) ) {
+           $term_ids = implode( ',' , $post_terms );
+           $terms = wp_list_categories( array(
+             'title_li' => '',
+             'depth' => 1,
+             'style'    => 'none',
+             'echo'     => false,
+             'taxonomy' => $taxonomy,
+             'include'  => $term_ids
+           )
+         );
+         $terms = rtrim( trim( str_replace( '<br />',  $separator, $terms ) ), $separator );
+         // Display post categories.
+         echo  $terms;}
 
 
 
@@ -92,7 +80,7 @@ if ( ! empty( $post_terms ) && ! is_wp_error( $post_terms ) ) {
 	        <p><?php echo get_the_excerpt(); ?></p>
 
 
-			<?php get_template_part('elements/post-meta'); ?>        				
+			<?php get_template_part('elements/post-meta'); ?>
 
 
 		<?php the_tags( '<div class="the-tags-archive">', ' ', '' );
@@ -107,17 +95,17 @@ if ( ! empty( $post_terms ) && ! is_wp_error( $post_terms ) ) {
 
 
 
-			
+
             	</div><!-- end of row -->
             		</div><!-- end of Post -->
 
 
 	<?php endwhile; ?>
-	
-			<?php get_template_part('elements/pagination'); ?>    
-    
+
+			<?php get_template_part('elements/pagination'); ?>
+
 	<?php else: ?>
 		<p>Sorry, nothing found.</p>
 	<?php endif; ?>
-	
+
  </div><!-- end of Loop Archive -->
