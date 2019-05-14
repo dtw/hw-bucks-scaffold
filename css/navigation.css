@@ -230,7 +230,7 @@ ul.child-sidebar-menu li.has_children ul.children li a {
 #sidebar li.current_page_ancestor {
 	font-weight: 700;
 	font-size: 2rem;
-	padding: 2rem 0 6rem 2rem;
+	padding: 1.5rem 0 0 1.5rem;
 	}
 
 #sidebar .current_page_item a {
