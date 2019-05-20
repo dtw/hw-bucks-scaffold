@@ -776,11 +776,17 @@ div.staff-member {
 
 .panel-default .panel-heading {
 	background-image: none;
+	background-color: #e73e97;
+	transition: 400ms linear 100ms;
+}
+
+.panel-default .panel-heading.collapsed {
+	background-image: none;
 	background-color: rgb(35, 82, 124);
 	transition: 400ms ease-out 100ms;
 }
 
-.panel-default .panel-heading:hover {
+.panel-default .panel-heading.collapsed:hover {
 	opacity: 0.7;
 }
 
