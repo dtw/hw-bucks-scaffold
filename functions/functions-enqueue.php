@@ -1,14 +1,5 @@
 <?php // ENQUEUE CSS and Javascript and Google Fonts
 
-/* 6. Enqueue JS
------------------------------------------------------------------------------- */
-
-  wp_enqueue_script( 'scaffold_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js');
-
-  wp_enqueue_script( 'scaffold_bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js');
-
-//  wp_enqueue_script( 'scaffold_fontawesome', 'https://use.fontawesome.com/bba45a4e25.js');
-
 /* 7. Enqueue CSS
 ------------------------------------------------------------------------------ */
 
@@ -17,8 +8,13 @@ function scaffold_add_theme_scripts() {
 // Add a reset CSS sheet
 //	wp_enqueue_style( 'erc_reset', 'https://meyerweb.com/eric/tools/css/reset/reset.css' );
 
+// Jquery
+
+  wp_enqueue_script( 'scaffold_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js');
 
 // Bootstrap
+
+  wp_enqueue_script( 'scaffold_javascript', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js');
 
   wp_enqueue_style( 'scaffold_bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
 
