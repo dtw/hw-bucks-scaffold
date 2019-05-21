@@ -7,17 +7,18 @@
        
 
 
-<!--<script src="https://use.fontawesome.com/bba45a4e25.js"></script>-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<!-- META TAGS -->	
+<!--<script src="https://use.fontawesome.com/bba45a4e25.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
 
-	<?php if (is_home('')) { 
-				$thedescription = get_bloginfo('description'); } 
-				
-		if (is_single() || is_page()) { 		
-				$thedescription = get_the_excerpt(); } 
-				
+<!-- META TAGS -->
+
+	<?php if (is_home('')) {
+				$thedescription = get_bloginfo('description'); }
+
+		if (is_single() || is_page()) {
+				$thedescription = get_the_excerpt(); }
+
 		if (is_singular('local_services')) {
 
 				$aCity = get_post_meta(get_the_ID(),'hw_services_city',true);
