@@ -45,7 +45,7 @@ function scaffold_add_theme_scripts() {
 
   wp_enqueue_style( 'scaffold_print', get_template_directory_uri() . '/css/print.css');
 
-  // Uses CDN in header instead - wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'); 
+  // Uses CDN in header instead - wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 
 		}
 
@@ -63,7 +63,7 @@ function scaffold_google_fonts() {
 		);
 	wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
             }
-            
+
 add_action('wp_enqueue_scripts', 'scaffold_google_fonts');
 
 ?>

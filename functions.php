@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-/* 
+/*
 
 1. Includes
 2. Add theme support
@@ -13,7 +13,7 @@
 
 /* 1. Includes
 -------------------------------------------- */
-	
+
 	// ENQUEUE CSS and Javascript and Fonts
 	require_once('functions/functions-enqueue.php');
 
@@ -22,7 +22,7 @@
 
 	// CUSTOMIZER additional settings
 	require_once('functions/functions-customiser.php');
-	
+
 	// ADMIN DASHBOARD modifications
 	require_once('functions/functions-dashboard.php');
 
@@ -89,8 +89,8 @@ update_option('image_default_link_type','none');
 
 // Remove meta boxes from Posts and Pages
 function remove_meta_boxes() {
-	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' ); 
-	remove_meta_box( 'trackbacksdiv' , 'page' , 'normal' ); 
+	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' );
+	remove_meta_box( 'trackbacksdiv' , 'page' , 'normal' );
 }
 add_action( 'admin_menu' , 'remove_meta_boxes' );
 
