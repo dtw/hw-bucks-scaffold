@@ -10,6 +10,15 @@ function scaffold_widgets_init() {
 		'before_title' => '<h2>',
 		'after_title' => '</h2>',
 	) );
+	
+	register_sidebar( array(
+		'name' => 'Pages without menu',
+		'id' => 'single_page_sidebar',
+		'before_widget' => '<div id="%1$s" class="widget widget-pages %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>',
+	) );
 
 	register_sidebar( array(
 		'name' => 'Post archives',
