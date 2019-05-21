@@ -28,7 +28,7 @@ function scaffold_widgets_init() {
 		'before_title' => '<h2>',
 		'after_title' => '</h2>',
 	) );
-	
+
 			register_sidebar( array(
 		'name' => 'Single Post',
 		'id' => 'single_post_sidebar',
