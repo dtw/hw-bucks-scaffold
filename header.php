@@ -2,9 +2,8 @@
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
 
 
 
@@ -23,12 +22,12 @@
 
 				$aCity = get_post_meta(get_the_ID(),'hw_services_city',true);
 
-	
+
 				$thedescription = "Give your feedback on local health services and find out what others have said about the service offered by " . get_the_title() . ", " .  $aCity;
-			
+
 			}
 				?>
-	
+
 	<meta name="description" content="<?php echo $thedescription; ?>" />
 
 <!-- SUPPORT FOR INTERNET EXPLORER -->
@@ -48,16 +47,16 @@
     <?php wp_head(); ?>
 	  </head>
 
- 
+
 <?php // BODY class for ANCESTOR pages
 	/* Get the Page Slug to Use as a Body Class, this will only return a value on pages */
 	$class = '';
 	/* is it a page */
-	if( is_page() ) { 
+	if( is_page() ) {
 		global $post;
 			/* Get an array of Ancestors and Parents if they exist */
 		$parents = get_post_ancestors( $post->ID );
-			/* Get the top Level page->ID count base 1, array base 0 so -1 */ 
+			/* Get the top Level page->ID count base 1, array base 0 so -1 */
 		$id = ($parents) ? $parents[count($parents)-1]: $post->ID;
 		/* Get the parent and set the $class with the page slug (post_name) */
 			$parent = get_page( $id );
@@ -71,9 +70,9 @@
 <!-- INCLUDE NAVIGATION -->
 
 <?php get_template_part('elements/scroll-hide'); ?>
-  
+
 	<?php get_template_part('elements/nav'); ?>
-	
+
 	<?php get_template_part('elements/page-title'); ?>
-    
+
 	</div><!-- end of container-fluid -->
