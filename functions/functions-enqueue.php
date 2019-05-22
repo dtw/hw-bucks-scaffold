@@ -1,5 +1,7 @@
 <?php // ENQUEUE CSS and Javascript and Google Fonts
 
+function scaffold_add_theme_scripts() {
+
 /* 6. Enqueue JS
 ------------------------------------------------------------------------------ */
 
@@ -11,8 +13,6 @@
 
 /* 7. Enqueue CSS
 ------------------------------------------------------------------------------ */
-
-function scaffold_add_theme_scripts() {
 
 // Add a reset CSS sheet
 //	wp_enqueue_style( 'erc_reset', 'https://meyerweb.com/eric/tools/css/reset/reset.css' );
