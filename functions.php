@@ -111,8 +111,20 @@ return '';
 }
 add_filter('the_generator', 'wpbeginner_remove_version');
 
-
-
-
-
+/* 7. Defer parsing JS
+------------------------------------------------------------------------------ */
+// Defer jQuery Parsing using the HTML5 defer property
+if (!(is_admin() )) {
+	function defer_parsing_of_js ( $url ) {
+	// if the url doesn't contain .js do nothing
+	if ( FALSE === strpos( $url, '.js' ) ) return $url;
+	// if the url contains jquery.js do nothing
+	if ( strpos( $url, 'jquery.js' ) ) return $url;
+	// if the url contains /wp-includes do nothing
+	if ( strpos( $url, '/wp-includes' ) ) return $url;
+	// return "$url' defer ";
+	return "$url' defer ";
+	}
+	add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 );
+}
 ?>
