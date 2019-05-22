@@ -7,7 +7,11 @@
 <?php } ?>
 
 <?php if (is_page()) { ?>
-	<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Pages')) : endif; ?>
+	<?php if ( is_page_template('template-single-page.php') ) { ?>
+		<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Pages without menu')) : endif; ?>
+	<?php } else { ?>
+		<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Pages')) : endif; ?>
+	<?php } ?>
 <?php } ?>
 
 <!-- show sub-category navigation, if necessary -->
