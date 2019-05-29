@@ -94,6 +94,67 @@ h1 {
 	border-color: #0080A4;
 	}
 
+/* Bootstrap Buttons for Panels */
+
+.panel-turquoise .btn-primary {
+	background-color: #1CFFEF;
+	color: #fff;
+	background-image: none;
+	}
+
+.panel-turquoise .btn-primary:hover {
+	background-color: #fff;
+	border-color: #1CFFEF;
+	color: #1CFFEF;
+	}
+
+.panel-orange .btn-primary {
+	background-color: #F79486;
+	color: #fff;
+	background-image: none;
+	}
+
+.panel-orange .btn-primary:hover {
+	background-color: #fff;
+	border-color: #F79486;
+	color: #F79486;
+	}
+
+.panel-pink .btn-primary {
+	background-color: #F08BC0;
+	color: #fff;
+	background-image: none;
+	}
+
+.panel-pink .btn-primary:hover {
+	background-color: #fff;
+	border-color: #F08BC0;
+	color: #F08BC0;
+	}
+
+.panel-blue .btn-primary {
+	background-color: #0080A4;
+	color: #fff;
+	background-image: none;
+	}
+
+.panel-blue .btn-primary:hover {
+	background-color: #fff;
+	border-color: #0080A4;
+	color: #0080A4;
+	}
+
+.panel-green .btn-primary {
+	background-color: #0080A4;
+	color: #fff;
+	background-image: none;
+	}
+
+.panel-green .btn-primary:hover {
+	background-color: #fff;
+	border-color: #0080A4;
+	color: #0080A4;
+	}
 
 .call-to-action,
 .call-to-action:visited {
