@@ -13,12 +13,12 @@
 .no-gutter {
 	padding-left: 0;
 	padding-right: 0;
-	}	
+	}
 	}
 
 /* SMALL to MEDIUM --- xs --- 768px and above --- */
-	
-@media (min-width: 768px) {		
+
+@media (min-width: 768px) {
 	}
 
 /* 1024px and below --- */
@@ -44,10 +44,10 @@
 		font-size: 1.4rem;
 	}
 
-	.navbar-brand img {		
+	.navbar-brand img {
 		max-width: 160px;
 		}
-		
+
 	body {
 		padding-top: 12rem !important;
 		}
@@ -56,7 +56,7 @@
 		font-size: 2rem;
 		line-height: 3rem;
 		}
-		
+
 	.page-header p {
 		font-size: 1.8rem;
 		line-height: 2.6rem;
@@ -65,10 +65,10 @@
 	}
 
 
-/* EXTRA SMALL --- xs --- 768px and below --- 
+/* EXTRA SMALL --- xs --- 768px and below ---
 The point at which the nav menu COLLAPSES (vertically stacks)
 */
-	
+
 @media only screen and (max-width: 767px) {
 
 	/* Mobile menu */
@@ -104,20 +104,20 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	#subfooter .text-right {
 		text-align: left;
 		}
-		
+
 	.navbar-brand {
 		padding-top: 2rem;
 		}
-		
+
 	.btn,
 	input[type="submit"] {
 		font-size: 1.4rem !important;
 		}
-		
+
 	.date {
 		margin-bottom: 1rem;
 		}
-		
+
 	.date span {
 		display: inline;
 		}
@@ -130,9 +130,9 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		font-size: 1.5rem;
 		}
 	}
-	
+
 /* 480px and below --- */
-	
+
 @media (max-width: 480px) {
 
 	.navbar-brand img {		
@@ -164,16 +164,16 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		content:"Text goes here";
 		display: inline;
 		}
-		
+
 	/* Phil added these 3 styles */
 	.home .widget_search {
 		margin: 2rem;
 		}
-		
+
 	.home .widget_search:before {
 		font-size: 2rem;
 		}
-	
+
 	#text-8 h2{
 		padding: 0;
 		}
