@@ -70,7 +70,19 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 */
 
 @media only screen and (max-width: 767px) {
+	#content {
+		padding-right: 0px;
+	}
 
+	#sidebar {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.navbar-brand img {
+		/*max-width: 140px;*/
+		padding-left: 1.5rem;
+	}
 	/* Mobile menu */
 
 	.tagline .email {
@@ -134,21 +146,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 /* 480px and below --- */
 
 @media (max-width: 480px) {
-
-	#content {
-		padding-right: 0px;
-		}
-
-	#sidebar {
-		padding-left: 0px;
-		padding-right: 0px;
-		}
-
-	.navbar-brand img {
-		/*max-width: 140px;*/
-		padding-left: 1.5rem;
-		}
-
 	.tagline {
 		/* Phil did this
 		display: none;
