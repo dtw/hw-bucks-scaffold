@@ -8,7 +8,7 @@ body, .navbar {
 footer p, footer a {
 	color: rgba(255,255,255,1.00);
 	}
-	
+
 h1,
 .page-header p,
 .page-header a,
@@ -24,7 +24,7 @@ footer a:hover,
 footer {
 	background-color: #3F7188;
 	}
-	
+
 #content footer {
 	background: none;
 	padding: 0;
@@ -32,12 +32,12 @@ footer {
 
 /* Medium blue
 -------------------------------- */
-	
+
 #subfooter {
 	background-color: #0F4F6B;
 	background: linear-gradient(#3F7188, #0F4F6B);
 	}
-	
+
 /* Pink
 -------------------------------- */
 
@@ -47,12 +47,12 @@ footer {
 .fa-star,
 .fa-star-half-empty,
 .fa-star-o,
-.navbar-nav .current-menu-item a,	
+.navbar-nav .current-menu-item a,
 .navbar-nav .current_page_item a,
 .navbar-nav .current-post-ancestor a {
 	color: #e73e97;
 	}
-	
+
 
 /* Text shadow
 -------------------------------- */
@@ -74,7 +74,7 @@ h1 {
 	color: #fff;
 	background-image: none;
 	}
-	
+
 .btn-primary:hover {
 	background-color: #fff;
 	border-color: #0080A4;
@@ -94,6 +94,67 @@ h1 {
 	border-color: #0080A4;
 	}
 
+/* Bootstrap Buttons for Panels */
+
+.panel-turquoise .btn-primary {
+	background-color: #1CFFEF;
+	color: #fff;
+	background-image: none;
+	}
+
+.panel-turquoise .btn-primary:hover {
+	background-color: #fff;
+	border-color: #1CFFEF;
+	color: #1CFFEF;
+	}
+
+.panel-orange .btn-primary {
+	background-color: #F79486;
+	color: #fff;
+	background-image: none;
+	}
+
+.panel-orange .btn-primary:hover {
+	background-color: #fff;
+	border-color: #F79486;
+	color: #F79486;
+	}
+
+.panel-pink .btn-primary {
+	background-color: #F08BC0;
+	color: #fff;
+	background-image: none;
+	}
+
+.panel-pink .btn-primary:hover {
+	background-color: #fff;
+	border-color: #F08BC0;
+	color: #F08BC0;
+	}
+
+.panel-blue .btn-primary {
+	background-color: #0080A4;
+	color: #fff;
+	background-image: none;
+	}
+
+.panel-blue .btn-primary:hover {
+	background-color: #fff;
+	border-color: #0080A4;
+	color: #0080A4;
+	}
+
+.panel-green .btn-primary {
+	background-color: #0080A4;
+	color: #fff;
+	background-image: none;
+	}
+
+.panel-green .btn-primary:hover {
+	background-color: #fff;
+	border-color: #0080A4;
+	color: #0080A4;
+	}
 
 .call-to-action,
 .call-to-action:visited {
@@ -102,16 +163,16 @@ h1 {
 	text-decoration:none;
 	font-size: 1.2em;
 	}
-	
+
 .call-to-action:hover {
 	text-decoration:underline;
 	color: #e73e97;
 	}
-	
-	
+
+
 /* Needed?
 ----------------------------------- */
-		
+
 #commentform label i.fa {
-	color: rgba(0,0,0,.50);	
+	color: rgba(0,0,0,.50);
 	}

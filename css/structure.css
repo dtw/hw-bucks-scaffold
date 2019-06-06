@@ -79,13 +79,16 @@ body {
 	margin-top: 3rem;
 	}
 
+.tax-signpost_categories article h3 {
+	padding-top: 1.5rem;
+}
 
 /* Sidebar ---------------- */
 
 #sidebar {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	padding-top: 1.5rem;
+	padding-top: 1rem;
 	}
 
 .service-type {

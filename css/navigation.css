@@ -151,95 +151,90 @@
 /* Navigation for CHILD PAGES WIDGET
 ------------------------------------------- */
 
-.advanced-sidebar-menu,
-.advanced-sidebar-menu ul,
-#sidebar ul.child-menu,
-#sidebar ul.child-menu ul {
-	padding-left: 0;
-	font-family: "Bitter", serif;
-	background-color: rgba(0,0,0,0.005);
-	}
-
-.advanced-sidebar-menu li,
-#sidebar ul.child-menu li {
-	padding:0;
-	list-style: none;
-	}
-
-.advanced-sidebar-menu li ul a,
-#sidebar ul.child-menu li a {
-	padding: 1rem .75rem;
-	border-bottom: 1px dotted rgba(0,0,0,0.1);
-	display: block;
-	font-weight: 400;
-	}
-
-
-.advanced-sidebar-menu li ul li:last-child a,
-#sidebar ul.child-menu li:last-child a {
-	border-bottom: none;
-	}
-
-
-.advanced-sidebar-menu li li,
-#sidebar ul.child-menu li li {
-	padding: 0;
-	}
-
-.advanced-sidebar-menu ul.child-menu ul.children,
-#sidebar ul.child-menu ul.children {
-	margin-bottom: 0;
-	}
-
-.advanced-sidebar-menu .current_page_parent,
-#sidebar ul.child-menu li a.child-menu-parent {
-	font-weight: 700;
-	border-bottom: 3px solid rgba(0,0,0,0.1);
-	background-color: rgba(0,0,0,0.03);
-	}
-
-.advanced-sidebar-menu ul.child-menu-children ul li a,
-#sidebar ul.child-menu-children ul li a {
-	padding-bottom: .6rem;
-	padding-left: 3rem;
-	}
-
-ul.child-sidebar-menu li.has_children ul.children li a {
-	padding-left: 1.5rem;
+.advanced-sidebar-menu {
+    font-family: "Bitter", serif;
 }
 
-#sidebar ul.child-menu-children {
-	padding-left: 0;
-	}
+.advanced-sidebar-menu ul:first-child {
+    background-color: rgba(0,0,0,0.035);
+		border-bottom: 3px solid rgba(0,0,0,0.1);
+}
 
-#sidebar ul.child-menu-children li.current_page_item a,
-#sidebar ul.child-menu li.current-cat a {
-	background-color: rgba(0,0,0,0.05);
-	font-weight: 700;
-	}
+.advanced-sidebar-menu ul:first-child li {
+		margin-left: 0px;
+}
 
-#sidebar ul.child-menu a:hover {
+.advanced-sidebar-menu ul a {
+	padding: 1rem .75rem;
+	display: block;
+}
+
+.advanced-sidebar-menu ul a:hover {
 	background-color: rgba(0,0,0,0.07) !important;
 }
 
-#sidebar a.child-menu-parent:hover:after {
-	content: "\f077";
-	font-family: 'Font Awesome\ 5 Free';
-	font-weight: 900;
-	float: right;
-	opacity: .3;
+.advanced-sidebar-menu ul li ul {
+	margin-left: 1rem;
 }
 
-#sidebar li.current_page_ancestor {
-	font-weight: 700;
-	font-size: 2rem;
-	padding: 1.5rem 0 0 1.5rem;
-	}
+.advanced-sidebar-menu ul li ul a{
+    border-bottom: 1px dotted rgba(0,0,0,0.1);
+}
 
-#sidebar .current_page_item a {
-	font-weight: 700;
-	}
+.advanced-sidebar-menu .current_page_parent {
+    font-weight: 700;
+}
 
+/*.advanced-sidebar-menu .current_page_parent a:hover::after {
+	content: "\f077";
+	font-family: 'Font Awesome\ 5 Free';
+	font-weight: 700;
+	float: right;
+	opacity: .3;
+}*/
+
+li.current_page_item.has_children ul.grandchild-sidebar-menu {
+		background-color: rgba(0,0,0,0.02);
+		border-bottom: 3px solid rgba(0,0,0,0.1);
+}
+
+/* Default styles from plugin */
+
+.advanced-sidebar-menu ul{
+	list-style: none;
+}
+
+.advanced-sidebar-menu ul li{
+	list-style:none;
+	margin: 0 0 0 1rem;
+}
+
+.advanced-sidebar-menu li.current_page_item{
+	list-style:none;
+}
+
+.advanced-sidebar-menu li.current_page_item a{
+	font-weight: 700;
+}
+
+.advanced-sidebar-menu li.current_page_item li a{
+  font-weight: normal;
+}
+
+.advanced-sidebar-menu ul li a{
+	font-weight: bold;
+	font-size: 120%;
+	text-decoration: none;
+}
+
+.advanced-sidebar-menu ul li a:hover{
+	text-decoration: underline;
+}
+
+.advanced-sidebar-menu ul ul li a{
+	font-weight: normal;
+	font-size: 100%;
+}
 
 /* Navigation for CHILD NAVIGATION SHORTCODE
 ------------------------------------------------- */
