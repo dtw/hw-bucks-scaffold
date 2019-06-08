@@ -1,9 +1,6 @@
 <!-- loop / loop-archive starts here -->
 <div class="loop-archive">
 
-<?php if (is_category("real-stories")) { echo "<h2>It starts with you. Not got a story, what about leaving some feedback instead? Just find the service you wish to rate and have your say.</h2>"; } ?>
-
-
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
