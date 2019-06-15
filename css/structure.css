@@ -667,7 +667,6 @@ div.staff-member {
 	background-color: rgba(0,0,0,.03);
 	border: #FFFFFF solid 2px !important;
 	text-align: center;
-	transition: 400ms ease-out 100ms;
 	position: relative;
 	}
 
@@ -710,10 +709,6 @@ div.staff-member {
 
 .signpost-details p {
 	margin:0;
-}
-
-.signpost-details .signpost-title {
-	
 }
 
 .signpost-details .hover-content {
