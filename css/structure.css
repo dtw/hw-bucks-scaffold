@@ -671,9 +671,13 @@ div.staff-member {
 	position: relative;
 	}
 
-.signpost_container:hover {
-	background-color: rgba(0,0,0,.03);
-	border-bottom: rgb(35, 82, 124) solid 2px !important;
+.signpost_container:hover .signpost-details {
+	min-height: 50%;
+	background-color: rgb(35, 82, 124, 0.8);
+}
+
+.signpost_container:hover .signpost-details .hover-content {
+	max-height: 20%;
 }
 
 .img_signpost_category {
@@ -683,6 +687,37 @@ div.staff-member {
 
 .img_signpost_category:hover {
 	transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.signpost-details {
+	background-color: rgb(35, 82, 124);
+	min-height: 10%;
+	padding: 0.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.signpost-details a {
+	color: white;
+}
+
+.signpost-details p {
+	margin:0;
+}
+
+.signpost-details .signpost-title {
+	
+}
+
+.signpost-details .hover-content {
+	max-height: 0px;
 }
 
 /* Improved tags and category links */
