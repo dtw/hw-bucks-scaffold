@@ -662,11 +662,13 @@ div.staff-member {
 	}
 
 .signpost_container {
-	padding: 2rem 4rem;
+	padding: 1rem 0;
 	margin: 0 0 2rem 0;
+	background-color: rgba(0,0,0,.03);
 	border: #FFFFFF solid 2px !important;
 	text-align: center;
 	transition: 400ms ease-out 100ms;
+	position: relative;
 	}
 
 .signpost_container:hover {
@@ -676,6 +678,7 @@ div.staff-member {
 
 .img_signpost_category {
 	transition: transform .3s; /* Animation */
+	width: 100%;
 }
 
 .img_signpost_category:hover {
