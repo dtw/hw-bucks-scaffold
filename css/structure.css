@@ -670,6 +670,10 @@ div.staff-member {
 	position: relative;
 	}
 
+.signpost_container:hover {
+	cursor:pointer;
+}
+
 /* transition is for panel OPENING */
 .signpost_container:hover .signpost-details {
 	min-height: 50%;
