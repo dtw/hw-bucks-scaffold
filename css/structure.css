@@ -661,7 +661,7 @@ div.staff-member {
 	display: none;
 	}
 
-.signpost_container {
+.signpost-container {
 	padding: 1rem 0;
 	margin: 0 0 2rem 0;
 	background-color: rgba(0,0,0,.03);
@@ -670,31 +670,31 @@ div.staff-member {
 	position: relative;
 	}
 
-.signpost_container:hover {
+.signpost-container:hover {
 	cursor:pointer;
 }
 
 /* transition is for panel OPENING */
-.signpost_container:hover .signpost-details {
+.signpost-container:hover .signpost-details {
 	min-height: 50%;
 	background-color: rgb(35, 82, 124, 0.8);
 	transition: min-height 350ms linear;
 }
 
 /* transition is for panel OPENING */
-.signpost_container:hover .signpost-details .hover-content {
+.signpost-container:hover .signpost-details .hover-content {
 	/* max-height: 20%; */
   max-height: 500px;
   transition: all 350ms linear 350ms;
 	color:white;
 }
 
-.img_signpost_category {
+.img-signpost-category {
 	transition: transform .3s; /* Animation */
 	width: 100%;
 }
 
-.img_signpost_category:hover {
+.img-signpost-category:hover {
 	transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
