@@ -713,6 +713,12 @@ div.staff-member {
 	width: 100%;
 	overflow: hidden;
 	transition: min-height 350ms linear;
+	color: white;
+}
+
+.signpost-details:hover {
+	text-decoration: none;
+	color: white;
 }
 
 .signpost-details a {
@@ -728,6 +734,7 @@ div.staff-member {
 	max-height: 0px;
 	transition: all 100ms linear;
 	overflow: hidden;
+	font-weight: normal;
 	color: rgb(35, 82, 124, 0.8);
 }
 
