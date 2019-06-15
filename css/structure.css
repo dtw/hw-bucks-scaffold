@@ -673,10 +673,14 @@ div.staff-member {
 .signpost_container:hover .signpost-details {
 	min-height: 50%;
 	background-color: rgb(35, 82, 124, 0.8);
+	transition: min-height 350ms linear;
 }
 
 .signpost_container:hover .signpost-details .hover-content {
-	max-height: 20%;
+	/* max-height: 20%; */
+  max-height: 500px;
+  transition: all 350ms linear 350ms;
+	color:white;
 }
 
 .img_signpost_category {
@@ -695,12 +699,13 @@ div.staff-member {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	align-content: center;
+	align-content: start;
 	justify-content: center;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	overflow: hidden;
+	transition: min-height 350ms linear;
 }
 
 .signpost-details a {
@@ -713,6 +718,9 @@ div.staff-member {
 
 .signpost-details .hover-content {
 	max-height: 0px;
+	transition: all 100ms linear;
+	overflow: hidden;
+	color: rgb(35, 82, 124, 0.8);
 }
 
 /* Improved tags and category links */
