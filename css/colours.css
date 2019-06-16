@@ -81,6 +81,10 @@ h1 {
 	color: #0080A4;
 	}
 
+.btn:hover:after {
+	color: #0080A4;
+	}
+
 .page-header .btn-primary {
 	background-color: #0080A4;
 	color: #fff;

@@ -467,10 +467,6 @@ a[href$=".docx"]:before {
 	color: rgba(255,255,255,.6);
 	}
 
-.btn:hover:after {
-	color: #0080A4;
-	}
-
 .btn-primary {
 	border-width: 1px;
 	border-style: solid;
