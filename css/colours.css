@@ -85,6 +85,10 @@ h1 {
 	color: #0080A4;
 	}
 
+.btn-primary:hover:after {
+	color: inherit;
+}
+
 .page-header .btn-primary {
 	background-color: #0080A4;
 	color: #fff;
