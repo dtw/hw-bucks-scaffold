@@ -12,7 +12,7 @@
 	    <?php the_content(); ?>
 			<?php // get_template_part('elements/post-meta'); ?>
       <?php the_tags( '<p><small>Topics: ', ', ', '</small></p>' ); ?>
-      <p style="color: #999; text-align:right;">Updated: <?php echo get_the_date(); ?></p>
+      <p class="text-right" style="color: #999;">Updated: <?php echo get_the_date(); ?></p>
     </article>
 	</div><!-- end of 1st col (post) -->
 	<?php endwhile; ?>
