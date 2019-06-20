@@ -6,29 +6,6 @@
       <div style="display: flex; justify-content:space-between; align-items:flex-end;">
         <h2>
           <?php the_title(); ?>
-          <?php if (is_tag()) {
-            echo "<small>&laquo; ";
-            $taxonomy = 'category';
-            // Get the term IDs assigned to post.
-            $post_terms = wp_get_object_terms( $post->ID, $taxonomy, array( 'fields' => 'ids' ) );
-            // Separator between links.
-            $separator = ', ';
-            if ( ! empty( $post_terms ) && ! is_wp_error( $post_terms ) ) {
-              $term_ids = implode( ',' , $post_terms );
-              $terms = wp_list_categories( array(
-                'title_li' => '',
-                'depth' => 1,
-                'style'    => 'none',
-                'echo'     => false,
-                'taxonomy' => $taxonomy,
-                'include'  => $term_ids));
-              $terms = rtrim( trim( str_replace( '<br />',  $separator, $terms ) ), $separator );
-              // Display post categories.
-              echo  $terms;
-            }
-          }
-          echo "</small>";
-          ?>
         </h2>
         <p style="margin-bottom: 20px;"><?php edit_post_link(); ?></p>
       </div>
