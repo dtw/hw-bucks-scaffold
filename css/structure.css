@@ -895,3 +895,14 @@ div.staff-member {
   padding-right: 0;
   padding-left: 0;
 }
+
+.edit-link {
+	min-width: 70px;
+	margin: 2rem 0;
+	line-height: 3rem;
+}
+
+.updated-text {
+	color: #999;
+	margin: 1rem 0;
+}
