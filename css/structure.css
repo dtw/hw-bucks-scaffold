@@ -883,3 +883,15 @@ div.staff-member {
 .panel-body {
 	padding-bottom: 0;
 }
+
+/* No gutters class from https://julienmelissas.com/no-gutter-column-trick-for-bootstrap/ */
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
