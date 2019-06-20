@@ -10,8 +10,6 @@
         <p class="edit-link"><?php edit_post_link(); ?></p>
       </div>
 	    <?php the_content(); ?>
-			<?php // get_template_part('elements/post-meta'); ?>
-      <?php the_tags( '<p><small>Topics: ', ', ', '</small></p>' ); ?>
       <p class="updated-text text-right" >Updated: <?php echo get_the_date(); ?></p>
     </article>
 	</div><!-- end of 1st col (post) -->
