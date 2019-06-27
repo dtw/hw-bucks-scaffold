@@ -47,80 +47,30 @@ $comments = get_comments($args);
 
 
 
-<?php if ( $gadget == "yes" && $rating_average < 3 ) { } else { ?> 
+<?php if ( $gadget == "yes" && $rating_average < 3 ) { } else { $star_count = 0; ?>
 
 <p>
-<?php if ($rating_average < 1.25 ) { ?>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <?php } ?> 
-
-<?php if ($rating_average >= 1.25 && $rating_average < 1.75 ) { ?>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star-half-empty"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <?php } ?> 
-
-<?php if ($rating_average >= 1.75 && $rating_average < 2.25 ) { ?>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <?php } ?> 
-
-<?php if ($rating_average >= 2.25 && $rating_average < 2.75 ) { ?>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star-half-empty"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <?php } ?> 
-    
-<?php if ($rating_average >= 2.75 && $rating_average < 3.25 ) { ?>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <?php } ?> 
-
-<?php if ($rating_average >= 3.25 && $rating_average < 3.75 ) { ?>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star-half-empty"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <?php } ?> 
-
-<?php if ($rating_average >= 3.75 && $rating_average < 4.25 ) { ?>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star-o"></i>
-    <?php } ?> 
-
-<?php if ($rating_average >= 4.25 && $rating_average < 4.75 ) { ?>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star-half-empty"></i>
-    <?php } ?> 
-
-<?php if ($rating_average >= 4.75 ) { ?>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <i class="fa fa-lg fa-star"></i>
-    <?php } ?>
+	<?php
+	if ($rating_average < 1) {
+		echo '<i class="fa fa-star fa-lg"></i>';
+	} else {
+		for ($int_count = 1; $int_count <= floor($rating_average); $int_count++) {
+			echo '<i class="fa fa-star fa-lg"></i>
+			';
+			$star_count++;
+		}
+		if (($individual_rating - floor($rating_average)) >= 0.25 && ($individual_rating - floor($rating_average)) < 0.75) {
+			echo '<i class="fa fa-star-half-empty fa-lg"></i>
+			';
+			$star_count++;
+		}
+		while ($star_count < 5) {
+			echo '<i class="fa fa-star-o fa-lg"></i>
+			';
+			$star_count++;
+		}
+	}
+	?>
 </p>
 <p>Rated <strong><?php echo $average_rating; ?></strong>/5 by <strong><?php echo $rating_count; ?>
 <?php if ($rating_count <= 1) { echo "person"; } else { echo "people"; } ?>
