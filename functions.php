@@ -127,28 +127,4 @@ if (!(is_admin() )) {
 	}
 	add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 );
 }
-
-/* 8. Remove extra paragraph tags in shortcode_styles
------------------------------------------------------------------------------- */
-
-/**
-* Filters the content to remove any extra paragraph or break tags
-* caused by shortcodes.
-*
-* @since 1.0.0
-*
-* @param string $content  String of HTML content.
-* @return string $content Amended string of HTML content.
-*/
-function tgm_io_shortcode_empty_paragraph_fix( $content ) {
-
-	$array = array(
-			'<p>['    => '[',
-			']</p>'   => ']',
-			']<br />' => ']'
-	);
-	return strtr( $content, $array );
-}
-
-add_filter( 'the_content', 'tgm_io_shortcode_empty_paragraph_fix' );
 ?>
