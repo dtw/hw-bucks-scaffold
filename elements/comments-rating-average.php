@@ -73,7 +73,7 @@ $comments = get_comments($args);
 	?>
 </p>
 <p>Rated <strong><?php echo $average_rating; ?></strong>/5 by <strong><?php echo $rating_count; ?>
-<?php if ($rating_count <= 1) { echo "person"; } else { echo "people"; } ?>
+<?php if ($rating_count <= 1) { echo " person"; } else { echo " people"; } ?>
 </strong></p>
 
 
