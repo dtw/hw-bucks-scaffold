@@ -25,8 +25,8 @@ if ( $status == "approved" ) { ?>
 
 
     <div class="comment">
-    
-    
+
+
 	<?php $individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true ); ?>
 
 <?php if ($individual_rating) { ?>
@@ -126,7 +126,7 @@ if ( $status == "approved" ) { ?>
 	<p><strong><?php the_title(); ?></strong> responded:</p>
 	<blockquote><em><?php echo get_comment_meta( $comment->comment_ID, 'feedback_response', true ); ?></em></blockquote>
     </div>
-	
+
 		<?php } ?>
 
 
