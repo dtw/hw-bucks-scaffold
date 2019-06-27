@@ -243,6 +243,10 @@ div.child-nav div.child-nav-item {
 	min-height: 260px;
 	}
 
+div.child-nav-img {
+	height: 150px;
+}
+
 /* Breadcrumbs
 ------------------------------------------------- */
 
