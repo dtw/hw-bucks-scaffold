@@ -774,6 +774,7 @@ div.staff-member {
 	display: inline-block;
 	border-radius: 3px;
 	color: rgb(35, 82, 124) !important;
+	margin-bottom: 0.5rem;
 }
 
 .the-tags p a:hover {
