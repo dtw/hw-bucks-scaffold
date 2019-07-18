@@ -328,6 +328,14 @@ form#mc-embedded-subscribe-form :-ms-input-placeholder { /* IE 10+ */
 form#mc-embedded-subscribe-form :-moz-placeholder { /* Firefox 18- */
   color: #3F7188; }
 
+#mc_embed_signup_scroll p {
+	margin-top: 3rem;
+}
+
+#mc_embed_signup_scroll a {
+	color: #fff;
+	text-decoration: underline;
+}
 
  /* COMMENT FORM
  ---------------------------------------------------- */
