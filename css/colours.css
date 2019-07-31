@@ -169,8 +169,14 @@ h1 {
 	}
 
 .call-to-action a,
-.call-to-action:visted,
-.call-to-action a:visited{
+.call-to-action a:visited {
+	color:#e73e97;
+	font-weight:bold;
+	text-decoration:none;
+	font-size: 1.2em;
+	}
+
+.call-to-action:visted {
 	color:#e73e97;
 	font-weight:bold;
 	text-decoration:none;
