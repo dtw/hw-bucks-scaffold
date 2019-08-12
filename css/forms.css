@@ -178,14 +178,20 @@ footer .AjaxSearchProWidget h3 {
 /* Gravity Forms
 ----------------------------------- */
 
+form#gform_1,
+form#gform_2 {
+	margin-top: 0 !important;
+}
+
 ul.gform_fields {
 	list-style: none;
 	-webkit-padding-start: 0;
 	padding-left: 0;
+	margin-left: 0;
 	}
 
 ul.gform_fields li {
-	margin: 1rem 0 2rem 0;
+	margin: 1rem 0 1rem 0;
 	}
 
 form .validation_error,
@@ -375,3 +381,12 @@ form#mc-embedded-subscribe-form :-moz-placeholder { /* Firefox 18- */
 	 background-color: #f9f9f9;
 	 padding: 1rem;
 	 }
+
+/* Enable disable forms */
+.gform_wrapper {
+    display: inherit !important;
+}
+
+.gform_body ul li::before {
+	content: none;
+}
