@@ -649,15 +649,18 @@ div.staff-member {
 	}
 
 /* Signposts */
-#signposts-selector {
+#signposts-selector,
+#feedback-selector {
 	background-color: ;
 	}
 
-#signposts-selector.row::before {
+#signposts-selector.row::before,
+#feedback-selector.row::before {
 	display: none;
 	}
 
-.signpost-container {
+.signpost-container,
+.choice-container {
 	padding: 1rem 0;
 	margin: 0 0 2rem 0;
 	background-color: rgba(0,0,0,.03);
@@ -666,19 +669,22 @@ div.staff-member {
 	position: relative;
 	}
 
-.signpost-container:hover {
+.signpost-container:hover,
+.choice-container:hover {
 	cursor:pointer;
 }
 
 /* transition is for panel OPENING */
-.signpost-container:hover .signpost-details {
+.signpost-container:hover .signpost-details,
+.choice-container:hover .choice-details {
 	min-height: 50%;
 	background-color: rgb(35, 82, 124, 0.8);
 	transition: min-height 350ms linear;
 }
 
 /* transition is for panel OPENING */
-.signpost-container:hover .signpost-details .hover-content {
+.signpost-container:hover .signpost-details .hover-content,
+.choice-container:hover .choice-details .hover-content {
 	/* max-height: 20%; */
   max-height: 500px;
   transition: all 350ms linear 350ms;
@@ -695,7 +701,8 @@ div.staff-member {
 }
 
 /* transition is for panel CLOSING */
-.signpost-details {
+.signpost-details,
+.choice-details {
 	background-color: rgb(35, 82, 124);
 	min-height: 10%;
 	padding: 0.5rem;
@@ -712,21 +719,26 @@ div.staff-member {
 	color: white;
 }
 
-.signpost-details:hover {
+.signpost-details:hover,
+.choice-details:hover {
 	text-decoration: none;
 	color: white;
 }
 
-.signpost-details a {
+.signpost-details a,
+.choice-details a {
 	color: white;
 }
 
-.signpost-details p {
+.signpost-details p,
+.choice-details p {
 	margin:0;
+	width:100%;
 }
 
 /* transition is for panel closing */
-.signpost-details .hover-content {
+.signpost-details .hover-content,
+.choice-details .hover-content {
 	max-height: 0px;
 	transition: all 100ms linear;
 	overflow: hidden;
