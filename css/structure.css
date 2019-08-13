@@ -669,6 +669,10 @@ div.staff-member {
 	position: relative;
 	}
 
+.choice-container {
+	padding: 0;
+}
+
 .signpost-container:hover,
 .choice-container:hover {
 	cursor:pointer;
@@ -689,6 +693,10 @@ div.staff-member {
   max-height: 500px;
   transition: all 350ms linear 350ms;
 	color:white;
+}
+
+.choice-img {
+	width: 100%
 }
 
 .img-signpost-category {
