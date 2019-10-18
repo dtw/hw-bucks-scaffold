@@ -37,10 +37,15 @@
 				<?php } ?>
 
 						</p>
-	        
-		<?php if ( get_post_meta( $post->ID, 'hw_services_phone', true ) )  { ?>
+
+		<?php if ( get_post_meta( $post->ID, 'hw_services_phone', true ) )  {
+      $hw_services_phone_tmp = get_post_meta( $post->ID, 'hw_services_phone', true );
+      $hw_services_phone_tmp = str_replace(' ', '', $hw_services_phone_tmp);
+      $mask = "%s%s%s%s%s %s%s%s %s%s%s";
+      $hw_services_phone_tmp = vsprintf($mask, str_split($hw_services_phone_tmp));
+      ?>
 			<p><i class="fa fa-phone"></i>
-				<strong><?php echo get_post_meta( $post->ID, 'hw_services_phone', true ); ?></strong><br />
+				<strong><?php echo $hw_services_phone_tmp; ?></strong><br />
 			        </p>
 						<?php } ?>
 
