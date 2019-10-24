@@ -11,7 +11,7 @@
 <div class="row">
 
 <div class="col-md-4 col-sm-4 col-xs-12" style="border-right: #999 1px dashed;">
-           
+
 
 
 	        <p>
@@ -37,13 +37,18 @@
 				<?php } ?>
 
 						</p>
-	        
-		<?php if ( get_post_meta( $post->ID, 'hw_services_phone', true ) )  { ?>
+
+		<?php if ( get_post_meta( $post->ID, 'hw_services_phone', true ) )  {
+      $hw_services_phone_tmp = get_post_meta( $post->ID, 'hw_services_phone', true );
+      $hw_services_phone_tmp = str_replace(' ', '', $hw_services_phone_tmp);
+      $mask = "%s%s%s%s%s %s%s%s %s%s%s";
+      $hw_services_phone_tmp = vsprintf($mask, str_split($hw_services_phone_tmp));
+      ?>
 			<p><i class="fa fa-phone"></i>
-				<strong><?php echo get_post_meta( $post->ID, 'hw_services_phone', true ); ?></strong><br />
+				<strong><?php echo $hw_services_phone_tmp; ?></strong><br />
 			        </p>
 						<?php } ?>
-        	        
+
 		<?php if ( get_post_meta( $post->ID, 'hw_services_website', true ) )  { ?>
 			<p><i class="fa fa-link"></i>
             	<a target="_blank"  href="http://<?php echo get_post_meta( $post->ID, 'hw_services_website', true ); ?>" title="<?php the_title(); ?>" >Visit their website &raquo;</a><br />
@@ -76,19 +81,19 @@
 
 	<div class="col-md-6 col-sm-6 col-xs-12">
 		<p><strong>Our overall rating:</strong></p>
-			</div><!-- end of col -->			
+			</div><!-- end of col -->
 
 
 
 	<div class="col-md-6 col-sm-6 col-xs-12">
 <p>
-<?php $rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true ); 
+<?php $rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true );
 		for ($i = 1; $i <= $rating; ++$i)  { echo "<i class='fa fa-star fa-lg green'></i> "; }
-		for ($i = 1; $i <= (5 - $rating); ++$i)  { echo "<i class='fa fa-star-o fa-lg green'></i> "; } 
+		for ($i = 1; $i <= (5 - $rating); ++$i)  { echo "<i class='fa fa-star-o fa-lg green'></i> "; }
 					?>
                     </p>
 		</div><!-- end of col -->
-        
+
  	       </div><!-- end of row -->
 
 				<?php } ?>
@@ -100,7 +105,7 @@ $args = array (
 	'post_id' => $post->ID,
 	'status' => 'approve'
 	);
-	
+
 $comments = get_comments($args);
 ?>
 
@@ -117,7 +122,7 @@ $comments = get_comments($args);
 		</div><!-- end of col -->
 
 	</div><!-- end of row -->
-<?php } 
+<?php }
 else { ?>
 	<p><a href="<?php echo get_the_permalink(); ?>#respond">Leave your own rating &raquo;</a></p>
 
@@ -128,7 +133,7 @@ else { ?>
 
     </div><!-- end of col 2 -->
 
-        </div><!-- end of row -->       
+        </div><!-- end of row -->
 
 
 
@@ -156,15 +161,15 @@ else { ?>
                         <a class="btn btn-primary" href="<?php echo get_post_meta( $post->ID, 'hw_services_full_report', true ); ?>" title="Download the full report" >
                         Download our full report</a><br />
                             </p>
-                                <?php } ?>				
-
-            
+                                <?php } ?>
 
 
-	<?php endwhile; ?>	
-    
+
+
+	<?php endwhile; ?>
+
 	<?php else: ?>
 		<p>Sorry, nothing found.</p>
 	<?php endif; ?>
-	
+
    </div><!-- end of Loop Single Service -->
