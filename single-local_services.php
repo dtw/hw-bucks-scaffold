@@ -9,7 +9,7 @@
 
 
 
-				<?php include('loop/loop-single-local_Services.php'); ?>
+				<?php include('loop/loop-single-local_services.php'); ?>
 
                 <?php include('elements/comments-list.php'); ?>
 

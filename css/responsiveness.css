@@ -141,6 +141,17 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	#signpost-categories ul li a {
 		font-size: 1.5rem;
 		}
+
+	.choice-container .choice-details {
+		min-height: 50%;
+		background-color: rgb(35, 82, 124, 0.8);
+		}
+
+	.choice-container .choice-details .hover-content {
+		/* max-height: 20%; */
+	  max-height: 500px;
+		color:white;
+		}
 	}
 
 /* 480px and below --- */

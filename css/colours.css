@@ -164,15 +164,27 @@ h1 {
 	color: #0080A4;
 	}
 
-.call-to-action,
-.call-to-action:visited {
+.call-to-action	{
+	margin: 2rem 0px;
+	}
+
+.call-to-action a,
+.call-to-action a:visited {
 	color:#e73e97;
 	font-weight:bold;
 	text-decoration:none;
 	font-size: 1.2em;
 	}
 
-.call-to-action:hover {
+.call-to-action:visted {
+	color:#e73e97;
+	font-weight:bold;
+	text-decoration:none;
+	font-size: 1.2em;
+	}
+
+.call-to-action:hover,
+.call-to-action a:hover {
 	text-decoration:underline;
 	color: #e73e97;
 	}

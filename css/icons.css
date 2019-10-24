@@ -13,6 +13,10 @@
 	font-weight: 400;
 	}
 
+.fa.fa-star.fa-lg.shortcode-icon {
+	width: auto;
+}
+
 .social-icons i {
 	margin: 1rem 1.5rem 0 0;
 	}
@@ -20,6 +24,11 @@
 .social-icons i:hover {
 	color: #fff;
 	}
+
+.mc-icons {
+	color: #fff;
+	margin-right: 1rem;
+}
 
 .tagline i.fa,
 .tagline i.fab {
