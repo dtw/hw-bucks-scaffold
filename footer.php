@@ -132,29 +132,16 @@
 
 <!-- Beginning of COPYRIGHT -->
 <div id="copyright" class="container-fluid">
-
-<div class="container">
-
-
-
-   
-    <div class="row">
-        
-        <div id="copyright" class="col-md-6 col-sm-6 col-xs-12">
-            <p>&copy; <strong><?php bloginfo('name'); ?></strong> <?php echo date('Y'); ?></p>
-                </div><!-- end of col 1 -->
-        
-
-        <div id="author" class="col-md-6 col-sm-6 col-xs-12">
-        <?php $theme_author_url = 'https://www.kingjason.co.uk/wordpress-theme-plugin-healthwatch/'; ?>
-            <p class="text-right">WordPress website built by <a href="<?php echo $theme_author_url; ?>" target="_blank" title="Non-profit web design by Jason King"><strong>Jason King</strong></a></p>
-                </div><!-- end of col 2 -->
-
-
-					</div><!-- end of row  -->
-
-</div><!-- end of container -->
-
+	<div class="container">
+		<div class="row">
+			<div class="copyright col-md-6 col-sm-6 col-xs-12">
+				<p>&copy; <strong><?php bloginfo('name'); ?></strong> <?php echo date('Y'); ?></p>
+			</div><!-- end of col 1 -->
+			<div class="author col-md-6 col-sm-6 col-xs-12"><?php $theme_author_url = 'https://www.kingjason.co.uk/wordpress-theme-plugin-healthwatch/'; ?>
+				<p>WordPress website built by <a href="<?php echo $theme_author_url; ?>" target="_blank" title="Non-profit web design by Jason King"><strong>Jason King</strong></a></p>
+			</div><!-- end of col 2 -->
+		</div><!-- end of row  -->
+	</div><!-- end of container -->
 </div><!-- end of copyright / container-fluid -->
 
 
