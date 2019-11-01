@@ -123,12 +123,7 @@ $hwid = $_GET["hwid"]; ?>
 				// the_excerpt();
 
 
-				for ($i = 1; $i <= $rating; ++$i)  {
-				echo "<i class='fas fa-star fa-lg green'></i> ";
-				}
-				for ($i = 1; $i <= (5 - $rating); ++$i)  {
-				echo "<i class='far fa-star fa-lg green'></i> ";
-				}
+				<?php feedbackstarrating($individual_rating,'green'); ?>
 
 				} else {
 
