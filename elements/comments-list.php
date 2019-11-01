@@ -36,12 +36,12 @@ if ( $status == "approved" ) { ?>
     <p class="star-rating p-rating">
 			<?php
 				for ($int_count = 1; $int_count <= floor($individual_rating); $int_count++) {
-					echo '<i class="fa fa-star fa-lg"></i>
+					echo '<i class="fas fa-star fa-lg"></i>
 					';
 					$star_count++;
 				}
 				while ($star_count < 5) {
-					echo '<i class="fa fa-star-o fa-lg"></i>
+					echo '<i class="far fa-star fa-lg"></i>
 					';
 					$star_count++;
 				}
