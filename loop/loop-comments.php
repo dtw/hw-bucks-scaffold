@@ -30,77 +30,77 @@ if ( $comments ) {
 
     <p class="star-rating p-rating">
     <?php if ($individual_rating < 1.25 ) { ?>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <?php } ?> 
-    
+        <i class="fas fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <?php } ?>
+
     <?php if ($individual_rating >= 1.25 && $individual_rating < 1.75 ) { ?>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star-half-empty fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <?php } ?> 
-    
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star-half-empty fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <?php } ?>
+
     <?php if ($individual_rating >= 1.75 && $individual_rating < 2.25 ) { ?>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <?php } ?> 
-    
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <?php } ?>
+
     <?php if ($individual_rating >= 2.25 && $individual_rating < 2.75 ) { ?>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star-half-empty fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <?php } ?> 
-        
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star-half-empty fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <?php } ?>
+
     <?php if ($individual_rating >= 2.75 && $individual_rating < 3.25 ) { ?>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <?php } ?> 
-    
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <?php } ?>
+
     <?php if ($individual_rating >= 3.25 && $individual_rating < 3.75 ) { ?>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star-half-empty fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <?php } ?> 
-    
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star-half-empty fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <?php } ?>
+
     <?php if ($individual_rating >= 3.75 && $individual_rating < 4.25 ) { ?>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star-o fa-lg"></i>
-        <?php } ?> 
-    
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="far fa-star fa-lg"></i>
+        <?php } ?>
+
     <?php if ($individual_rating >= 4.25 && $individual_rating < 4.75 ) { ?>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star-half-empty fa-lg"></i>
-        <?php } ?> 
-    
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star-half-empty fa-lg"></i>
+        <?php } ?>
+
     <?php if ($individual_rating >= 4.75 ) { ?>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <i class="fa fa-star fa-lg"></i>
-        <?php } ?> 
-     <br />&mdash; 
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <i class="fas fa-star fa-lg"></i>
+        <?php } ?>
+     <br />&mdash;
        <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>
 
 
