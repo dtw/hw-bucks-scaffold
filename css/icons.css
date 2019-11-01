@@ -5,12 +5,12 @@
 .fas.shortcode-icon,
 .fab.shortcode-icon {
 	width: 3.5rem;
-	font-weight: 700;
+	/* font-weight: 700; */
 	}
 
 .far.shortcode-icon {
 	width: 3.5rem;
-	font-weight: 400;
+	/* font-weight: 400; */
 	}
 
 .fa.fa-star.fa-lg.shortcode-icon {

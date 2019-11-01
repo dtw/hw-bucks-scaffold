@@ -442,7 +442,7 @@ ul#local-services-selector li:last-child {
 a[href$=".pdf"]:before {
 	font-family: 'Font Awesome 5 Pro';
 	content:"\f1c1 ";
-	font-weight: 900;
+	font-weight: 400;
 	}
 
 a[href$=".doc"]:before,
@@ -468,6 +468,7 @@ a[href$=".docx"]:before {
 	content: " \f105";
 	font-family: 'Font Awesome 5 Pro';
 	padding-left: .5rem;
+	font-weight: 900;
 	color: rgba(255,255,255,.6);
 	}
 
