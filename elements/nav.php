@@ -27,7 +27,7 @@
       <!--<i class="fas fa-bars fa-2x"></i>-->MENU
       </button>
 
-      <a class="navbar-brand" title="<?php bloginfo('name'); ?>" href="<?php echo esc_url( home_url() ); ?>">        
+      <a class="navbar-brand" title="<?php bloginfo('name'); ?>" href="<?php echo esc_url( home_url() ); ?>">
       <?php if ( get_theme_mod( 'scaffold_logo' ) ) : ?>
       <img src='<?php echo esc_url( get_theme_mod( 'scaffold_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
       <?php else : ?>
