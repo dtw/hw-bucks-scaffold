@@ -148,6 +148,10 @@ footer ul li {
 	margin-bottom: 1rem;
 	}
 
+#footer1 {
+	padding-left: 0;
+	}
+
 #copyright {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
