@@ -119,7 +119,7 @@ if (is_tax()) 	{ 												// If this is a taxonomy page
 
 <div class="jumbotron">
 		<p class="text-center">
-        	<i class="fa fa-4x fa-search"></i>
+        	<i class="fas fa-4x fa-search"></i>
 			</p>
             
 				<h2 class="text-center">Didn't find the local health service you were looking for?</h2>
@@ -132,7 +132,7 @@ if (is_tax()) 	{ 												// If this is a taxonomy page
 
 <div class="jumbotron">
 		<p class="text-center">
-        	<i class="fa fa-4x fa-search"></i>
+        	<i class="fas fa-4x fa-search"></i>
 			</p>
             
 				<p class="text-center"
