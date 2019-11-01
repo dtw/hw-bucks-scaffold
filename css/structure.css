@@ -469,6 +469,9 @@ a[href$=".docx"]:before {
 	font-family: 'Font Awesome 5 Pro';
 	padding-left: .5rem;
 	font-weight: 900;
+	}
+
+.btn:hover:after {
 	color: rgba(255,255,255,.6);
 	}
 
