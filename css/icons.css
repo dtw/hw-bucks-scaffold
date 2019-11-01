@@ -6,11 +6,13 @@
 .fab.shortcode-icon {
 	width: 3.5rem;
 	/* font-weight: 700; */
+	padding-left: 1px;
 	}
 
 .far.shortcode-icon {
 	width: 3.5rem;
 	/* font-weight: 400; */
+	padding-left: 1px;
 	}
 
 .fa.fa-star.fa-lg.shortcode-icon {
