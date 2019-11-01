@@ -51,25 +51,7 @@ $comments = get_comments($args);
 
 <p>
 	<?php
-	if ($rating_average < 1) {
-		echo '<i class="fas fa-star fa-lg"></i>';
-	} else {
-		for ($int_count = 1; $int_count <= floor($rating_average); $int_count++) {
-			echo '<i class="fas fa-star fa-lg"></i>
-			';
-			$star_count++;
-		}
-		if (($individual_rating - floor($rating_average)) >= 0.25 && ($individual_rating - floor($rating_average)) < 0.75) {
-			echo '<i class="fas fa-star-half-empty fa-lg"></i>
-			';
-			$star_count++;
-		}
-		while ($star_count < 5) {
-			echo '<i class="far fa-star fa-lg"></i>
-			';
-			$star_count++;
-		}
-	}
+		feedbackstarrating($rating);
 	?>
 </p>
 <p>Rated <strong><?php echo $average_rating; ?></strong>/5 by <strong><?php echo $rating_count; ?>
