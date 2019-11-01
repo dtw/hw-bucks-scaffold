@@ -5,7 +5,7 @@
 <div class="row no-gutter">
 
 	<div id="content" class="col-md-8 col-xs-12">
-                
+
 
 
 
@@ -15,13 +15,13 @@
 
 	 <?php if (!is_user_logged_in()) {  ?>
 
-			
+
 <hr />
 <h2 id="respond">Rate and review this service</h2>
-<p>Your name and email address and other identifying information will not be published and will be stored in accordance with our <a href="http://www.healthwatchbucks.co.uk/data-protection-privacy-policy/" target="_blank">data protection policy</a>. Required fields are marked with an asterisk.</p>			
-			
-			
-			<?php include('elements/comments-form.php'); 
+<p>Your name and email address and other identifying information will not be published and will be stored in accordance with our <a href="http://www.healthwatchbucks.co.uk/data-protection-privacy-policy/" target="_blank">data protection policy</a>. Required fields are marked with an asterisk.</p>
+
+
+			<?php include('elements/comments-form.php');
 				} ?>
 
 
@@ -38,10 +38,10 @@
 
 
 
-                 
+
                   </div><!-- end of content column -->
 
-    
+
     <div id="sidebar" class="col-md-4 col-xs-12">
 
 
@@ -55,10 +55,10 @@ if ( has_post_thumbnail() ) {
 
 <!-- Insert CQC WIDGET -->
 
-<?php if (has_term('pharmacy','service_types')) { 
+<?php if (has_term('pharmacy','service_types')) {
 
- } else 
- 
+ } else
+
  { ?>
 
 
@@ -76,11 +76,11 @@ if ( has_post_thumbnail() ) {
 
 
 
-     
-     
-     
-     
-     
+
+
+
+
+
      <div id="view1">
 <?php
 $aTitle = get_the_title();
@@ -148,9 +148,9 @@ $comments = $comments_query->query( $args );
 if ( $comments ) {
 
 $the_count = 0;
-		
-	foreach ( $comments as $comment ) { 
-	
+
+	foreach ( $comments as $comment ) {
+
 if ($the_count > 4) { break; }
 
 	?>
@@ -158,16 +158,16 @@ if ($the_count > 4) { break; }
 
 
 
-<?php												// Display icon for taxonomy term	
+<?php												// Display icon for taxonomy term
 
 $term_ids = get_the_terms( $comment->comment_post_ID, 'service_types' );	// Find taxonomies
 $comment_term_id = $term_ids[0]->term_id;											// Get taxonomy ID
 		?>
-        
 
-<?php if ($comment_term_id == $service_type) { 
 
-$the_count = $the_count + 1; 
+<?php if ($comment_term_id == $service_type) {
+
+$the_count = $the_count + 1;
 
 
 ?>
@@ -192,7 +192,7 @@ $the_count = $the_count + 1;
 $individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true ); ?>
 
 <?php if ($individual_rating) { ?>
-    
+
     <p class="star-rating p-rating">
     <?php if ($individual_rating < 1.25 ) { ?>
         <i class="fa fa-star fa-lg"></i>
@@ -324,6 +324,6 @@ $individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', 
 </div><!-- end of container -->
 </div><!-- end of container fluid -->
 
-            
+
 
 <?php get_footer(); ?>

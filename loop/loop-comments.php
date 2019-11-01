@@ -22,12 +22,12 @@ if ( $comments ) {
 
 <div class="row post">
 
-<div class="col-md-3">    
+<div class="col-md-3">
 
 	<?php $individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true ); ?>
 
 <?php if ($individual_rating) { ?>
-    
+
     <p class="star-rating p-rating">
     <?php if ($individual_rating < 1.25 ) { ?>
         <i class="fa fa-star fa-lg"></i>
@@ -110,7 +110,7 @@ if ( $comments ) {
 
 </div><!-- end of col 1 -->
 
-        
+
 <div class="col-md-9">
 	<p><strong><a href="<?php echo get_the_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title($comment->comment_post_ID); ?></a></strong></p>
         <p><?php echo mb_strimwidth($comment->comment_content,0,400," ..."); ?></p>
@@ -128,5 +128,5 @@ if ( $comments ) {
 
 
 
-		
+
 </div><!-- end of Loop Taxonomy -->

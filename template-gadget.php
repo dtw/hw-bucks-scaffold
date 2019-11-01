@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>	
+<head>
     <meta charset="utf-8">
 
 <!-- Load Font Awesome -->
@@ -35,8 +35,8 @@
 			font-size: 1.2rem;
 			text-decoration: none;
 			font-weight: 700;
-	        } 
-        
+	        }
+
         a.hw-button {
             background-color: #004f6b; /* Core blue */
 			padding: .5rem .5rem;
@@ -59,15 +59,15 @@
 		a .fa {
 			padding-left: .3rem;
 			}
-			
+
 		.fa-2x {
 			font-size: 1.2rem !important;
 			}
-			
+
 		.fa.green {
 			color: green;
 			}
-			        
+
         </style>
 
     </head>
@@ -81,7 +81,7 @@
 
 <?php // Query
 $hwid = $_GET["hwid"]; ?>
-	
+
 	<?php $args = array (
 	'posts_per_page' => 1,
 	'post_type' => 'Local_services',
@@ -89,7 +89,7 @@ $hwid = $_GET["hwid"]; ?>
 	'p' => $hwid,
 	);
 
-	query_posts($args); 
+	query_posts($args);
 	?>
 
 
@@ -107,43 +107,43 @@ $hwid = $_GET["hwid"]; ?>
 
 
 	<?php // Begin loop if there is a Post
-	
+
 	if ( have_posts() && $hwid ) : while ( have_posts() ) : the_post(); ?>
-    
+
         <p class="hw-p"><a target="_blank" href="<?php echo the_permalink(); ?>" class="hw-title"><?php the_title(); ?></a></p>
 
 
 
-			<?php $rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true ); 
-				
+			<?php $rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true );
+
 				if ($rating <>"") {
-				
+
 				echo "<p>Our rating:</p>";
 
 				// the_excerpt();
-				
-								
-				for ($i = 1; $i <= $rating; ++$i)  { 
+
+
+				for ($i = 1; $i <= $rating; ++$i)  {
 				echo "<i class='fas fa-star fa-lg green'></i> ";
+				}
 				for ($i = 1; $i <= (5 - $rating); ++$i)  {
 				echo "<i class='far fa-star fa-lg green'></i> ";
 				}
-				} 
-				
+
 				} else {
-					
+
 					}
 					?>
 
-    
+
     <?php 	$gadget = "yes";
 			include('elements/comments-rating-average.php'); ?>
-    
-    
+
+
     <p class="hw-p"><a target="_blank" class="hw-button" href="<?php echo the_permalink(); ?>">Leave feedback <i class="fa fa-caret-right"></i></a></p>
-    
+
     <?php endwhile; ?>
-            
+
 
 
 
@@ -155,20 +155,20 @@ $hwid = $_GET["hwid"]; ?>
         <?php else: // Show if there is not a Post
 		?>
     <p><a target="_blank" class="hw-title" href="<?php echo esc_url(site_url()); ?>/rate-a-service/"><?php echo bloginfo('name'); ?></a></p>
-    
+
     <p class="hw-p">Rate and review your local health services</p>
-    
+
     <p class="hw-p"><a target="_blank" class="hw-button" href="<?php echo esc_url(site_url()); ?>/rate-a-service/">Leave your feedback <i class="fa fa-caret-right"></i></a></p>
-    
-        <?php endif; ?>    
-    
+
+        <?php endif; ?>
+
         <div id="logo" class="healthwatch-gadget-logo">
             <p class="hw-p"><a target="_blank" href="<?php echo esc_url(site_url()); ?>/rate-a-service/"><img width="150" src='<?php echo esc_url( get_theme_mod( 'scaffold_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a></p>
                     </div>
 
 		</div><!-- end of HW feedback -->
 
-</body>    
-    
-    
+</body>
+
+
     </html>
