@@ -156,11 +156,13 @@ footer ul li {
 
 /* Comments
 ----------------------------------- */
+.comment-area {
+	margin-top: 2rem;
+	}
 
 .comment {
 	padding-top: 1rem;
 	}
-
 
 /* Home page
 ------------------------------ */
