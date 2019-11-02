@@ -89,7 +89,7 @@
 	content: "\f00d";
 	color: #004f6b;
 	font-size: 2.8rem;
-	font-family: 'Font Awesome\ 5 Free';
+	font-family: 'Font Awesome 5 Pro';
 	font-weight: 900;
 	}
 
@@ -97,7 +97,7 @@
 	content: "\f0c9";
 	color: #004f6b;
 	font-size: 2.8rem;
-	font-family: 'Font Awesome\ 5 Free';
+	font-family: 'Font Awesome 5 Pro';
 	font-weight: 900;
 	}
 
@@ -187,7 +187,7 @@
 
 /*.advanced-sidebar-menu .current_page_parent a:hover::after {
 	content: "\f077";
-	font-family: 'Font Awesome\ 5 Free';
+	font-family: 'Font Awesome 5 Pro';
 	font-weight: 700;
 	float: right;
 	opacity: .3;

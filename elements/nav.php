@@ -24,10 +24,10 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-container">
       <span class="sr-only">Toggle navigation</span>
-      <!--<i class="fa fa-bars fa-2x"></i>-->MENU
+      <!--<i class="fas fa-bars fa-2x"></i>-->MENU
       </button>
 
-      <a class="navbar-brand" title="<?php bloginfo('name'); ?>" href="<?php echo esc_url( home_url() ); ?>">        
+      <a class="navbar-brand" title="<?php bloginfo('name'); ?>" href="<?php echo esc_url( home_url() ); ?>">
       <?php if ( get_theme_mod( 'scaffold_logo' ) ) : ?>
       <img src='<?php echo esc_url( get_theme_mod( 'scaffold_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
       <?php else : ?>

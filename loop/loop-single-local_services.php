@@ -44,13 +44,13 @@
       $mask = "%s%s%s%s%s %s%s%s %s%s%s";
       $hw_services_phone_tmp = vsprintf($mask, str_split($hw_services_phone_tmp));
       ?>
-			<p><i class="fa fa-phone"></i>
+			<p><i class="fas fa-phone"></i>
 				<strong><?php echo $hw_services_phone_tmp; ?></strong><br />
 			        </p>
 						<?php } ?>
 
 		<?php if ( get_post_meta( $post->ID, 'hw_services_website', true ) )  { ?>
-			<p><i class="fa fa-link"></i>
+			<p><i class="fas fa-link"></i>
             	<a target="_blank"  href="http://<?php echo get_post_meta( $post->ID, 'hw_services_website', true ); ?>" title="<?php the_title(); ?>" >Visit their website &raquo;</a><br />
 			        </p>
 						<?php } ?>
@@ -88,8 +88,7 @@
 	<div class="col-md-6 col-sm-6 col-xs-12">
 <p>
 <?php $rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true );
-		for ($i = 1; $i <= $rating; ++$i)  { echo "<i class='fas fa-star fa-lg green'></i> "; }
-		for ($i = 1; $i <= (5 - $rating); ++$i)  { echo "<i class='far fa-star fa-lg green'></i> "; }
+		feedbackstarrating($rating,'green');
 					?>
                     </p>
 		</div><!-- end of col -->
@@ -144,7 +143,7 @@ else { ?>
 
             <hr /><h2>Healthwatch Bucks has visited, rated and reviewed <?php the_title(); ?></h2>
 
-			<p><i class="fa fa-calendar"></i> Visited <strong><?php echo get_post_meta( $id, 'hw_services_date_visited', true ); ?></strong><br />
+			<p><i class="fas fa-calendar"></i> Visited <strong><?php echo get_post_meta( $id, 'hw_services_date_visited', true ); ?></strong><br />
 			        </p>
 						<?php } ?>
 

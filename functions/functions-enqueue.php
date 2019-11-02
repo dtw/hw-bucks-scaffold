@@ -9,7 +9,7 @@ function scaffold_add_theme_scripts() {
 
   wp_enqueue_script( 'scaffold_bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js');
 
-//  wp_enqueue_script( 'scaffold_fontawesome', 'https://use.fontawesome.com/bba45a4e25.js');
+  wp_enqueue_script( 'fontawesome_5_cdn', 'https://kit.fontawesome.com/c1c5370dea.js');
 
 /* 7. Enqueue CSS
 ------------------------------------------------------------------------------ */
@@ -17,13 +17,11 @@ function scaffold_add_theme_scripts() {
 // Add a reset CSS sheet
 //	wp_enqueue_style( 'erc_reset', 'https://meyerweb.com/eric/tools/css/reset/reset.css' );
 
-
 // Bootstrap
 
   wp_enqueue_style( 'scaffold_bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
 
   wp_enqueue_style( 'scaffold_bootstrap_theme', get_template_directory_uri() . '/bootstrap/css/bootstrap-theme.min.css');
-
 
 // Main stylesheet
   wp_enqueue_style( 'style', get_stylesheet_uri() );
@@ -48,19 +46,6 @@ function scaffold_add_theme_scripts() {
   wp_enqueue_style( 'scaffold_responsiveness', get_template_directory_uri() . '/css/responsiveness.css');
 
   wp_enqueue_style( 'scaffold_print', get_template_directory_uri() . '/css/print.css');
-
-  // Uses CDN in header instead - wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
-
-  wp_enqueue_style( 'font-awesome-5', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', array(), null );
-
-  function add_font_awesome_5_cdn_attributes( $html, $handle ) {
-    if ( 'font-awesome-5' === $handle ) {
-        return str_replace( "media='all'", "media='all' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous'", $html );
-    }
-    return $html;
-  }
-
-  add_filter( 'style_loader_tag', 'add_font_awesome_5_cdn_attributes', 10, 2 );
 
 }
 

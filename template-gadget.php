@@ -123,12 +123,7 @@ $hwid = $_GET["hwid"]; ?>
 				// the_excerpt();
 
 
-				for ($i = 1; $i <= $rating; ++$i)  {
-				echo "<i class='fas fa-star fa-lg green'></i> ";
-				}
-				for ($i = 1; $i <= (5 - $rating); ++$i)  {
-				echo "<i class='far fa-star fa-lg green'></i> ";
-				}
+				<?php feedbackstarrating($individual_rating,'green'); ?>
 
 				} else {
 
@@ -140,7 +135,7 @@ $hwid = $_GET["hwid"]; ?>
 			include('elements/comments-rating-average.php'); ?>
 
 
-    <p class="hw-p"><a target="_blank" class="hw-button" href="<?php echo the_permalink(); ?>">Leave feedback <i class="fa fa-caret-right"></i></a></p>
+    <p class="hw-p"><a target="_blank" class="hw-button" href="<?php echo the_permalink(); ?>">Leave feedback <i class="fas fa-caret-right"></i></a></p>
 
     <?php endwhile; ?>
 
@@ -158,7 +153,7 @@ $hwid = $_GET["hwid"]; ?>
 
     <p class="hw-p">Rate and review your local health services</p>
 
-    <p class="hw-p"><a target="_blank" class="hw-button" href="<?php echo esc_url(site_url()); ?>/rate-a-service/">Leave your feedback <i class="fa fa-caret-right"></i></a></p>
+    <p class="hw-p"><a target="_blank" class="hw-button" href="<?php echo esc_url(site_url()); ?>/rate-a-service/">Leave your feedback <i class="fas fa-caret-right"></i></a></p>
 
         <?php endif; ?>
 

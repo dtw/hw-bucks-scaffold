@@ -34,18 +34,7 @@ if ( $status == "approved" ) { ?>
 
 
     <p class="star-rating p-rating">
-			<?php
-				for ($int_count = 1; $int_count <= floor($individual_rating); $int_count++) {
-					echo '<i class="fas fa-star fa-lg"></i>
-					';
-					$star_count++;
-				}
-				while ($star_count < 5) {
-					echo '<i class="far fa-star fa-lg"></i>
-					';
-					$star_count++;
-				}
-			?>
+			<?php feedbackstarrating($individual_rating); ?>
 
      &mdash;
        <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>

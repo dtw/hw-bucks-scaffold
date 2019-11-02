@@ -111,20 +111,22 @@ return '';
 }
 add_filter('the_generator', 'wpbeginner_remove_version');
 
-/* 7. Defer parsing JS
+/* 7. Pass arguements to JS
 ------------------------------------------------------------------------------ */
-// Defer jQuery Parsing using the HTML5 defer property
 if (!(is_admin() )) {
-	function defer_parsing_of_js ( $url ) {
+	function add_js_arguements ( $url ) {
 	// if the url doesn't contain .js do nothing
 	if ( FALSE === strpos( $url, '.js' ) ) return $url;
 	// if the url contains jquery.js do nothing
 	if ( strpos( $url, 'jquery.js' ) ) return $url;
 	// if the url contains /wp-includes do nothing
 	if ( strpos( $url, '/wp-includes' ) ) return $url;
+	// if the url contains fontawesome kit, append crossorigin="anonymous"
+	if ( strpos( $url, '/c1c5370dea.js' ) ) return "$url' crossorigin='anonymous";
+	// Defer jQuery Parsing using the HTML5 defer property
 	// return "$url' defer ";
 	return "$url' defer ";
 	}
-	add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 );
+	add_filter( 'clean_url', 'add_js_arguements', 11, 1 );
 }
 ?>

@@ -148,6 +148,10 @@ footer ul li {
 	margin-bottom: 1rem;
 	}
 
+#footer1 {
+	padding-left: 0;
+	}
+
 #copyright {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
@@ -433,19 +437,19 @@ ul#local-services-selector li:last-child {
 
 #content a[href*="sharepoint"]:before {
 	content: "\f381";
-	font-family: 'Font Awesome\ 5 Free';
+	font-family: 'Font Awesome 5 Pro';
 	font-weight: 900;
 	}
 
 a[href$=".pdf"]:before {
-	font-family: 'Font Awesome\ 5 Free';
+	font-family: 'Font Awesome 5 Pro';
 	content:"\f1c1 ";
-	font-weight: 900;
+	font-weight: 400;
 	}
 
 a[href$=".doc"]:before,
 a[href$=".docx"]:before {
-	font-family: 'Font Awesome\ 5 Free';
+	font-family: 'Font Awesome 5 Pro';
 	content:"\f1c2 ";
 	font-weight: 900;
 	}
@@ -464,8 +468,12 @@ a[href$=".docx"]:before {
 
 .btn:after {
 	content: " \f105";
-	font-family: 'Font Awesome\ 5 Free';
+	font-family: 'Font Awesome 5 Pro';
 	padding-left: .5rem;
+	font-weight: 900;
+	}
+
+.btn:hover:after {
 	color: rgba(255,255,255,.6);
 	}
 
@@ -827,7 +835,7 @@ div.staff-member {
 .the-tags-archive a::before,
 .the-tags p a::before {
 	content:"\f022";
-	font-family: 'Font Awesome\ 5 Free';
+	font-family: 'Font Awesome 5 Pro';
 	font-weight: 400;
 	padding-right: 5px;
 }
