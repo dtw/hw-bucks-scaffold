@@ -10,10 +10,16 @@
 /* MEDIUM --- md --- 992px and above --- */
 
 @media (min-width: 992px) {
-.no-gutter {
-	padding-left: 0;
-	padding-right: 0;
-	}
+	.no-gutter {
+		padding-left: 0;
+		padding-right: 0;
+		}
+
+	/* from hwbucks-scaffold-child style.css */
+	.subitem {
+		transition: 400ms ease-out 100ms;
+		min-height: 215px;
+		}
 	}
 
 /* SMALL to MEDIUM --- xs --- 768px and above --- */
@@ -26,7 +32,7 @@
 
 /* 1024px and below --- */
 
-@media (max-width: 1224px) {
+@media (max-width: 1024px) {
 	.navbar-nav > li > a {
 		padding-left: .7rem;
 		padding-right: .7rem;
@@ -34,9 +40,9 @@
 		}
 	}
 
-/* SMALL --- sm --- 992px and below --- */
+/* SMALL --- sm --- 991px and below --- */
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
 
 	.tagline .email {
@@ -163,7 +169,45 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	#footer3 {
 		padding-left: 0;
 		}
-	}
+
+	/* from structure.css */
+	.the-tags-archive a,
+	.the-tags p a {
+		margin-bottom: 3px;
+		}
+
+	.category-terms {
+		display:none;
+		}
+
+	/* from hwbucks-scaffold-child style.css */
+	.home .panel h2 {
+		font-size: 2.5rem;
+		font-weight: 700 !important;
+		/* padding: 2rem 0 0 0; */
+		line-height: 3rem;
+		}
+
+	.home .panel .title-link {
+		display: block;
+		font-size: 2rem;
+		line-height: 2.4rem;
+		font-weight: 700 !important;
+		}
+
+	.home .panel .city {
+		font-size: 2rem;
+		}
+
+	.visit-date {
+		font-size: 1.4rem;
+		}
+
+	.service-icon-md {
+		width: 80px;
+		height: 80px;
+		}
+}
 
 /* 480px and below --- */
 
