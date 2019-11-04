@@ -833,17 +833,6 @@ div.staff-member {
 	padding-right: 5px;
 }
 
-@media only screen and (max-width: 769px) {
-	.the-tags-archive a,
-	.the-tags p a {
-		margin-bottom: 3px;
-	}
-
-	.category-terms {
-		display:none;
-	}
-}
-
 /* Bootstrap collapse aka accordion */
 
 #accordion.panel-group .panel.panel-default {
