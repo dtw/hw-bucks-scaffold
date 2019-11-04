@@ -81,7 +81,7 @@
 The point at which the nav menu COLLAPSES (vertically stacks)
 */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	#content {
 		padding-right: 0px;
 	}
