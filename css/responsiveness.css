@@ -181,8 +181,8 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		}
 
 	/* from hwbucks-scaffold-child style.css */
-		font-size: 2.2rem;
 	.home .panel h2 {
+		font-size: 2.5rem;
 		font-weight: 700 !important;
 		padding: 2rem 0 0 0;
 		line-height: 3rem;
