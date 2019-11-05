@@ -180,12 +180,18 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		display:none;
 		}
 
+	.home .shade h2 {
+		font-size: 2rem;
+		padding-bottom: 0px;
+		}
+
 	/* from hwbucks-scaffold-child style.css */
 	.home .panel h2 {
 		font-size: 2.5rem;
 		font-weight: 700 !important;
 		/* padding: 2rem 0 0 0; */
 		line-height: 3rem;
+		margin-bottom: 1rem;
 		}
 
 	.home .panel .title-link {
@@ -193,10 +199,12 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		font-size: 2rem;
 		line-height: 2.4rem;
 		font-weight: 700 !important;
+		margin-bottom: 1rem;
 		}
 
 	.home .panel .city {
 		font-size: 2rem;
+		margin-bottom: 1rem;
 		}
 
 	.visit-date {
