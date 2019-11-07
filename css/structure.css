@@ -480,10 +480,6 @@ a[href$=".docx"]:before {
 	box-shadow: none;
 	}
 
-.btn-primary .clear-both {
-	clear: both;
-	}
-
 /* Agnosia Bootstrap Carousel by AuSoft
 ----------------------------------------------- */
 
