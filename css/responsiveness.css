@@ -70,10 +70,6 @@
 		font-size: 1.8rem;
 		line-height: 2.6rem;
 		}
-
-	#footer3 {
-		padding-left: 0;
-		}
 	}
 
 
@@ -163,11 +159,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		/* max-height: 20%; */
 	  max-height: 500px;
 		color:white;
-		}
-
-	#footer2,
-	#footer3 {
-		padding-left: 0;
 		}
 
 	/* from structure.css */
