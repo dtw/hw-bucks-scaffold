@@ -23,8 +23,8 @@
   if (is_front_page()) {
     $payload["@type"] = "Organization";
     $payload["name"] = "Healthwatch Bucks";
-    $payload["logo"] = "https:\/\/healthwatchbucks.co.uk\/wp-content\/uploads\/2016\/07\/HW_BUCKS.png";
-    $payload["url"] = "http:\/\/healthwatchbucks.co.uk\/";
+    $payload["logo"] = "https://healthwatchbucks.co.uk/wp-content/uploads/2016/07/HW_BUCKS.png";
+    $payload["url"] = "http://healthwatchbucks.co.uk/";
     $payload["contactPoint"] = [
       ["@type" => "ContactPoint",
         "telephone" => "01844 348839",
