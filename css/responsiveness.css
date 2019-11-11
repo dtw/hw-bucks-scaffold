@@ -20,6 +20,11 @@
 		transition: 400ms ease-out 100ms;
 		min-height: 215px;
 		}
+
+	/* more padding on panels */
+	.home .panel {
+		padding: 2rem;
+		}
 	}
 
 /* SMALL to MEDIUM --- xs --- 768px and above --- */
