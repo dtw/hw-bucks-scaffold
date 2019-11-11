@@ -19,6 +19,20 @@
     $post_thumb = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
   }
 
+  if ( is_singular('local_services') ) {
+    $rating = getrating($post);
+    if ( $rating['count'] > 4 ) {
+      $payload["@type"] = "Organization";
+      $payload["name"] = get_the_title();
+      $payload["description"] = get_the_excerpt();
+      $payload["aggregateRating"] = [
+        ["@type" => "AggregateRating",
+        "ratingValue" => $rating['average'],
+        "ratingCount" => $rating['count']
+        ]
+      ];
+    }
+  }
   // We do all this separately so we keep the right things for organization together
   if (is_front_page()) {
     $payload["@type"] = "Organization";
