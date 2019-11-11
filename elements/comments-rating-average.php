@@ -1,32 +1,11 @@
 <div class="star-rating">
 
-<?php // Set TOTAL and COUNT to zero
-$rating_total = 0;
-$rating_count = 0; ?>
+<?php
 
-<?php // QUERY the COMMENTS for current single post
-$args = array (
-	'post_id' => $post->ID,
-	'status' => 'approve'
-	);
+// returns an array containing the
+$rating = getrating($post);
 
-$comments = get_comments($args);
-
-// LOOP comments
-	foreach($comments as $comment) {
-
-		// Get comment META for RATING field
-		$rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true );
-
-		// Add to TOTAL
-		$rating_total = $rating_total + $rating;
-
-		// Increase COUNT by 1
-		$rating_count = $rating_count + 1;
-
-		} // End of comments LOOP ?>
-
-<?php if ($rating_count == 0) {
+if ($rating['count'] == 0) {
 
 	if ($gadget <> "yes") {
 
@@ -41,21 +20,21 @@ $comments = get_comments($args);
 
 
 
-<?php $average_rating = ( $rating_average = $rating_total / $rating_count);
+<?php $average_rating = $rating['average'];
 	$average_rating = round($average_rating,1);
 	?>
 
 
 
-<?php if ( $gadget == "yes" && $rating_average < 3 ) { } else { $star_count = 0; ?>
+<?php if ( $gadget == "yes" && $rating['average'] < 3 ) { } else { $star_count = 0; ?>
 
 <p>
 	<?php
-		feedbackstarrating($rating);
+		feedbackstarrating($average_rating);
 	?>
 </p>
-<p>Rated <strong><?php echo $average_rating; ?></strong>/5 by <strong><?php echo $rating_count; ?>
-<?php if ($rating_count <= 1) { echo " person"; } else { echo " people"; } ?>
+<p>Rated <strong><?php echo $average_rating; ?></strong>/5 by <strong><?php echo $rating['count']; ?>
+<?php if ($rating['count'] <= 1) { echo " person"; } else { echo " people"; } ?>
 </strong></p>
 
 
