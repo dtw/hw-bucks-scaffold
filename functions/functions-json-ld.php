@@ -22,20 +22,19 @@
   // We do all this separately so we keep the right things for organization together
   if (is_front_page()) {
     $payload["@type"] = "Organization";
-    $payload["name"] = "Builtvisible";
-    $payload["logo"] = "https:\/\/builtvisible.com\/wp-content\/uploads\/2018\/09\/builtvisible-logo.png";
-    $payload["url"] = "http:\/\/builtvisible.com\/";
+    $payload["name"] = "Healthwatch Bucks";
+    $payload["logo"] = "https:\/\/healthwatchbucks.co.uk\/wp-content\/uploads\/2016\/07\/HW_BUCKS.png";
+    $payload["url"] = "http:\/\/healthwatchbucks.co.uk\/";
     $payload["sameAs"] = [
-      "https:\/\/twitter.com\/builtvisible",
-      "https:\/\/www.facebook.com\/builtvisible",
-      "https:\/\/www.linkedin.com\/company\/builtvisible",
-      "https:\/\/plus.google.com\/+SEOgadget\/"
+      "https:\/\/twitter.com\/HW_Bucks",
+      "https:\/\/www.facebook.com\/HealthWatchBucks",
+      "https:\/\/www.linkedin.com\/company\/healthwatch-bucks",
     ];
     $payload["contactPoint"] = [
       ["@type" => "ContactPoint",
-        "telephone" => "+44 20 7148 0453",
-        "email" => "hello@builtvisible.com",
-        "contactType" => "sales"
+        "telephone" => "01844 348839",
+        "email" => "info@healthwatchbucks.co.uk",
+        "contactType" => "info"
       ]
     ];
   }
