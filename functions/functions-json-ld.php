@@ -25,11 +25,6 @@
     $payload["name"] = "Healthwatch Bucks";
     $payload["logo"] = "https:\/\/healthwatchbucks.co.uk\/wp-content\/uploads\/2016\/07\/HW_BUCKS.png";
     $payload["url"] = "http:\/\/healthwatchbucks.co.uk\/";
-    $payload["sameAs"] = [
-      "https:\/\/twitter.com\/HW_Bucks",
-      "https:\/\/www.facebook.com\/HealthWatchBucks",
-      "https:\/\/www.linkedin.com\/company\/healthwatch-bucks",
-    ];
     $payload["contactPoint"] = [
       ["@type" => "ContactPoint",
         "telephone" => "01844 348839",
