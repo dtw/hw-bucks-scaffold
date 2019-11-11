@@ -10,7 +10,7 @@ if ($rating['count'] == 0) {
 	if ($gadget <> "yes") {
 
 	if  ( is_tax() || is_page_template() ) { ?>
-   <p><a href="<?php echo the_permalink(); ?>"><i class="fas fa-comments"></i> Give feedback</a></p>
+   <p><a href="<?php echo the_permalink(); ?>"><i class="fas fa-comments" aria-hidden="true"></i> Give feedback</a></p>
 		<?php } ?>
 
 
