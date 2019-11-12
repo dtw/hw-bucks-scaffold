@@ -7,42 +7,32 @@ $args = array(
 	);
 
 $comments = get_comments($args); ?>
+<?php if ( is_singular('local_services') ) {
+	if ($comments) { ?>
+		<hr /><h2>Service users have provided the following ratings and reviews</h2>
+		<p><small>If <?php the_title(); ?> would like to respond to any of the comments, email <a href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></small></p>
+<?php }
+	}
+?>
 
-<?php if ( is_singular('local_services') ) { ?>
-<?php if ($comments) { ?>
-<hr /><h2>Service users have provided the following ratings and reviews</h2>
-<p><small>If <?php the_title(); ?> would like to respond to any of the comments, email <a href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></small></p>
-
-<?php } } ?>
-
-<?php foreach($comments as $comment) { ?>
-
-<?php // Check whether approved
-$comment_id = '';
-$status = wp_get_comment_status( $comment_id );
-if ( $status == "approved" ) { ?>
-
-
-
-    <div class="comment">
-
-
-	<?php $individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true ); ?>
-
-<?php if ($individual_rating) { $star_count = 0; ?>
-
-
-
-    <p class="star-rating p-rating">
-			<?php feedbackstarrating($individual_rating); ?>
+<?php foreach($comments as $comment) {
+	// Check whether approved
+	$comment_id = '';
+	$status = wp_get_comment_status( $comment_id );
+	if ( $status == "approved" ) { ?>
+		<div class="comment">
+			<?php $individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true );
+			if ($individual_rating) {
+				$star_count = 0; ?>
+				<p class="star-rating p-rating">
+					<?php feedbackstarrating($individual_rating); ?>
 
      &mdash;
        <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>
 
 	<?php } // end of if there is a rating ?>
 
-		<blockquote class="e-description"><?php comment_text(); ?>
-</blockquote>
+		<blockquote class="e-description"><?php comment_text(); ?></blockquote>
 
 
 
