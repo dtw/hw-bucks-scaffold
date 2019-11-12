@@ -167,14 +167,6 @@ footer ul li {
 /* Home page
 ------------------------------ */
 
-.home #content img.wp-post-image {
-	border-radius: 50% 50%;
-	}
-
-.home #content a:hover img.wp-post-image {
-	opacity: .6;
-	}
-
 #home-services-guide h2,
 .recent-posts-headliner h2 {
 	padding-bottom: 0;
