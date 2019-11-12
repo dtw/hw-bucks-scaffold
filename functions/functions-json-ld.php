@@ -52,7 +52,7 @@
   // Some of you may not have all of these data points in your user profiles - delete as appropriate
   // fetch twitter from author meta and concatenate with full twitter URL
     $author_data = get_userdata($post_data->post_author);
-    $twitter_url = " https:\/\/twitter.com/";
+    $twitter_url = " https://twitter.com/";
     $twitterHandle = get_the_author_meta('twitter');
     $twitterHandleURL = $twitter_url . $twitterHandle;
     $websiteHandle = get_the_author_meta('url');
