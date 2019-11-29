@@ -8,3 +8,6 @@ Unless otherwise specified, all the theme files, scripts and images are licensed
 The main exceptions to this license are as follows:
 - Twitter Bootstrap
 - Font Awesome
+
+== Dependencies ==
+This theme requires the Healthwatch Feedback plugin
