@@ -17,26 +17,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -
 
 ## [1.1.1] - 2016-08-29
-
 ### Changed
 - Various bug fixes, proper enqueuing of resources, speed optimisation.
 
 ## [1.1.0] - 2016-08-25
-
 ### Changed
 - As soft launched on Healthwatch Bucks
 
 ## [1.0.3] - 2015-07-31
-
 ### Changed
 - As launched on Healthwatch Derbyshire
 
 ## [1.0.2] - unknown
-
 ### Changed
 - As tested on Healthwatch Derbyshire
 
 ## [1.0.1] - unknown
-
 ### Added
 - Prototype
