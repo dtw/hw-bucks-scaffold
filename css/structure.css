@@ -669,6 +669,8 @@ div.staff-member {
 
 .choice-container {
 	padding: 0;
+	height: 200px;
+	overflow: hidden;
 }
 
 .signpost-container:hover,
@@ -695,6 +697,7 @@ div.staff-member {
 
 .choice-img {
 	width: 100%;
+	height: auto;
 }
 
 .img-signpost-category {
