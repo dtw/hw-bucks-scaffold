@@ -203,6 +203,11 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		margin-bottom: 1rem;
 		}
 
+	.home .panel .panel-title-right,
+	.home .panel .panel-content-right {
+		padding-left: 0;
+		}
+
 	.visit-date {
 		font-size: 1.4rem;
 		}
