@@ -4,6 +4,9 @@
 /* LARGE --- lg --- 1,200px and above --- */
 
 @media (min-width: 1200px) {
+	.choice-container {
+		height: 200px;
+		}
 	}
 
 
@@ -164,6 +167,10 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		/* max-height: 20%; */
 	  max-height: 500px;
 		color:white;
+		}
+
+	.choice-container {
+		height: 180px;
 		}
 
 	/* from structure.css */
