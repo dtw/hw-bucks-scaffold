@@ -35,7 +35,7 @@
 				$aCity = get_post_meta(get_the_ID(),'hw_services_city',true);
 
 
-				$thedescription = "Give your feedback on local health services and find out what others have said about the service offered by " . get_the_title() . ", " .  $aCity;
+				$thedescription = "Rate and review the service offered by " . get_the_title() . ", " .  $aCity;
 
 			}
 				?>
