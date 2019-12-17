@@ -19,8 +19,16 @@
 	width: auto;
 }
 
-.social-icons i {
+.social-icons {
+	text-align: right;
+}
+
+.social-icons a {
 	margin: 1rem 1.5rem 0 0;
+	}
+
+.social-icons a:last-child {
+	margin-right: 0;
 	}
 
 .social-icons i:hover {
