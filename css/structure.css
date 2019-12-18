@@ -52,6 +52,7 @@ body {
 
 #signpost-categories ul {
 	-webkit-padding-start: 0;
+	padding-left: 0px;
 	/* PT add */
 	display: flex;
 	justify-content: center;
