@@ -807,6 +807,7 @@ div.staff-member {
 }
 
 .the-tags-archive a,
+.the-taxonomies-archive a,
 .the-tags p a {
 	background-color: white;
 	border: 1px solid darkgray;
@@ -817,6 +818,7 @@ div.staff-member {
 }
 
 .the-tags-archive a:hover,
+.the-taxonomies-archive a:hover,
 .the-tags p a:hover {
 	color: white !important;
 	background-color: #e73e97;
@@ -825,6 +827,7 @@ div.staff-member {
 
 .category-terms a::before,
 .the-tags-archive a::before,
+.the-taxonomies-archive a::before,
 .the-tags p a::before {
 	content:"\f022";
 	font-family: 'Font Awesome 5 Pro';

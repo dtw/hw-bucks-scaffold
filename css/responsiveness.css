@@ -179,6 +179,7 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 
 	/* from structure.css */
 	.the-tags-archive a,
+	.the-taxonomies-archive a,
 	.the-tags p a {
 		margin-bottom: 3px;
 		}

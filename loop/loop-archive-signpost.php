@@ -11,6 +11,9 @@
       </div>
 	    <?php the_content(); ?>
       <p class="updated-text text-right" >Updated: <?php echo get_the_date(); ?></p>
+      <?php if ( is_user_logged_in() ) {
+        the_terms( $post->ID, 'signpost_categories', '<span class="the-taxonomies-archive">', ' ', '</span>' );
+      }?>
     </article>
 	</div><!-- end of 1st col (post) -->
 	<?php endwhile; ?>
