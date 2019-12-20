@@ -3,7 +3,7 @@
   <div class="row">
     <div id="content" class="col-md-12 col-sm-12">
       <?php echo do_shortcode("[wd_asp id=3]"); ?>
-      <?php echo do_shortcode("[signposts]"); ?>
+      <?php echo do_shortcode("[signposts_menu]"); ?>
     </div><!-- end of content column -->
     <?php echo do_shortcode("[wd_asp id=1]"); ?>
   </div><!-- end of row -->
