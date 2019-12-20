@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.2] - 2019-12-20
+### Changed
+- services : added structured data ratings on local services with 10 or more reviews
+- signposts : show categories to logged in users
+- minor CSS fixes
+
+## [1.2.1] - 2019-12-13
+### Changed
+- padding and height on choice containers and panels
+
+### Removed
+- old static image files
+
 ## [1.2.0] - 2019-11-29
 ### Added
 - new function to output star ratings feedbackstarrating
