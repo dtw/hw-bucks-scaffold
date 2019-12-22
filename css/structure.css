@@ -651,17 +651,20 @@ div.staff-member {
 
 /* Signposts */
 #signposts-selector,
-#feedback-selector {
+#feedback-selector,
+#children-selector {
 	background-color: ;
 	}
 
 #signposts-selector.row::before,
-#feedback-selector.row::before {
+#feedback-selector.row::before,
+#children-selector.row::before, {
 	display: none;
 	}
 
 .signpost-container,
-.choice-container {
+.choice-container,
+.children-container {
 	padding: 1rem 0;
 	margin: 0 0 2rem 0;
 	background-color: rgba(0,0,0,.03);
@@ -677,13 +680,15 @@ div.staff-member {
 }
 
 .signpost-container:hover,
-.choice-container:hover {
+.choice-container:hover,
+.children-container:hover {
 	cursor:pointer;
 }
 
 /* transition is for panel OPENING */
 .signpost-container:hover .signpost-details,
-.choice-container:hover .choice-details {
+.choice-container:hover .choice-details,
+.children-container:hover .child-details {
 	min-height: 50%;
 	background-color: rgb(35, 82, 124, 0.8);
 	transition: min-height 350ms linear;
@@ -694,6 +699,13 @@ div.staff-member {
 .choice-container:hover .choice-details .hover-content {
 	/* max-height: 20%; */
   max-height: 500px;
+  transition: all 350ms linear 350ms;
+	color:white;
+}
+
+.children-container:hover .child-details .hover-content {
+	/* max-height: 20%; */
+  max-height: 100%;
   transition: all 350ms linear 350ms;
 	color:white;
 }
@@ -714,7 +726,8 @@ div.staff-member {
 
 /* transition is for panel CLOSING */
 .signpost-details,
-.choice-details {
+.choice-details,
+.child-details {
 	background-color: rgb(35, 82, 124);
 	min-height: 10%;
 	padding: 0.5rem;
@@ -732,25 +745,33 @@ div.staff-member {
 }
 
 .signpost-details:hover,
-.choice-details:hover {
+.choice-details:hover,
+.child-details:hover {
 	text-decoration: none;
 	color: white;
 }
 
 .signpost-details a,
-.choice-details a {
+.choice-details a,
+.child-details a {
 	color: white;
 }
 
 .signpost-details p,
-.choice-details p {
+.choice-details p,
+.child-details p {
 	margin:0;
 	width:100%;
 }
 
+.child-img {
+	width: 100%;
+}
+
 /* transition is for panel closing */
 .signpost-details .hover-content,
-.choice-details .hover-content {
+.choice-details .hover-content,
+.child-details .hover-content {
 	max-height: 0px;
 	transition: all 100ms linear;
 	overflow: hidden;
