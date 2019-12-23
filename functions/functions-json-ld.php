@@ -26,14 +26,14 @@
 
   if ( is_singular('local_services') ) {
     $rating = getrating($post);
-    if ( $rating['count'] > 4 ) {
+    if ( $rating['count'] > 2 ) {
       $payload["@type"] = "Organization";
       $payload["name"] = get_the_title();
       $payload["description"] = get_the_excerpt();
       $payload["aggregateRating"] = [
         ["@type" => "AggregateRating",
-        "ratingValue" => $rating['average'],
-        "reviewCount" => $rating['count'],
+        "ratingValue" => round($rating['average'],1),
+        "ratingCount" => $rating['count'],
         "itemReviewed" => [
           ["@type" => "Hospital",
           "name" => get_the_title(),
