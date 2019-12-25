@@ -82,6 +82,10 @@
 	.social-icons {
 		text-align: left;
 		}
+
+		#sidebar {
+			padding-left:0;
+		}
 	}
 
 
