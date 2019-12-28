@@ -1,9 +1,9 @@
 <script> window.addEventListener("scroll", function() {
 if (window.scrollY > 100) {
-$('.tagline').fadeOut('slow swing');
+$('.hide-on-scroll').fadeOut('slow swing');
 }
 else {
-$('.tagline').fadeIn('slow swing');
+$('.hide-on-scroll').fadeIn('slow swing');
 }
 
 },false); </script>

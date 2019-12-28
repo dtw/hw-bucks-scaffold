@@ -5,7 +5,7 @@
 
 <div class="container-fluid">
 
-  <div class="row tagline">
+  <div class="row tagline hide-on-scroll">
     <div class="hidden-lg col-md-12 col-sm-6 col-xs-12 phone">
       <p>Call <strong>01844 34 88 39</strong></p>
     </div>
