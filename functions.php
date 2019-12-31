@@ -122,9 +122,9 @@ if (!(is_admin() )) {
 	// if the url contains /wp-includes do nothing
 	if ( strpos( $url, '/wp-includes' ) ) return $url;
 	// if the url contains fontawesome kit, append crossorigin="anonymous"
-	if ( strpos( $url, '/c1c5370dea.js' ) ) return "$url' crossorigin='anonymous'";
+	if ( strpos( $url, '/c1c5370dea.js' ) ) return "$url' crossorigin='anonymous";
 	// if the url contains bootstrap, append
-	if ( strpos( $url, '/bootstrap.min.js' ) ) return "$url' integrity='sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd' crossorigin='anonymous'";
+	if ( strpos( $url, '/bootstrap.min.js' ) ) return "$url' integrity='sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd' crossorigin='anonymous";
 	// if the url contains bootstrap, append
 	if ( strpos( $url, '/bootstrap.min.css' ) ) return "$url' integrity='sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu' crossorigin='anonymous'";
 	// if the url contains bootstrap, append
