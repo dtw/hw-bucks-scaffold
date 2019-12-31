@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Changed
 - minor CSS fixes
+- added hide-on-scroll class to make applying scroll JS cleaner
 
 ## [1.2.2] - 2019-12-20
 ### Changed
