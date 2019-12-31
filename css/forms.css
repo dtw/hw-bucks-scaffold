@@ -146,26 +146,6 @@ form input[type="submit"]:hover {
 	border-style: none;
 	}
 
-.home .widget_search:before,
-.page-template-template-home-php .widget_search:before {
-	content: "Want your say on services in Bucks? Want to see what others said?";
-	background-color: transparent;
-	font-size: 2.2rem;
-	margin-bottom: 2rem;
-	color: #fff;
-	display: block;
-	}
-
-.home .widget_search:after,
-.page-template-template-home-php .widget_search:after {
-	content: "Rate & review 500 GPs, dentists, pharmacists, care homes and hospitals";
-	background-color: transparent;
-	font-size: 1.8rem;
-	margin-top: 2rem;
-	color: #fff;
-	display: block;
-	}
-
 div[class*='ajaxsearchpro'] {
 	margin: 0 auto !important;
 	border-radius: 5px !important;

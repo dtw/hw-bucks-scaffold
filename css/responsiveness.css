@@ -272,10 +272,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		margin: 2rem;
 		}
 
-	.home .widget_search:before {
-		font-size: 2rem;
-		}
-
 	#text-8 h2{
 		padding: 0;
 		}
