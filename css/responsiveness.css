@@ -38,9 +38,9 @@
 	}
 }
 
-/* 1024px and below --- */
+/* 1199px and below --- */
 
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
 	.navbar-nav > li > a {
 		padding-left: .7rem;
 		padding-right: .7rem;
