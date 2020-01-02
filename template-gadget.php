@@ -123,7 +123,7 @@ $hwid = $_GET["hwid"]; ?>
 				// the_excerpt();
 
 
-				<?php feedbackstarrating($individual_rating,'green'); ?>
+				<?php echo feedbackstarrating($individual_rating,'green'); ?>
 
 				} else {
 
