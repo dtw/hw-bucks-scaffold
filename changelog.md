@@ -8,7 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - minor CSS fixes
 - added hide-on-scroll class to make applying scroll JS cleaner
-- remove unused before/after styles on front page
+- moved hide_on_scroll code to js file
+- added compact_on_scroll js and CSS classes - compacts the navbar on scroll
+- removed unused before/after styles on front page
 - fixed privacy statement links
 
 ## [1.2.2] - 2019-12-20
