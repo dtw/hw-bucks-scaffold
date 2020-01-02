@@ -125,10 +125,6 @@ if (!(is_admin() )) {
 	if ( strpos( $url, '/c1c5370dea.js' ) ) return "$url' crossorigin='anonymous";
 	// if the url contains bootstrap, append
 	if ( strpos( $url, '/bootstrap.min.js' ) ) return "$url' integrity='sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd' crossorigin='anonymous";
-	// if the url contains bootstrap, append
-	//if ( strpos( $url, '/bootstrap.min.css' ) ) return "$url' integrity='sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu' crossorigin='anonymous";
-	// if the url contains bootstrap, append
-	//if ( strpos( $url, '/bootstrap-theme.min.css' ) ) return "$url' integrity='sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ' crossorigin='anonymous";
 	// Defer jQuery Parsing using the HTML5 defer property
 	// return "$url' defer ";
 	return "$url' defer ";

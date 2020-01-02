@@ -7,8 +7,6 @@ function scaffold_add_theme_scripts() {
 
   wp_enqueue_script( 'scaffold_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js');
 
-  //wp_enqueue_script( 'scaffold_bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js');
-
   wp_enqueue_script( 'fontawesome_5_cdn', 'https://kit.fontawesome.com/c1c5370dea.js');
 
   wp_enqueue_script( 'bootstrap_3_cdn', 'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js');
@@ -21,10 +19,8 @@ function scaffold_add_theme_scripts() {
 
 // Bootstrap
 
-  //wp_enqueue_style( 'scaffold_bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
   wp_enqueue_style( 'scaffold_bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css');
 
-  //wp_enqueue_style( 'scaffold_bootstrap_theme', get_template_directory_uri() . '/bootstrap/css/bootstrap-theme.min.css');
   wp_enqueue_style( 'scaffold_bootstrap_theme', 'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css');
 
 // Main stylesheet
