@@ -113,22 +113,22 @@ add_filter('the_generator', 'wpbeginner_remove_version');
 
 /* 7. Pass arguements to JS
 ------------------------------------------------------------------------------ */
-if (!(is_admin() )) {
-	function add_js_arguements ( $url ) {
-	// if the url doesn't contain .js do nothing
-	if ( FALSE === strpos( $url, '.js' ) ) return $url;
-	// if the url contains jquery.js do nothing
-	if ( strpos( $url, 'jquery.js' ) ) return $url;
-	// if the url contains /wp-includes do nothing
-	if ( strpos( $url, '/wp-includes' ) ) return $url;
-	// if the url contains fontawesome kit, append crossorigin="anonymous"
-	if ( strpos( $url, '/c1c5370dea.js' ) ) return "$url' crossorigin='anonymous";
-	// if the url contains bootstrap, append
-	if ( strpos( $url, '/bootstrap.min.js' ) ) return "$url' integrity='sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd' crossorigin='anonymous";
-	// Defer jQuery Parsing using the HTML5 defer property
-	// return "$url' defer ";
-	return "$url' defer ";
+function add_js_arguements ( $url ) {
+	if (!(is_admin() )) {
+		// if the url doesn't contain .js do nothing
+		if ( FALSE === strpos( $url, '.js' ) ) return $url;
+		// if the url contains jquery.js do nothing
+		if ( strpos( $url, 'jquery.js' ) ) return $url;
+		// if the url contains /wp-includes do nothing
+		if ( strpos( $url, '/wp-includes' ) ) return $url;
+		// if the url contains fontawesome kit, append crossorigin="anonymous"
+		if ( strpos( $url, '/c1c5370dea.js' ) ) return "$url' defer crossorigin='anonymous";
+		// Defer jQuery Parsing using the HTML5 defer property
+		// return "$url' defer ";
+		return "$url' defer ";
+	} else {
+		if ( strpos( $url, '/c1c5370dea.js' ) ) return "$url' crossorigin='anonymous";
 	}
-	add_filter( 'clean_url', 'add_js_arguements', 11, 1 );
 }
+add_filter( 'clean_url', 'add_js_arguements', 11, 1 );
 ?>
