@@ -18,7 +18,7 @@
 
 <hr />
 <h2 id="respond">Rate and review this service</h2>
-<p>Your name and email address and other identifying information will not be published and will be stored in accordance with our <a href="http://www.healthwatchbucks.co.uk/data-protection-privacy-policy/" target="_blank">data protection policy</a>. Required fields are marked with an asterisk.</p>
+<p>Your name and email address and other identifying information will not be published and will be stored in accordance with our <a href="http://www.healthwatchbucks.co.uk/privacy/" target="_blank">privacy policy</a>. Required fields are marked with an asterisk.</p>
 
 
 			<?php include('elements/comments-form.php');
