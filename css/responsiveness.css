@@ -46,6 +46,10 @@
 		padding-right: .7rem;
 		font-size: 1.5rem;
 		}
+
+	.navbar-brand img {
+		max-width: 160px;
+		}
 	}
 
 /* SMALL --- sm --- 991px and below --- */
@@ -60,10 +64,6 @@
 	.navbar-nav > li > a {
 		font-size: 1.4rem;
 	}
-
-	.navbar-brand img {
-		max-width: 160px;
-		}
 
 	body {
 		padding-top: 12rem !important;
