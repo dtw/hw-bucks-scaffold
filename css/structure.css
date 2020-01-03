@@ -940,7 +940,8 @@ div.staff-member {
 	line-height: 3rem;
 }
 
-.updated-text {
+.updated-text,
+.published-text {
 	color: #999;
 	margin: 1rem 0;
 }
