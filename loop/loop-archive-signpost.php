@@ -10,7 +10,11 @@
         <p class="edit-link"><?php edit_post_link(); ?></p>
       </div>
 	    <?php the_content(); ?>
-      <p class="updated-text text-right" >Updated: <?php echo get_the_date(); ?></p>
+      <?php if (get_the_modified_date() > get_the_date()) { ?>
+        <p class="updated-text text-right" >Last updated: <?php echo get_the_modified_date(); ?></p>
+      <?php } else { ?>
+        <p class="published-text text-right" >First published: <?php echo get_the_date(); ?></p>
+      <?php } ?>
       <?php if ( is_user_logged_in() ) {
         the_terms( $post->ID, 'signpost_categories', '<span class="the-taxonomies-archive">', ' ', '</span>' );
       }?>

@@ -11,6 +11,10 @@ function scaffold_add_theme_scripts() {
 
   wp_enqueue_script( 'fontawesome_5_cdn', 'https://kit.fontawesome.com/c1c5370dea.js');
 
+  wp_enqueue_script( 'scaffold_hide_on_scroll', get_template_directory_uri() . '/js/hide_on_scroll.js');
+
+  wp_enqueue_script( 'scaffold_compact_on_scroll', get_template_directory_uri() . '/js/compact_on_scroll.js');
+
 /* 7. Enqueue CSS
 ------------------------------------------------------------------------------ */
 

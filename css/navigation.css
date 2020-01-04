@@ -12,6 +12,11 @@
 	padding-bottom: 1.6rem;
 	}
 
+.navbar-compact {
+	padding-bottom: 0.6px;
+	/*margin-bottom: 0px;*/
+	}
+
 .tagline {
 	font-size: 1.6rem;
 	font-family: Bitter;
@@ -53,13 +58,25 @@
 .separator {
 	padding:0 1rem;
 	}
+
+.tagline-compact {
+	margin-bottom: 0px;
+}
 /* .navbar-nav {
 	padding-top: 1.5rem;
 	}
 */
 .navbar-brand {
 	padding: 0;
-	}
+}
+
+.navbar-brand-compact {
+	height: 100%;
+}
+
+.navbar-brand-compact > img {
+  max-width: 160px;
+}
 
 /* Links */
 

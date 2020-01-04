@@ -1,11 +1,11 @@
      <!-- Fixed navbar -->
 
 
-<nav class="navbar navbar-fixed-top" role="navigation">
+<nav id="nav" class="navbar navbar-fixed-top" role="navigation">
 
 <div class="container-fluid">
 
-  <div class="row tagline hide-on-scroll">
+  <div id="tagline" class="row tagline hide-on-scroll">
     <div class="hidden-lg col-md-12 col-sm-6 col-xs-12 phone">
       <p>Call <strong>01844 34 88 39</strong></p>
     </div>
@@ -27,7 +27,7 @@
       <!--<i class="fas fa-bars fa-2x"></i>-->MENU
       </button>
 
-      <a class="navbar-brand" title="<?php bloginfo('name'); ?>" href="<?php echo esc_url( home_url() ); ?>">
+      <a id="navbar-brand" class="navbar-brand" title="<?php bloginfo('name'); ?>" href="<?php echo esc_url( home_url() ); ?>">
       <?php if ( get_theme_mod( 'scaffold_logo' ) ) : ?>
       <img src='<?php echo esc_url( get_theme_mod( 'scaffold_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
       <?php else : ?>

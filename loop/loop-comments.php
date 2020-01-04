@@ -29,7 +29,7 @@ if ( $comments ) {
 <?php if ($individual_rating) { ?>
 
     <p class="star-rating p-rating">
-			<?php feedbackstarrating($rating); ?>
+			<?php echo feedbackstarrating($rating); ?>
      <br />&mdash;
        <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>
 

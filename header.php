@@ -81,8 +81,6 @@
 
 <!-- INCLUDE NAVIGATION -->
 
-<?php get_template_part('elements/scroll-hide'); ?>
-
 	<?php get_template_part('elements/nav'); ?>
 
 	<?php get_template_part('elements/page-title'); ?>
