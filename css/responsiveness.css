@@ -103,11 +103,20 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		padding-right: 0px;
 	}
 
+	.navbar {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
 	.navbar-brand img {
 		/*max-width: 140px;*/
 		padding-left: 1.5rem;
 	}
 	/* Mobile menu */
+
+	.tagline {
+		margin-bottom: 0px;
+	}
 
 	.tagline .email {
 		text-align: left;
@@ -247,10 +256,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 
 	.navbar-toggle {
 		font-size: 2rem;
-		}
-
-	.page-header {
-		margin-top: 70px;
 		}
 
 	h2 {
