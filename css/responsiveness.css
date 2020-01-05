@@ -141,6 +141,10 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	}
 	/* Mobile menu */
 
+	.tagline {
+		margin-bottom: 0px;
+	}
+
 	.tagline .email {
 		text-align: left;
 	}
