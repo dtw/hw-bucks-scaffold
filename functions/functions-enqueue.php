@@ -11,6 +11,10 @@ function scaffold_add_theme_scripts() {
 
   wp_enqueue_script( 'bootstrap_3_cdn', 'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js');
 
+  wp_enqueue_script( 'scaffold_hide_on_scroll', get_template_directory_uri() . '/js/hide_on_scroll.js');
+
+  wp_enqueue_script( 'scaffold_compact_on_scroll', get_template_directory_uri() . '/js/compact_on_scroll.js');
+
 /* 7. Enqueue CSS
 ------------------------------------------------------------------------------ */
 

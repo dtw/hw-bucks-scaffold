@@ -5,11 +5,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.3.0] - 2020-01-06
 ### Changed
-- minor CSS fixes
-- added hide-on-scroll class to make applying scroll JS cleaner
-- remove unused before/after styles on front page
+- minor CSS fixes especially tagline and navbar
+- moved hide_on_scroll code to js file
 - fixed privacy statement links
+
+### Added
+- added hide-on-scroll class to make applying scroll JS cleaner
+- added compact_on_scroll js and CSS classes - compacts the navbar on scroll
+
+### Removed
+- removed unused before/after CSS styles on front page
 
 ## [1.2.2] - 2019-12-20
 ### Changed

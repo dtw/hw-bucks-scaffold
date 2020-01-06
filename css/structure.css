@@ -16,6 +16,7 @@ body {
 .page-header {
 	background-color: #23527c;
 	padding-bottom: 20px;
+	margin-top: 0px;
 	margin-bottom: 2rem;
 	}
 
@@ -90,6 +91,7 @@ body {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	padding-top: 1rem;
+	padding-right: 0px;
 	}
 
 .service-type {
@@ -940,7 +942,8 @@ div.staff-member {
 	line-height: 3rem;
 }
 
-.updated-text {
+.updated-text,
+.published-text {
 	color: #999;
 	margin: 1rem 0;
 }

@@ -38,13 +38,26 @@
 	}
 }
 
-/* 1024px and below --- */
+/* 1199px and below --- */
 
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
+	body {
+		padding-top: 13.8rem !important;
+		}
+
 	.navbar-nav > li > a {
 		padding-left: .7rem;
 		padding-right: .7rem;
 		font-size: 1.5rem;
+		}
+
+	.navbar-brand img {
+		max-width: 160px;
+		}
+
+	.navbar {
+		padding-bottom: 0rem;
+		min-height: 13.8rem;
 		}
 	}
 
@@ -52,21 +65,28 @@
 
 @media (max-width: 991px) {
 
+	.tagline {
+		margin-bottom: 0px;
+		}
 
 	.tagline .email {
 		text-align: right;
+	}
+
+	.navbar {
+		min-height: 11.8rem;
+	}
+
+	.navbar-brand {
+		height: 100%;
 	}
 
 	.navbar-nav > li > a {
 		font-size: 1.4rem;
 	}
 
-	.navbar-brand img {
-		max-width: 160px;
-		}
-
 	body {
-		padding-top: 12rem !important;
+		padding-top: 11.8rem !important;
 		}
 
 	h1 {
@@ -94,6 +114,10 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 */
 
 @media only screen and (max-width: 767px) {
+	body {
+		padding-top: 13.9rem !important;
+		}
+
 	#content {
 		padding-right: 0px;
 	}
@@ -103,11 +127,23 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		padding-right: 0px;
 	}
 
+	.navbar {
+		min-height: 13.9rem;
+	}
+
+	.navbar-header {
+		padding-top: 0px;
+	}
+
 	.navbar-brand img {
 		/*max-width: 140px;*/
 		padding-left: 1.5rem;
 	}
 	/* Mobile menu */
+
+	.tagline {
+		margin-bottom: 0px;
+	}
 
 	.tagline .email {
 		text-align: left;
@@ -249,10 +285,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		font-size: 2rem;
 		}
 
-	.page-header {
-		margin-top: 70px;
-		}
-
 	h2 {
 		font-size: 2rem;
 		}
@@ -268,9 +300,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		}
 
 	/* Phil added these 3 styles */
-	.home .widget_search {
-		margin: 2rem;
-		}
 
 	#text-8 h2{
 		padding: 0;

@@ -33,7 +33,7 @@ else { ?>
 						<?php echo category_description(); ?>
 						<p>Choose a local service and leave your feedback</p>
 					<?php } else if (is_singular('signposts')) { ?>
-						<p><a style="text-decoration: underline;" href="https://www.healthwatchbucks.co.uk/service-guide/">Search our signposts again &raquo;</a></p>
+						<p><a style="text-decoration: underline;" href="https://www.healthwatchbucks.co.uk/signposting/">Search our signposts again &raquo;</a></p>
 					<?php } else if (is_404()) { ?>
 
 					<?php } else if (is_category() || is_archive()) { ?>

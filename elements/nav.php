@@ -1,22 +1,29 @@
      <!-- Fixed navbar -->
 
 
-<nav class="navbar navbar-fixed-top" role="navigation">
+<nav id="nav" class="navbar navbar-fixed-top" role="navigation">
 
 <div class="container-fluid">
 
-  <div class="row tagline hide-on-scroll">
-    <div class="hidden-lg col-md-12 col-sm-6 col-xs-12 phone">
-      <p>Call <strong>01844 34 88 39</strong></p>
+  <div id="tagline" class="row tagline hide-on-scroll">
+    <div class="row">
+      <div class="hidden-lg col-md-12 col-sm-6 col-xs-12 phone">
+        <p>Call <strong>01844 34 88 39</strong></p>
+      </div>
+      <div class="hidden-lg hidden-md col-sm-6 hidden-xs email">
+        <p><strong><a href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
+      </div>
     </div>
-    <div class="hidden-lg col-md-4 col-sm-6 col-xs-12 email">
-      <p><strong><a href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
-    </div>
-    <div class="col-lg-6 hidden-md hidden-sm hidden-xs email">
-      <p>Call <strong>01844 34 88 39</strong><span class="separator">|</span><strong><a class="email" href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
-    </div>
-    <div class="col-lg-6 col-md-8 hidden-xs widget-beside-tagline-container">
-      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Beside Tagline')) : endif; ?>
+    <div class="row">
+      <div class="col-lg-6 hidden-md hidden-sm hidden-xs contact">
+        <p>Call <strong>01844 34 88 39</strong><span class="separator">|</span><strong><a class="email" href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
+      </div>
+      <div class="hidden-lg col-md-4 hidden-sm col-xs-12 email">
+        <p><strong><a href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
+      </div>
+      <div class="col-lg-6 col-md-8 hidden-xs widget-beside-tagline-container">
+        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Beside Tagline')) : endif; ?>
+      </div>
     </div>
   </div>
 
@@ -27,7 +34,7 @@
       <!--<i class="fas fa-bars fa-2x"></i>-->MENU
       </button>
 
-      <a class="navbar-brand" title="<?php bloginfo('name'); ?>" href="<?php echo esc_url( home_url() ); ?>">
+      <a id="navbar-brand" class="navbar-brand" title="<?php bloginfo('name'); ?>" href="<?php echo esc_url( home_url() ); ?>">
       <?php if ( get_theme_mod( 'scaffold_logo' ) ) : ?>
       <img src='<?php echo esc_url( get_theme_mod( 'scaffold_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
       <?php else : ?>
