@@ -28,21 +28,34 @@
 	padding: .6rem .2rem 0 .2rem;
 	}
 
-.tagline div {
-	max-height: 3.2rem;
+.tagline p {
+	margin-bottom: 9px;
 	}
 
 .tagline .widget-beside-tagline-container {
 	text-align: right;
 	}
 
-.tagline .widget-beside-tagline {
-	margin-left: 2rem;
+.tagline .widget-beside-tagline .AjaxSearchProWidget {
+	display: inline-block;
 	}
 
-.tagline .widget-beside-tagline,
-.tagline .widget-beside-tagline .textwidget {
-	display: inline;
+.tagline .widget-beside-tagline {
+	margin-left: 2rem;
+	display: inline-block;
+	vertical-align: top;
+	}
+
+.tagline .widget-beside-tagline p {
+	display: inline-block;
+	}
+
+.textwidget .newsletter-link {
+	margin-left: 1rem;
+	}
+
+.textwidget .newsletter-link a {
+	color: #fff
 	}
 
 .tagline .phone {
@@ -53,9 +66,11 @@
 	text-align: left;
 	}
 
-.tagline .email a {
+.tagline .email a,
+.tagline .contact a {
 	color:inherit;
 	}
+
 .separator {
 	padding:0 1rem;
 	}
