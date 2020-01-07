@@ -11,7 +11,7 @@
 
 
 
-    <div class="col-md-3 col-sm-3 hidden-xs">
+    <div class="col-md-2 col-sm-3 hidden-xs">
 
 
 			<?php // check if the post has a Post Thumbnail assigned to it.
@@ -25,7 +25,7 @@
 
 
 
-    <div class="col-md-9 col-sm-9">
+    <div class="col-md-10 col-sm-9">
 
         <div class="post-title"><h2><a href="<?php echo the_permalink(''); ?>"><?php the_title(); ?></a></h2></div>
 
