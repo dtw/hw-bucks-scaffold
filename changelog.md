@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - anchors on office phone numbers
 - change column widths in loop-archive
+- add reCAPTCHA in functions-enqueue
+- CSS fixes
 
 ### Changed
 - add an offset to nav for logged in users to stop WordPress admin bar hiding navbar-fixed
