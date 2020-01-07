@@ -139,6 +139,11 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		/*max-width: 140px;*/
 		padding-left: 1.5rem;
 	}
+
+	.navbar-admin {
+		padding-top: 46px;
+	}
+
 	/* Mobile menu */
 
 	.tagline {
@@ -305,3 +310,20 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		padding: 0;
 		}
 	}
+
+/* WordPress admin bar breakpoints!
+Annoyingly different from Bootstrap! */
+
+@media only screen and (max-width: 781px) {
+	/*WordPress admin bar goes mobile */
+	.navbar-admin {
+		padding-top: 46px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	/*WordPress admin bar no longer fixed */
+	.navbar-admin {
+		padding-top: 0px;
+	}
+}
