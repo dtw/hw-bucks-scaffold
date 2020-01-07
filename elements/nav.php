@@ -11,7 +11,7 @@
   <div id="tagline" class="row tagline hide-on-scroll">
     <div class="row">
       <div class="hidden-lg col-md-12 col-sm-6 col-xs-12 phone">
-        <p>Call <strong>01844 34 88 39</strong></p>
+        <p>Call <a href="tel:+441844348839"><strong>01844 34 88 39</strong></a></p>
       </div>
       <div class="hidden-lg hidden-md col-sm-6 hidden-xs email">
         <p><strong><a href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
@@ -19,7 +19,7 @@
     </div>
     <div class="row">
       <div class="col-lg-6 hidden-md hidden-sm hidden-xs contact">
-        <p>Call <strong>01844 34 88 39</strong><span class="separator">|</span><strong><a class="email" href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
+        <p>Call <a href="tel:+441844348839"><strong>01844 34 88 39</strong></a><span class="separator">|</span><strong><a class="email" href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
       </div>
       <div class="hidden-lg col-md-4 hidden-sm col-xs-12 email">
         <p><strong><a href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
