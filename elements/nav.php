@@ -8,7 +8,7 @@
 
 <div class="container-fluid">
 
-  <div id="tagline" class="row tagline hide-on-scroll">
+  <div id="tagline" class="row tagline">
     <div class="row">
       <div class="hidden-lg col-md-12 col-sm-6 col-xs-12 phone">
         <p>Call <a href="tel:+441844348839"><strong>01844 34 88 39</strong></a></p>
