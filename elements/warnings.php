@@ -31,7 +31,7 @@ is_singular( local_services ) || 						// Is single local service page
 // FEEDBACK WAITING, needs to be approved
 
 if ($feedback_count > 0) {
-	echo "<p'><i class='fas fa-comments text-warning' aria-hidden='true'></i> You have <strong>" . $feedback_count . " comments</strong> awaiting approval. <a href='" . get_bloginfo(url) . "/wp-admin/edit-comments.php?comment_status=moderated'>Moderate comments &raquo;</a></p>";
+	echo "<p><i class='fas fa-comments text-warning' aria-hidden='true'></i> You have <strong>" . $feedback_count . " comments</strong> awaiting approval. <a href='" . get_bloginfo(url) . "/wp-admin/edit-comments.php?comment_status=moderated'>Moderate comments &raquo;</a></p>";
 } else { echo "<p><i class='fas fa-comments text-info' aria-hidden='true'></i> There are currently <strong>no comments waiting</strong> to be approved.</p>"; }
 
 
