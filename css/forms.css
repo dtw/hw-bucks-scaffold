@@ -218,6 +218,9 @@ form .gfield_required {
 
 .g-recaptcha iframe {
 	width: 100%;
+	margin-top: 0px;
+	border-radius: 0px;
+	border: none;
 	}
 
 #gglcptch_error {
