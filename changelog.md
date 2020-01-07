@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - anchors on office phone numbers
+- change column widths in loop-archive
 
 ### Changed
 - add an offset to nav for logged in users to stop WordPress admin bar hiding navbar-fixed
