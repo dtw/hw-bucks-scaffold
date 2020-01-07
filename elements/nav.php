@@ -1,7 +1,10 @@
      <!-- Fixed navbar -->
 
-
-<nav id="nav" class="navbar navbar-fixed-top" role="navigation">
+<?php if ( is_user_logged_in() ) { ?>
+  <nav id="nav" class="navbar navbar-admin navbar-fixed-top" role="navigation">
+<?php } else { ?>
+  <nav id="nav" class="navbar navbar-fixed-top" role="navigation">
+<?php } ?>
 
 <div class="container-fluid">
 

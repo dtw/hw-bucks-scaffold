@@ -18,6 +18,10 @@
 	/*margin-bottom: 0px;*/
 	}
 
+.navbar-admin {
+	padding-top: 32px;
+	}
+
 .tagline {
 	font-size: 1.6rem;
 	font-family: Bitter;
