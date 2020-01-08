@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - add an offset to nav for logged in users to stop WordPress admin bar hiding navbar-fixed
 - fixes to bootstrap alerts CSS
+- added feedbackstarrating() arguments
 
 ## [1.3.0] - 2020-01-06
 ### Changed
