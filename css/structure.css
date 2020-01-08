@@ -636,6 +636,7 @@ div.staff-member {
 	width: 100% !important;
 	float: left !important;
 	height: auto !important;
+	background-color: rgba(0,0,0,.04);
 	}
 
 .yarpp-thumbnail > img, .yarpp-thumbnail-default {
