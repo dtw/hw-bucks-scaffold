@@ -194,7 +194,7 @@ $individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', 
 <?php if ($individual_rating) { ?>
 
     <p class="star-rating p-rating">
-			<?php echo feedbackstarrating($individual_rating); ?>
+			<?php echo feedbackstarrating($individual_rating,array('size' => 'fa-lg')); ?>
      </p>
        <p><strong><?php echo human_time_diff( strtotime($comment->comment_date), current_time( 'timestamp' ) ); ?> ago</strong></p>
 
