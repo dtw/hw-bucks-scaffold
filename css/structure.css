@@ -585,8 +585,6 @@ img.media-object {
 	bottom: 0;
 	z-index: 500;
 	display: inline-block;
-	border-left: none;
-	border-right: none;
 	margin-bottom: 0;
 	border-radius: 0;
 	padding: 15px;
