@@ -25,7 +25,7 @@ $comments = get_comments($args); ?>
 			if ($individual_rating) {
 				$star_count = 0; ?>
 				<p class="star-rating p-rating">
-					<?php echo feedbackstarrating($individual_rating); ?>
+					<?php echo feedbackstarrating($individual_rating,array('size' => 'fa-lg')); ?>
 
      &mdash;
        <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>

@@ -88,7 +88,7 @@
 	<div class="col-md-6 col-sm-6 col-xs-12">
 <p>
 <?php $rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true );
-		echo feedbackstarrating($rating,'green');
+		echo feedbackstarrating($rating,array('colour' => 'green','size' => 'fa-lg'));
 					?>
                     </p>
 		</div><!-- end of col -->

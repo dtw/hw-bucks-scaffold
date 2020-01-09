@@ -30,7 +30,7 @@ if ($rating['count'] == 0) {
 
 <p>
 	<?php
-		echo feedbackstarrating($average_rating);
+		echo feedbackstarrating($average_rating,array('size' => 'fa-lg'));
 	?>
 </p>
 <p>Rated <strong><?php echo $average_rating; ?></strong>/5 by <strong><?php echo $rating['count']; ?>
