@@ -129,6 +129,8 @@
 	font-size: 2.8rem;
 	font-family: 'Font Awesome 5 Pro';
 	font-weight: 900;
+	width: 28px;
+	display: inline-block;
 	}
 
 .navbar-toggle.collapsed:after {

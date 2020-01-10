@@ -279,16 +279,30 @@ h2 img.alignright {
 /* Video
 ----------------------------------- */
 
+.responsive-iframe {
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
+	}
+
+.responsive-iframe iframe{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+	}
+
 iframe {
 	/* forcing width is causing some crappy looking letterboxing on videos with height/width specified.*/
 	/* width: 100%;*/
-	margin-top: 2.5rem;
-	border-radius: 5px;
-	border: solid rgba(0,0,0,0.05) 5px;
+	border-radius: 3px;
+	border: solid rgba(0,0,0,0.05) 3px;
 	}
 
 iframe:hover {
-	border: solid rgba(0,0,0,0.3) 5px;
+	border: solid rgba(0,0,0,0.3) 3px;
 	}
 
 /* CQC Widget
@@ -581,18 +595,9 @@ img.media-object {
 /* Alerts
 ------------------------------------- */
 .alert {
-	position: fixed;
-	bottom: 0;
-	z-index: 500;
-	display: inline-block;
-	border-left: none;
-	border-right: none;
-	margin-bottom: 0;
-	border-radius: 0;
-	padding: 15px;
+	padding: 1.2rem;
 	font-size: 2rem;
 	font-weight: 700;
-	width: 100%;
 	}
 
 .alert button span {

@@ -8,6 +8,7 @@
 4. Set WordPress permalink structure
 5. Tidy
 6. Security
+7. Pass arguements to JS
 
 */
 
@@ -86,7 +87,6 @@ update_option('image_default_link_type','none');
 /* 5. Tidy
 ------------------------------------------------------------------------------ */
 
-
 // Remove meta boxes from Posts and Pages
 function remove_meta_boxes() {
 	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' );
@@ -99,8 +99,33 @@ add_action( 'admin_menu' , 'remove_meta_boxes' );
 remove_action('wp_head', 'wp_generator');
 remove_action('wp_head', 'wlwmanifest_link');
 
+// clear oembed cache
+add_filter( 'oembed_ttl', function($ttl) {
+      $GLOBALS['wp_embed']->usecache = 0;
+            $ttl = 0;
+            // House-cleanoing
+            do_action( 'wpse_do_cleanup' );
+    return $ttl;
+});
 
+add_filter( 'embed_oembed_discover', function( $discover )
+{
+    if( 1 === did_action( 'wpse_do_cleanup' ) )
+        $GLOBALS['wp_embed']->usecache = 1;
+    return $discover;
+} );
 
+// wrap video iframes in divs
+function wrap_oembed_dataparse($return, $data, $url) {
+
+    if  ( $data->type == 'video' ) {
+    	return '<div class="responsive-iframe">' . $return . '</div>';
+		} else {
+			return $return;
+		}
+}
+
+add_filter( 'oembed_dataparse', 'wrap_oembed_dataparse', 99, 4 );
 
 /* 6. Security
 ------------------------------------------------------------------------------ */
