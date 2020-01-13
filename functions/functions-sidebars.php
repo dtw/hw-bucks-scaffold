@@ -10,7 +10,7 @@ function scaffold_widgets_init() {
 		'before_title' => '<h2>',
 		'after_title' => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name' => 'Pages without menu',
 		'id' => 'single_page_sidebar',

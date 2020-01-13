@@ -10,8 +10,8 @@
 // Remove the static front page option
 add_action('customize_register', 'scaffold_customize_register');
 function scaffold_customize_register($wp_customize) {
-  $wp_customize->remove_section( 'static_front_page' );
-  $wp_customize->remove_section( 'nav' );
+	$wp_customize->remove_section( 'static_front_page' );
+	$wp_customize->remove_section( 'nav' );
 }
 
 
@@ -28,7 +28,7 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'description' => 'Upload a logo to replace the default site name and description',
 	) );
 
-	// Register the new setting 
+	// Register the new setting
 	$wp_customize->add_setting( 'scaffold_logo' );
 
 	// Tell Theme Customiser to let us use an image uploader

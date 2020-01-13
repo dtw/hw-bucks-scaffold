@@ -5,17 +5,17 @@ function scaffold_add_theme_scripts() {
 /* 6. Enqueue JS
 ------------------------------------------------------------------------------ */
 
-  wp_enqueue_script( 'scaffold_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js');
+	wp_enqueue_script( 'scaffold_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js');
 
-  wp_enqueue_script( 'scaffold_bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js');
+	wp_enqueue_script( 'scaffold_bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js');
 
-  wp_enqueue_script( 'fontawesome_5_cdn', 'https://kit.fontawesome.com/c1c5370dea.js');
+	wp_enqueue_script( 'fontawesome_5_cdn', 'https://kit.fontawesome.com/c1c5370dea.js');
 
-  wp_enqueue_script( 'scaffold_hide_on_scroll', get_template_directory_uri() . '/js/hide_on_scroll.js');
+	wp_enqueue_script( 'scaffold_hide_on_scroll', get_template_directory_uri() . '/js/hide_on_scroll.js');
 
-  wp_enqueue_script( 'scaffold_compact_on_scroll', get_template_directory_uri() . '/js/compact_on_scroll.js');
+	wp_enqueue_script( 'scaffold_compact_on_scroll', get_template_directory_uri() . '/js/compact_on_scroll.js');
 
-  wp_enqueue_script( 'recaptcha_2', 'https://www.google.com/recaptcha/api.js');
+	wp_enqueue_script( 'recaptcha_2', 'https://www.google.com/recaptcha/api.js');
 
 /* 7. Enqueue CSS
 ------------------------------------------------------------------------------ */
@@ -25,33 +25,33 @@ function scaffold_add_theme_scripts() {
 
 // Bootstrap
 
-  wp_enqueue_style( 'scaffold_bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
+	wp_enqueue_style( 'scaffold_bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
 
-  wp_enqueue_style( 'scaffold_bootstrap_theme', get_template_directory_uri() . '/bootstrap/css/bootstrap-theme.min.css');
+	wp_enqueue_style( 'scaffold_bootstrap_theme', get_template_directory_uri() . '/bootstrap/css/bootstrap-theme.min.css');
 
 // Main stylesheet
-  wp_enqueue_style( 'style', get_stylesheet_uri() );
+	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 // Additional stylesheets
-  wp_enqueue_style( 'scaffold_structure', get_template_directory_uri() . '/css/structure.css?v=' . rand());
+	wp_enqueue_style( 'scaffold_structure', get_template_directory_uri() . '/css/structure.css?v=' . rand());
 
-  wp_enqueue_style( 'scaffold_typography', get_template_directory_uri() . '/css/typography.css?v=' .rand());
+	wp_enqueue_style( 'scaffold_typography', get_template_directory_uri() . '/css/typography.css?v=' .rand());
 
-  wp_enqueue_style( 'scaffold_forms', get_template_directory_uri() . '/css/forms.css?v=' .rand());
+	wp_enqueue_style( 'scaffold_forms', get_template_directory_uri() . '/css/forms.css?v=' .rand());
 
-  wp_enqueue_style( 'scaffold_colours', get_template_directory_uri() . '/css/colours.css?v=' .rand());
+	wp_enqueue_style( 'scaffold_colours', get_template_directory_uri() . '/css/colours.css?v=' .rand());
 
-  wp_enqueue_style( 'scaffold_navigation', get_template_directory_uri() . '/css/navigation.css?' .rand());
+	wp_enqueue_style( 'scaffold_navigation', get_template_directory_uri() . '/css/navigation.css?' .rand());
 
-  wp_enqueue_style( 'scaffold_widgets', get_template_directory_uri() . '/css/widgets.css');
+	wp_enqueue_style( 'scaffold_widgets', get_template_directory_uri() . '/css/widgets.css');
 
-  wp_enqueue_style( 'scaffold_icons', get_template_directory_uri() . '/css/icons.css?' .rand());
+	wp_enqueue_style( 'scaffold_icons', get_template_directory_uri() . '/css/icons.css?' .rand());
 
 //   wp_enqueue_style( 'scaffold_sidebar', get_template_directory_uri() . '/css/sidebar.css');
 
-  wp_enqueue_style( 'scaffold_responsiveness', get_template_directory_uri() . '/css/responsiveness.css');
+	wp_enqueue_style( 'scaffold_responsiveness', get_template_directory_uri() . '/css/responsiveness.css');
 
-  wp_enqueue_style( 'scaffold_print', get_template_directory_uri() . '/css/print.css');
+	wp_enqueue_style( 'scaffold_print', get_template_directory_uri() . '/css/print.css');
 
 }
 
