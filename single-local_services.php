@@ -147,7 +147,10 @@ $comments = $comments_query->query( $args );
 
 // Comment Loop
 if ( $comments ) {
-echo '<h3>Other feedback for ' . $service_type . 's</h3>';
+
+//$term = get_term( $service_type, 'service_types' );
+//echo '<h3>Other feedback for ' . $term->name . 's</h3>';
+echo '<h3>Other reviews</h3>';
 $the_count = 0;
 
 	foreach ( $comments as $comment ) {
