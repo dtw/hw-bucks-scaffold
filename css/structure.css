@@ -284,6 +284,7 @@ h2 img.alignright {
 	padding-bottom: 56.25%;
 	position: relative;
 	height: 0;
+	margin: 2rem 0;
 	}
 
 .responsive-iframe iframe{
@@ -572,6 +573,11 @@ a[href$=".docx"]:before {
 	margin-top: 0;
 	font-size: 2rem;
 	line-height: 3rem;
+	}
+
+.media .media-body {
+	/* replaces zoom: 1 in bootstrap */
+	transform: scale(1);
 	}
 
 .media-body {

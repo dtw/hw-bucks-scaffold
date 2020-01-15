@@ -206,6 +206,10 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		padding-top: 2rem;
 		}
 
+	.lead {
+		font-size: 1.8rem;
+		}
+
 	.btn,
 	input[type="submit"] {
 		font-size: 1.4rem !important;
