@@ -94,7 +94,8 @@ $location = $aTitle . " " . $a1 . " " . $a2 . " " . $aCity . " " . $aCounty . " 
 ?>
 
 <iframe width="1000" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?center=<?php echo $location; ?>&zoom=8&q=<?php echo $location; ?>&size=1000x500&output=embed&iwloc=near"></iframe><br /><br />
-
+</div>
+<div>
 
 
 
@@ -146,7 +147,7 @@ $comments = $comments_query->query( $args );
 
 // Comment Loop
 if ( $comments ) {
-
+echo '<h3>Other feedback for ' . $service_type . 's</h3>';
 $the_count = 0;
 
 	foreach ( $comments as $comment ) {
@@ -175,15 +176,10 @@ $the_count = $the_count + 1;
 
 
 
-	<div class="text-center"><a href="<?php echo get_the_permalink($comment->comment_post_ID); ?>">
-    </a></div>
 
 
-
-
-
-
-	<h3 style="margin: 0; padding-bottom: .5rem;"><a href="<?php echo get_the_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title($comment->comment_post_ID); ?></a></h3>
+<div class="review-container">
+	<h3 class="review-permalink"><a href="<?php echo get_the_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title($comment->comment_post_ID); ?></a></h3>
 
 
 
@@ -196,7 +192,7 @@ $individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', 
     <p class="star-rating p-rating">
 			<?php echo feedbackstarrating($individual_rating,array('size' => 'fa-lg')); ?>
      </p>
-       <p><strong><?php echo human_time_diff( strtotime($comment->comment_date), current_time( 'timestamp' ) ); ?> ago</strong></p>
+       <p class="review-date"><strong><?php echo human_time_diff( strtotime($comment->comment_date), current_time( 'timestamp' ) ); ?> ago</strong></p>
 
 
 
@@ -211,7 +207,8 @@ $individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', 
 
 	<?php } // end of if there is a rating ?>
 
-        <p><?php echo mb_strimwidth($comment->comment_content,0,200," ..."); ?></p>
+        <p class="review"><?php echo mb_strimwidth($comment->comment_content,0,200," ..."); ?></p>
+			<!-- end review-container --></div>
 
 
 
