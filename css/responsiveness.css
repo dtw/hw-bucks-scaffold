@@ -1,6 +1,26 @@
 /* Media queries
 ------------------------------------- */
 
+/* Light and Dark mode */
+
+@media (prefers-color-scheme: no-preference) {
+	#navbar-brand-alt {
+		display: none;
+		}
+	}
+
+@media (prefers-color-scheme: light) {
+  #navbar-brand-alt {
+		display: none;
+		}
+	}
+
+@media (prefers-color-scheme: dark) {
+  #navbar-brand {
+		display: none;
+		}
+	}
+
 /* LARGE --- lg --- 1,200px and above --- */
 
 @media (min-width: 1200px) {

@@ -28,8 +28,16 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'description' => 'Upload a logo to replace the default site name and description',
 	) );
 
-	// Register the new setting 
+	// Create a new section in the Theme Customizer
+	$wp_customize->add_section( 'scaffold_logo_alt_section' , array(
+		'title'       => __( 'Your Logo (alt)', 'scaffold' ),
+		'priority'    => 30,
+		'description' => 'Upload an alternate logo to replace the default site name and description',
+	) );
+
+	// Register the new setting
 	$wp_customize->add_setting( 'scaffold_logo' );
+	$wp_customize->add_setting( 'scaffold_logo_alt' );
 
 	// Tell Theme Customiser to let us use an image uploader
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'scaffold_logo', array(
@@ -38,6 +46,12 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'settings' => 'scaffold_logo',
 	) ) );
 
+	// Tell Theme Customiser to let us use an image uploader
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'scaffold_logo_alt', array(
+		'label'    => __( 'Upload logo - should be 280px wide', 'scaffold' ),
+		'section'  => 'scaffold_logo_alt_section',
+		'settings' => 'scaffold_logo_alt',
+	) ) );
 }
 
 	add_action( 'customize_register', 'scaffold_theme_customizer' );

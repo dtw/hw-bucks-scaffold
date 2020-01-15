@@ -44,6 +44,13 @@
       <?php bloginfo('name'); ?>
       <?php endif; ?>
       </a>
+      <a id="navbar-brand-alt" class="navbar-brand" title="<?php bloginfo('name'); ?>" href="<?php echo esc_url( home_url() ); ?>">
+      <?php if ( get_theme_mod( 'scaffold_logo_alt' ) ) : ?>
+      <img src='<?php echo esc_url( get_theme_mod( 'scaffold_logo_alt' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
+      <?php else : ?>
+      <?php bloginfo('name'); ?>
+      <?php endif; ?>
+      </a>
     </div><!-- end of navbar-header -->
     <div id="nav-container" class="collapse navbar-collapse">
       <ul id="menu-main" class="nav navbar-nav">
