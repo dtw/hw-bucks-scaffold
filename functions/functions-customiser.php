@@ -10,8 +10,8 @@
 // Remove the static front page option
 add_action('customize_register', 'scaffold_customize_register');
 function scaffold_customize_register($wp_customize) {
-  $wp_customize->remove_section( 'static_front_page' );
-  $wp_customize->remove_section( 'nav' );
+	$wp_customize->remove_section( 'static_front_page' );
+	$wp_customize->remove_section( 'nav' );
 }
 
 
