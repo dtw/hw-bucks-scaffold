@@ -335,6 +335,17 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		}
 	}
 
+/* Embedded Mailchimp form */
+@media only screen and (max-width: 480px) {
+	form#mc-embedded-subscribe-form input[type="submit"] {
+		margin-left: 0px;
+		}
+
+	#mc_embed_signup_scroll p {
+		margin-top: 1rem;
+		}
+	}
+
 /* WordPress admin bar breakpoints!
 Annoyingly different from Bootstrap! */
 
