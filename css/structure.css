@@ -178,6 +178,7 @@ footer ul li {
 
 .comment .star-rating {
 	margin-left: 1rem;
+	margin-bottom: 2rem;
 	}
 
 /* Home page
@@ -395,6 +396,14 @@ ul#local-services-selector li:last-child {
 
 #sidebar .child-menu a {
 	text-decoration: none;
+	}
+
+#sidebar .sidebar-container {
+	margin-top: 1rem;
+	}
+
+#sidebar div:first-child {
+	margin-top: 0px;
 	}
 
 #content a[href*="sharepoint"],
@@ -844,6 +853,7 @@ div.staff-member {
 	border-radius: 3px;
 	color: white !important;
 	text-decoration: none !important;
+	margin-bottom: 10px;
 }
 
 .category-terms a:hover {
