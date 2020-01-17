@@ -966,6 +966,8 @@ div.staff-member {
 	margin: 1rem 0;
 }
 
+/* Rules for accessibility */
+
 .screen-reader-text {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
