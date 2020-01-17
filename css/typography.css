@@ -232,7 +232,8 @@ footer a,
 	}
 
 footer a:hover,
-#subfooter a:hover {
+#subfooter a:hover,
+.img-anchor:hover {
 	text-decoration: underline;
 	background-color: inherit !important;
 	outline: none !important;
