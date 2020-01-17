@@ -173,14 +173,13 @@ h1 {
 	font-size: 1.2em;
 	}
 
-.call-to-action:visted {
+.call-to-action:visited {
 	color:#e73e97;
 	font-weight:bold;
 	text-decoration:none;
 	font-size: 1.2em;
 	}
 
-.call-to-action:hover,
 .call-to-action a:hover {
 	text-decoration:underline;
 	color: #e73e97;

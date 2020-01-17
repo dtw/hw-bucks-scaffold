@@ -812,7 +812,7 @@ div.staff-member {
 }
 
 .category-terms a {
-	background-color: rgb(35, 82, 124);
+	background-color: rgb(35, 82, 124) !important;
 	border: 1px solid darkgray;
 	padding: 2px 8px;
 	display: inline-block;
