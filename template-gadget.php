@@ -20,7 +20,7 @@
 			border-radius: 10px;
 			padding: .4rem .8rem;
 			margin: 1rem;
-			background-color: rgba(0,0,0,0.03);
+			background-color: #F7F7F7;
 			box-sizing: border-box;
 			}
 
