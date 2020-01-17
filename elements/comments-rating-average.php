@@ -33,7 +33,7 @@ if ($rating['count'] == 0) {
 		echo feedbackstarrating($average_rating,array('size' => 'fa-lg'));
 	?>
 </p>
-<p>Rated <strong><?php echo $average_rating; ?></strong>/5 by <strong><?php echo $rating['count']; ?>
+<p>Rated <strong><?php echo $average_rating; ?></strong> out of 5 by <strong><?php echo $rating['count']; ?>
 <?php if ($rating['count'] <= 1) { echo " person"; } else { echo " people"; } ?>
 </strong></p>
 
