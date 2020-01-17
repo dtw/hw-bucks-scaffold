@@ -6,7 +6,8 @@ $args = array(
 	'post_id' => $post->ID,
 	);
 
-$comments = get_comments($args); ?>
+$comments = get_comments($args);
+$total_comments = count($comments); ?>
 <?php if ( is_singular('local_services') ) {
 	if ($comments) { ?>
 		<hr /><h2>Service users have provided the following ratings and reviews</h2>
@@ -15,13 +16,15 @@ $comments = get_comments($args); ?>
 	}
 ?>
 
-<?php foreach($comments as $comment) {
+<?php $comment_counter = 1;
+	foreach($comments as $comment) {
 	// Check whether approved
 	$comment_id = '';
 	$status = wp_get_comment_status( $comment_id );
 	if ( $status == "approved" ) { ?>
 		<div class="comment">
-			<?php $individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true );
+			<?php echo '<span class="screen-reader-text">Review '.$comment_counter.' of '.$total_comments.'</span>';
+			$individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true );
 			if ($individual_rating) {
 				$star_count = 0; ?>
 				<p class="star-rating p-rating">
@@ -76,7 +79,11 @@ $comments = get_comments($args); ?>
     <?php // echo ($comment->comment_content); ?>
 
 
-<?php } ?>
+<?php
+$comment_counter = ++$comment_counter;
+} //loop ends here
+unset($comment);
+?>
 
 
 <?php if(function_exists('wp_paginate_comments')) {
