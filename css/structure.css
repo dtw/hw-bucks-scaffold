@@ -681,7 +681,7 @@ div.staff-member {
 .children-container {
 	padding: 1rem 0;
 	margin: 0 0 2rem 0;
-	background-color: rgba(0,0,0,.03);
+	background-color: #F7F7F7;
 	border: #FFFFFF solid 2px !important;
 	text-align: center;
 	position: relative;
@@ -756,6 +756,7 @@ div.staff-member {
 	overflow: hidden;
 	transition: min-height 350ms linear;
 	color: white;
+	text-decoration: none;
 }
 
 .signpost-details:hover,
@@ -763,6 +764,7 @@ div.staff-member {
 .child-details:hover {
 	text-decoration: none;
 	color: white;
+	outline: none;
 }
 
 .signpost-details a,
@@ -818,12 +820,14 @@ div.staff-member {
 	display: inline-block;
 	border-radius: 3px;
 	color: white !important;
+	text-decoration: none !important;
 }
 
 .category-terms a:hover {
 	color: rgb(35, 82, 124) !important;
-	background-color: white;
+	background-color: white !important;
 	text-decoration: none !important;
+	outline: none !important;
 }
 
 .the-tags p a {
@@ -851,13 +855,15 @@ div.staff-member {
 	display: inline-block;
 	border-radius: 3px;
 	color: #e73e97 !important;
+	text-decoration: none !important;
 }
 
 .the-tags-archive a:hover,
 .the-taxonomies-archive a:hover,
 .the-tags p a:hover {
 	color: white !important;
-	background-color: #e73e97;
+	background-color: #e73e97 !important;
+	outline: none !important;
 	text-decoration: none !important;
 }
 

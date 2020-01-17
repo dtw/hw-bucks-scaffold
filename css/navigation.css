@@ -101,6 +101,13 @@
 
 /* Links */
 
+.navbar-nav a:hover {
+	background-color: inherit;
+	outline: none;
+	color: #0080A4;
+	text-decoration: underline !important;
+}
+
 .navbar-nav > li > a {
 	text-shadow: none;
 	letter-spacing: .03rem;
@@ -114,6 +121,12 @@
 
 .navbar-nav > li:last-child > a {
 	padding-right: 0;
+	}
+
+.navbar-nav .current-menu-item a,
+.navbar-nav .current_page_item a,
+.navbar-nav .current-post-ancestor a {
+	text-decoration: none;
 	}
 
 /* Toggle Menu */
@@ -158,6 +171,16 @@
 
 .navbar-brand img:hover {
 	opacity: .7;
+	}
+
+#tagline a {
+	text-decoration: none;
+	}
+
+#tagline a:hover {
+	background-color: inherit !important;
+	outline: none !important;
+	text-decoration: underline;
 	}
 
 /* Navigation for CHILDREN SHORTCODE MENU

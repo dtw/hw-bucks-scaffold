@@ -50,6 +50,10 @@ footer {
 	color: #e73e97;
 	}
 
+.navbar-nav .current_page_item a:hover {
+	color: #e73e97;
+	text-decoration: underline;
+}
 
 /* Text shadow
 -------------------------------- */
@@ -70,12 +74,14 @@ h1 {
 	background-color: #0080A4;
 	color: #fff;
 	background-image: none;
+	text-decoration: none;
 	}
 
 .btn-primary:hover {
 	background-color: #fff;
 	border-color: #0080A4;
 	color: #0080A4;
+	outline: none;
 	}
 
 .btn:hover:after {
@@ -169,7 +175,6 @@ h1 {
 .call-to-action a:visited {
 	color:#e73e97;
 	font-weight:bold;
-	text-decoration:none;
 	font-size: 1.2em;
 	}
 
@@ -181,8 +186,10 @@ h1 {
 	}
 
 .call-to-action a:hover {
-	text-decoration:underline;
-	color: #e73e97;
+	text-decoration: none;
+	background-color: #e73e97 !important;
+	outline: 3px solid #e73e97;
+	color: rgba(255,255,255,1.00);
 	}
 
 

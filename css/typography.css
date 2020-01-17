@@ -226,12 +226,18 @@ a {
 	text-decoration: underline;
 	}
 
+footer a,
 #subfooter a {
-	text-decoration: none !important;
+	text-decoration: none;
 	}
 
+footer a:hover,
 #subfooter a:hover {
-	text-decoration: underline !important;
+	text-decoration: underline;
+	background-color: inherit !important;
+	outline: none !important;
+	}
+
 a:hover, a:focus {
 	background-color: #0080A4;
 	color: rgba(255,255,255,1.00);
