@@ -18,11 +18,11 @@
 $tax = 'signpost_categories';
 
 // get the terms of taxonomy
-$terms = get_terms( $tax, $args = array( 
+$terms = get_terms( $tax, $args = array(
 'hide_empty' => false, // do not hide empty terms
 ));
 
-    if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){                
+    if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 
 		echo "<div id='signpost-categories'><ul>";
 
@@ -53,28 +53,28 @@ $terms = get_terms( $tax, $args = array(
 
 
 <br />
-                
+
                 <div class="row panel">
 
 
-                
-                
-                
-				<?php get_template_part('loop/loop-archive-signpost'); ?>
-                
 
-                
+
+
+				<?php get_template_part('loop/loop-archive-signpost'); ?>
+
+
+
                 </div>
                 <!-- end of loop row -->
 
 
                   </div><!-- end of content column -->
 
-    
+
                    </div>
                 <!-- end of row -->
 
 
-                            
+
 
 <?php get_footer(); ?>
