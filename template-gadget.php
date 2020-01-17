@@ -123,7 +123,9 @@ $hwid = $_GET["hwid"]; ?>
 				// the_excerpt();
 
 
-				<?php echo feedbackstarrating($individual_rating,array('colour' => 'green','size' => 'fa-lg')); ?>
+				echo feedbackstarrating($individual_rating,array('colour' => 'green','size' => 'fa-lg'));
+        if ($individual_rating == 1) echo '<span class="screen-reader-text">'.$individual_rating.' star</span>';
+        else echo '<span class="screen-reader-text">'.$individual_rating.' stars</span>';
 
 				} else {
 
