@@ -8,7 +8,7 @@
 
 	<?php the_content(); ?>
 
-		<?php the_tags( '<div class="the-tags"><p>Explore more ', ' ', '</p></div>' ); ?>
+		<?php the_tags( "<div class='the-tags'><span class='screen-reader-text'>This post's tags</span><p><span aria-hidden='true'>Explore more </span>", " ", "</p></div>" ); ?>
 
 	<?php endwhile; ?>
 

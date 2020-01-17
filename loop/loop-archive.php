@@ -31,7 +31,7 @@
 
 
        <?php if (is_tag()) {
-         echo "<div class='category-terms'>";
+         echo "<div class='category-terms'><span class='screen-reader-text'>This post's categories</span>";
          $taxonomy = 'category';
          // Get the term IDs assigned to post.
          $post_terms = wp_get_object_terms( $post->ID, $taxonomy, array( 'fields' => 'ids' ) );
@@ -56,6 +56,7 @@
      }?>
      <p><?php echo get_the_excerpt(); ?></p>
      <?php get_template_part('elements/post-meta'); ?>
+     <span class="screen-reader-text">Tagged with</span>
      <?php the_tags( '<span class="the-tags-archive">', ' ', '</span>' );?>
    </div><!-- end of 2nd col (post) -->
  </div><!-- end of row -->

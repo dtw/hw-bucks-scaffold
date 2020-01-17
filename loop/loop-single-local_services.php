@@ -15,6 +15,7 @@
 
 
 	        <p>
+						<span class="screen-reader-text">Street address</span>
 
 		<?php if ( get_post_meta( $post->ID, 'hw_services_address_line_1', true ) )  { ?>
 			<?php echo get_post_meta( $post->ID, 'hw_services_address_line_1', true ); ?><br />
@@ -45,12 +46,14 @@
       $hw_services_phone_tmp = vsprintf($mask, str_split($hw_services_phone_tmp));
       ?>
 			<p><i class="fas fa-phone service-icon" aria-hidden="true"></i>
+				<span class="screen-reader-text">Telephone</span>
 				<strong><?php echo $hw_services_phone_tmp; ?></strong><br />
 			        </p>
 						<?php } ?>
 
 		<?php if ( get_post_meta( $post->ID, 'hw_services_website', true ) )  { ?>
 			<p><i class="fas fa-external-link-alt service-icon" aria-hidden="true"></i>
+				<span class="screen-reader-text">Website</span>
             	<a target="_blank"  href="http://<?php echo get_post_meta( $post->ID, 'hw_services_website', true ); ?>" title="<?php the_title(); ?>" >Visit their website &raquo;</a><br />
 			        </p>
 						<?php } ?>
