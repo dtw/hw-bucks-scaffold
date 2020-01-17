@@ -3,6 +3,10 @@
 
 /* Structure */
 
+#menu-main {
+	margin-top: 1rem;
+	}
+
 .navbar-collapse {
 	float: right;
 	}
@@ -113,14 +117,16 @@
 	letter-spacing: .03rem;
 	font-weight: 700;
 	font-family: Bitter, serif;
+	font-size: 1.7rem;
+	padding: 0.5rem 1rem;
 	}
 
 .navbar-nav > li:first-child > a {
-	padding-left: 0;
+	/*padding-left: 0;*/
 	}
 
 .navbar-nav > li:last-child > a {
-	padding-right: 0;
+	/*padding-right: 0;*/
 	}
 
 .navbar-nav .current-menu-item a,
@@ -176,7 +182,6 @@
 	}
 
 .navbar li:hover a {
-	opacity: .5;
 	background: none;
 	}
 
