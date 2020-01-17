@@ -274,7 +274,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	.home .panel .title-link {
 		display: inline-block;
 		font-size: 2rem;
-		line-height: 2.4rem;
 		font-weight: 700 !important;
 		margin-bottom: 1rem;
 		}

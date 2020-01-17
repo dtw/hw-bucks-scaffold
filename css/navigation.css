@@ -106,10 +106,9 @@
 /* Links */
 
 .navbar-nav a:hover {
-	background-color: inherit;
-	outline: none;
-	color: #0080A4;
-	text-decoration: underline !important;
+	background-color: #0080A4 !important;
+	color: rgba(255,255,255,1.00);
+	text-decoration: none !important;
 }
 
 .navbar-nav > li > a {
@@ -133,6 +132,11 @@
 .navbar-nav .current_page_item a,
 .navbar-nav .current-post-ancestor a {
 	text-decoration: none;
+	}
+
+.navbar-nav .current-menu-item a:hover {
+	background-color: #e73e97 !important;
+	outline: 3px solid #e73e97;
 	}
 
 /* Toggle Menu */
