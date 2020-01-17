@@ -43,7 +43,7 @@ $terms = get_terms( $tax, $args = array(
 
             if( $term->count > 0 )
                 // display link to term archive
-                echo '<li><img width="50px" src="' . $term_icon . '"><a href="' . esc_url( $term_link ) . '">' . $term->name .'</a></li>';
+                echo '<li><img width="50px" src="' . $term_icon . '" alt="' . $term->name . '" aria-hidden="true" /><a href="' . esc_url( $term_link ) . '">' . $term->name .'</a></li>';
 
             elseif( $term->count !== 0 )
                 // display name
