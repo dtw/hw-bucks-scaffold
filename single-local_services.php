@@ -99,7 +99,7 @@ $location = $aTitle . " " . $a1 . " " . $a2 . " " . $aCity . " " . $aCounty . " 
 <iframe width="1000" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?center=<?php echo $location; ?>&zoom=8&q=<?php echo $location; ?>&size=1000x500&output=embed&iwloc=near"></iframe>
 </div>
 </div>
-<div>
+<div id="recent-reviews-container" class="sidebar-container">
 
 
 
