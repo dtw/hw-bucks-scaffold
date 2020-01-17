@@ -223,6 +223,7 @@ div.comment-content p:last-child:after {
 
 a {
 	color:  #0080A4;
+	text-decoration: underline;
 	}
 
 #subfooter a {
@@ -231,4 +232,9 @@ a {
 
 #subfooter a:hover {
 	text-decoration: underline !important;
+a:hover, a:focus {
+	background-color: #0080A4;
+	color: rgba(255,255,255,1.00);
+	outline: 3px solid #0080A4;
+	text-decoration: none;
 	}
