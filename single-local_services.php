@@ -84,6 +84,7 @@ if ( has_post_thumbnail() ) {
 
 
 <div id="google-maps-container" class="sidebar-container" aria-hidden="true">
+	<h3>Service location</h3>
      <div id="view1">
 <?php
 $aTitle = get_the_title();
