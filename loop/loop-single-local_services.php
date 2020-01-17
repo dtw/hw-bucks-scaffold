@@ -69,14 +69,14 @@
 
 
 
-<div class="col-md-7 col-sm-7 col-xs-12 col-md-offset-1 col-sm-offset-1">
+<div id="service-rating-details" class="col-md-7 col-sm-7 col-xs-12 col-md-offset-1 col-sm-offset-1">
 
 
 
 	<?php if ( get_post_meta( $post->ID, 'hw_services_overall_rating', true ) )  { ?>
 
 
-<div class="row">
+<div id="overall-rating" class="row">
 
 
 	<div class="col-md-6 col-sm-6 col-xs-12">
@@ -112,7 +112,7 @@ $comments = get_comments($args);
 
 <?php if ( $comments ) { ?>
 
-<div class="row">
+<div id="public-rating" class="row">
 
 	<div class="col-md-6 col-sm-6 col-xs-12">
 		<p><strong>Public rating:</strong>
