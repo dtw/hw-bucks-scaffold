@@ -50,6 +50,12 @@
 	opacity: .7;
 }
 
+.fas.service-icon {
+	width: 2.5rem;
+	/* font-weight: 700; */
+	padding-left: 1px;
+	}
+
 /* Featured images
 ------------------------------------ */
 

@@ -44,13 +44,13 @@
       $mask = "%s%s%s%s%s %s%s%s %s%s%s";
       $hw_services_phone_tmp = vsprintf($mask, str_split($hw_services_phone_tmp));
       ?>
-			<p><i class="fas fa-phone" aria-hidden="true"></i>
+			<p><i class="fas fa-phone service-icon" aria-hidden="true"></i>
 				<strong><?php echo $hw_services_phone_tmp; ?></strong><br />
 			        </p>
 						<?php } ?>
 
 		<?php if ( get_post_meta( $post->ID, 'hw_services_website', true ) )  { ?>
-			<p><i class="fas fa-link" aria-hidden="true"></i>
+			<p><i class="fas fa-external-link-alt service-icon" aria-hidden="true"></i>
             	<a target="_blank"  href="http://<?php echo get_post_meta( $post->ID, 'hw_services_website', true ); ?>" title="<?php the_title(); ?>" >Visit their website &raquo;</a><br />
 			        </p>
 						<?php } ?>
@@ -145,7 +145,7 @@ else { ?>
 
             <hr /><h2>Healthwatch Bucks has visited, rated and reviewed <?php the_title(); ?></h2>
 
-			<p><i class="fas fa-calendar" aria-hidden="true"></i> Visited <strong><?php echo get_post_meta( $id, 'hw_services_date_visited', true ); ?></strong><br />
+			<p><i class="fas fa-calendar service-icon" aria-hidden="true"></i> Visited <strong><?php echo get_post_meta( $id, 'hw_services_date_visited', true ); ?></strong><br />
 			        </p>
 						<?php } ?>
 
