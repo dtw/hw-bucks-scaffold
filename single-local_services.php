@@ -48,7 +48,9 @@
 <!-- Insert FEATURED IMAGE -->
 <?php // check if the post has a Post Thumbnail assigned to it.
 if ( has_post_thumbnail() ) {
+	echo '<div id="feature-img-container" class="sidebar-container">';
 	the_post_thumbnail();
+	echo '</div>';
 } ?>
 
 
@@ -62,11 +64,11 @@ if ( has_post_thumbnail() ) {
  { ?>
 
 
-
+<div id="cqc-widget-container" class="sidebar-container">
 <h3>How does the Care Quality Commission rate <?php the_title(); ?>?</h3>
 
 <script type='text/javascript' src="http://www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js?data-host=www.cqc.org.uk&amp;type=location&amp;data-id=<?php echo get_post_meta( $post->ID, 'hw_services_cqc_location', true ); ?>">;
-		    	</script>
+		    	</script></div>
 
 
 
@@ -81,6 +83,7 @@ if ( has_post_thumbnail() ) {
 
 
 
+<div id="google-maps-container" class="sidebar-container" aria-hidden="true">
      <div id="view1">
 <?php
 $aTitle = get_the_title();
@@ -93,7 +96,8 @@ $aPostcode = get_post_meta(get_the_ID(),'hw_services_postcode',true);
 $location = $aTitle . " " . $a1 . " " . $a2 . " " . $aCity . " " . $aCounty . " " . $aPostcode . " UK";
 ?>
 
-<iframe width="1000" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?center=<?php echo $location; ?>&zoom=8&q=<?php echo $location; ?>&size=1000x500&output=embed&iwloc=near"></iframe><br /><br />
+<iframe width="1000" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?center=<?php echo $location; ?>&zoom=8&q=<?php echo $location; ?>&size=1000x500&output=embed&iwloc=near"></iframe>
+</div>
 </div>
 <div>
 
