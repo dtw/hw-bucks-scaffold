@@ -980,3 +980,11 @@ div.staff-member {
 	word-wrap: normal !important;
 	word-break: normal;
 }
+
+/* Local Services */
+
+#service-contact-details {
+	border-right: #999 1px dashed;
+	padding-left: 0px;
+}
+

@@ -10,7 +10,7 @@
 
 <div class="row">
 
-<div class="col-md-4 col-sm-4 col-xs-12" style="border-right: #999 1px dashed;">
+<div id="service-contact-details" class="col-md-4 col-sm-4 col-xs-12">
 
 
 
