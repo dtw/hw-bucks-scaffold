@@ -156,16 +156,14 @@ hr {
 
 /* Blockquote
 ----------------------------------- */
-
 blockquote {
 	border: none;
 	font-size: 1.6rem;
-	border-radius: 5px;
-	margin: 1rem 1rem 0 1rem;
+	margin: 2em 0;
 	padding: 2rem;
 	font-style: italic;
 	border-left: 5px solid #e73e97;
-	background: rgba(0,0,0,0.02);
+	background: #f9f9f9;
 	}
 
 blockquote br {
@@ -174,9 +172,13 @@ blockquote br {
 	display: block;
 	}
 
-
-blockquote.e-description {
-	border: none;
+.comment blockquote {
+	font-size: 1.6rem;
+	margin: 1rem 1rem 0 1rem;
+	padding: 2rem;
+	font-style: italic;
+	border-left: 3px solid rgb(35, 82, 124);
+	background: rgba(0,0,0,0.02);
 	}
 
 div.comment-content {
