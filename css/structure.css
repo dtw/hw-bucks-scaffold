@@ -75,6 +75,11 @@ body {
 	text-decoration: underline;
 	}
 
+#signpost-categories ul li a:hover {
+	font-weight: 400 !important;
+	text-decoration: none;
+	}
+
 .tax-signpost_categories article {
 	background-color: rgba(0,0,0,.02);
 	padding: .1rem 2rem 2rem 2rem;
@@ -168,6 +173,7 @@ footer ul li {
 	background-color: rgba(0,0,0,0.02);
 	margin-top: 2rem;
 	border-radius: 5px;
+	border: 2px solid rgba(0,0,0,0.04);
 	}
 
 .comment .star-rating {
@@ -402,6 +408,7 @@ ul#local-services-selector li:last-child {
 	padding: 1.6rem 2rem;
 	display: inline-block;
 	color: #333;
+	text-decoration: none;
 }
 
 #content a[href*="sharepoint"]:before,
@@ -435,6 +442,7 @@ ul#local-services-selector li:last-child {
 	background-color: #7A9A01;
 	border-color: #7A9A01;
 	color: #fff;
+	outline: none;
 	}
 
 #content a[href*="sharepoint"]:hover:before,
@@ -654,7 +662,15 @@ div.staff-member {
 	width: 100% !important;
 	float: left !important;
 	height: auto !important;
+	color: #0080A4;
 	background-color: rgba(0,0,0,.04);
+	text-decoration: none;
+	}
+
+.yarpp-thumbnail:hover {
+  outline: none;
+  color: #23527c;
+	text-decoration: underline;
 	}
 
 .yarpp-thumbnail > img, .yarpp-thumbnail-default {
