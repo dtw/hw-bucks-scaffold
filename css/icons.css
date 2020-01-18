@@ -32,7 +32,8 @@
 	}
 
 .social-icons i:hover {
-	color: #fff;
+	border-bottom: 4px solid white;
+	padding-bottom: 2px;
 	}
 
 .mc-icons {
