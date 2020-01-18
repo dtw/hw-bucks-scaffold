@@ -314,8 +314,11 @@ li.current_page_item.has_children ul.grandchild-sidebar-menu {
 	text-decoration: none;
 }
 
-.advanced-sidebar-menu ul li a:hover{
+.advanced-sidebar-menu ul li a:hover,
+.advanced-sidebar-menu ul li a:focus {
 	text-decoration: underline;
+	background-color: #23527c !important;
+	outline: 1px solid #23527c;
 }
 
 .advanced-sidebar-menu ul ul li a{
