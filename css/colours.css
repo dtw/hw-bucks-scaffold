@@ -50,7 +50,8 @@ footer {
 	color: #e73e97;
 	}
 
-.navbar-nav .current_page_item a:hover {
+.navbar-nav .current_page_item a:hover,
+.navbar-nav .current_page_item a:focus {
 	color: #e73e97;
 	text-decoration: underline;
 }
@@ -185,7 +186,8 @@ h1 {
 	font-size: 1.2em;
 	}
 
-.call-to-action a:hover {
+.call-to-action a:hover,
+.call-to-action a:focus {
 	text-decoration: none;
 	background-color: #e73e97 !important;
 	outline: 3px solid #e73e97;

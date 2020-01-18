@@ -749,6 +749,13 @@ div.staff-member {
 	color:white;
 }
 
+a.signpost-details:focus,
+a.choice-details:focus,
+a.child-details:focus {
+	background-color: rgb(35, 82, 124, 0.8);
+	outline: none;
+}
+
 .children-container:hover .child-details .hover-content {
 	/* max-height: 20%; */
   max-height: 100%;

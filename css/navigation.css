@@ -105,7 +105,8 @@
 
 /* Links */
 
-.navbar-nav a:hover {
+.navbar-nav a:hover,
+.navbar-nav a:focus {
 	background-color: #0080A4 !important;
 	color: rgba(255,255,255,1.00);
 	text-decoration: none !important;
@@ -134,9 +135,11 @@
 	text-decoration: none;
 	}
 
-.navbar-nav .current-menu-item a:hover {
+.navbar-nav .current-menu-item a:hover,
+.navbar-nav .current-menu-item a:focus {
 	background-color: #e73e97 !important;
 	outline: 3px solid #e73e97;
+	color: rgba(255,255,255,1.00);
 	}
 
 /* Toggle Menu */
@@ -197,7 +200,8 @@
 	text-decoration: none;
 	}
 
-#tagline a:hover {
+#tagline a:hover,
+#tagline a:focus {
 	background-color: inherit !important;
 	outline: none !important;
 	text-decoration: underline;
