@@ -181,29 +181,6 @@ footer ul li {
 	margin-bottom: 2rem;
 	}
 
-/* Home page
------------------------------- */
-
-#home-services-guide h2,
-.recent-posts-headliner h2 {
-	padding-bottom: 0;
-	}
-
-#home-services-guide .lead,
-.recent-posts-headliner .lead {
-	padding: 0;
-	}
-
-#home-services-guide {
-	text-align: right;
-	background-image: url(http://www.healthwatchbucks.co.uk/wp-content/uploads/2016/07/Mother-and-child-1024x681.jpg);
-	background-size: cover;
-	background-position: 20%;
-	padding: 0 15% 2rem 15%;
-	margin: 3rem 0;
-	color: #fff;
-	}
-
 /* Static slides
 ----------------------------------- */
 
