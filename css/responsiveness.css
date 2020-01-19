@@ -19,6 +19,10 @@
   #navbar-brand {
 		display: none;
 		}
+
+	#navbar-brand-alt {
+		display: block !important;
+		}
 	}
 
 /* LARGE --- lg --- 1,200px and above --- */

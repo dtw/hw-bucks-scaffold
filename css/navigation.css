@@ -91,6 +91,11 @@
 	padding-top: 1.5rem;
 	}
 */
+
+#navbar-brand-alt {
+	display: none;
+	}
+
 .navbar-brand {
 	padding: 0;
 }
