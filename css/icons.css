@@ -33,6 +33,11 @@
 
 .social-icons i:hover {
 	border-bottom: 4px solid white;
+	margin-bottom: 0px;
+	}
+
+.social-icons i {
+	margin-bottom: 4px;
 	padding-bottom: 2px;
 	}
 
