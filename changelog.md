@@ -6,6 +6,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.0] - 2020-01-21
+### Added
+- theme config for an alt logo (for dark mode)
+- CSS to show alt logo in dark mode
+- headings and divs on single-service sidebar
+- screen reader hints for ratings added to all star ratings
+- screen reader hints before tags and categories on posts
+- screen reader hints to show a count of comments
+- :focus CSS selectors on most anchor elements
+
+### Changed
+- many CSS changes for mobile views
+- anchors now have a much more obvious (accessible) hover style
+- visual hints, including icons and images in menu elements, now have alt text or titles, are aria hidden, and have added screen reader hints.
+- new semantic ID/classes added
+- improved readability/cohesion of comments and ratings
+- improved appearance of pagination on small screens
+- fixed too wide pagination links on archives with many pages
+
+### Removed
+- some old CSS styles
+
 ## [1.4.0] - 2020-01-10
 ### Added
 - anchors on office phone numbers
