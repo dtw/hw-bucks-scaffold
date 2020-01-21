@@ -202,6 +202,10 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		color: #fff !important;
 		}
 
+	.wp-paginate .title {
+		 display: block;
+		}
+
 	#subfooter .text-right {
 		text-align: left;
 		}
