@@ -175,6 +175,11 @@ footer ul li {
 	border: 2px solid rgba(0,0,0,0.04);
 	}
 
+.comment-body {
+	background-color: rgba(0,0,0,.02);
+	padding: 1rem;
+	}
+
 .comment .star-rating {
 	margin-left: 1rem;
 	margin-bottom: 2rem;
