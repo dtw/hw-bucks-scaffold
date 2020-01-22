@@ -66,7 +66,7 @@
 
 @media (max-width: 1199px) {
 	body {
-		padding-top: 13.8rem !important;
+		padding-top: 13.8rem;
 		}
 
 	.navbar-nav > li > a {
@@ -110,7 +110,7 @@
 	}
 
 	body {
-		padding-top: 11.8rem !important;
+		padding-top: 11.8rem;
 		}
 
 	h1 {
@@ -139,7 +139,7 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 
 @media only screen and (max-width: 767px) {
 	body {
-		padding-top: 13.9rem !important;
+		padding-top: 13.9rem;
 		}
 
 	#content {
@@ -371,13 +371,31 @@ Annoyingly different from Bootstrap! */
 }
 
 /* cookie notice breakpoints */
-@media (min-width: 901px) {
+@media (min-width: 992px) {
 	#cookie-notice .cookie-notice-visible {
 		height: 96px;
 	}
 
 	.cookies-not-set #nav {
 		top: 96px;
+	}
+
+	.cookies-not-set {
+		padding-top: calc(14rem + 96px);
+	}
+}
+
+@media (max-width: 991px) {
+	#cookie-notice .cookie-notice-visible {
+		height: 96px;
+	}
+
+	.cookies-not-set #nav {
+		top: 96px;
+	}
+
+	.cookies-not-set {
+		padding-top: calc(12rem + 96px);
 	}
 }
 
@@ -389,6 +407,10 @@ Annoyingly different from Bootstrap! */
 	.cookies-not-set #nav {
 		top: 121px;
 	}
+
+	.cookies-not-set {
+		padding-top: calc(12rem + 121px);
+	}
 }
 
 @media (max-width: 794px) {
@@ -398,6 +420,10 @@ Annoyingly different from Bootstrap! */
 
 	.cookies-not-set #nav {
 		top: 141px;
+	}
+
+	.cookies-not-set {
+		padding-top: calc(14rem + 141px);
 	}
 }
 
@@ -409,6 +435,10 @@ Annoyingly different from Bootstrap! */
 	.cookies-not-set #nav {
 		top: 161px;
 	}
+
+	.cookies-not-set {
+		padding-top: calc(14rem + 161px);
+	}
 }
 
 @media (max-width: 411px) {
@@ -419,6 +449,10 @@ Annoyingly different from Bootstrap! */
 	.cookies-not-set #nav {
 		top: 181px;
 	}
+
+	.cookies-not-set {
+		padding-top: calc(14rem + 181px);
+	}
 }
 
 @media (max-width: 367px) {
@@ -428,5 +462,9 @@ Annoyingly different from Bootstrap! */
 
 	.cookies-not-set #nav {
 		top: 201px;
+	}
+
+	.cookies-not-set {
+		padding-top: calc(14rem + 201px);
 	}
 }
