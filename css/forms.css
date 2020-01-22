@@ -154,6 +154,11 @@ footer .AjaxSearchProWidget h3 {
 	display: none;
 	}
 
+.ajaxsearchpro .results .item .asp_content h3 a:hover {
+	color: #fff !important;
+	outline: 1px solid #0080A4;
+	}
+
 /* Gravity Forms
 ----------------------------------- */
 
