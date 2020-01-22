@@ -687,7 +687,7 @@ div.staff-member {
 
 #signposts-selector.row::before,
 #feedback-selector.row::before,
-#children-selector.row::before, {
+#children-selector.row::before {
 	display: none;
 	}
 
