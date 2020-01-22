@@ -369,3 +369,64 @@ Annoyingly different from Bootstrap! */
 		padding-top: 0px;
 	}
 }
+
+/* cookie notice breakpoints */
+@media (min-width: 901px) {
+	#cookie-notice {
+		height: 96px;
+	}
+
+	.cookies-not-set #nav {
+		top: 96px;
+	}
+}
+
+@media (max-width: 901px) {
+	#cookie-notice {
+		height: 121px;
+	}
+
+	.cookies-not-set #nav {
+		top: 121px;
+	}
+}
+
+@media (max-width: 794px) {
+	#cookie-notice {
+		height: 141px;
+	}
+
+	.cookies-not-set #nav {
+		top: 141px;
+	}
+}
+
+@media (max-width: 506px) {
+	#cookie-notice {
+		height: 161px;
+	}
+
+	.cookies-not-set #nav {
+		top: 161px;
+	}
+}
+
+@media (max-width: 411px) {
+	#cookie-notice {
+		height: 181px;
+	}
+
+	.cookies-not-set #nav {
+		top: 181px;
+	}
+}
+
+@media (max-width: 367px) {
+	#cookie-notice {
+		height: 201px;
+	}
+
+	.cookies-not-set #nav {
+		top: 201px;
+	}
+}
