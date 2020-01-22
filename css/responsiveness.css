@@ -372,7 +372,7 @@ Annoyingly different from Bootstrap! */
 
 /* cookie notice breakpoints */
 @media (min-width: 901px) {
-	#cookie-notice {
+	#cookie-notice .cookie-notice-visible {
 		height: 96px;
 	}
 
@@ -382,7 +382,7 @@ Annoyingly different from Bootstrap! */
 }
 
 @media (max-width: 901px) {
-	#cookie-notice {
+	#cookie-notice .cookie-notice-visible {
 		height: 121px;
 	}
 
@@ -392,7 +392,7 @@ Annoyingly different from Bootstrap! */
 }
 
 @media (max-width: 794px) {
-	#cookie-notice {
+	#cookie-notice .cookie-notice-visible {
 		height: 141px;
 	}
 
@@ -402,7 +402,7 @@ Annoyingly different from Bootstrap! */
 }
 
 @media (max-width: 506px) {
-	#cookie-notice {
+	#cookie-notice .cookie-notice-visible {
 		height: 161px;
 	}
 
@@ -412,7 +412,7 @@ Annoyingly different from Bootstrap! */
 }
 
 @media (max-width: 411px) {
-	#cookie-notice {
+	#cookie-notice .cookie-notice-visible {
 		height: 181px;
 	}
 
@@ -422,7 +422,7 @@ Annoyingly different from Bootstrap! */
 }
 
 @media (max-width: 367px) {
-	#cookie-notice {
+	#cookie-notice .cookie-notice-visible {
 		height: 201px;
 	}
 
