@@ -469,6 +469,10 @@ a[href$=".docx"]:before {
 /* Buttons
 ----------------------------------- */
 
+.cn-button.bootstrap {
+	font-size: 1.4rem;
+}
+
 .btn {
 	letter-spacing: .1rem;
 	margin-top: 1rem;
