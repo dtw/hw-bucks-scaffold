@@ -370,7 +370,7 @@ Annoyingly different from Bootstrap! */
 }
 
 /* cookie notice breakpoints */
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 	#cookie-notice .cookie-notice-visible {
 		height: 96px;
 	}
@@ -381,6 +381,20 @@ Annoyingly different from Bootstrap! */
 
 	.cookies-not-set {
 		padding-top: calc(125px + 96px);
+	}
+}
+
+@media (max-width: 1199px) {
+	#cookie-notice .cookie-notice-visible {
+		height: 96px;
+	}
+
+	.cookies-not-set #nav {
+		top: 96px;
+	}
+
+	.cookies-not-set {
+		padding-top: calc(142px + 96px);
 	}
 }
 
