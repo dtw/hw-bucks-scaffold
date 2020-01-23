@@ -31,6 +31,10 @@
 	.choice-container {
 		height: 200px;
 		}
+
+	#menu-main {
+		margin-top: 9px;
+		}
 	}
 
 
