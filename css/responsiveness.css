@@ -74,7 +74,7 @@
 
 @media (max-width: 1199px) {
 	body {
-		padding-top: 12.7rem;
+		padding-top: 142px;
 		}
 
 	.navbar-nav > li > a {
@@ -104,10 +104,6 @@
 	.navbar-nav > li > a {
 		font-size: 1.4rem;
 	}
-
-	body {
-		padding-top: 11.8rem;
-		}
 
 	h1 {
 		font-size: 2rem;
