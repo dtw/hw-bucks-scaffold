@@ -10,11 +10,14 @@
 .navbar {
 	border-bottom: none !important;
 	}
+
+.navbar-compact #nav-spacer {
+	padding-top: 10px;
+	padding-bottom: 10px;
 	}
 
-.navbar-compact {
-	padding-bottom: 0.6px;
-	/*margin-bottom: 0px;*/
+.navbar-compact #menu-main {
+	margin-top: 0;
 	}
 
 .navbar-admin {
