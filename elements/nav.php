@@ -30,7 +30,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div id="nav-spacer" class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-container">
       <span class="sr-only">Toggle navigation</span>
