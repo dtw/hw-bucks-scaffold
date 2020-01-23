@@ -35,6 +35,10 @@
 	#menu-main {
 		margin-top: 9px;
 		}
+
+	#nav-spacer {
+		padding-bottom: 1.6rem;
+		}
 	}
 
 
@@ -70,7 +74,7 @@
 
 @media (max-width: 1199px) {
 	body {
-		padding-top: 13.8rem;
+		padding-top: 12.7rem;
 		}
 
 	.navbar-nav > li > a {
@@ -85,7 +89,7 @@
 
 	.navbar {
 		padding-bottom: 0rem;
-		min-height: 13.8rem;
+		min-height: 12.7rem;
 		}
 	}
 
@@ -93,20 +97,8 @@
 
 @media (max-width: 991px) {
 
-	.tagline {
-		margin-bottom: 0px;
-		}
-
 	.tagline .email {
 		text-align: right;
-	}
-
-	.navbar {
-		min-height: 11.8rem;
-	}
-
-	.navbar-brand {
-		height: 100%;
 	}
 
 	.navbar-nav > li > a {
@@ -155,10 +147,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		padding-right: 0px;
 	}
 
-	.navbar {
-		min-height: 13.9rem;
-	}
-
 	.navbar-header {
 		padding-top: 0px;
 	}
@@ -172,6 +160,10 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		padding-top: 46px;
 	}
 
+	.navbar-compact #nav-spacer {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	/* Mobile menu */
 
 	.tagline {
