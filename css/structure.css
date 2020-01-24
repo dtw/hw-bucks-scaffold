@@ -3,22 +3,22 @@
 
 .city h2 {
 	display: none;
-	}
+}
 
 .city h2:first-child {
 	display: block;
-	}
+}
 
 body {
 	padding-top: 135px;
-	}
+}
 
 .page-header {
 	background-color: #23527c;
 	padding-bottom: 20px;
 	margin-top: 0px;
 	margin-bottom: 2rem;
-	}
+}
 
 .row.page-header h1 {
 		padding-bottom: 10px;
@@ -31,22 +31,22 @@ body {
 	/*padding: 1.5rem 3rem 1rem 0; */
 	padding: 1rem 0;
 	padding-right: 3rem;
-	}
+}
 
 .home #content {
 	padding-right: 0;
-	}
+}
 
 /* Signposts ---------------- */
 
 #signposts-selector {
 	margin: 2rem 0;
 	display: block;
-	}
+}
 
 #signpost-categories {
 	margin: 2rem 0;
-	}
+}
 
 #signpost-categories ul {
 	-webkit-padding-start: 0;
@@ -55,7 +55,7 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	}
+}
 
 #signpost-categories ul li {
 	list-style: none;
@@ -65,23 +65,23 @@ body {
 	margin-right: 1rem;
 	font-size: 2rem;
 	line-height: 3.6rem;
-	}
+}
 
 #signpost-categories ul li a {
 	font-weight: 400 !important;
 	text-decoration: underline;
-	}
+}
 
 #signpost-categories ul li a:hover {
 	font-weight: 400 !important;
 	text-decoration: none;
-	}
+}
 
 .tax-signpost_categories article {
 	background-color: rgba(0,0,0,.02);
 	padding: .1rem 2rem 2rem 2rem;
 	margin-top: 3rem;
-	}
+}
 
 .tax-signpost_categories article h3 {
 	padding-top: 1.5rem;
@@ -94,16 +94,16 @@ body {
 	border-bottom-right-radius: 5px;
 	padding-top: 1rem;
 	padding-right: 0px;
-	}
+}
 
 .service-type {
 	border-bottom: rgba(0,0,0,0.1) 1px dotted;
 	padding: 1.5rem 0;
-	}
+}
 
 .service-type:last-child {
 	border: none;
-	}
+}
 
 
 /* Posts ---------------- */
@@ -118,51 +118,51 @@ body {
 	margin: 4rem 0;
 	padding-top: 3rem;
 	font-weight: 700;
-	}
+}
 
 .yarpp-related {
 	background-color: rgba(0,0,0,.02);
 	padding: 2rem 1rem 1rem 1rem;
 	margin: 4rem 0 0 0 !important;
 	text-align: center;
-	}
+}
 
 .yarpp-related ul {
 	list-style: none;
-	}
+}
 
 .the-tags {
 	background-color: rgba(0,0,0,.04);
 	padding: 2rem 1rem 1rem 1rem;
 	text-align: center;
-	}
+}
 
 /* Footer ---------------- */
 
 #subfooter {
 	margin: 5rem 0 0 0;
-	}
+}
 
 footer,
 #subfooter {
 	padding: 5rem 0 5rem 0;
-	}
+}
 
 footer ul li {
 	margin-bottom: 1rem;
-	}
+}
 
 #copyright {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-	}
+}
 
 
 /* Comments
 ----------------------------------- */
 .comments-area {
 	margin-top: 2rem;
-	}
+}
 
 .comment {
 	padding: 1rem 0;
@@ -170,33 +170,33 @@ footer ul li {
 	margin-top: 2rem;
 	border-radius: 5px;
 	border: 2px solid rgba(0,0,0,0.04);
-	}
+}
 
 .comment-body {
 	background-color: rgba(0,0,0,.02);
 	padding: 1rem;
 	margin: 1rem 1rem 0 1rem;
-	}
+}
 
 .comment .star-rating {
 	margin-left: 1rem;
 	margin-bottom: 2rem;
-	}
+}
 
 /* Static slides
 ----------------------------------- */
 
 .static-slides {
 	padding: 4rem 0;
-	}
+}
 
 .static-slides .row {
 	padding: 2rem 8rem;
-	}
+}
 
 .static-slides h3 {
 	line-height: 3rem;
-	}
+}
 
 .static-slides .badge {
 	float: left;
@@ -208,7 +208,7 @@ footer ul li {
 	border-radius: 50% 50%;
 	min-width: 30px;
 	margin-right: 1rem;
-	}
+}
 
 /* Images
 ----------------------------------- */
@@ -225,49 +225,49 @@ footer ul li {
 
 .alignright {
 	float: right;
-	}
+}
 
 .aligncenter {
 	float: right;
-	}
+}
 
 #content img {
 	border-radius: 5px;
-	}
+}
 
 img.alignnone,
 img.aligncenter {
 	margin: 1.5rem 0;
-	}
+}
 
 img.alignleft {
 	float: left;
 	padding: 0 2rem 1rem 0;
 	border-radius: 5px;
-	}
+}
 
 img.alignright {
 	float: right;
 	margin: 0 0 2rem 2rem;
 	border-radius: 5px;
-	}
+}
 
 h2 img.alignright {
 	margin-top: .5rem;
-	}
+}
 
 /* Galleries */
 
 
 .wp-caption {
-	}
+}
 
 .wp-caption-text {
-	}
+}
 
 .gallery-caption {
 	padding: 1rem 0;
-	}
+}
 
 /* Video
 ----------------------------------- */
@@ -278,7 +278,7 @@ h2 img.alignright {
 	position: relative;
 	height: 0;
 	margin: 2rem 0;
-	}
+}
 
 .responsive-iframe iframe{
   left: 0;
@@ -286,18 +286,18 @@ h2 img.alignright {
   height: 100%;
   width: 100%;
   position: absolute;
-	}
+}
 
 iframe {
 	/* forcing width is causing some crappy looking letterboxing on videos with height/width specified.*/
 	/* width: 100%;*/
 	border-radius: 3px;
 	border: solid rgba(0,0,0,0.05) 3px;
-	}
+}
 
 iframe:hover {
 	border: solid rgba(0,0,0,0.3) 3px;
-	}
+}
 
 /* CQC Widget
 ----------------------------------- */
@@ -311,7 +311,7 @@ iframe:hover {
 ----------------------------------- */
 
 .text-muted {
-	}
+}
 
 
 
@@ -320,29 +320,29 @@ iframe:hover {
 ul#local-services-selector li {
 	padding: .5rem 0;
 	border-bottom: 1px dotted #ccc;
-	}
+}
 
 ul#local-services-selector li a {
 	padding: 1.2rem 0;
 	display: block;
 	font-weight: bold;
-	}
+}
 
 ul#local-services-selector li:last-child {
 	border: none;
-	}
+}
 
 /* ---- LOOP: Archive Short ----- */
 
 .loop-archive-short ul li {
-	}
+}
 
 /* ---- LOOP: Taxonomy ----- */
 
 .loop-taxonomy .row {
 
 	margin: 2.5rem 0;
-	}
+}
 
 /* ---- LOOP -----*/
 
@@ -367,23 +367,23 @@ ul#local-services-selector li:last-child {
 
 #content a, footer a {
 	font-weight: 700;
-	}
+}
 
 #content h2 a {
 	font-weight: normal;
-	}
+}
 
 #sidebar .child-menu a {
 	text-decoration: none;
-	}
+}
 
 #sidebar .sidebar-container {
 	margin-top: 1.5rem;
-	}
+}
 
 #sidebar div:first-child {
 	margin-top: 0px;
-	}
+}
 
 #content a[href*="sharepoint"],
 #content a[href$=".pdf"],
@@ -409,18 +409,18 @@ ul#local-services-selector li:last-child {
 	text-decoration: none;
 	float: left;
 	color: rgba(0,0,0,0.60);
-	}
+}
 
 #content a[href$=".pdf"]:after {
 	content: " / PDF";
 	color: rgba(0,0,0,0.5);
-	}
+}
 
 #content a[href$=".doc"]:after,
 #content a[href$=".docx"]:after {
 	content: " / Word";
 	color: rgba(0,0,0,0.5);
-	}
+}
 
 #content a[href*="sharepoint"]:hover,
 #content a[href$=".pdf"]:hover,
@@ -431,7 +431,7 @@ ul#local-services-selector li:last-child {
 	border-color: #7A9A01;
 	color: #fff;
 	outline: none;
-	}
+}
 
 #content a[href*="sharepoint"]:hover:before,
 #content a[href$=".pdf"]:hover:before,
@@ -442,26 +442,26 @@ ul#local-services-selector li:last-child {
 #content a[href$=".doc"]:hover:after,
 #content a[href$=".docx"]:hover:after {
 	color: #fff;
-	}
+}
 
 #content a[href*="sharepoint"]:before {
 	content: "\f381";
 	font-family: 'Font Awesome 5 Pro';
 	font-weight: 900;
-	}
+}
 
 a[href$=".pdf"]:before {
 	font-family: 'Font Awesome 5 Pro';
 	content:"\f1c1 ";
 	font-weight: 400;
-	}
+}
 
 a[href$=".doc"]:before,
 a[href$=".docx"]:before {
 	font-family: 'Font Awesome 5 Pro';
 	content:"\f1c2 ";
 	font-weight: 900;
-	}
+}
 
 /* Buttons
 ----------------------------------- */
@@ -477,18 +477,18 @@ a[href$=".docx"]:before {
 	white-space: normal;
 	font-size: 1.8rem;
 	font-weight: 700;
-	}
+}
 
 .btn:after {
 	content: " \f105";
 	font-family: 'Font Awesome 5 Pro';
 	padding-left: .5rem;
 	font-weight: 900;
-	}
+}
 
 .btn:hover:after {
 	color: rgba(255,255,255,.6);
-	}
+}
 
 .btn-primary {
 	border-width: 1px;
@@ -497,7 +497,7 @@ a[href$=".docx"]:before {
 	text-shadow: none;
 	font-family: inherit;
 	box-shadow: none;
-	}
+}
 
 /* Agnosia Bootstrap Carousel by AuSoft
 ----------------------------------------------- */
@@ -505,27 +505,27 @@ a[href$=".docx"]:before {
 .carousel {
 	margin-top: 4rem;
 	margin-bottom: 1rem;
-	}
+}
 
 .home .carousel {
 	margin-top: 5rem !important;
-	}
+}
 
 .carousel img {
 	background-size: contain;
 	width: 100%;
-	}
+}
 
 .carousel-caption h2 {
 	font-size: 6rem;
 	text-transform: uppercase;
 	color: rgba(255,255,255,0.80);
 	text-align: left;
-	}
+}
 
 .carousel-control {
 	font-size: 12rem;
-	}
+}
 
 
 	/* ------ Agnosia Carousel FADE ------ */
@@ -563,7 +563,7 @@ a[href$=".docx"]:before {
 
 #content table {
 	width: 100%;
-	}
+}
 
 
 /* Media (Bootstrap)
@@ -573,36 +573,36 @@ a[href$=".docx"]:before {
     background-color: rgba(0,0,0,:;);
 	padding: 2rem;
 	border-top: 5px solid rgba(0,0,0,0.06);
-	}
+}
 
 .media h2, .media h3 {
 	padding-top: 0;
 	margin-top: 0;
 	font-size: 2rem;
 	line-height: 3rem;
-	}
+}
 
 .media .media-body {
 	/* replaces zoom: 1 in bootstrap */
 	transform: scale(1);
-	}
+}
 
 .media-body {
 	margin-bottom: 1rem;
-	}
+}
 
 img.media-object {
 	max-width: none;
-	}
+}
 
 img.media-object {
 	border-radius: 50% 50% !important;
 	background-color: #fff;
-	}
+}
 
 #sidebar img.media-object {
 	max-width: 100px;
-	}
+}
 
 
 /* Alerts
@@ -611,11 +611,11 @@ img.media-object {
 	padding: 1.2rem;
 	font-size: 2rem;
 	font-weight: 700;
-	}
+}
 
 .alert button span {
 	font-weight: bold;
-	}
+}
 
 /* Clips
 ---------------------------------------- */
@@ -623,7 +623,7 @@ img.media-object {
 #subfooter {
 	-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-	}
+}
 
 
 /* Simple Staff List plugin
@@ -631,21 +631,21 @@ img.media-object {
 
 .staff-member-info-wrap {
 	width: 90% !important;
-	}
+}
 
 .staff-member-info-wrap img {
 	float: right !important;
 	padding: 0 0 1rem 1rem;
 	border-radius: 0px !important;
-	}
+}
 
 div.staff-member {
 	margin-bottom: 2rem;
-	}
+}
 .staff-member-info-wrap h2 {
 	margin: 0;
 	padding: 0 0 1rem 0 !important;
-	}
+}
 
 /* Calendar
 ---------------------------------------- */
@@ -657,39 +657,39 @@ div.staff-member {
 	color: #0080A4;
 	background-color: rgba(0,0,0,.04);
 	text-decoration: none;
-	}
+}
 
 .yarpp-thumbnail:hover {
   outline: none;
   color: #23527c;
 	text-decoration: underline;
-	}
+}
 
 .yarpp-thumbnail > img, .yarpp-thumbnail-default {
 	width: 20% !important;
 	height: auto !important;
 	float: left !important;
-	}
+}
 
 .yarpp-thumbnails-horizontal .yarpp-thumbnail-title {
 	max-height: none !important;
 	width: 70% !important;
 	float: right !important;
 	padding-top: 2rem !important;
-	}
+}
 
 /* Signposts */
 #signposts-selector,
 #feedback-selector,
 #children-selector {
 	background-color: ;
-	}
+}
 
 #signposts-selector.row::before,
 #feedback-selector.row::before,
 #children-selector.row::before {
 	display: none;
-	}
+}
 
 .signpost-container,
 .choice-container,
@@ -700,7 +700,7 @@ div.staff-member {
 	border: #FFFFFF solid 2px !important;
 	text-align: center;
 	position: relative;
-	}
+}
 
 .choice-container {
 	padding: 0;

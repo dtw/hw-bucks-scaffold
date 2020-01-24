@@ -3,11 +3,11 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #111;
-	}
+}
 
 h1, h2, h3, h4 {
 	font-family: 'Bitter', serif;
-	}
+}
 
 /* --- Headings --- */
 
@@ -16,24 +16,24 @@ h1 {
 	font-size: 3rem;
 	line-height: 4rem;
 	font-weight: 700;
-	}
+}
 
 #subfooter h2 {
 	padding-bottom: 0;
-	}
+}
 
 #sidebar h3 {
 	padding: 0 0 .5rem 0;
-	}
+}
 
 .post h3 {
 	padding: 0 0 .5rem 0;
 	margin: 0;
-	}
+}
 
 .loop-taxonomy h3 {
 	margin-top: .5rem;
-	}
+}
 
 
 #sidebar > h2,
@@ -42,7 +42,7 @@ h1 {
 .single #content h2:first-child {
 	margin-top: 0;
 	padding-top: 0;
-	}
+}
 
 
 /* Font sizes and line heights
@@ -51,90 +51,90 @@ h1 {
 p, li {
 	font-size: 1.6rem;
 	line-height: 2.4rem;
-	}
+}
 
 h3 {
 	font-size: 1.9rem;
 	line-height: 2.6rem;
-	}
+}
 
 #sidebar h3 {
 	font-size: 1.8rem;
 	line-height: 2.4rem;
-	}
+}
 
 .page-header p {
 	font-size: 2rem;
 	text-shadow: none;
 	line-height: 3rem;
 	margin-bottom: 0px;
-	}
+}
 
 input[type="submit"] {
 	font-size: 2.4rem;
-	}
+}
 
 h2 {
 	font-size: 2.5rem;
 	padding: 0 0 1rem 0;
 	/*margin-bottom: 2rem;*/
 	line-height: 3rem;
-	}
+}
 
 #content h2 {
 	padding-bottom: 0;
-	}
+}
 
 .post h2 {
 	padding-top: 0;
 	margin-top: 0;
-	}
+}
 
 h3 {
 	padding: 2rem 0;
-	}
+}
 
 footer h3 {
 	font-size: 2.4rem;
 	padding-bottom: 1rem;
-	}
+}
 
 #footer-mailchimp h2 {
 	color: #fff;
-	}
+}
 
 .loop-taxonomy h3 {
 	padding: 0 0 0 0;
-	}
+}
 
 h4 {
 	padding-top: 1rem;
 	line-height: 2.6rem;
-	}
+}
 
 footer p, footer li {
 	font-size: 1.7rem;
-	}
+}
 
 p.lead {
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	}
+}
 
 .home p.lead {
 	border: none;
-	}
+}
 
 
 .date {
 	padding: 1rem 0;
 	margin: auto;
-	}
+}
 
 .date span {
 	font-size: 1.5rem;
 	display: block;
-	}
+}
 
 /* Horizontal rule
 ----------------------------------- */
@@ -143,7 +143,7 @@ hr {
 	margin: 3rem 0 2rem 0;
 	border-top: #777 1px dashed;
 	clear: both;
-	}
+}
 
 /* Lists
 ----------------------------------- */
@@ -151,7 +151,7 @@ hr {
 #content ul li,
 #content ol li {
 	padding-bottom: 1rem;
-	}
+}
 
 
 /* Blockquote
@@ -164,13 +164,13 @@ blockquote {
 	font-style: italic;
 	border-left: 5px solid #e73e97;
 	background: #f9f9f9;
-	}
+}
 
 blockquote br {
 	margin: 2rem;
 	content: "";
 	display: block;
-	}
+}
 
 .comment blockquote {
 	font-size: 1.6rem;
@@ -179,12 +179,12 @@ blockquote br {
 	font-style: italic;
 	border-left: 3px solid rgb(35, 82, 124);
 	background: rgba(0,0,0,0.02);
-	}
+}
 
 div.comment-content {
 	padding: 2rem;
 	background: #f9f9f9;
-	}
+}
 
 blockquote p:first-child:before,
 div.comment-content p:first-child:before {
@@ -194,7 +194,7 @@ div.comment-content p:first-child:before {
 	font-weight: bold;
 	font-family: Bitter;
 	font-style: italic;
-	}
+}
 
 blockquote p:last-child:after,
 div.comment-content p:last-child:after {
@@ -204,21 +204,21 @@ div.comment-content p:last-child:after {
 	font-weight: bold;
 	font-family: Bitter;
 	font-style: italic;
-	}
+}
 
 .response blockquote {
 	padding-left: 0;
-	}
+}
 
 .response blockquote:after,
 .response blockquote:before {
 	padding: 0;
 	margin: 0;
 	content: "";
-	}
+}
 
 .screen-reader-text {
-	}
+}
 
 /* Links
 ----------------------------------- */
@@ -226,12 +226,12 @@ div.comment-content p:last-child:after {
 a {
 	color:  #0080A4;
 	text-decoration: underline;
-	}
+}
 
 footer a,
 #subfooter a {
 	text-decoration: none;
-	}
+}
 
 footer a:hover,
 #subfooter a:hover,
@@ -240,11 +240,11 @@ footer a:hover,
 	text-decoration: underline;
 	background-color: inherit !important;
 	outline: none !important;
-	}
+}
 
 a:hover, a:focus {
 	background-color: #0080A4;
 	color: rgba(255,255,255,1.00);
 	outline: 3px solid #0080A4;
 	text-decoration: none;
-	}
+}

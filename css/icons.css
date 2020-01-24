@@ -7,13 +7,13 @@
 	width: 3.5rem;
 	/* font-weight: 700; */
 	padding-left: 1px;
-	}
+}
 
 .far.shortcode-icon {
 	width: 3.5rem;
 	/* font-weight: 400; */
 	padding-left: 1px;
-	}
+}
 
 .fa.fa-star.fa-lg.shortcode-icon {
 	width: auto;
@@ -25,21 +25,21 @@
 
 .social-icons a {
 	margin: 1rem 1.5rem 0 0;
-	}
+}
 
 .social-icons a:last-child {
 	margin-right: 0;
-	}
+}
 
 .social-icons i:hover {
 	border-bottom: 4px solid white;
 	margin-bottom: 0px;
-	}
+}
 
 .social-icons i {
 	margin-bottom: 4px;
 	padding-bottom: 2px;
-	}
+}
 
 .mc-icons {
 	color: #fff;
@@ -60,11 +60,11 @@
 	width: 2.5rem;
 	/* font-weight: 700; */
 	padding-left: 1px;
-	}
+}
 
 /* Featured images
 ------------------------------------ */
 
 .category #content .attachment-thumbnail {
 	background: rgba(0,0,0,0.02);
-	}
+}

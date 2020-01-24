@@ -3,32 +3,32 @@
 
 form {
 	margin: 3rem 0;
-	}
+}
 
 form ul {
 	-webkit-padding-start: 0;
-	}
+}
 
 form li {
 	list-style: none;
-	}
+}
 
 form legend, form label {
 	font-family: Bitter, serif;
-	}
+}
 
 form fieldset {
 	margin: 3rem 0;
-	}
+}
 
 form legend {
 	border: none;
-	}
+}
 
 form label {
 	vertical-align: top;
 	padding: .5rem 1rem 0 0;
-	}
+}
 
 form input[type="text"],
 form input[type="email"],
@@ -40,7 +40,7 @@ form select {
 	letter-spacing: .1rem;
 	border: #96df46 1px solid; /* Green */
 	border-radius: 5px;
-	}
+}
 
 form input[type="submit"] {
 	background-color: #004f6b; /* Blue */
@@ -52,11 +52,11 @@ form input[type="submit"] {
 	border-radius: 5px;
 	font-size: 1.8rem;
 	margin-top: 1rem;
-	}
+}
 
 form input[type="submit"]:hover {
 	background-color: #e73e97; /* Pink */
-	}
+}
 
 /* embedded MC form */
 #mailchimp-container {
@@ -98,13 +98,13 @@ form input[type="submit"]:hover {
 	width: 100%;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
-	}
+}
 
 #searchform input[type="search"] {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 	border-right: none;
-	}
+}
 
 /* Ajax autocompleting search form
 ----------------------------------- */
@@ -117,11 +117,11 @@ form input[type="submit"]:hover {
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(233,233,233);
-	}
+}
 
 .widget_search h2 {
 	margin-bottom: 1rem;
-	}
+}
 
 /* PT add - style search box in sidebar */
 
@@ -129,7 +129,7 @@ form input[type="submit"]:hover {
 	border-bottom: 3px solid rgba(0,0,0,0.1);
 	border-radius: 0px;
 	margin: 0 0 2rem 0;
-	}
+}
 
 #sidebar .probox .proinput input.orig::placeholder {
 	font-size: 1.4rem;
@@ -143,21 +143,21 @@ form input[type="submit"]:hover {
 	padding: 2rem;
 	margin: 0 0 2rem 0;
 	border-style: none;
-	}
+}
 
 div[class*='ajaxsearchpro'] {
 	margin: 0 auto !important;
 	border-radius: 5px !important;
-	}
+}
 
 footer .AjaxSearchProWidget h3 {
 	display: none;
-	}
+}
 
 .ajaxsearchpro .results .item .asp_content h3 a:hover {
 	color: #fff !important;
 	outline: 1px solid #0080A4;
-	}
+}
 
 /* Gravity Forms
 ----------------------------------- */
@@ -172,75 +172,75 @@ ul.gform_fields {
 	-webkit-padding-start: 0;
 	padding-left: 0;
 	margin-left: 0;
-	}
+}
 
 ul.gform_fields li {
 	margin: 1rem 0 1rem 0;
-	}
+}
 
 form .validation_error,
 form .validation_message {
 	color: #e73e97;
 	font-weight: bold;
-	}
+}
 
 form span.name_first, form span.name_last {
 	width: 48%;
-	}
+}
 
 form span.name_first {
 	float: left;
-	}
+}
 
 form span.name_last {
 	float: right;
-	}
+}
 
 form span label {
 	font-weight: normal;
-	}
+}
 
 form .gfield_required {
 	color: #e73e97; /* Pink */
 	margin-left: .5rem;
-	}
+}
 
 .ginput_complex span {
 	margin-bottom: 2rem;
-	}
+}
 
 .gform_description {
 	padding-bottom: 2rem;
 	display: block;
-	}
+}
 
 .gform_confirmation_wrapper {
 	font-weight: bold;
 	margin-top: 3rem;
 	font-size: 3rem;
 	color: #e73e97; /* Core pink */
-	}
+}
 
 .g-recaptcha iframe {
 	width: 100%;
 	margin-top: 0px;
 	border-radius: 0px;
 	border: none;
-	}
+}
 
 #gglcptch_error {
 	width: 100%;
 	font-size: 3rem;
-	}
+}
 
 .gfield_description {
 	font-style: italic;
 	padding-bottom: .5rem;
-	}
+}
 
 #content ul.gfield_checkbox li {
 	padding-bottom: 0;
-	}
+}
 
 /* PT added */
 ul.gfield_checkbox {
@@ -253,11 +253,11 @@ ul.gfield_checkbox li label {
 	font-family: inherit;
 	font-weight: normal;
 	padding: 0;
-	}
+}
 
 .gfield_required {
 	display: none;
-	}
+}
 
 /* Focus
 ------------------------------------------------- */
@@ -268,7 +268,7 @@ ul.gfield_checkbox li label {
 	box-shadow: none;
 	color: #000;
 	letter-spacing: .1rem;
-	}
+}
 
 /* Validation
 ------------------------------------------------- */
@@ -277,7 +277,7 @@ ul.gfield_checkbox li label {
 	background-image: url(../images/asterisk.png);
 	background-repeat: no-repeat;
 	background-position: 90% 50%;
-	}
+}
 
 /* PT added */
 #content .gfield_hwbucks_privacy [aria-required=true] {
@@ -303,17 +303,17 @@ ul.gfield_checkbox li label {
 	background-repeat: no-repeat;
 	background-position: 98% 50%;
 	border: #e73e97 1px solid; /* Pink */
- 	}
+ }
 
 #content select:required,
 #content select[aria-required=true] {
 	background-position: 94% 50%;
-	}
+}
 
 #content textarea:required,
 #content textarea[aria-required=true] {
 	background-position: 98% 10px;
-	}
+}
 
 
 
@@ -330,7 +330,7 @@ form#mc-embedded-subscribe-form input[type="email"] {
 	font-size: 1.8rem;
 	width: 300px;
 	max-width: 100%;
-	}
+}
 
 form#mc-embedded-subscribe-form input[type="submit"] {
 	font-weight: 700;
@@ -338,11 +338,11 @@ form#mc-embedded-subscribe-form input[type="submit"] {
 	font-size: 1.8rem;
 	letter-spacing: .1rem;
 	margin-left: 1rem;
-	}
+}
 
 form#mc-embedded-subscribe-form input[type="submit"]:hover {
 	background-color: #e73e97; /* pink */
-	}
+}
 
 form#mc-embedded-subscribe-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #3F7188; }
