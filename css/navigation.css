@@ -350,3 +350,14 @@ div.child-nav-img {
 	background-color:	#23527c;
 	outline: 3px solid #23527c;
 }
+
+/* Pagination
+------------------------------------------------- */
+
+.wp-paginate .current {
+	background-color: #3F7188 !important;
+}
+
+.wp-paginate a {
+	background-color: #FAFAFA !important;
+}
