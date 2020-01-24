@@ -247,4 +247,5 @@ a:hover, a:focus {
 	color: rgba(255,255,255,1.00);
 	outline: 3px solid #0080A4;
 	text-decoration: none;
+	outline-offset: 0;
 }
