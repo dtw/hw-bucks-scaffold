@@ -444,7 +444,15 @@ ul#local-services-selector li:last-child {
 #content a[href*="sharepoint"]:hover:after,
 #content a[href$=".pdf"]:hover:after,
 #content a[href$=".doc"]:hover:after,
-#content a[href$=".docx"]:hover:after {
+#content a[href$=".docx"]:hover:after,
+#content a[href*="sharepoint"]:focus:before,
+#content a[href$=".pdf"]:focus:before,
+#content a[href$=".doc"]:focus:before,
+#content a[href$=".docx"]:focus:before,
+#content a[href*="sharepoint"]:focus:after,
+#content a[href$=".pdf"]:focus:after,
+#content a[href$=".doc"]:focus:after,
+#content a[href$=".docx"]:focus:after  {
 	color: #fff;
 }
 
