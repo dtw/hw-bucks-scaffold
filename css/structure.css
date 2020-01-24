@@ -883,7 +883,7 @@ a.child-details:focus {
 	padding: 2px 8px;
 	display: inline-block;
 	border-radius: 3px;
-	color: #e73e97 !important;
+	color: #af5192 !important;
 	text-decoration: none !important;
 }
 
@@ -894,7 +894,7 @@ a.child-details:focus {
 .the-taxonomies-archive a:focus,
 .the-tags p a:focus {
 	color: white !important;
-	background-color: #e73e97 !important;
+	background-color: #af5192 !important;
 	outline: none !important;
 	text-decoration: none !important;
 }
