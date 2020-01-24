@@ -367,6 +367,10 @@ div.child-nav-img {
 	background-color: #3F7188 !important;
 }
 
+.wp-paginate .gap {
+	color: #666666 !important;
+}
+
 .wp-paginate a {
 	background-color: #FAFAFA !important;
 }
