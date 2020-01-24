@@ -339,3 +339,14 @@ div.child-nav-img {
 	/* margin-bottom: 2rem;
 	background: rgba(0,0,0,.2); */
 }
+
+#breadcrumbs a {
+	color: #23527c;
+}
+
+#breadcrumbs a:hover,
+#breadcrumbs a:focus {
+	color: #FAFAFA;
+	background-color:	#23527c;
+	outline: 3px solid #23527c;
+}
