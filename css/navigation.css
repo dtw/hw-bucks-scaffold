@@ -234,6 +234,15 @@
     font-family: "Bitter", serif;
 }
 
+.advanced-sidebar-menu a {
+	color: #23527c;
+}
+
+.advanced-sidebar-menu a:hover,
+.advanced-sidebar-menu a:focus {
+	color: #FAFAFA;
+}
+
 .advanced-sidebar-menu ul:first-child {
     background-color: rgba(0,0,0,0.035);
 		border-bottom: 3px solid rgba(0,0,0,0.1);
