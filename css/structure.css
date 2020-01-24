@@ -723,7 +723,7 @@ div.staff-member {
 .choice-container:hover .choice-details,
 .children-container:hover .child-details {
 	min-height: 50%;
-	background-color: rgb(35, 82, 124, 0.8);
+	background-color: rgb(35, 82, 124, 0.85);
 	transition: min-height 350ms linear;
 }
 
@@ -739,7 +739,7 @@ div.staff-member {
 a.signpost-details:focus,
 a.choice-details:focus,
 a.child-details:focus {
-	background-color: rgb(35, 82, 124, 0.8);
+	background-color: rgb(35, 82, 124, 0.85);
 	outline: none;
 }
 
@@ -818,7 +818,7 @@ a.child-details:focus {
 	transition: all 100ms linear;
 	overflow: hidden;
 	font-weight: normal;
-	color: rgb(35, 82, 124, 0.8);
+	color: rgb(35, 82, 124, 0.85);
 }
 
 /* Improved tags and category links */
