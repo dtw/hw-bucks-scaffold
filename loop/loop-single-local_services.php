@@ -52,7 +52,7 @@
 
 		<?php if ( get_post_meta( $post->ID, 'hw_services_website', true ) )  { ?>
 			<p><i class="fas fa-external-link-alt service-icon" aria-hidden="true" title="Website"></i>
-            	<a target="_blank"  href="http://<?php echo get_post_meta( $post->ID, 'hw_services_website', true ); ?>" title="<?php the_title(); ?>" >Visit their website &raquo;</a><br />
+            	<a target="_blank"  href="<?php echo esc_url(get_post_meta( $post->ID, 'hw_services_website', true )); ?>" title="<?php the_title(); ?>" >Visit their website &raquo;</a><br />
 			        </p>
 						<?php } ?>
 
