@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.1] - 2020-01-24
+### Added
+- fix cookie notice to top of page for screen readers with CSS
+- new wrapper for navbar items to help with spacing (nav-spacer)
+
+### Changed
+- fixed some hover effects
+- minor CSS changes
+
 ## [1.5.0] - 2020-01-21
 ### Added
 - theme config for an alt logo (for dark mode)
