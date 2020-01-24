@@ -147,6 +147,10 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		padding-top: 0px;
 	}
 
+	.navbar-brand {
+		padding-top: 2rem;
+		}
+
 	.navbar-brand img {
 		/*max-width: 140px;*/
 		padding-left: 1.5rem;
@@ -160,7 +164,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-	/* Mobile menu */
 
 	.tagline {
 		margin-bottom: 0px;
@@ -169,6 +172,8 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	.tagline .email {
 		text-align: left;
 	}
+
+	/* Mobile menu */
 
 	.navbar-collapse {
 		float: none !important;
@@ -205,10 +210,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		text-align: left;
 		}
 
-	.navbar-brand {
-		padding-top: 2rem;
-		}
-
 	.lead {
 		font-size: 1.8rem;
 		}
@@ -225,7 +226,8 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	.date span {
 		display: inline;
 		}
-/* PT add */
+
+	/* signposts menu */
 	#signpost-categories ul {
 		justify-content: space-between;
 		}
@@ -369,17 +371,29 @@ Annoyingly different from Bootstrap! */
 	}
 }
 
-/* cookie notice breakpoints */
+/*
+Cookie Notice plugin
+
+The content of the notice wraps around, increasing the height of the notice,
+as the screen width decreases. Changes to the content will change the breakpoints
+needed to maintain the spacing.
+
+This is horrible and hacky.
+*/
+
 @media (min-width: 1200px) {
 	#cookie-notice .cookie-notice-visible {
+		/* fix the height (roughly based on content */
 		height: 96px;
 	}
 
 	.cookies-not-set #nav {
+		/* this class is placed by the plugin on <body> while the notice shows */
 		top: 96px;
 	}
 
 	.cookies-not-set {
+		/* this is the height of #nav + the height of the notice */
 		padding-top: calc(125px + 96px);
 	}
 }
