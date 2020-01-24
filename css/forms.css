@@ -154,6 +154,10 @@ footer .AjaxSearchProWidget h3 {
 	display: none;
 }
 
+.ajaxsearchpro .results .item .asp_content h3 {
+	line-height: inherit !important;
+}
+
 .ajaxsearchpro .results .item .asp_content h3 a:hover,
 .ajaxsearchpro .results .item .asp_content h3 a:focus {
 	color: #fff !important;
