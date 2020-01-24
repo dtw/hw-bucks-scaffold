@@ -425,10 +425,14 @@ ul#local-services-selector li:last-child {
 #content a[href*="sharepoint"]:hover,
 #content a[href$=".pdf"]:hover,
 #content a[href$=".doc"]:hover,
-#content a[href$=".docx"]:hover {
+#content a[href$=".docx"]:hover,
+#content a[href*="sharepoint"]:focus,
+#content a[href$=".pdf"]:focus,
+#content a[href$=".doc"]:focus,
+#content a[href$=".docx"]:focus {
 	text-decoration: none;
-	background-color: #7A9A01;
-	border-color: #7A9A01;
+	background-color: #af5192;
+	border-color: #af5192;
 	color: #fff;
 	outline: none;
 }
