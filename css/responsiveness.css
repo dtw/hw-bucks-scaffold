@@ -6,40 +6,40 @@
 @media (prefers-color-scheme: no-preference) {
 	#navbar-brand-alt {
 		display: none;
-		}
 	}
+}
 
 @media (prefers-color-scheme: light) {
   #navbar-brand-alt {
 		display: none;
-		}
 	}
+}
 
 @media (prefers-color-scheme: dark) {
   #navbar-brand {
 		display: none;
-		}
+	}
 
 	#navbar-brand-alt {
 		display: block !important;
-		}
 	}
+}
 
 /* LARGE --- lg --- 1,200px and above --- */
 
 @media (min-width: 1200px) {
 	.choice-container {
 		height: 200px;
-		}
+	}
 
 	#menu-main {
 		margin-top: 9px;
-		}
+	}
 
 	#nav-spacer {
 		padding-bottom: 1.6rem;
-		}
 	}
+}
 
 
 /* MEDIUM --- md --- 992px and above --- */
@@ -48,19 +48,19 @@
 	.no-gutter {
 		padding-left: 0;
 		padding-right: 0;
-		}
+	}
 
 	/* from hwbucks-scaffold-child style.css */
 	.subitem {
 		transition: 400ms ease-out 100ms;
 		min-height: 215px;
-		}
+	}
 
 	/* more padding on panels */
 	.home .panel {
 		padding: 2rem;
-		}
 	}
+}
 
 /* SMALL to MEDIUM --- xs --- 768px and above --- */
 
@@ -75,23 +75,23 @@
 @media (max-width: 1199px) {
 	body {
 		padding-top: 142px;
-		}
+	}
 
 	.navbar-nav > li > a {
 		padding-left: .7rem;
 		padding-right: .7rem;
 		font-size: 1.5rem;
-		}
+	}
 
 	.navbar-brand img {
 		max-width: 160px;
-		}
+	}
 
 	.navbar {
 		padding-bottom: 0rem;
 		min-height: 12.7rem;
-		}
 	}
+}
 
 /* SMALL --- sm --- 991px and below --- */
 
@@ -108,21 +108,21 @@
 	h1 {
 		font-size: 2rem;
 		line-height: 3rem;
-		}
+	}
 
 	.page-header p {
 		font-size: 1.8rem;
 		line-height: 2.6rem;
-		}
+	}
 
 	.social-icons {
 		text-align: left;
-		}
-
-		#sidebar {
-			padding-left:0;
-		}
 	}
+
+	#sidebar {
+		padding-left:0;
+	}
+}
 
 
 /* EXTRA SMALL --- xs --- 768px and below ---
@@ -132,7 +132,7 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 @media only screen and (max-width: 767px) {
 	body {
 		padding-top: 13.9rem;
-		}
+	}
 
 	#content {
 		padding-right: 0px;
@@ -149,7 +149,7 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 
 	.navbar-brand {
 		padding-top: 2rem;
-		}
+	}
 
 	.navbar-brand img {
 		/*max-width: 140px;*/
@@ -179,93 +179,93 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		float: none !important;
 		width: 100%;
 		margin: auto !important;
-		}
+	}
 
 	.navbar-collapse li {
 		background-color: #3075AD;
 		border-bottom: 1px solid #5C9DD1;
-		}
+	}
 
 	.navbar-collapse a {
 		color: #fff;
 		padding: 1rem !important;
-		}
+	}
 
 	.navbar-collapse li:hover {
 		background-color: #5C9DD1;
-		}
+	}
 
 	.navbar-collapse a:hover,
 	.navbar-collapse a:focus {
 		color: #fff !important;
 		outline: none;
 		background-color: #5c9dd1 !important;
-		}
+	}
 
 	.navbar-collapse .current-menu-item a {
 		outline: none !important;
-		}
+	}
 
 	#subfooter .text-right {
 		text-align: left;
-		}
+	}
 
 	.lead {
 		font-size: 1.8rem;
-		}
+	}
 
 	.btn,
 	input[type="submit"] {
 		font-size: 1.4rem !important;
-		}
+	}
 
 	.date {
 		margin-bottom: 1rem;
-		}
+	}
 
 	.date span {
 		display: inline;
-		}
+	}
 
 	/* signposts menu */
 	#signpost-categories ul {
 		justify-content: space-between;
-		}
+	}
 
 	#signpost-categories ul li a {
 		font-size: 1.5rem;
-		}
+	}
 
 	.choice-container .choice-details {
 		min-height: 50%;
 		background-color: rgb(35, 82, 124, 0.8);
-		}
+	}
 
 	.choice-container .choice-details .hover-content {
 		/* max-height: 20%; */
 	  max-height: 500px;
 		color:white;
-		}
+	}
 
 	.choice-container {
 		height: 180px;
-		}
+	}
 
 	/* from structure.css */
 	.the-tags-archive a,
 	.the-taxonomies-archive a,
 	.the-tags p a {
 		margin-bottom: 3px;
-		}
+	}
 
 	.category-terms {
 		display:none;
-		}
+	}
 
 	.home .shade h2 {
 		font-size: 2rem;
 		padding-bottom: 0px;
-		}
+	}
 
 	/* from hwbucks-scaffold-child style.css */
 	.home .panel h2 {
@@ -274,33 +274,33 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		/* padding: 2rem 0 0 0; */
 		line-height: 3rem;
 		margin-bottom: 1rem;
-		}
+	}
 
 	.home .panel .title-link {
 		display: inline-block;
 		font-size: 2rem;
 		font-weight: 700 !important;
 		margin-bottom: 1rem;
-		}
+	}
 
 	.home .panel .city {
 		font-size: 2rem;
 		margin-bottom: 1rem;
-		}
+	}
 
 	.home .panel .panel-title-right,
 	.home .panel .panel-content-right {
 		padding-left: 0;
-		}
+	}
 
 	.visit-date {
 		font-size: 1.4rem;
-		}
+	}
 
 	.service-icon-md {
 		width: 80px;
 		height: 80px;
-		}
+	}
 }
 
 /* 480px and below --- */
@@ -312,47 +312,47 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		font-size: 1.1rem;
 		line-height: 2rem;
 		text-align: left; */
-		}
+	}
 
 	.navbar-toggle {
 		font-size: 2rem;
-		}
+	}
 
 	h2 {
 		font-size: 2rem;
-		}
+	}
 
 	div[class*='ajaxsearchpro'] ::-webkit-input-placeholder {
 		font-size: 1.2rem !important;
 		display: none;
-		}
+	}
 
 	div[class*='ajaxsearchpro'] ::-webkit-input-placeholder:before {
 		content:"Text goes here";
 		display: inline;
-		}
+	}
 
 	/* Phil added these 3 styles */
 
 	#text-8 h2{
 		padding: 0;
-		}
+	}
 
 	.wp-paginate .title {
 		 display: block;
-		}
 	}
+}
 
 /* Embedded Mailchimp form */
 @media only screen and (max-width: 480px) {
 	form#mc-embedded-subscribe-form input[type="submit"] {
 		margin-left: 0px;
-		}
+	}
 
 	#mc_embed_signup_scroll p {
 		margin-top: 1rem;
-		}
 	}
+}
 
 /* WordPress admin bar breakpoints!
 Annoyingly different from Bootstrap! */
