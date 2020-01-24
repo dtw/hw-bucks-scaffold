@@ -27,11 +27,11 @@ $total_comments = count($comments); ?>
 			$individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true );
 			if ($individual_rating) {
 				$star_count = 0; ?>
-				<p class="star-rating p-rating"><span title="<?php echo $individual_rating ?> out of 5 stars">
+				<p class="star-rating p-rating">
 					<?php
 						echo feedbackstarrating($individual_rating,array('size' => 'fa-lg'));
-						if ($individual_rating == 1) echo '</span><span class="screen-reader-text">'.$individual_rating.' star</span>';
-						else echo '</span><span class="screen-reader-text">'.$individual_rating.' stars</span>';
+						if ($individual_rating == 1) echo '<span class="screen-reader-text">'.$individual_rating.' star</span>';
+						else echo '<span class="screen-reader-text">'.$individual_rating.' stars</span>';
 					?>
      &mdash;
        <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>
