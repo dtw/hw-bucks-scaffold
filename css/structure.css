@@ -850,7 +850,8 @@ a.child-details:focus {
 	margin-bottom: 10px;
 }
 
-.category-terms a:hover {
+.category-terms a:hover,
+.category-terms a:focus {
 	color: rgb(35, 82, 124) !important;
 	background-color: white !important;
 	text-decoration: none !important;
@@ -867,7 +868,8 @@ a.child-details:focus {
 	margin-bottom: 0.5rem;
 }
 
-.the-tags p a:hover {
+.the-tags p a:hover,
+.the-tags p a:focus {
 	color: white !important;
 	background-color: rgb(35, 82, 124);
 	text-decoration: none !important;
@@ -887,7 +889,10 @@ a.child-details:focus {
 
 .the-tags-archive a:hover,
 .the-taxonomies-archive a:hover,
-.the-tags p a:hover {
+.the-tags p a:hover,
+.the-tags-archive a:focus,
+.the-taxonomies-archive a:focus,
+.the-tags p a:focus {
 	color: white !important;
 	background-color: #e73e97 !important;
 	outline: none !important;
