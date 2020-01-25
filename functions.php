@@ -147,10 +147,11 @@ if (!(is_admin() )) {
 	// if the url contains /wp-includes do nothing
 	if ( strpos( $url, '/wp-includes' ) ) return $url;
 	// if the url contains fontawesome kit, append crossorigin="anonymous"
-	if ( strpos( $url, '/c1c5370dea.js' ) ) return "$url' crossorigin='anonymous";
+	if ( strpos( $url, '/c1c5370dea.js' ) ) return str_replace(' src', ' crossorigin="anonymous" src', $url);
 	// Defer jQuery Parsing using the HTML5 defer property
 	// return "$url' defer ";
-	return "$url' defer ";
+	//return "$url' defer ";
+	if ( FALSE === strpos( $url, 'defer' ) ) return str_replace(' src', ' defer src', $url);
 	}
 	add_filter( 'clean_url', 'add_js_arguements', 11, 1 );
 }
