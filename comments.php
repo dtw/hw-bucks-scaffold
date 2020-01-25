@@ -5,7 +5,7 @@
  * The area of the page that contains comments and the comment form.
  *
  */
- 
+
 /*
  * If the current post is protected by a password and the visitor has not yet
  * entered the password we will return early without loading the comments.
@@ -15,7 +15,7 @@ if ( post_password_required() )
 ?>
 
 <div id="comments" class="comments-area">
- 
+
     <?php if ( have_comments() ) : ?>
         <h2 class="comments-title">
             <?php
@@ -23,7 +23,7 @@ if ( post_password_required() )
                     number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
             ?>
         </h2>
- 
+
         <ul class="comment-list">
             <?php
                 wp_list_comments( array(
@@ -35,7 +35,7 @@ if ( post_password_required() )
                 ) );
             ?>
         </ul><!-- .comment-list -->
- 
+
         <?php
             // Are there comments to navigate through?
             if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
@@ -46,13 +46,13 @@ if ( post_password_required() )
             <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'twentythirteen' ) ); ?></div>
         </nav><!-- .comment-navigation -->
         <?php endif; // Check for comment navigation ?>
- 
+
         <?php if ( ! comments_open() && get_comments_number() ) : ?>
         <p class="no-comments"><?php _e( 'Comments are closed.' , 'twentythirteen' ); ?></p>
         <?php endif; ?>
- 
+
     <?php endif; // have_comments() ?>
- 
+
     <?php comment_form(); ?>
- 
+
 </div><!-- #comments -->
