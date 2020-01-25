@@ -1,3 +1,10 @@
+/* CSS Variables
+-------------------------------- */
+:root {
+  --hw-pink: #e73e97;
+	--url-blue: #0080A4;
+}
+
 /* White
 -------------------------------- */
 
@@ -72,7 +79,7 @@ h1 {
 }
 
 .btn-primary {
-	background-color: #0080A4;
+	background-color: var(--url-blue);
 	color: #fff;
 	background-image: none;
 	text-decoration: none;
@@ -80,13 +87,13 @@ h1 {
 
 .btn-primary:hover {
 	background-color: #fff;
-	border-color: #0080A4;
-	color: #0080A4;
+	border-color: var(--url-blue);
+	color: var(--url-blue);
 	outline: none;
 }
 
 .btn:hover:after {
-	color: #0080A4;
+	color: var(--url-blue);
 }
 
 .btn-primary:hover:after {
@@ -94,7 +101,7 @@ h1 {
 }
 
 .page-header .btn-primary {
-	background-color: #0080A4;
+	background-color: var(--url-blue);
 	color: #fff;
 	background-image: none;
 	text-decoration: none;
@@ -102,8 +109,8 @@ h1 {
 
 .page-header .btn-primary:hover {
 	background-color: #fff;
-	color: #0080A4;
-	border-color: #0080A4;
+	color: var(--url-blue);
+	border-color: var(--url-blue);
 }
 
 /* Bootstrap Buttons for Panels */
@@ -133,27 +140,27 @@ h1 {
 }
 
 .panel-pink .btn-primary {
-	background-color: #F08BC0;
+	background-color: var(--hw-pink);
 	color: #fff;
 	background-image: none;
 }
 
 .panel-pink .btn-primary:hover {
 	background-color: #fff;
-	border-color: #F08BC0;
-	color: #F08BC0;
+	border-color: var(--hw-pink);
+	color: var(--hw-pink);
 }
 
 .panel-blue .btn-primary {
-	background-color: #0080A4;
+	background-color: var(--url-blue);
 	color: #fff;
 	background-image: none;
 }
 
 .panel-blue .btn-primary:hover {
 	background-color: #fff;
-	border-color: #0080A4;
-	color: #0080A4;
+	border-color: var(--url-blue);
+	color: var(--url-blue);
 }
 
 .panel-green .btn-primary {
