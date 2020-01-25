@@ -131,15 +131,15 @@ h1 {
 }
 
 .panel-orange .btn-primary {
-	background-color: #F79486;
+	background-color: var(--hw-orange);
 	color: white;
 	background-image: none;
 }
 
 .panel-orange .btn-primary:hover {
-	border-color: #F79486;
-	color: #F79486;
 	background-color: white;
+	border-color: var(--hw-orange);
+	color: var(--hw-orange);
 }
 
 .panel-pink .btn-primary {
