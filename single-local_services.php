@@ -40,7 +40,8 @@
 					$aCity = get_post_meta(get_the_ID(),'hw_services_city',true);
 					$aCounty = get_post_meta(get_the_ID(),'hw_services_county',true);
 					$aPostcode = get_post_meta(get_the_ID(),'hw_services_postcode',true);
-					$location = $aTitle . " " . $a1 . " " . $a2 . " " . $aCity . " " . $aCounty . " " . $aPostcode . " UK";
+					$location = $aTitle . "%20" . $a1 . "%20" . $a2 . "%20" . $aCity . "%20" . $aCounty . "%20" . $aPostcode . "%20UK";
+					$location = str_replace(' ', '%20', $location);
 					?>
 					<iframe width="1000" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?center=<?php echo $location; ?>&zoom=8&q=<?php echo $location; ?>&size=1000x500&output=embed&iwloc=near"></iframe>
 				</div>
