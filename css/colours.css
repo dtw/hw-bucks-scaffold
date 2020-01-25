@@ -24,7 +24,7 @@ h1,
 .page-header a,
 footer a:hover,
 #subfooter h2 {
-	color: #fff;
+	color: white;
 }
 
 
@@ -83,13 +83,13 @@ h1 {
 
 .btn-primary {
 	background-color: var(--url-blue);
-	color: #fff;
+	color: white;
 	background-image: none;
 	text-decoration: none;
 }
 
 .btn-primary:hover {
-	background-color: #fff;
+	background-color: white;
 	border-color: var(--url-blue);
 	color: var(--url-blue);
 	outline: none;
@@ -105,13 +105,13 @@ h1 {
 
 .page-header .btn-primary {
 	background-color: var(--url-blue);
-	color: #fff;
+	color: white;
 	background-image: none;
 	text-decoration: none;
 }
 
 .page-header .btn-primary:hover {
-	background-color: #fff;
+	background-color: white;
 	color: var(--url-blue);
 	border-color: var(--url-blue);
 }
@@ -120,60 +120,60 @@ h1 {
 
 .panel-turquoise .btn-primary {
 	background-color: #1CFFEF;
-	color: #fff;
+	color: white;
 	background-image: none;
 }
 
 .panel-turquoise .btn-primary:hover {
-	background-color: #fff;
+	background-color: white;
 	border-color: #1CFFEF;
 	color: #1CFFEF;
 }
 
 .panel-orange .btn-primary {
 	background-color: #F79486;
-	color: #fff;
+	color: white;
 	background-image: none;
 }
 
 .panel-orange .btn-primary:hover {
-	background-color: #fff;
 	border-color: #F79486;
 	color: #F79486;
+	background-color: white;
 }
 
 .panel-pink .btn-primary {
 	background-color: var(--hw-pink);
-	color: #fff;
+	color: white;
 	background-image: none;
 }
 
 .panel-pink .btn-primary:hover {
-	background-color: #fff;
+	background-color: white;
 	border-color: var(--hw-pink);
 	color: var(--hw-pink);
 }
 
 .panel-blue .btn-primary {
 	background-color: var(--url-blue);
-	color: #fff;
+	color: white;
 	background-image: none;
 }
 
 .panel-blue .btn-primary:hover {
-	background-color: #fff;
+	background-color: white;
 	border-color: var(--url-blue);
 	color: var(--url-blue);
 }
 
 .panel-green .btn-primary {
 	background-color: #0080A4;
-	color: #fff;
+	color: white;
 	background-image: none;
 }
 
 .panel-green .btn-primary:hover {
-	background-color: #fff;
+	background-color: white;
 	border-color: #0080A4;
 	color: #0080A4;
 }

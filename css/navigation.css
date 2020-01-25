@@ -28,7 +28,7 @@
 	font-size: 1.6rem;
 	font-family: Bitter;
 	font-weight: 700;
-	color: #fff;
+	color: white;
 	margin-bottom: 2rem;
 	background-color: rgb(35, 82, 124);
 	padding: .6rem .2rem 0 .2rem;
@@ -61,7 +61,7 @@
 }
 
 .textwidget .newsletter-link a {
-	color: #fff
+	color: white
 }
 
 .tagline .phone {

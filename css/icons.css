@@ -42,13 +42,13 @@
 }
 
 .mc-icons {
-	color: #fff;
+	color: white;
 	margin-right: 1rem;
 }
 
 .tagline i.fa,
 .tagline i.fab {
-	color: #fff !important;
+	color: white !important;
 }
 
 .tagline i.fa:hover,

@@ -200,7 +200,7 @@ footer ul li {
 
 .static-slides .badge {
 	float: left;
-	background-color: #fff;
+	background-color: white;
 	color: #000;
 	padding: .5rem;
 	font-weight: bold;
@@ -433,7 +433,7 @@ ul#local-services-selector li:last-child {
 	text-decoration: none;
 	background-color: #af5192;
 	border-color: #af5192;
-	color: #fff;
+	color: white;
 	outline: none;
 }
 
@@ -453,7 +453,7 @@ ul#local-services-selector li:last-child {
 #content a[href$=".pdf"]:focus:after,
 #content a[href$=".doc"]:focus:after,
 #content a[href$=".docx"]:focus:after  {
-	color: #fff;
+	color: white;
 }
 
 #content a[href*="sharepoint"]:before {
@@ -609,7 +609,7 @@ img.media-object {
 
 img.media-object {
 	border-radius: 50% 50% !important;
-	background-color: #fff;
+	background-color: white;
 }
 
 #sidebar img.media-object {
@@ -709,7 +709,7 @@ div.staff-member {
 	padding: 1rem 0;
 	margin: 0 0 2rem 0;
 	background-color: #F7F7F7;
-	border: #FFFFFF solid 2px !important;
+	border: white solid 2px !important;
 	text-align: center;
 	position: relative;
 }

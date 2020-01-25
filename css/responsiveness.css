@@ -187,7 +187,7 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	}
 
 	.navbar-collapse a {
-		color: #fff;
+		color: white;
 		padding: 1rem !important;
 	}
 
@@ -197,7 +197,7 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 
 	.navbar-collapse a:hover,
 	.navbar-collapse a:focus {
-		color: #fff !important;
+		color: white !important;
 		outline: none;
 		background-color: #5c9dd1 !important;
 	}
