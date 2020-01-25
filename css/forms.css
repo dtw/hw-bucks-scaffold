@@ -55,7 +55,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-	background-color: #e73e97; /* Pink */
+	background-color: var(--hw-pink); /* Pink */
 }
 
 /* embedded MC form */
@@ -185,7 +185,7 @@ ul.gform_fields li {
 
 form .validation_error,
 form .validation_message {
-	color: #e73e97;
+	color: var(--hw-pink);
 	font-weight: bold;
 }
 
@@ -206,7 +206,7 @@ form span label {
 }
 
 form .gfield_required {
-	color: #e73e97; /* Pink */
+	color: var(--hw-pink); /* Pink */
 	margin-left: .5rem;
 }
 
@@ -223,7 +223,7 @@ form .gfield_required {
 	font-weight: bold;
 	margin-top: 3rem;
 	font-size: 3rem;
-	color: #e73e97; /* Core pink */
+	color: var(--hw-pink); /* Core pink */
 }
 
 .g-recaptcha iframe {
@@ -292,7 +292,7 @@ ul.gfield_checkbox li label {
 }
 
 #content .gfield_contains_required ul {
-	border: #e73e97 1px solid; /* Pink */
+	border: var(--hw-pink) 1px solid; /* Pink */
 	border-radius: 5px;
 }
 /* End */
@@ -307,7 +307,7 @@ ul.gfield_checkbox li label {
 	background-image: url(../images/asterisk.png);
 	background-repeat: no-repeat;
 	background-position: 98% 50%;
-	border: #e73e97 1px solid; /* Pink */
+	border: var(--hw-pink) 1px solid; /* Pink */
  }
 
 #content select:required,
@@ -346,7 +346,7 @@ form#mc-embedded-subscribe-form input[type="submit"] {
 }
 
 form#mc-embedded-subscribe-form input[type="submit"]:hover {
-	background-color: #e73e97; /* pink */
+	background-color: var(--hw-pink); /* pink */
 }
 
 form#mc-embedded-subscribe-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

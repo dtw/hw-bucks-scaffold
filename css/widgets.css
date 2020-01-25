@@ -45,7 +45,7 @@ span.post-date {
 }
 
 .recent-posts-headliner {
-	background-color: #e73e97;
+	background-color: var(--hw-pink);
 	margin: 7rem 0;
 	padding: 1rem 1rem 3rem 2rem;
 }

@@ -140,8 +140,8 @@
 
 .navbar-nav .current-menu-item a:hover,
 .navbar-nav .current-menu-item a:focus {
-	background-color: #e73e97 !important;
-	outline: 3px solid #e73e97;
+	background-color: var(--hw-pink) !important;
+	outline: 3px solid var(--hw-pink);
 	color: rgba(255,255,255,1.00);
 }
 
@@ -171,7 +171,7 @@
 }
 
 .navbar-toggle:hover:after {
-	color: #e73e97;
+	color: var(--hw-pink);
 }
 
 .navbar-toggle.collapsed {

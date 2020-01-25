@@ -57,12 +57,12 @@ footer {
 .navbar-nav .current-menu-item a,
 .navbar-nav .current_page_item a,
 .navbar-nav .current-post-ancestor a {
-	color: #e73e97;
+	color: var(--hw-pink);
 }
 
 .navbar-nav .current_page_item a:hover,
 .navbar-nav .current_page_item a:focus {
-	color: #e73e97;
+	color: var(--hw-pink);
 	text-decoration: underline;
 }
 
@@ -184,13 +184,13 @@ h1 {
 
 .call-to-action a,
 .call-to-action a:visited {
-	color:#e73e97;
+	color:var(--hw-pink);
 	font-weight:bold;
 	font-size: 1.2em;
 }
 
 .call-to-action:visited {
-	color:#e73e97;
+	color:var(--hw-pink);
 	font-weight:bold;
 	text-decoration:none;
 	font-size: 1.2em;
@@ -199,8 +199,8 @@ h1 {
 .call-to-action a:hover,
 .call-to-action a:focus {
 	text-decoration: none;
-	background-color: #e73e97 !important;
-	outline: 3px solid #e73e97;
+	background-color: var(--hw-pink) !important;
+	outline: 3px solid var(--hw-pink);
 	color: rgba(255,255,255,1.00);
 }
 

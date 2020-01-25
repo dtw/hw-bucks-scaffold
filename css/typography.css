@@ -162,7 +162,7 @@ blockquote {
 	margin: 2em 0;
 	padding: 2rem;
 	font-style: italic;
-	border-left: 5px solid #e73e97;
+	border-left: 5px solid var(--hw-pink);
 	background: #f9f9f9;
 }
 
