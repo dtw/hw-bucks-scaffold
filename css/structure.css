@@ -431,8 +431,8 @@ ul#local-services-selector li:last-child {
 #content a[href$=".doc"]:focus,
 #content a[href$=".docx"]:focus {
 	text-decoration: none;
-	background-color: #af5192;
-	border-color: #af5192;
+	background-color: var(--hw-purple);
+	border-color: var(--hw-purple);
 	color: white;
 	outline: none;
 }
@@ -891,7 +891,7 @@ a.child-details:focus {
 	padding: 2px 8px;
 	display: inline-block;
 	border-radius: 3px;
-	color: #af5192 !important;
+	color: var(--hw-purple) !important;
 	text-decoration: none !important;
 }
 
@@ -902,7 +902,7 @@ a.child-details:focus {
 .the-taxonomies-archive a:focus,
 .the-tags p a:focus {
 	color: white !important;
-	background-color: #af5192 !important;
+	background-color: var(--hw-purple) !important;
 	outline: none !important;
 	text-decoration: none !important;
 }
