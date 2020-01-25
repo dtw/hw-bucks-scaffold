@@ -1,9 +1,9 @@
      <!-- Fixed navbar -->
 
 <?php if ( is_user_logged_in() ) { ?>
-  <nav id="nav" class="navbar navbar-admin navbar-fixed-top" role="navigation">
+  <nav id="nav" class="navbar navbar-admin navbar-fixed-top">
 <?php } else { ?>
-  <nav id="nav" class="navbar navbar-fixed-top" role="navigation">
+  <nav id="nav" class="navbar navbar-fixed-top">
 <?php } ?>
 
 <div class="container-fluid">
