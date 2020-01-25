@@ -1,8 +1,11 @@
 /* CSS Variables
 -------------------------------- */
 :root {
-  --hw-pink: #e73e97;
+  --hw-pink: #CC3A8E;
 	--url-blue: #0080A4;
+	--hw-green: #84bf41;
+  --hw-purple: #9B26B6;
+  --hw-orange: #E32A0D;
 }
 
 /* White
