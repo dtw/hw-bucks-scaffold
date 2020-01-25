@@ -25,7 +25,7 @@
 <!-- META TAGS -->
 
 	<?php if (is_home('')) {
-				$thedescription = get_bloginfo('description'); }
+				$thedescription = get_bloginfo('description'); } else {
 
 		if (is_single() || is_page()) {
 				$thedescription = get_the_excerpt(); }
@@ -37,10 +37,11 @@
 
 				$thedescription = "Rate and review the service offered by " . get_the_title() . ", " .  $aCity;
 
-			}
+			}?>
+      <meta name="description" content="<?php echo $thedescription; ?>" />
+    <?php }
 				?>
 
-	<meta name="description" content="<?php echo $thedescription; ?>" />
 
 <!-- SUPPORT FOR INTERNET EXPLORER -->
 
