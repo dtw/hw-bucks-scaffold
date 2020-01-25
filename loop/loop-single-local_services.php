@@ -120,7 +120,7 @@ $comments = get_comments($args);
 		</div><!-- end of col -->
 
 	<div class="col-md-6 col-sm-6 col-xs-12">
-            <?php get_template_part('elements/comments-rating-average'); ?></p>
+            <?php get_template_part('elements/comments-rating-average'); ?>
 		</div><!-- end of col -->
 
 	</div><!-- end of row -->
