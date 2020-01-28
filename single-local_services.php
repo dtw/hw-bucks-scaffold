@@ -87,7 +87,7 @@
 						</p>
 						<p class="review-date"><strong><?php echo human_time_diff( strtotime($comment->comment_date), current_time( 'timestamp' ) ); ?> ago</strong></p>
 					<?php } // end of if there is a rating ?>
-        		<p class="review"><?php echo mb_strimwidth($comment->comment_content,0,200," ..."); ?></p>
+        		<p class="review"><?php echo wpautop(wp_strip_all_tags(mb_strimwidth($comment->comment_content,0,300," ...")), true); ?></p>
 				<!-- end review-container --></div>
 						<?php	} // end of check matching service type
   				} // end of for loop
