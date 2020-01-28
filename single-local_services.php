@@ -26,7 +26,7 @@
 			} else { ?>
 				<div id="cqc-widget-container" class="sidebar-container">
 					<h3>How does the Care Quality Commission rate <?php the_title(); ?>?</h3>
-					<script src="http://www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js?data-host=www.cqc.org.uk&amp;type=location&amp;data-id=<?php echo get_post_meta( $post->ID, 'hw_services_cqc_location', true ); ?>">;
+					<script src="http://www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js?data-host=www.cqc.org.uk&amp;type=location&amp;data-id=<?php echo get_post_meta( $post->ID, 'hw_services_cqc_location', true ); ?>">
 		    	</script>
 				</div>
 			<?php } ?>
