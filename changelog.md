@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.0] - 2020-01-28
+### Added
+- CSS "variables" for major colours
+
+### Changed
+- fixed issue with fussy service URLs
+- fixed more hover/focus styles
+- update multiple styles with altered colours to improve contrast based on WCAG2
+- switched hex colour codes to colour names where possible (e.g. white)
+- multiple changes to validate HTML
+- fixed add_js_arguements function
+- fixed duplicate meta description on home page
+
 ## [1.5.1] - 2020-01-24
 ### Added
 - fix cookie notice to top of page for screen readers with CSS
