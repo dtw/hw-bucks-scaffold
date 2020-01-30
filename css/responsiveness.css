@@ -122,6 +122,14 @@
 	#sidebar {
 		padding-left:0;
 	}
+
+	#service-rating-details {
+	  padding-left: 0;
+	}
+
+	#public-rating div:first-child {
+	  padding-left: 0px;
+	}
 }
 
 

@@ -17,7 +17,7 @@
 			<!-- Insert FEATURED IMAGE -->
 			<?php // check if the post has a Post Thumbnail assigned to it.
 			if ( has_post_thumbnail() ) {
-				echo '<div id="feature-img-container" class="sidebar-container">';
+				echo '<div id="feature-img-container" class="col-md-12 hidden-sm hidden-xs sidebar-container">';
 				the_post_thumbnail();
 				echo '</div>';
 			} ?>

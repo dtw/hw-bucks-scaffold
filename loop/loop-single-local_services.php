@@ -9,8 +9,8 @@
 
 
 <div class="row">
-
-<div id="service-contact-details" class="col-md-4 col-sm-4 col-xs-12">
+<div id="service" class="col-md-12 col-sm-8 col-xs-12">
+<div id="service-contact-details" class="col-md-4 col-sm-12 col-xs-12">
 
 
 
@@ -70,23 +70,22 @@
 
 
 
-<div id="service-rating-details" class="col-md-7 col-sm-7 col-xs-12 col-md-offset-1 col-sm-offset-1">
+<div id="service-rating-details" class="col-md-7 col-sm-12 col-xs-12 col-md-offset-1">
 
 
 
 	<?php if ( get_post_meta( $post->ID, 'hw_services_overall_rating', true ) )  { ?>
 
-
 <div id="overall-rating" class="row">
 
 
-	<div class="col-md-6 col-sm-6 col-xs-12">
+	<div class="col-md-6 col-sm-12 col-xs-12">
 		<p><strong>Our overall rating:</strong></p>
 			</div><!-- end of col -->
 
 
 
-	<div class="col-md-6 col-sm-6 col-xs-12">
+	<div class="col-md-6 col-sm-12 col-xs-12">
 <p>
 <?php $rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true );
 		echo feedbackstarrating($rating,array('colour' => 'green','size' => 'fa-lg'));
@@ -115,11 +114,11 @@ $comments = get_comments($args);
 
 <div id="public-rating" class="row">
 
-	<div class="col-md-6 col-sm-6 col-xs-12">
+	<div class="col-md-6 col-sm-12 col-xs-12">
 		<p><strong>Public rating:</strong>
 		</div><!-- end of col -->
 
-	<div class="col-md-6 col-sm-6 col-xs-12">
+	<div class="col-md-6 col-sm-12 col-xs-12">
             <?php get_template_part('elements/comments-rating-average'); ?>
 		</div><!-- end of col -->
 
@@ -134,7 +133,12 @@ else { ?>
 
 
     </div><!-- end of col 2 -->
-
+	</div>
+	<?php if ( has_post_thumbnail() ) {
+		echo '<div id="feature-img-container" class="hidden-lg hidden-md col-sm-4 col-xs-12 sidebar-container">';
+		the_post_thumbnail('medium');
+		echo '</div>';
+	} ?>
         </div><!-- end of row -->
 
 
