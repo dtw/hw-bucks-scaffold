@@ -16,7 +16,12 @@ yoast_breadcrumb('
 
 
                 <div class="row">
-                
+									<?php // check if the post has a Post Thumbnail assigned to it.
+						            if ( has_post_thumbnail() ) {
+														echo '<div id="thumbnail-container" class="hidden-lg hidden-md hidden-sm col-xs-12 text-center">';
+						                the_post_thumbnail('medium');
+														echo '</div>';
+						            } ?>
 				<?php get_template_part('loop/loop-default'); ?>
 
 
@@ -36,7 +41,9 @@ yoast_breadcrumb('
     <div class="text-center">
     	<?php // check if the post has a Post Thumbnail assigned to it.
             if ( has_post_thumbnail() ) {
+								echo '<div id="thumbnail-container" class="col-md-12 col-sm-12 hidden-xs">';
                 the_post_thumbnail('medium');
+								echo '</div>';
             } ?>
 		</div>
 

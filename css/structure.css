@@ -105,6 +105,9 @@ body {
 	border: none;
 }
 
+#thumbnail-container {
+	margin-bottom: 2rem;
+}
 
 /* Posts ---------------- */
 
