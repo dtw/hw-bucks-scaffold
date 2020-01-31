@@ -14,12 +14,12 @@ yoast_breadcrumb('
 }
 ?>
 
-                
+
                 <div class="row">
                 
 				<?php get_template_part('loop/loop-default'); ?>
-                
-                
+
+
                 </div>
                 <!-- end of loop row -->
 
@@ -29,25 +29,25 @@ yoast_breadcrumb('
 
                   </div><!-- end of content column -->
 
-    
+
     <div id="sidebar" class="col-md-4 col-xs-12">
-    
-    
+
+
     <div class="text-center">
     	<?php // check if the post has a Post Thumbnail assigned to it.
             if ( has_post_thumbnail() ) {
                 the_post_thumbnail('medium');
             } ?>
 		</div>
-    
-    
+
+
         <?php get_sidebar(); ?>
-    
-    
-    
+
+
+
             </div>
 </div>
-</div>            
-            
+</div>
+
 
 <?php get_footer(); ?>
