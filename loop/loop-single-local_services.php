@@ -135,7 +135,7 @@ else { ?>
     </div><!-- end of col 2 -->
 	</div>
 	<?php if ( has_post_thumbnail() ) {
-		echo '<div id="feature-img-container" class="hidden-lg hidden-md col-sm-4 col-xs-12 sidebar-container">';
+		echo '<div id="thumbnail-container-body" class="hidden-lg hidden-md col-sm-4 col-xs-12 sidebar-container">';
 		the_post_thumbnail('medium');
 		echo '</div>';
 	} ?>
