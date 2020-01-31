@@ -107,6 +107,10 @@ body {
 
 /* Posts ---------------- */
 
+#thumbnail-container-body {
+	margin-bottom: 2rem;
+}
+
 .post {
 	 margin-top: 4rem;
 	 margin-bottom: 4rem;
