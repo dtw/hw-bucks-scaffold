@@ -369,10 +369,25 @@ form#mc-embedded-subscribe-form :-moz-placeholder { /* Firefox 18- */
  /* COMMENT FORM
  ---------------------------------------------------- */
 
- #commentform {
-	 background-color: #f9f9f9;
-	 padding: 1rem;
-	 }
+#commentform {
+ background-color: #f9f9f9;
+ padding: 1rem;
+}
+
+#commentform a {
+	color: var(--hw-blue);
+}
+
+#commentform a:hover,
+#commentform a:focus {
+	color: #FAFAFA;
+	background-color: #23527c;
+	outline: 3px solid #23527c;
+}
+
+.comment-reply-link {
+	color: var(--hw-blue);
+}
 
 /* Enable disable forms */
 .gform_wrapper {
