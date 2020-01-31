@@ -15,7 +15,7 @@ body {
 
 .page-header {
 	background-color: #23527c;
-	padding-bottom: 20px;
+	padding-bottom: 2rem;
 	margin-top: 0px;
 	margin-bottom: 2rem;
 }
@@ -205,7 +205,7 @@ footer ul li {
 	font-weight: bold;
 	font-size: 2rem;
 	border-radius: 50% 50%;
-	min-width: 30px;
+	min-width: 3rem;
 	margin-right: 1rem;
 }
 
@@ -840,7 +840,7 @@ a.child-details:focus {
 }
 
 .post-title h2 {
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 
 .post-title {
@@ -859,7 +859,7 @@ a.child-details:focus {
 	border-radius: 3px;
 	color: white !important;
 	text-decoration: none !important;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 
 .category-terms a:hover,
@@ -918,7 +918,7 @@ a.child-details:focus {
 	content:"\f022";
 	font-family: 'Font Awesome 5 Pro';
 	font-weight: 400;
-	padding-right: 5px;
+	padding-right: 0.5rem;
 }
 
 /* Bootstrap collapse aka accordion */
