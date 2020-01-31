@@ -2,6 +2,7 @@
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div class="row">
 			<div id="service" class="col-md-12 col-sm-8 col-xs-12">
+				<div class="row">
 					<div id="service-contact-details" class="col-md-4 col-sm-12 col-xs-12">
 						<p>
 							<span class="screen-reader-text">Street address</span>
@@ -81,6 +82,7 @@
 						<p><a href="<?php echo get_the_permalink(); ?>#respond">Leave your own rating &raquo;</a></p>
 						<?php } ?>
 					</div><!-- end of col 2 service-rating-details -->
+				</div><!-- end of row -->
 			</div>
 			<?php if ( has_post_thumbnail() ) { ?>
 			<div id="thumbnail-container-body" class="hidden-lg hidden-md col-sm-4 col-xs-12 sidebar-container">
