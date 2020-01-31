@@ -105,10 +105,6 @@ body {
 	border: none;
 }
 
-#thumbnail-container {
-	margin-bottom: 2rem;
-}
-
 /* Posts ---------------- */
 
 .post {
@@ -665,14 +661,30 @@ div.staff-member {
 /* Calendar
 ---------------------------------------- */
 
-.yarpp-thumbnails-horizontal .yarpp-thumbnail {
-	width: 100% !important;
-	float: left !important;
-	height: auto !important;
-	color: #0080A4;
+.yarpp-thumbnails-horizontal .yarpp-container {
 	background-color: rgba(0,0,0,.04);
-	text-decoration: none;
 	padding: 1rem;
+	border: 1px solid rgba(127,127,127,0.1);
+}
+
+.yarpp-thumbnail,
+.yarpp-thumbnail-title {
+	vertical-align: middle;
+	padding-left: 0.5rem;
+	color: var(--hw-blue);
+}
+
+.yarpp-thumbnails-horizontal h3 {
+  margin-top: 1rem;
+}
+
+.yarpp-thumbnail.media-left.img-anchor {
+  padding: 0.5rem;
+}
+
+.yarpp-thumbnail-title:hover {
+  outline: none;
+	background-color: var(--hw-blue);
 }
 
 .yarpp-thumbnail:hover {
@@ -681,17 +693,6 @@ div.staff-member {
 	text-decoration: underline;
 }
 
-.yarpp-thumbnail > img, .yarpp-thumbnail-default {
-	width: 20% !important;
-	height: auto !important;
-	float: left !important;
-}
-
-.yarpp-thumbnails-horizontal .yarpp-thumbnail-title {
-	max-height: none !important;
-	width: 70% !important;
-	float: right !important;
-}
 
 /* Signposts */
 #signposts-selector,
