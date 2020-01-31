@@ -6,7 +6,7 @@ form {
 }
 
 form ul {
-	-webkit-padding-start: 0;
+	-webkit-padding-start: 0px;
 }
 
 form li {
@@ -94,15 +94,15 @@ form input[type="submit"]:hover {
 ------------------------------------------------------------- */
 
 #searchform input[type="submit"] {
-	padding: 0;
+	padding: 0px;
 	width: 100%;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
 }
 
 #searchform input[type="search"] {
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
 	border-right: none;
 }
 
@@ -174,9 +174,9 @@ form#gform_2 {
 
 ul.gform_fields {
 	list-style: none;
-	-webkit-padding-start: 0;
-	padding-left: 0;
-	margin-left: 0;
+	-webkit-padding-start: 0px;
+	padding-left: 0px;
+	margin-left: 0px;
 }
 
 ul.gform_fields li {
@@ -244,7 +244,7 @@ form .gfield_required {
 }
 
 #content ul.gfield_checkbox li {
-	padding-bottom: 0;
+	padding-bottom: 0px;
 }
 
 /* PT added */
@@ -257,7 +257,7 @@ ul.gfield_checkbox {
 ul.gfield_checkbox li label {
 	font-family: inherit;
 	font-weight: normal;
-	padding: 0;
+	padding: 0px;
 }
 
 .gfield_required {

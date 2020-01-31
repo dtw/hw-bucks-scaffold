@@ -19,7 +19,7 @@ h1 {
 }
 
 #subfooter h2 {
-	padding-bottom: 0;
+	padding-bottom: 0px;
 }
 
 #sidebar h3 {
@@ -28,7 +28,7 @@ h1 {
 
 .post h3 {
 	padding: 0 0 .5rem 0;
-	margin: 0;
+	margin: 0px;
 }
 
 .loop-taxonomy h3 {
@@ -40,8 +40,8 @@ h1 {
 #sidebar > .widget h2,
 .page #content h2:first-child,
 .single #content h2:first-child {
-	margin-top: 0;
-	padding-top: 0;
+	margin-top: 0px;
+	padding-top: 0px;
 }
 
 
@@ -82,12 +82,12 @@ h2 {
 }
 
 #content h2 {
-	padding-bottom: 0;
+	padding-bottom: 0px;
 }
 
 .post h2 {
-	padding-top: 0;
-	margin-top: 0;
+	padding-top: 0px;
+	margin-top: 0px;
 }
 
 h3 {
@@ -207,13 +207,13 @@ div.comment-content p:last-child:after {
 }
 
 .response blockquote {
-	padding-left: 0;
+	padding-left: 0px;
 }
 
 .response blockquote:after,
 .response blockquote:before {
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
 	content: "";
 }
 
@@ -247,5 +247,5 @@ a:hover, a:focus {
 	color: rgba(255,255,255,1.00);
 	outline: 3px solid #0080A4;
 	text-decoration: none;
-	outline-offset: 0;
+	outline-offset: 0px;
 }

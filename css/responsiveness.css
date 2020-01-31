@@ -46,8 +46,8 @@
 
 @media (min-width: 992px) {
 	.no-gutter {
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	/* from hwbucks-scaffold-child style.css */
@@ -124,7 +124,7 @@
 	}
 
 	#service-rating-details {
-	  padding-left: 0;
+	  padding-left: 0px;
 	}
 
 	#public-rating div:first-child {
@@ -169,8 +169,8 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	}
 
 	.navbar-compact #nav-spacer {
-		padding-top: 0;
-		padding-bottom: 0;
+		padding-top: 0px;
+		padding-bottom: 0px;
 	}
 
 	.tagline {
@@ -298,7 +298,7 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 
 	.home .panel .panel-title-right,
 	.home .panel .panel-content-right {
-		padding-left: 0;
+		padding-left: 0px;
 	}
 
 	.visit-date {
@@ -310,7 +310,11 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		height: 80px;
 	}
 
-	.yarpp-thumbnails-horizontal .yarpp-thumbnail {
+	.yarpp-thumbnails-horizontal {
+		padding-left: 0px;
+	}
+
+	.yarpp-thumbnail {
 		padding: 0.5rem;
 	}
 }
@@ -347,7 +351,7 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	/* Phil added these 3 styles */
 
 	#text-8 h2{
-		padding: 0;
+		padding: 0px;
 	}
 
 	.wp-paginate .title {

@@ -22,19 +22,19 @@ body {
 
 .row.page-header h1 {
 		padding-bottom: 10px;
-		margin-bottom: 0;
+		margin-bottom: 0px;
 }
 
 #content {
 	border-radius: 5px;
-	border-top-right-radius: 0;
+	border-top-right-radius: 0px;
 	/*padding: 1.5rem 3rem 1rem 0; */
 	padding: 1rem 0;
 	padding-right: 3rem;
 }
 
 .home #content {
-	padding-right: 0;
+	padding-right: 0px;
 }
 
 /* Signposts ---------------- */
@@ -49,7 +49,7 @@ body {
 }
 
 #signpost-categories ul {
-	-webkit-padding-start: 0;
+	-webkit-padding-start: 0px;
 	padding-left: 0px;
 	/* PT add */
 	display: flex;
@@ -275,13 +275,13 @@ h2 img.alignright {
 	overflow: hidden;
 	padding-bottom: 56.25%;
 	position: relative;
-	height: 0;
+	height: 0px;
 	margin: 2rem 0;
 }
 
 .responsive-iframe iframe{
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -561,7 +561,7 @@ a[href$=".docx"]:before {
             .carousel-inner .prev,
             .carousel-inner .active.left,
             .carousel-inner .active.right {
-            left: 0;
+            left: 0px;
             transform: translate3d(0, 0, 0) !important;
         }
 
@@ -587,8 +587,8 @@ a[href$=".docx"]:before {
 }
 
 .media h2, .media h3 {
-	padding-top: 0;
-	margin-top: 0;
+	padding-top: 0px;
+	margin-top: 0px;
 	font-size: 2rem;
 	line-height: 3rem;
 }
@@ -654,7 +654,7 @@ div.staff-member {
 	margin-bottom: 2rem;
 }
 .staff-member-info-wrap h2 {
-	margin: 0;
+	margin: 0px;
 	padding: 0 0 1rem 0 !important;
 }
 
@@ -719,7 +719,7 @@ div.staff-member {
 }
 
 .choice-container {
-	padding: 0;
+	padding: 0px;
 	height: 250px;
 	overflow: hidden;
 }
@@ -789,7 +789,7 @@ a.child-details:focus {
 	align-content: start;
 	justify-content: center;
 	position: absolute;
-	bottom: 0;
+	bottom: 0px;
 	width: 100%;
 	overflow: hidden;
 	transition: min-height 350ms linear;
@@ -976,26 +976,26 @@ a.child-details:focus {
 }
 
 .panel-heading h4 {
-	padding-top: 0;
+	padding-top: 0px;
 	line-height: 3rem;
 	font-size: 18px;
 	color: white;
 }
 
 .panel-body {
-	padding-bottom: 0;
+	padding-bottom: 0px;
 }
 
 /* No gutters class from https://julienmelissas.com/no-gutter-column-trick-for-bootstrap/ */
 
 .row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 .row.no-gutters > [class^="col-"],
 .row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .edit-link {
@@ -1013,14 +1013,14 @@ a.child-details:focus {
 /* Rules for accessibility */
 
 .screen-reader-text {
-	border: 0;
+	border: 0px;
 	clip: rect(1px, 1px, 1px, 1px);
 	-webkit-clip-path: inset(50%);
 	clip-path: inset(50%);
 	height: 1px;
 	margin: -1px;
 	overflow: hidden;
-	padding: 0;
+	padding: 0px;
 	position: absolute !important;
 	width: 1px;
 	word-wrap: normal !important;
