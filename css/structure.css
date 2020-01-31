@@ -672,6 +672,7 @@ div.staff-member {
 	color: #0080A4;
 	background-color: rgba(0,0,0,.04);
 	text-decoration: none;
+	padding: 1rem;
 }
 
 .yarpp-thumbnail:hover {
@@ -690,7 +691,6 @@ div.staff-member {
 	max-height: none !important;
 	width: 70% !important;
 	float: right !important;
-	padding-top: 2rem !important;
 }
 
 /* Signposts */
