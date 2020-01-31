@@ -374,19 +374,18 @@ form#mc-embedded-subscribe-form :-moz-placeholder { /* Firefox 18- */
  padding: 1rem;
 }
 
-#commentform a {
+#commentform a,
+.comment-reply-link {
 	color: var(--hw-blue);
 }
 
 #commentform a:hover,
-#commentform a:focus {
+#commentform a:focus,
+.comment-reply-link:hover,
+.comment-reply-link:focus {
 	color: #FAFAFA;
 	background-color: #23527c;
 	outline: 3px solid #23527c;
-}
-
-.comment-reply-link {
-	color: var(--hw-blue);
 }
 
 /* Enable disable forms */
