@@ -85,7 +85,7 @@
 				</div><!-- end of row -->
 			</div>
 			<?php if ( has_post_thumbnail() ) { ?>
-			<div id="thumbnail-container-body" class="hidden-lg hidden-md col-sm-4 col-xs-12 sidebar-container">
+			<div id="thumbnail-container-body" class="hidden-lg hidden-md col-sm-4 col-xs-12 text-center sidebar-container">
 				<?php echo the_post_thumbnail('medium'); ?>
 			</div><!-- end of service -->
 			<?php } ?>
