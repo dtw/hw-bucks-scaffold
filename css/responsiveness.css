@@ -317,6 +317,10 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	.yarpp-thumbnail {
 		padding: 0.5rem;
 	}
+
+	.hidden-xs-img {
+		display: none;
+	}
 }
 
 /* 480px and below --- */
