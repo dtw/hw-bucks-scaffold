@@ -2,10 +2,6 @@
 	<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Services Sidebar')) : endif; ?>
 <?php } ?>
 
-<?php if ( is_home()  ) { ?>
-	<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Home Right')) : endif; ?>
-<?php } ?>
-
 <?php if (is_page()) { ?>
 	<?php if ( is_page_template('template-single-page.php') ) { ?>
 		<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Pages without menu')) : endif; ?>
