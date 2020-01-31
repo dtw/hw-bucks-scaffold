@@ -1,8 +1,8 @@
 <div class="loop-single-service">
- <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	 <div class="row">
-		 <div id="service" class="col-md-12 col-sm-8 col-xs-12">
-			 <div id="service-contact-details" class="col-md-4 col-sm-12 col-xs-12">
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<div class="row">
+			<div id="service" class="col-md-12 col-sm-8 col-xs-12">
+				<div id="service-contact-details" class="col-md-4 col-sm-12 col-xs-12">
 					<p>
 						<span class="screen-reader-text">Street address</span>
 						<?php if ( get_post_meta( $post->ID, 'hw_services_address_line_1', true ) )  { ?>
