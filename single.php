@@ -18,7 +18,7 @@ yoast_breadcrumb('
                 <div class="row">
 									<?php // check if the post has a Post Thumbnail assigned to it.
 						            if ( has_post_thumbnail() ) {
-														echo '<div id="thumbnail-container" class="hidden-lg hidden-md hidden-sm col-xs-12 text-center">';
+														echo '<div id="thumbnail-container" class="hidden-lg hidden-md col-sm-12 col-xs-12 text-center">';
 						                the_post_thumbnail('medium');
 														echo '</div>';
 						            } ?>
@@ -41,7 +41,7 @@ yoast_breadcrumb('
     <div class="text-center">
     	<?php // check if the post has a Post Thumbnail assigned to it.
             if ( has_post_thumbnail() ) {
-								echo '<div id="thumbnail-container" class="col-md-12 col-sm-12 hidden-xs">';
+								echo '<div id="thumbnail-container" class="col-md-12 hidden-sm hidden-xs">';
                 the_post_thumbnail('medium');
 								echo '</div>';
             } ?>
