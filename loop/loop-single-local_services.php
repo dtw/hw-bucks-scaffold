@@ -97,7 +97,7 @@
 
 		<?php if ( get_post_meta( $id, 'hw_services_date_visited', true ) )  { ?>
 
-						<h2>Healthwatch Bucks has visited, rated and reviewed <?php the_title(); ?></h2>
+						<hr /><h2>Healthwatch Bucks has visited, rated and reviewed <?php the_title(); ?></h2>
 
 			<p><i class="fas fa-calendar service-icon" aria-hidden="true" title="Date"></i> Visited <strong><?php echo get_post_meta( $id, 'hw_services_date_visited', true ); ?></strong><br />
 							</p>
