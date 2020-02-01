@@ -24,13 +24,13 @@
 			<!-- Insert CQC WIDGET -->
 			<?php if (has_term('pharmacy','service_types')) {
 			} else { ?>
-				<div id="cqc-widget-container" class="sidebar-container">
+				<div id="cqc-widget-container" class="col-xs-12 sidebar-container">
 					<h3>How does the Care Quality Commission rate <?php the_title(); ?>?</h3>
 					<script src="http://www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js?data-host=www.cqc.org.uk&amp;type=location&amp;data-id=<?php echo get_post_meta( $post->ID, 'hw_services_cqc_location', true ); ?>">
 		    	</script>
 				</div>
 			<?php } ?>
-			<div id="google-maps-container" class="sidebar-container" aria-hidden="true">
+			<div id="google-maps-container" class="col-xs-12 sidebar-container" aria-hidden="true">
 				<h3>Service location</h3>
 				<div id="view1">
 					<?php
@@ -46,7 +46,7 @@
 					<iframe width="1000" height="500" src="https://maps.google.ca/maps?center=<?php echo $location; ?>&zoom=8&q=<?php echo $location; ?>&size=1000x500&output=embed&iwloc=near"></iframe>
 				</div>
 			</div>
-			<div id="recent-reviews-container" class="sidebar-container">
+			<div id="recent-reviews-container" class="col-xs-12 sidebar-container">
 				<?php // Get the taxonomy term for this post
 				$term_list = wp_get_post_terms($post->ID, 'service_types', array("fields" => "ids"));
 				$service_type = $term_list[0];
