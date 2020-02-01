@@ -97,6 +97,10 @@
 
 @media (max-width: 991px) {
 
+	#content {
+		padding-right: 0px;
+	}
+
 	.tagline .email {
 		text-align: right;
 	}
@@ -128,7 +132,7 @@
 	}
 
 	#public-rating div:first-child {
-	  padding-left: 0px;
+	  /*padding-left: 0px;*/
 	}
 }
 
@@ -140,10 +144,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 @media only screen and (max-width: 767px) {
 	body {
 		padding-top: 13.9rem;
-	}
-
-	#content {
-		padding-right: 0px;
 	}
 
 	#sidebar {
