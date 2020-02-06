@@ -1044,8 +1044,33 @@ a.child-details:focus {
 #service-contact-details {
 	margin-bottom: 2rem;
 }
+
+#service-contact-details,
+#service-rating-details {
+	border: rgba(0,0,0,0.04) 2px solid;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.02);
+	padding: 1rem;
+}
+
+#service-contact-details a,
+#service-rating-details a {
+	color: var(--hw-blue);
+}
+
+#service-contact-details a:hover,
+#service-rating-details a:hover,
+#service-contact-details a:focus,
+#service-rating-details a:focus {
+	color: #FAFAFA;
+	background-color: var(--hw-blue);
+	outline: 3px solid var(--hw-blue);
 }
 
 #service-rating-details {
   padding-right: 0px;
+}
+
+.loop-single-service {
+	/*border-bottom: #999 1px dashed;*/
 }
