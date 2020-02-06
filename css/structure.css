@@ -37,6 +37,10 @@ body {
 	padding-right: 0px;
 }
 
+#service {
+	padding-left: 0px;
+}
+
 /* Signposts ---------------- */
 
 #signposts-selector {
@@ -109,6 +113,7 @@ body {
 
 #thumbnail-container-body {
 	margin-bottom: 2rem;
+	padding: 0px;
 }
 
 .post {
@@ -382,6 +387,8 @@ ul#local-services-selector li:last-child {
 
 #sidebar .sidebar-container {
 	margin-top: 1.5rem;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
 
 #sidebar div:first-child {
@@ -1034,8 +1041,8 @@ a.child-details:focus {
 /* Local Services */
 
 #service-contact-details {
-	border-right: #999 1px dashed;
-	padding-left: 0px;
+	margin-bottom: 2rem;
+}
 }
 
 #service-rating-details {
