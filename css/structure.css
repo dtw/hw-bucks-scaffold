@@ -592,7 +592,7 @@ a[href$=".docx"]:before {
 ------------------------------------- */
 
 .media {
-    background-color: rgba(0,0,0,:;);
+  background-color: rgba(0,0,0,:;);
 	padding: 2rem;
 	border-top: 5px solid rgba(0,0,0,0.06);
 }
