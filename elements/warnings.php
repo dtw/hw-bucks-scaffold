@@ -37,9 +37,9 @@ if ($feedback_count > 0) {
 
 // If Backup Buddy plugin not activated
 
-if ( is_plugin_active ( 'backupbuddy/backupbuddy.php' ) ) { } else {
+/*if ( is_plugin_active ( 'backupbuddy/backupbuddy.php' ) ) { } else {
 	echo "<p class='text-danger'><i class='fas fa-exclamation-triangle text-danger' aria-hidden='true'></i> Ensure the <strong>Backup Buddy</strong> plugin is installed and activated. <a href='" . get_bloginfo(url) . "/wp-admin/plugins.php'>See list of plugins &raquo;</a></p>";
-	}
+}*/
 
 
 // If Healthwatch plugin not activated
