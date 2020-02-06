@@ -693,7 +693,8 @@ div.staff-member {
   padding: 0.5rem;
 }
 
-.yarpp-thumbnail-title:hover {
+.yarpp-thumbnail-title:hover,
+.yarpp-thumbnail-title:focus {
   outline: none;
 	background-color: var(--hw-blue);
 }
