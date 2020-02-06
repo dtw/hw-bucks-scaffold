@@ -49,7 +49,7 @@
 				<?php if ( get_post_meta( $post->ID, 'hw_services_overall_rating', true ) )  { ?>
 				<div id="overall-rating" class="row">
 					<div class="col-md-6 col-sm-4 col-xs-12">
-						<p><strong>Our overall rating:</strong></p>
+						<p><strong>Our rating:</strong></p>
 					</div><!-- end of col -->
 					<div class="col-md-6 col-sm-8 col-xs-12">
 						<p>
@@ -97,7 +97,7 @@
 
 		<?php if ( get_post_meta( $id, 'hw_services_date_visited', true ) )  { ?>
 
-						<hr /><h2>Healthwatch Bucks has visited, rated and reviewed <?php the_title(); ?></h2>
+						<hr /><h2>We have rated and reviewed <?php the_title(); ?></h2>
 
 			<p><i class="fas fa-calendar service-icon" aria-hidden="true" title="Date"></i> Visited <strong><?php echo get_post_meta( $id, 'hw_services_date_visited', true ); ?></strong><br />
 							</p>

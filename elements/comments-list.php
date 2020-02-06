@@ -10,7 +10,7 @@ $comments = get_comments($args);
 $total_comments = count($comments); ?>
 <?php if ( is_singular('local_services') ) {
 	if ($comments) { ?>
-		<hr /><h2>Service users have provided the following ratings and reviews</h2>
+		<hr /><h2>Public ratings and reviews</h2>
 		<p><small>If <?php the_title(); ?> would like to respond to any of the comments, email <a href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></small></p>
 <?php }
 	}
