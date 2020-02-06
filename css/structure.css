@@ -14,7 +14,7 @@ body {
 }
 
 .page-header {
-	background-color: #23527c;
+	background-color: var(--hw-blue);
 	padding-bottom: 2rem;
 	margin-top: 0px;
 	margin-bottom: 2rem;
@@ -701,7 +701,7 @@ div.staff-member {
 
 .yarpp-thumbnail:hover {
   outline: none;
-  color: #23527c;
+  color: var(--hw-blue);
 	text-decoration: underline;
 }
 
