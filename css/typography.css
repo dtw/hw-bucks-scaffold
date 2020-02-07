@@ -233,6 +233,10 @@ footer a,
 	text-decoration: none;
 }
 
+.img-anchor {
+	color: inherit;
+}
+
 footer a:hover,
 #subfooter a:hover,
 .img-anchor:hover,
