@@ -13,7 +13,7 @@ is_singular( local_services ) || 						// Is single local service page
  is_plugin_active( 'ajax-search-lite/ajax-search-lite.php' ) 	// Ajax Search Lite not installed
 	) { ?>
 
-    		<div class="alert alert-danger container alert-dismissible alert-scaffold" role="alert">
+    		<div class="alert alert-danger container alert-dismissible scaffold-alert" role="alert">
 
               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
