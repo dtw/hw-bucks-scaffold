@@ -31,7 +31,7 @@ is_singular( local_services ) || 						// Is single local service page
 // FEEDBACK WAITING, needs to be approved
 
 if ($feedback_count > 0) {
-	echo "<p><i class='fas fa-comments text-warning' aria-hidden='true'></i> You have <strong>" . $feedback_count . " comments</strong> awaiting approval. <a href='" . get_bloginfo(url) . "/wp-admin/edit-comments.php?comment_status=moderated'>Moderate comments &raquo;</a></p>";
+	echo "<p><i class='fas fa-comments text-warning' aria-hidden='true'></i> You have <strong>" . $feedback_count . " comments</strong> awaiting approval. <a class='scaffold-warning-url' href='" . get_bloginfo(url) . "/wp-admin/edit-comments.php?comment_status=moderated'>Moderate comments &raquo;</a></p>";
 } else { echo "<p><i class='fas fa-comments text-info' aria-hidden='true'></i> There are currently <strong>no comments waiting</strong> to be approved.</p>"; }
 
 
@@ -45,20 +45,20 @@ if ($feedback_count > 0) {
 // If Healthwatch plugin not activated
 
 if ( is_plugin_active ( 'healthwatchfeedback/healthwatchfeedback.php' ) ) { } else {
-	echo "<p class='text-danger'><i class='fas fa-exclamation-triangle text-danger' aria-hidden='true'></i> Ensure the <strong>Healthwatch Feedback</strong> plugin is installed and activated. <a href='" . get_bloginfo(url) . "/wp-admin/plugins.php'>See list of plugins &raquo;</a></p>";
+	echo "<p class='text-danger'><i class='fas fa-exclamation-triangle text-danger' aria-hidden='true'></i> Ensure the <strong>Healthwatch Feedback</strong> plugin is installed and activated. <a class='scaffold-warning-url' href='" . get_bloginfo(url) . "/wp-admin/plugins.php'>See list of plugins &raquo;</a></p>";
 	}
 
 
 // If Scaffold Widgets Tweaks plugin not activated
 
 if ( is_plugin_active ( 'scaffold-widgets-tweaks/scaffold-widgets-tweaks.php' ) ) { } else {
-	echo "<p class='text-danger'><i class='fas fa-exclamation-triangle text-danger' aria-hidden='true'></i> Ensure the <strong>Scaffold Widgets & Tweaks</strong> plugin is installed and activated. <a href='" . get_bloginfo(url) . "/wp-admin/plugins.php'>See list of plugins &raquo;</a></p>";
+	echo "<p class='text-danger'><i class='fas fa-exclamation-triangle text-danger' aria-hidden='true'></i> Ensure the <strong>Scaffold Widgets & Tweaks</strong> plugin is installed and activated. <a class='scaffold-warning-url' href='" . get_bloginfo(url) . "/wp-admin/plugins.php'>See list of plugins &raquo;</a></p>";
 	}
 
 // If WP Paginate plugin not activated
 
 if ( is_plugin_active ( 'wp-paginate/wp-paginate.php' ) ) { } else {
-	echo "<p class='text-danger'><i class='fas fa-exclamation-triangle text-danger' aria-hidden='true'></i> Ensure the <strong>WP Paginate</strong> plugin is installed and activated. <a href='" . get_bloginfo(url) . "/wp-admin/plugins.php'>See list of plugins &raquo;</a></p>";
+	echo "<p class='text-danger'><i class='fas fa-exclamation-triangle text-danger' aria-hidden='true'></i> Ensure the <strong>WP Paginate</strong> plugin is installed and activated. <a class='scaffold-warning-url' href='" . get_bloginfo(url) . "/wp-admin/plugins.php'>See list of plugins &raquo;</a></p>";
 	}
 
 	?>
