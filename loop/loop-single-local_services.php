@@ -89,7 +89,7 @@
 				</div>
 			</div><!-- end of col 2 service-rating-details -->
 		</div><!-- end of row -->
-
+		<hr />
 
 
 
@@ -97,7 +97,7 @@
 
 		<?php if ( get_post_meta( $id, 'hw_services_date_visited', true ) )  { ?>
 
-						<hr /><h2>We have rated and reviewed <?php the_title(); ?></h2>
+						<h2>We have rated and reviewed <?php the_title(); ?></h2>
 
 			<p><i class="fas fa-calendar service-icon" aria-hidden="true" title="Date"></i> Visited <strong><?php echo get_post_meta( $id, 'hw_services_date_visited', true ); ?></strong><br />
 							</p>
