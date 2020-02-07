@@ -28,7 +28,7 @@ if ( post_password_required() )
             <?php
                 wp_list_comments( array(
 					'type' 		  => 'comment',
-					'callback'	  => 'mytheme_comment',
+					'callback'	  => 'scaffold_threaded_comments',
                     'style'       => 'ul',
                     'short_ping'  => true,
                     'avatar_size' => 74,
