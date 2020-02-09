@@ -1115,7 +1115,8 @@ a.child-details:focus {
   padding-left: 1rem;
 }
 
-#service-rating-details .star-rating {
+#service-rating-details .star-rating,
+#service-rating-details .rating-description {
   padding-left: 0px;
 }
 

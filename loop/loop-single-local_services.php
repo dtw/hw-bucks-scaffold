@@ -61,25 +61,26 @@
 						</p>
 					</div><!-- end of col -->
 				</div><!-- end of row -->
-				<?php } ?>
-				<?php // QUERY the COMMENTS for current single post
-				$args = array (
-					'post_id' => $post->ID,
-					'status' => 'approve'
-					);
+				<?php }
+				// QUERY the COMMENTS for current single post
+				$rating = getrating($post);
 
-				$comments = get_comments($args);
-				?>
-
-				<?php if ( $comments ) { ?>
+				if ($rating['count'] != 0) {
+					$average_rating = $rating['average'];
+					$average_rating = round($average_rating,1); ?>
 
 				<div id="public-rating" class="row">
 					<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 rating-title">
 						<p><strong>Public rating:</strong></p>
 					</div><!-- end of col -->
 					<div class="col-lg-8 col-md-6 col-sm-8 col-xs-12 star-rating">
-						<?php get_template_part('elements/comments-rating-average'); ?>
+						<p><?php echo feedbackstarrating($average_rating,array('size' => 'fa-lg')); ?></p>
 					</div><!-- end of col -->
+					<div class="col-lg-8 col-md-12 col-sm-8 col-xs-12 col-lg-offset-4 col-md-offset-0 col-sm-offset-4 rating-description">
+						<p>Rated <strong><?php echo $average_rating; ?></strong> out of 5 by <strong><?php echo $rating['count']; ?>
+						<?php if ($rating['count'] <= 1) { echo " person"; } else { echo " people"; } ?>
+						</strong></p>
+					</div>
 				</div><!-- end of row -->
 			<?php } ?>
 				<div id="rating-link" class="row">
