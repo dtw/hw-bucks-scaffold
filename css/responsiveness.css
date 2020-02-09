@@ -335,6 +335,12 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	#HWBucksCommentLogo {
 		display: none;
 	}
+
+	.rate-and-review-scores .fa-star,
+	.rate-and-review-scores .fa-star-half-alt,
+	.rate-and-review-scores .fa-star-o {
+		font-size: 1.2em;
+	}
 }
 
 /* 480px and below --- */

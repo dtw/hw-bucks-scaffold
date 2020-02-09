@@ -402,6 +402,10 @@ ul#local-services-selector li:last-child {
 	vertical-align: text-bottom;
 }
 
+.loop-single-service ul {
+	padding-left: 2.5rem;
+}
+
 /* Links
 ----------------------------------- */
 
