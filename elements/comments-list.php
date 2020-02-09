@@ -55,7 +55,13 @@ $total_comments = count($comments); ?>
 
 		<?php } ?>
 
+<?php if (get_comment_meta( $comment->comment_ID, 'feedback_hw_reply', true )) { ?>
+	<div class="response hw-reply">
+	<p><strong>Healthwatch Bucks</strong> responded:</p>
+	<p class="hw-reply-quote"><?php echo get_comment_meta( $comment->comment_ID, 'feedback_hw_reply', true ); ?></p>
+    </div>
 
+		<?php } ?>
 
 
 
