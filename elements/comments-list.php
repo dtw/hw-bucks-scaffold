@@ -48,7 +48,6 @@ $total_comments = count($comments); ?>
 
 
 <?php if (get_comment_meta( $comment->comment_ID, 'feedback_response', true )) { ?>
-    <img class="alignright" src="<?php bloginfo(url) ?>/wp-content/themes/scaffold/images/icons/colour/response-small.png" alt="Response" />
 	<div class="response provider">
 	<p><strong><?php the_title(); ?></strong> responded:</p>
 	<blockquote><em><?php echo get_comment_meta( $comment->comment_ID, 'feedback_response', true ); ?></em></blockquote>
