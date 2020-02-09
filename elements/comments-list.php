@@ -22,7 +22,7 @@ $total_comments = count($comments); ?>
 	$comment_id = '';
 	$status = wp_get_comment_status( $comment_id );
 	if ( $status == "approved" ) { ?>
-		<div class="comment">
+		<div class="review">
 			<?php echo '<span class="screen-reader-text">Review '.$comment_counter.' of '.$total_comments.'</span>';
 			$individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true );
 			if ($individual_rating) {
@@ -38,7 +38,7 @@ $total_comments = count($comments); ?>
 
 	<?php } // end of if there is a rating ?>
 
-		<blockquote class="e-description"><?php comment_text(); ?></blockquote>
+		<blockquote><?php comment_text(); ?></blockquote>
 
 
 
@@ -48,8 +48,8 @@ $total_comments = count($comments); ?>
 
 
 <?php if (get_comment_meta( $comment->comment_ID, 'feedback_response', true )) { ?>
-	<div class="response">
     <img class="alignright" src="<?php bloginfo(url) ?>/wp-content/themes/scaffold/images/icons/colour/response-small.png" alt="Response" />
+	<div class="response provider">
 	<p><strong><?php the_title(); ?></strong> responded:</p>
 	<blockquote><em><?php echo get_comment_meta( $comment->comment_ID, 'feedback_response', true ); ?></em></blockquote>
     </div>
