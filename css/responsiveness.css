@@ -361,8 +361,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		display: inline;
 	}
 
-	/* Phil added these 3 styles */
-
 	#text-8 h2{
 		padding: 0px;
 	}
