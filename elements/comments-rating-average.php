@@ -26,7 +26,7 @@ if ($rating['count'] == 0) {
 
 
 
-<?php if ( $gadget == "yes" && $rating['average'] < 3 ) { } else { $star_count = 0; ?>
+<?php if ( $gadget == "yes" && $rating['average'] < 3 ) { } else { ?>
 
 <p>
 	<?php
