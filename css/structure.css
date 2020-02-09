@@ -1103,13 +1103,16 @@ a.child-details:focus {
   padding-right: 0px;
 }
 
-.rating-title,
+.rating-title {
+  padding-left: 0px;
+}
+
 .rating-label {
   padding-left: 1rem;
 }
 
 #service-rating-details .star-rating {
-  padding-left: 1rem;
+  padding-left: 0px;
 }
 
 .loop-single-service {

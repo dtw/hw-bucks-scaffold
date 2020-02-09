@@ -127,10 +127,6 @@
 		padding-left:0;
 	}
 
-	#service-rating-details {
-	  padding-left: 0px;
-	}
-
 	#public-rating div:first-child {
 	  /*padding-left: 0px;*/
 	}
@@ -323,8 +319,17 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	}
 
 	.rating-label,
-	.rating {
+	.rating,
+	.rate-and-review-scores .star-rating {
 		padding-right: 0px;
+	}
+
+	.rate-and-review-scores .star-rating {
+		padding-left: 0.5rem;
+	}
+
+	.rating-label {
+	  padding-left: 0px;
 	}
 
 	#HWBucksCommentLogo {
