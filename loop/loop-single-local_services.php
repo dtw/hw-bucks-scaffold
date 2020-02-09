@@ -48,10 +48,10 @@
 			<div id="service-rating-details" class="col-md-7 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1">
 				<?php if ( get_post_meta( $post->ID, 'hw_services_overall_rating', true ) )  { ?>
 				<div id="overall-rating" class="row">
-					<div class="col-md-6 col-sm-4 col-xs-12 rating-title">
+					<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 rating-title">
 						<p><strong>Our rating:</strong></p>
 					</div><!-- end of col -->
-					<div class="col-md-6 col-sm-8 col-xs-12 star-rating">
+					<div class="col-lg-8 col-md-6 col-sm-8 col-xs-12 star-rating">
 						<p>
 						<?php $rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true );
 							echo feedbackstarrating($rating,array('colour' => 'green','size' => 'fa-lg'));
@@ -74,10 +74,10 @@
 				<?php if ( $comments ) { ?>
 
 				<div id="public-rating" class="row">
-					<div class="col-md-6 col-sm-4 col-xs-12 rating-title">
+					<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 rating-title">
 						<p><strong>Public rating:</strong></p>
 					</div><!-- end of col -->
-					<div class="col-md-6 col-sm-8 col-xs-12 star-rating">
+					<div class="col-lg-8 col-md-6 col-sm-8 col-xs-12 star-rating">
 						<?php get_template_part('elements/comments-rating-average'); ?>
 					</div><!-- end of col -->
 				</div><!-- end of row -->
