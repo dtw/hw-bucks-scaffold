@@ -217,6 +217,17 @@ footer ul li {
 	background: rgba(0,0,0,0.02);
 }
 
+.hw-reply-quote a {
+	color: var(--hw-blue);
+}
+
+.hw-reply-quote a:hover,
+.hw-reply-quote a:focus {
+	color: #FAFAFA;
+	background-color: var(--hw-blue);
+	outline: 3px solid var(--hw-blue);
+}
+
 .vcard-container {
   display: flex;
   justify-content: space-between;
