@@ -172,7 +172,8 @@ footer ul li {
 	margin-top: 2rem;
 }
 
-.comment {
+.comment-list,
+.review {
 	padding: 1rem 0;
 	background-color: rgba(0,0,0,0.02);
 	margin-top: 2rem;
@@ -186,9 +187,40 @@ footer ul li {
 	margin: 1rem 1rem 0 1rem;
 }
 
-.comment .star-rating {
+.hw-comment {
+	padding-left: 1rem;
+}
+
+#HWBucksCommentLogo {
+	width: 150px;
+}
+
+.review .star-rating {
 	margin-left: 1rem;
 	margin-bottom: 2rem;
+}
+
+.review .response {
+  padding: 2rem 0 0 2rem;
+}
+
+.review .provider blockquote {
+	border-left: 3px solid black;
+}
+
+.hw-reply-quote {
+	font-size: 1.6rem;
+	margin: 1rem 1rem 0 1rem;
+	padding: 2rem;
+	font-style: italic;
+	border-left: 3px solid var(--hw-pink);
+	background: rgba(0,0,0,0.02);
+}
+
+.vcard-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
 }
 
 /* Static slides
@@ -1069,6 +1101,15 @@ a.child-details:focus {
 
 #service-rating-details {
   padding-right: 0px;
+}
+
+.rating-title,
+.rating-label {
+  padding-left: 1rem;
+}
+
+#service-rating-details .star-rating {
+  padding-left: 1rem;
 }
 
 .loop-single-service {
