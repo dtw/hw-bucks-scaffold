@@ -172,7 +172,8 @@ blockquote br {
 	display: block;
 }
 
-.comment blockquote {
+.comment blockquote,
+.review blockquote {
 	font-size: 1.6rem;
 	margin: 1rem 1rem 0 1rem;
 	padding: 2rem;
@@ -204,10 +205,6 @@ div.comment-content p:last-child:after {
 	font-weight: bold;
 	font-family: Bitter;
 	font-style: italic;
-}
-
-.response blockquote {
-	padding-left: 0px;
 }
 
 .response blockquote:after,
