@@ -5,8 +5,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.7.0] - 2020-02-10
+### Added
+- show featured image in the top of the main content once the sidebar collapses
+- styles for new yarpp template
+- add formatting for response from HW in comments
+- replace the "widget" call on Local Service pages
+
 ### Changed
 - strip URLs from comments
+- spacing and style in the comments sections
+- minor CSS updates
+- many formatting changes to comment form and areas
+- updated wording on Local Service pages
+- improved appearance of service information and ratings on Local Service pages
+
+### Removed
+- rated-by-hw files
+- old sidebar code
 
 ## [1.6.0] - 2020-01-28
 ### Added
