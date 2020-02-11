@@ -149,10 +149,15 @@ hr {
 ----------------------------------- */
 
 #content ul li,
-#content ol li {
+#content ol li,
+#content ul li ul li,
+#content ol li ol li {
 	padding-bottom: 1rem;
 }
 
+#content ul li ul li:first-child {
+  padding-top: 1rem;
+}
 
 /* Blockquote
 ----------------------------------- */

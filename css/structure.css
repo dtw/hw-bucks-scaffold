@@ -397,12 +397,14 @@ ul#local-services-selector li:last-child {
 
 /* ---- LOOP -----*/
 
-.loop-default ul {
+.loop-default ul,
+.loop-default ul li ul {
   list-style: none; /* Remove default bullets */
-	margin-left: -10px;
+	padding-left: 2.5rem;
 }
 
-.loop-default ul li::before {
+.loop-default ul li::before,
+.loop-default ul li ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: var(--hw-pink); /* Change the color */
   font-weight: bold; /* If you want it to be bold */
