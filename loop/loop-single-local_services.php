@@ -44,7 +44,20 @@
 			<div id="thumbnail-container-body" class="hidden-lg hidden-md col-sm-6 col-xs-12 text-center sidebar-container">
 				<?php echo the_post_thumbnail('medium'); ?>
 			</div>
-			<?php } ?>
+		<?php } else {
+			$term_ids = get_the_terms( $post->ID, 'service_types' );	// Find taxonomies
+			$term_id = $term_ids[0]->term_id;											// Get taxonomy ID
+			$term_icon = get_term_meta( $term_id, 'icon', true );						// Get meta
+			$term_name=  get_term_meta( $term_id, 'name', true );						// Get meta
+			?>
+			<div id="thumbnail-container-body" class="hidden-lg hidden-md col-sm-6 col-xs-12 text-center sidebar-container">
+				<img class="attachment-small size-small wp-post-image" src="
+				<?php echo $term_icon; ?>
+				" alt="
+				<?php echo $term_name . ' icon'; ?>
+				"/>
+			</div>
+		<?php } ?>
 			<div id="service-rating-details" class="col-md-7 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1">
 				<?php if ( get_post_meta( $post->ID, 'hw_services_overall_rating', true ) )  { ?>
 				<div id="overall-rating" class="row">
