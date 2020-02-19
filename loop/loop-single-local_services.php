@@ -51,8 +51,8 @@
 			$term_name=  get_term_meta( $term_id, 'name', true );						// Get meta
 			?>
 			<div id="thumbnail-container-body" class="hidden-lg hidden-md col-sm-6 col-xs-12 text-center sidebar-container">
-				<img class="attachment-small size-small wp-post-image" src="
-				<?php echo $term_icon; ?>
+				<img class="attachment-thumbnail size-thumbnail wp-post-image" src="
+				<?php echo str_replace('.png', '-150x150.png', $term_icon);?>
 				" alt="
 				<?php echo $term_name . ' icon'; ?>
 				"/>
