@@ -9,6 +9,10 @@
 	padding-left: 1px;
 }
 
+.fas .fa-user .text-info {
+ color: var(--hw-blue);
+}
+
 .far.shortcode-icon {
 	width: 3.5rem;
 	/* font-weight: 400; */

@@ -171,6 +171,17 @@ blockquote {
 	background: #f9f9f9;
 }
 
+blockquote a {
+	color: var(--hw-blue);
+}
+
+blockquote a:hover,
+blockquote a:focus {
+	color: #FAFAFA;
+ 	background-color: var(--hw-blue);
+ 	outline: 3px solid var(--hw-blue);
+}
+
 blockquote br {
 	margin: 2rem;
 	content: "";
@@ -258,4 +269,11 @@ a:hover, a:focus {
 
  .scaffold-warning-url {
 	 color: var(--hw-blue);
+ }
+
+ .scaffold-warning-url a:hover,
+ .scaffold-warning-url a:focus {
+ 	color: #FAFAFA;
+ 	background-color: var(--hw-blue);
+ 	outline: 3px solid var(--hw-blue);
  }

@@ -66,3 +66,12 @@ span.post-date {
 .recent-posts-headliner img {
 	margin-top: 3rem;
 }
+
+/* CQC Widget
+-----------------------------*/
+.cqc-container a:hover,
+.cqc-container a:focus {
+	text-decoration: underline;
+	background-color: inherit !important;
+	outline: none !important;
+}

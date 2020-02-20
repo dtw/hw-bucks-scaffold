@@ -23,7 +23,7 @@ is_singular( local_services ) || 						// Is single local service page
 
     <?php if (is_singular(local_services)) { ?>
 
-		<p><i class="fas fa-user text-info" aria-hidden="true"></i> You are <strong>logged in</strong>, so don't see the feedback form. <a href="<?php echo wp_logout_url(get_permalink()); ?> ">Logout if you want to see it &raquo;</a></p>
+		<p><i class="fas fa-user text-info" aria-hidden="true"></i> You are <strong>logged in</strong>, so don't see the feedback form. <a class="scaffold-warning-url" href="<?php echo wp_logout_url(get_permalink()); ?> ">Logout if you want to see it &raquo;</a></p>
 
 		<?php }
 
