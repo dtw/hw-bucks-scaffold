@@ -186,24 +186,21 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	}
 
 	.navbar-collapse li {
-		background-color: #3075AD;
-		border-bottom: 1px solid #5C9DD1;
+	 background-color:#F6F6F6;
+	 border-bottom:1px solid rgba(0,0,0,0.1);
 	}
 
 	.navbar-collapse a {
-		color: white;
+		color: var(--hw-blue);
 		padding: 1rem !important;
 	}
 
-	.navbar-collapse li:hover {
-		background-color: #5C9DD1;
-	}
 
 	.navbar-collapse a:hover,
 	.navbar-collapse a:focus {
-		color: white !important;
+		color: #F6F6F6 !important;
 		outline: none;
-		background-color: #5c9dd1 !important;
+		background-color: var(--hw-blue) !important;
 	}
 
 	.navbar-collapse .current-menu-item a {
