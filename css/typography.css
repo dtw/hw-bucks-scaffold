@@ -271,8 +271,8 @@ a:hover, a:focus {
 	 color: var(--hw-blue);
  }
 
- .scaffold-warning-url a:hover,
- .scaffold-warning-url a:focus {
+ .scaffold-warning-url:hover,
+ .scaffold-warning-url:focus {
  	color: #FAFAFA;
  	background-color: var(--hw-blue);
  	outline: 3px solid var(--hw-blue);
