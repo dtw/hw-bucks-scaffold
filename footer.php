@@ -57,8 +57,8 @@ if ( is_active_sidebar( 'subfooter_sidebar' ) ) { ?>
 			<div class="copyright col-md-6 col-sm-6 col-xs-12">
 				<p>&copy; <strong><?php bloginfo('name'); ?></strong> <?php echo date('Y'); ?></p>
 			</div><!-- end of col 1 -->
-			<div class="author col-md-6 col-sm-6 col-xs-12"><?php $theme_author_url = 'https://www.kingjason.co.uk/wordpress-theme-plugin-healthwatch/'; ?>
-				<p>WordPress website built by <a href="<?php echo $theme_author_url; ?>" target="_blank" title="Non-profit web design by Jason King"><strong>Jason King</strong></a></p>
+			<div class="author col-md-6 col-sm-6 col-xs-12"><?php $theme_author_url = 'https://www.kingjason.co.uk/'; ?>
+				<p>Scaffold Theme by <a href="<?php echo $theme_author_url; ?>" target="_blank" title="Jason King"><strong>Jason King</strong></a></p>
 			</div><!-- end of col 2 -->
 		</div><!-- end of row  -->
 	</div><!-- end of container -->
