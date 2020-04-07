@@ -162,7 +162,7 @@ function hw_scaffold_nocache($headers)
 	if(is_home()) {
 		unset($headers['Cache-Control']);
 		// set new header for home page
-		$headers['Cache-Control'] = 'no-store,max-age=3600';
+		$headers['Cache-Control'] = 'no-store';
     return $headers;
 	}
 }
