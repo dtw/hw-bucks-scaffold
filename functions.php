@@ -9,6 +9,7 @@
 5. Tidy
 6. Security
 7. Pass arguements to JS
+8. Update HTML Headers
 
 */
 
@@ -153,4 +154,18 @@ if (!(is_admin() )) {
 	}
 	add_filter( 'clean_url', 'add_js_arguements', 11, 1 );
 }
+
+/* 8. Pass arguements to JS
+------------------------------------------------------------------------------ */
+function hw_scaffold_nocache($headers)
+{
+	if(is_home()) {
+		unset($headers['Cache-Control']);
+		// set new header for home page
+		$headers['Cache-Control'] = 'no-store,max-age=3600';
+    return $headers;
+	}
+}
+add_filter('wp_headers', 'hw_scaffold_nocache');
+
 ?>
