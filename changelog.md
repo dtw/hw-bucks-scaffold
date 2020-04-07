@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.7.1] - 2020-03-04
+### Added
+- use local_services category icon if there is no thumbnail
+
+### Changed
+- nested bullet styles
+- stop redirecting to "thanks" page for post comments
+- accessibility changes to url colors
+- mobile menu colors
+
 ## [1.7.0] - 2020-02-10
 ### Added
 - show featured image in the top of the main content once the sidebar collapses
