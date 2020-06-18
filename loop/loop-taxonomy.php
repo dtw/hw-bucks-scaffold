@@ -123,7 +123,7 @@ if (is_tax()) 	{ 												// If this is a taxonomy page
 			</p>
 
 				<h2 class="text-center">Didn't find the local health service you were looking for?</h2>
-                <p class="text-center">You can still <a href="<?php bloginfo(url); ?>/feedback/">send us feedback.</a></p>
+                <p class="text-center">You can still <a href="<?php bloginfo('url'); ?>/feedback/">send us feedback.</a></p>
                 </div><!-- end of Jumbotron -->
 
                 <?php else: ?>
@@ -136,7 +136,7 @@ if (is_tax()) 	{ 												// If this is a taxonomy page
 			</p>
 
 				<p class="text-center"
-                >Didn't find the local health service you were looking for? You can still <a href="<?php bloginfo(url); ?>/feedback/">send us feedback.</a></p>
+                >Didn't find the local health service you were looking for? You can still <a href="<?php bloginfo('url'); ?>/feedback/">send us feedback.</a></p>
 		</div><!-- end of Jumbotron -->
 
 
