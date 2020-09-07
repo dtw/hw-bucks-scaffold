@@ -75,3 +75,17 @@ span.post-date {
 	background-color: inherit !important;
 	outline: none !important;
 }
+
+.google-maps-link a,
+.gm-style .place-card a:link {
+	color: var(--hw-blue) !important;
+}
+
+.google-maps-link a:hover,
+.google-maps-link a:focus,
+iframe .gm-style .place-card a:hover,
+iframe .gm-style .place-card a:focus {
+ color: #FAFAFA !important;
+ background-color: var(--hw-blue) !important;
+ outline: 3px solid var(--hw-blue) !important;
+}
