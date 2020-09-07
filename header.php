@@ -15,7 +15,6 @@
     <?php if(is_home()) {
       echo '
       <!-- add disable brower cache on frontpage -->
-      <meta http-equiv="Cache-Control" content="no-store" />
       <meta http-equiv="Pragma" content="no-cache" />
       <meta http-equiv="Expires" content="0" />
       ';
