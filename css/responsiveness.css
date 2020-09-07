@@ -1,6 +1,17 @@
 /* Media queries
 ------------------------------------- */
 
+:root {
+  --cookie-one-line: 101px;
+	--cookie-two-line: 125px;
+	--cookie-two-line-mob: 117px;
+	--cookie-three-line: 146px;
+  --cookie-three-line-mob: 141px;
+	--cookie-four-line: 165px;
+	--cookie-five-line: 189px;
+  --cookie-max: 251px;
+}
+
 /* Light and Dark mode */
 
 @media (prefers-color-scheme: no-preference) {
@@ -338,6 +349,14 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 	.rate-and-review-scores .fa-star-o {
 		font-size: 1.2em;
 	}
+
+	.cookie-notice-container {
+		padding: 15px;
+	}
+
+  .home .panel .panel-excerpt {
+    margin-top: 0;
+  }
 }
 
 /* 480px and below --- */
@@ -375,6 +394,14 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 
 	.wp-paginate .title {
 		 display: block;
+	}
+
+	#cookie-notice .cn-button {
+		margin: 0 5px 5px 5px !important;
+	}
+
+	.cookie-notice-container {
+		padding-bottom: 10px;
 	}
 }
 
@@ -416,131 +443,140 @@ needed to maintain the spacing.
 This is horrible and hacky.
 */
 
-@media (min-width: 1200px) {
+@media (min-width: 1337px) {
 	#cookie-notice .cookie-notice-visible {
 		/* fix the height (roughly based on content */
-		height: 96px;
+		height: var(--cookie-one-line);
 	}
 
 	.cookies-not-set #nav {
 		/* this class is placed by the plugin on <body> while the notice shows */
-		top: 96px;
+		top: var(--cookie-one-line);
 	}
 
 	.cookies-not-set {
 		/* this is the height of #nav + the height of the notice */
-		padding-top: calc(125px + 96px);
+		padding-top: calc(125px + var(--cookie-one-line));
+	}
+}
+
+@media (max-width: 1336px) {
+	#cookie-notice .cookie-notice-visible {
+		/* fix the height (roughly based on content */
+		height: var(--cookie-two-line);
+	}
+
+	.cookies-not-set #nav {
+		/* this class is placed by the plugin on <body> while the notice shows */
+		top: var(--cookie-two-line);
+	}
+
+	.cookies-not-set {
+		/* this is the height of #nav + the height of the notice */
+		padding-top: calc(125px + var(--cookie-two-line));
 	}
 }
 
 @media (max-width: 1199px) {
 	#cookie-notice .cookie-notice-visible {
-		height: 96px;
+		height: var(--cookie-two-line);
 	}
 
 	.cookies-not-set #nav {
-		top: 96px;
+		top: var(--cookie-two-line);
 	}
 
 	.cookies-not-set {
-		padding-top: calc(142px + 96px);
-	}
-}
-
-@media (max-width: 991px) {
-	#cookie-notice .cookie-notice-visible {
-		height: 96px;
-	}
-
-	.cookies-not-set #nav {
-		top: 96px;
-	}
-
-	.cookies-not-set {
-		padding-top: calc(142px + 96px);
-	}
-}
-
-@media (max-width: 901px) {
-	#cookie-notice .cookie-notice-visible {
-		height: 121px;
-	}
-
-	.cookies-not-set #nav {
-		top: 121px;
-	}
-
-	.cookies-not-set {
-		padding-top: calc(142px + 121px);
-	}
-}
-
-@media (max-width: 794px) {
-	#cookie-notice .cookie-notice-visible {
-		height: 141px;
-	}
-
-	.cookies-not-set #nav {
-		top: 141px;
-	}
-
-	.cookies-not-set {
-		padding-top: calc(142px + 141px);
+		padding-top: calc(142px + var(--cookie-two-line));
 	}
 }
 
 @media (max-width: 767px) {
 	#cookie-notice .cookie-notice-visible {
-		height: 141px;
+		height: var(--cookie-two-line-mob);
 	}
 
 	.cookies-not-set #nav {
-		top: 141px;
+		top: var(--cookie-two-line-mob);
 	}
 
 	.cookies-not-set {
-		padding-top: calc(132px + 141px);
+		padding-top: calc(132px + var(--cookie-two-line-mob));
 	}
 }
 
-@media (max-width: 506px) {
+@media (max-width: 679px) {
 	#cookie-notice .cookie-notice-visible {
-		height: 161px;
+		height: var(--cookie-three-line);
 	}
 
 	.cookies-not-set #nav {
-		top: 161px;
+		top: var(--cookie-three-line);
 	}
 
 	.cookies-not-set {
-		padding-top: calc(132px + 161px);
+		padding-top: calc(132px + var(--cookie-three-line));
 	}
 }
 
-@media (max-width: 411px) {
+@media (max-width: 480px) {
 	#cookie-notice .cookie-notice-visible {
-		height: 181px;
+		height: var(--cookie-three-line-mob);
 	}
 
 	.cookies-not-set #nav {
-		top: 181px;
+		top: var(--cookie-three-line-mob);
 	}
 
 	.cookies-not-set {
-		padding-top: calc(132px + 181px);
+		padding-top: calc(132px + var(--cookie-three-line-mob));
 	}
 }
 
-@media (max-width: 367px) {
+@media (max-width: 463px) {
 	#cookie-notice .cookie-notice-visible {
-		height: 201px;
+		height: var(--cookie-four-line);
 	}
 
 	.cookies-not-set #nav {
-		top: 201px;
+		top: var(--cookie-four-line);
 	}
 
 	.cookies-not-set {
-		padding-top: calc(132px + 201px);
+		padding-top: calc(132px + var(--cookie-four-line));
+	}
+}
+
+@media (max-width: 361px) {
+	#cookie-notice .cookie-notice-visible {
+		height: var(--cookie-five-line);
+	}
+
+	.cookies-not-set #nav {
+		top: var(--cookie-five-line);
+	}
+
+	.cookies-not-set {
+		padding-top: calc(132px + var(--cookie-five-line));
+	}
+}
+
+@media (max-width: 310px) {
+	#cookie-notice .cookie-notice-visible {
+		height: var(--cookie-max);
+	}
+
+	.cookies-not-set #nav {
+		top: var(--cookie-max);
+	}
+
+	.cookies-not-set {
+		padding-top: calc(132px + var(--cookie-max));
+	}
+}
+
+@media (max-width: 900px) {
+	#cookie-notice .cn-button {
+		margin: 0 5px 5px 5px !important;
 	}
 }
