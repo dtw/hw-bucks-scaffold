@@ -26,6 +26,7 @@ $total_comments = count($comments); ?>
 			<?php echo '<span class="screen-reader-text">Review '.$comment_counter.' of '.$total_comments.'</span>';
 			$individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true );
 			if ($individual_rating) {
+				// if there is a rating
 				$star_count = 0; ?>
 				<p class="star-rating p-rating">
 					<?php
@@ -33,12 +34,12 @@ $total_comments = count($comments); ?>
 						if ($individual_rating == 1) echo '<span class="screen-reader-text">'.$individual_rating.' star</span>';
 						else echo '<span class="screen-reader-text">'.$individual_rating.' stars</span>';
 					?>
-     &mdash;
-       <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>
+					&mdash; <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>
+			<?php } else { // there is no rating ?>
+				<p class="star-rating p-rating"><strong>No rating &mdash; <?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>
+			<?php } ?>
 
-	<?php } // end of if there is a rating ?>
-
-		<blockquote><?php comment_text(); ?></blockquote>
+			<blockquote><?php comment_text(); ?></blockquote>
 
 
 
