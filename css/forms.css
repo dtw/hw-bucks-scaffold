@@ -92,7 +92,9 @@ form input[type="submit"]:hover {
 	background-color: white;
 }
 
-
+input#mc-embedded-subscribe.button {
+	margin-top: 0;
+}
 
 /* Search form
 ------------------------------------------------------------- */
