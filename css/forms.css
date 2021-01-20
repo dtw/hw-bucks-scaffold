@@ -92,6 +92,10 @@ form input[type="submit"]:hover {
 	background-color: white;
 }
 
+#mce-EMAIL {
+	margin-right: 1rem;
+}
+
 input#mc-embedded-subscribe.button {
 	margin-top: 0;
 }
@@ -348,7 +352,7 @@ form#mc-embedded-subscribe-form input[type="submit"] {
 	background-color: #0F4F6B;
 	font-size: 1.8rem;
 	letter-spacing: .1rem;
-	margin-left: 1rem;
+	margin-left: 0;
 }
 
 form#mc-embedded-subscribe-form input[type="submit"]:hover {
