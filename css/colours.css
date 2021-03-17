@@ -46,6 +46,7 @@ footer {
 
 #subfooter {
 	background-color: #0F4F6B;
+  /* not sure if this gradient is accessible */
 	background: linear-gradient(#3F7188, #0F4F6B);
 }
 
