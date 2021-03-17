@@ -2,16 +2,18 @@
 
 /*
 
+This changes the options in the WordPress theme customiser.
+
 1. Logo
-2. Custom background
 
 */
 
-// Remove the static front page option
+// Remove the static front page, nav and color options
 add_action('customize_register', 'scaffold_customize_register');
 function scaffold_customize_register($wp_customize) {
 	$wp_customize->remove_section( 'static_front_page' );
 	$wp_customize->remove_section( 'nav' );
+	$wp_customize->remove_section( 'colors' );
 }
 
 
@@ -59,12 +61,12 @@ function scaffold_theme_customizer( $wp_customize ) {
 
 
 /* 2. Custom BACKGROUND
----------------------------------------------- */
+----------------------------------------------
 
 $args = array(
 	'default-color' => 'fafafa',
 );
 add_theme_support( 'custom-background', $args );
-
+ */
 
 ?>
