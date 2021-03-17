@@ -18,6 +18,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ensure date of review is displayed if no rating is given.
 - New styles for MailChmip signup
 
+## [1.7.5] - 2021-09-07
+### Added
+- new CSS variables to manage responsive cookie notice
+
+### Changed
+- minor CSS accessibility changes
+
+### Removed
+- moved panel .btn styles to child theme
+
+## [1.7.4] - 2021-06-18
+### Changed
+- Updates for PHP7.0 compatibility
+
 ## [1.7.3] - 2020-04-07
 ### Changed
 - Cache-Control settings now sent with wp_headers hook
