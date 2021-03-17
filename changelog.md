@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.7.5] - 2021-03-17
+### Changed
+- Minor accessibility changes
+
+### Removed
+- Custom background option and colour options from customizer
 
 ## [1.7.4] - 2021-01-20
 ### Changed
