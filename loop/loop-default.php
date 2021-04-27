@@ -4,7 +4,9 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<?php get_template_part('elements/custom-fields-block'); ?>
+	<?php
+		// get_template_part('elements/custom-fields-block');
+	?>
 
 	<?php the_content(); ?>
 
