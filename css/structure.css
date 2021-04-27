@@ -358,6 +358,13 @@ iframe:hover {
 	width: 100%;
 }
 
+/* Power BI iframes
+----------------------------------- */
+
+.powerbi iframe {
+	border: 0px;
+}
+
 /* Bootstrap helper classes
 ----------------------------------- */
 
