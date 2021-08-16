@@ -100,6 +100,11 @@ input#mc-embedded-subscribe.button {
 	margin-top: 0;
 }
 
+/* embedded Microsoft Forms */
+#form-container .office-form-theme-footer {
+	display: none !important;
+}
+
 /* Search form
 ------------------------------------------------------------- */
 
