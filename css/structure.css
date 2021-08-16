@@ -128,12 +128,14 @@ body {
 	font-weight: 700;
 }
 
+/*
 .yarpp-related {
 	background-color: rgba(0,0,0,.02);
 	padding: 2rem 1rem 1rem 1rem;
 	margin: 4rem 0 0 0 !important;
 	text-align: center;
 }
+*/
 
 .yarpp-related ul {
 	list-style: none;
@@ -735,14 +737,17 @@ div.staff-member {
 }
 
 .yarpp-thumbnail,
-.yarpp-thumbnail-title {
+.yarpp-related .yarpp-thumbnail-title {
 	vertical-align: middle;
 	padding-left: 0.5rem;
 	color: var(--hw-blue);
+	font-size: 100% !important;
+	text-decoration: underline !important;
+	font-weight: 500 !important;
 }
 
-.yarpp-thumbnails-horizontal h3 {
-  margin-top: 1rem;
+.yarpp-related .yarpp-thumbnails-horizontal h3 {
+	margin: 1rem 0;
 }
 
 .yarpp-thumbnail.media-left.img-anchor {
@@ -753,6 +758,8 @@ div.staff-member {
 .yarpp-thumbnail-title:focus {
   outline: none;
 	background-color: var(--hw-blue);
+	color: White;
+	text-decoration: none !important;
 }
 
 .yarpp-thumbnail:hover {
