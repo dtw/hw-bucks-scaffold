@@ -711,6 +711,8 @@ img.media-object {
 
 .staff-member-info-wrap {
 	width: 90% !important;
+	float: none !important;
+	display: inline-block;
 }
 
 .staff-member-info-wrap img {
@@ -722,6 +724,7 @@ img.media-object {
 div.staff-member {
 	margin-bottom: 2rem;
 }
+
 .staff-member-info-wrap h2 {
 	margin: 0px;
 	padding: 0 0 1rem 0 !important;
