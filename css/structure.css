@@ -456,7 +456,8 @@ ul#local-services-selector li:last-child {
 #content a[href*="sharepoint"],
 #content a[href$=".pdf"],
 #content a[href$=".doc"],
-#content a[href$=".docx"] {
+#content a[href$=".docx"],
+#content a[href$=".pptx"] {
 	background-color: rgba(0,0,0,0.02);
 	border-radius: 5px;
 	border: solid 1px rgba(0,0,0,0.05);
@@ -470,7 +471,8 @@ ul#local-services-selector li:last-child {
 #content a[href*="sharepoint"]:before,
 #content a[href$=".pdf"]:before,
 #content a[href$=".doc"]:before,
-#content a[href$=".docx"]:before {
+#content a[href$=".docx"]:before,
+#content a[href$=".pptx"]:before {
 	padding-right: 2rem;
 	display: block;
 	font-weight: normal;
@@ -490,14 +492,22 @@ ul#local-services-selector li:last-child {
 	color: rgba(0,0,0,0.5);
 }
 
+#content a[href$=".ppt"]:after,
+#content a[href$=".pptx"]:after {
+	content: " / PowerPoint";
+	color: rgba(0,0,0,0.5);
+}
+
 #content a[href*="sharepoint"]:hover,
 #content a[href$=".pdf"]:hover,
 #content a[href$=".doc"]:hover,
 #content a[href$=".docx"]:hover,
+#content a[href$=".pptx"]:hover,
 #content a[href*="sharepoint"]:focus,
 #content a[href$=".pdf"]:focus,
 #content a[href$=".doc"]:focus,
-#content a[href$=".docx"]:focus {
+#content a[href$=".docx"]:focus,
+#content a[href$=".pptx"]:focus {
 	text-decoration: none;
 	background-color: var(--hw-purple);
 	border-color: var(--hw-purple);
@@ -509,18 +519,22 @@ ul#local-services-selector li:last-child {
 #content a[href$=".pdf"]:hover:before,
 #content a[href$=".doc"]:hover:before,
 #content a[href$=".docx"]:hover:before,
+#content a[href$=".pptx"]:hover:before,
 #content a[href*="sharepoint"]:hover:after,
 #content a[href$=".pdf"]:hover:after,
 #content a[href$=".doc"]:hover:after,
 #content a[href$=".docx"]:hover:after,
+#content a[href$=".pptx"]:hover:after,
 #content a[href*="sharepoint"]:focus:before,
 #content a[href$=".pdf"]:focus:before,
 #content a[href$=".doc"]:focus:before,
 #content a[href$=".docx"]:focus:before,
+#content a[href$=".pptx"]:focus:before,
 #content a[href*="sharepoint"]:focus:after,
 #content a[href$=".pdf"]:focus:after,
 #content a[href$=".doc"]:focus:after,
-#content a[href$=".docx"]:focus:after  {
+#content a[href$=".docx"]:focus:after,
+#content a[href$=".pptx"]:focus:after,  {
 	color: white;
 }
 
@@ -540,6 +554,13 @@ a[href$=".doc"]:before,
 a[href$=".docx"]:before {
 	font-family: 'Font Awesome 5 Pro';
 	content:"\f1c2 ";
+	font-weight: 900;
+}
+
+a[href$=".ppt"]:before,
+a[href$=".pptx"]:before {
+	font-family: 'Font Awesome 5 Pro';
+	content:"\f1c4 ";
 	font-weight: 900;
 }
 
