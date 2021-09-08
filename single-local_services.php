@@ -22,7 +22,7 @@
 				echo '</div>';
 			} ?>
 			<!-- Insert CQC WIDGET -->
-			<?php if (has_term('pharmacy','service_types')) {
+			<?php if (has_term('pharmacy','service_types') || get_post_meta(get_the_ID(),'hw_services_cqc_location',true) == '')  {
 			} else { ?>
 				<div id="cqc-widget-container" class="col-xs-12 sidebar-container">
 					<h3>How does the Care Quality Commission rate <?php the_title(); ?>?</h3>
