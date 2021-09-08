@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.7.9] - 2021-09-08
+### Changed
+- add new id to scroll to form
+- hide CQC widget if there is no cqc_location
+
 ## [1.7.8] - 2021-08-23
 ### Added
 - add CSS for pptx files
