@@ -8,15 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.7.7] - 2021-03-17
 ### Changed
-- Minor accessibility changes
+- minor accessibility changes
 
 ### Removed
-- Custom background option and colour options from customizer
+- custom background option and colour options from customizer
 
 ## [1.7.6] - 2021-01-20
 ### Changed
-- Ensure date of review is displayed if no rating is given.
-- New styles for MailChmip signup
+- ensure date of review is displayed if no rating is given.
+- new styles for MailChmip signup
 
 ## [1.7.5] - 2021-09-07
 ### Added
@@ -30,7 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.7.4] - 2021-06-18
 ### Changed
-- Updates for PHP7.0 compatibility
+- updates for PHP7.0 compatibility
 
 ## [1.7.3] - 2020-04-07
 ### Changed
