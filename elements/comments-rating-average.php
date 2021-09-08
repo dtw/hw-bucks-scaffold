@@ -44,6 +44,6 @@ if ($rating['count'] == 0) {
 
 <?php } // end IF ?>
 
-<p><a href="<?php echo get_the_permalink(); ?>#respond">Leave your own rating &raquo;</a></p>
+<p><a href="<?php echo get_the_permalink(); ?>#response-header">Leave your own rating &raquo;</a></p>
 
 </div>

@@ -7,7 +7,7 @@
 			<?php include('elements/comments-list.php'); ?>
 			<?php if (!is_user_logged_in()) { ?>
 				<hr />
-				<h2>Rate and review this service</h2>
+				<h2 id="response-header">Rate and review this service</h2>
 				<p>Your name and email address and other identifying information will not be published and will be stored in accordance with our <a href="http://www.healthwatchbucks.co.uk/privacy/" target="_blank">privacy policy</a>. Required fields are marked with an asterisk.</p>
 				<?php include('elements/comments-form.php');
 			} ?>

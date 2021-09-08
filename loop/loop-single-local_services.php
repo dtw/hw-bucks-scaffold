@@ -98,7 +98,7 @@
 			<?php } ?>
 				<div id="rating-link" class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12 text-right">
-						<p><a href="<?php echo get_the_permalink(); ?>#respond">Leave your own rating &raquo;</a></p>
+						<p><a href="<?php echo get_the_permalink(); ?>#response-header">Leave your own rating &raquo;</a></p>
 					</div>
 				</div>
 			</div><!-- end of col 2 service-rating-details -->
