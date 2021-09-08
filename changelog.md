@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.7.8] - 2021-08-23
+### Added
+- add CSS for pptx files
+- add CSS for BI frame
+- add CSS to hide disclaimer in MS Forms forms
+
+### Changed
+- update CSS rules after YARPP default changes
+- fix CSS spacing on Team page
+
 ## [1.7.7] - 2021-03-17
 ### Changed
 - minor accessibility changes
