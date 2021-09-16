@@ -84,10 +84,10 @@
 /* 1199px and below --- */
 
 @media (max-width: 1199px) {
-	body {
+	/*body {
 		padding-top: 142px;
 	}
-
+*/
 	.navbar-nav > li > a {
 		padding-left: .7rem;
 		padding-right: .7rem;
@@ -149,10 +149,10 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 */
 
 @media only screen and (max-width: 767px) {
-	body {
+	/*body {
 		padding-top: 13.9rem;
 	}
-
+*/
 	#sidebar {
 		padding-left: 0px;
 		padding-right: 0px;
