@@ -13,7 +13,7 @@ function scaffold_add_theme_scripts() {
 
 	wp_enqueue_script( 'scaffold_hide_on_scroll', get_template_directory_uri() . '/js/hide_on_scroll.js');
 
-	wp_enqueue_script( 'scaffold_compact_on_scroll', get_template_directory_uri() . '/js/compact_on_scroll.js');
+	// wp_enqueue_script( 'scaffold_compact_on_scroll', get_template_directory_uri() . '/js/compact_on_scroll.js');
 
 	wp_enqueue_script( 'recaptcha_2', 'https://www.google.com/recaptcha/api.js');
 
