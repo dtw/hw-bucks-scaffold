@@ -8,7 +8,7 @@
 }
 
 .navbar {
-	border-bottom: none !important;
+	border: none !important;
 }
 
 .navbar-compact #nav-spacer {
