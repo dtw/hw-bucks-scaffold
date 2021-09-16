@@ -170,11 +170,11 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 		/*max-width: 140px;*/
 		padding-left: 1.5rem;
 	}
-
+/*
 	.navbar-admin {
 		padding-top: 46px;
 	}
-
+*/
 	.navbar-compact #nav-spacer {
 		padding-top: 0px;
 		padding-bottom: 0px;
@@ -421,9 +421,11 @@ Annoyingly different from Bootstrap! */
 
 @media only screen and (max-width: 781px) {
 	/*WordPress admin bar goes mobile */
-	.navbar-admin {
+	/*
+  .navbar-admin {
 		padding-top: 46px;
 	}
+  */
 }
 
 @media only screen and (max-width: 600px) {
