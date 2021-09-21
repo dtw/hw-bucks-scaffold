@@ -21,29 +21,6 @@
     }
     ?>
 
-<!-- META TAGS -->
-
-	<?php if (is_home('')) {
-				$thedescription = get_bloginfo('description'); } else {
-
-		if (is_single() || is_page()) {
-				$thedescription = get_the_excerpt(); }
-
-		if (is_singular('local_services')) {
-
-				$aCity = get_post_meta(get_the_ID(),'hw_services_city',true);
-
-
-				$thedescription = "Rate and review the service offered by " . get_the_title() . ", " .  $aCity;
-
-			}?>
-      <meta name="description" content="<?php echo $thedescription; ?>" />
-      <meta property="og:description" content="<?php echo $thedescription; ?>" />
-      <meta name="twitter:description" content="<?php echo $thedescription; ?>" />
-    <?php }
-				?>
-
-
 <!-- SUPPORT FOR INTERNET EXPLORER -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
