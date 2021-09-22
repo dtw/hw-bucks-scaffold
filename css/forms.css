@@ -173,12 +173,27 @@ footer .AjaxSearchProWidget h3 {
 	line-height: inherit !important;
 }
 
+.results .item .asp_content h3 a:hover,
+div.asp_r.asp_r_1 .results .item .asp_content h3 a:hover,
 .ajaxsearchpro .results .item .asp_content h3 a:hover,
+.results .item .asp_content h3 a:focus,
+div.asp_r.asp_r_1 .results .item .asp_content h3 a:focus,
 .ajaxsearchpro .results .item .asp_content h3 a:focus {
 	color: white !important;
-	outline: 1px solid #0080A4;
+	outline: 1px solid var(--url-blue);
 }
 
+.results .item .asp_content h3 a,
+div.asp_r.asp_r_1 .results .item .asp_content h3 a {
+	display: inline !important;
+	color: var(--url-blue) !important
+}
+
+.vertical,
+div.asp_r.asp_r_1.vertical {
+	border: 1px solid var(--hw-blue) !important;
+	padding: 0px !important;
+}
 /* Gravity Forms
 ----------------------------------- */
 
