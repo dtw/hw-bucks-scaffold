@@ -27,9 +27,8 @@ yoast_breadcrumb('
 
 
     <div id="sidebar" class="col-md-4 col-xs-12">
-        <?php get_sidebar(); ?>
-            </div>
-
-</div><!-- end of row -->
+			<?php get_sidebar(); ?>
+		</div>
+	</div><!-- end of row -->
 
 <?php get_footer(); ?>
