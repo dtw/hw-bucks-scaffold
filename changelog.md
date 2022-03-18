@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.8.4] - 2021-10-08
+### Added
+- date to single posts (near bottom, above tags)
+
 ## [1.8.3] - 2021-09-30
 ### Added
 - full date/time in tooltip when hovering on date in comments feed
