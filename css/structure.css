@@ -17,9 +17,13 @@ body {
 
 .page-header {
 	background-color: var(--hw-blue);
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 	margin-top: 0px;
 	margin-bottom: 2rem;
+}
+
+#excerpt {
+  margin-bottom: 1rem;
 }
 
 .row.page-header h1 {

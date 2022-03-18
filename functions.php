@@ -124,6 +124,29 @@ function wrap_oembed_dataparse($return, $data, $url) {
 
 add_filter( 'oembed_dataparse', 'wrap_oembed_dataparse', 99, 4 );
 
+// don't create an excerpt from content if blank
+remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
+
+/**
+ * Filter the excerpt length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+// Wrap the excerpt in some html
+function scaffold_excerpt($content) {
+		if ( ! empty($content) ) {
+			return '<div id="excerpt">' . $content . '</div>';
+		}
+}
+
+add_filter('the_excerpt', 'scaffold_excerpt');
+
 /* 6. Security
 ------------------------------------------------------------------------------ */
 
