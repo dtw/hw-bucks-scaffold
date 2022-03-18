@@ -34,7 +34,7 @@ $total_comments = count($comments); ?>
 						if ($individual_rating == 1) echo '<span class="screen-reader-text">'.$individual_rating.' star</span>';
 						else echo '<span class="screen-reader-text">'.$individual_rating.' stars</span>';
 					?>
-					&mdash; <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>
+				&mdash; <a href="#" data-toggle="tooltip" data-placement="right" title="<?php echo get_comment_time('Y-m-d H:i'); ?>" class="date-tooltip"><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></a></p>
 			<?php } else { // there is no rating ?>
 				<p class="star-rating p-rating"><strong>No rating &mdash; <?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>
 			<?php } ?>

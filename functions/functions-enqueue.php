@@ -17,6 +17,12 @@ function scaffold_add_theme_scripts() {
 
 	wp_enqueue_script( 'recaptcha_2', 'https://www.google.com/recaptcha/api.js');
 
+	// only on enqueue on local_services
+
+	if  ( is_singular('local_services') ) {
+		wp_enqueue_script( 'scaffold_tooltip_enable', get_template_directory_uri() . '/js/tooltip-enable.js');
+	}
+
 /* 7. Enqueue CSS
 ------------------------------------------------------------------------------ */
 

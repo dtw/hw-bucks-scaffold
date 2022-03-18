@@ -283,3 +283,17 @@ a:hover, a:focus {
  	background-color: var(--hw-blue);
  	outline: 3px solid var(--hw-blue);
  }
+
+ .date-tooltip {
+ 	font-weight: bold;
+ 	text-decoration: none;
+ 	color: rgb(17, 17, 17);
+ }
+
+ .date-tooltip:hover,
+ .date-tooltip:active {
+ 	color: rgb(17,17,17);
+ 	background-color: transparent;
+ 	outline: none;
+ 	cursor: default;
+ }
