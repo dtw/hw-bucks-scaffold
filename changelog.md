@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.8.3] - 2021-09-30
+### Added
+- full date/time in tooltip when hovering on date in comments feed
+
 ## [1.8.2] - 2021-09-22
 ### Changed
 - update CSS rules for Ajax Search Pro and admin area
