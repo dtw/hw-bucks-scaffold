@@ -242,7 +242,7 @@ footer ul li {
 
 .hw-reply-quote a:hover,
 .hw-reply-quote a:focus {
-	color: #FAFAFA;
+	color: var(--hw-pale-grey);
 	background-color: var(--hw-blue);
 	outline: 3px solid var(--hw-blue);
 }
@@ -475,7 +475,7 @@ ul#local-services-selector li:last-child {
 #content a[href$=".doc"],
 #content a[href$=".docx"],
 #content a[href$=".pptx"] {
-	background-color: rgba(0,0,0,0.02);
+	background-color: var(--hw-pale-grey);
 	border-radius: 5px;
 	border: solid 1px rgba(0,0,0,0.05);
 	margin: 1rem 0 1rem 0;
@@ -1166,7 +1166,7 @@ a.child-details:focus {
 #service-rating-details a:hover,
 #service-contact-details a:focus,
 #service-rating-details a:focus {
-	color: #FAFAFA;
+	color: var(--hw-pale-grey);
 	background-color: var(--hw-blue);
 	outline: 3px solid var(--hw-blue);
 }
