@@ -149,6 +149,17 @@ body {
 	text-align: center;
 }
 
+.the-date {
+	padding: 1rem;
+	background-color: rgba(0,0,0,.04);
+}
+
+.the-date p {
+	font-family: Open Sans, sans-serif;
+	line-height: 2.6rem;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
 /* Footer ---------------- */
 
 #subfooter {
