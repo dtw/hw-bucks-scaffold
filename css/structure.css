@@ -476,12 +476,15 @@ ul#local-services-selector li:last-child {
 
 #content a[href*="sharepoint"],
 #content a[href$=".pdf"],
+#content a[href$="test123"],
+#content a.btn-download,
 #content a[href$=".doc"],
 #content a[href$=".docx"],
 #content a[href$=".pptx"] {
 	background-color: var(--hw-pale-grey);
 	border-radius: 5px;
-	border: solid 1px rgba(0,0,0,0.05);
+	/*border-color: var(--hw-purple);*/
+	border: 2px solid var(--hw-purple);
 	margin: 1rem 0 1rem 0;
 	padding: 1.6rem 2rem;
 	display: inline-block;
@@ -489,43 +492,84 @@ ul#local-services-selector li:last-child {
 	text-decoration: none;
 }
 
-#content a[href*="sharepoint"]:before,
-#content a[href$=".pdf"]:before,
-#content a[href$=".doc"]:before,
-#content a[href$=".docx"]:before,
-#content a[href$=".pptx"]:before {
-	padding-right: 2rem;
+#content a[href*="sharepoint"]::before,
+#content a[href$=".pdf"]::before,
+#content a[href$="test123"]::before,
+#content a.btn-download::before,
+#content a[href$=".doc"]::before,
+#content a[href$=".docx"]::before,
+#content a[href$=".pptx"]::before {
+	padding-right: 1.2rem;
 	display: block;
+	font-family: 'Font Awesome 5 Pro';
 	font-weight: normal;
+	font-size: 2rem;
 	text-decoration: none;
 	float: left;
-	color: rgba(0,0,0,0.60);
+	/*color: var(--hw-purple);*/
 }
 
-#content a[href$=".pdf"]:after {
+#content a[href*="sharepoint"]::before,
+#content a[href$="test123"]::before,
+#content a.btn-download::before {
+	content: "\f381";
+	font-weight: 900;
+}
+
+#content a[href$=".pdf"]::before {
+	content:"\f1c1 ";
+	font-weight: 400;
+}
+
+#content a[href$=".doc"]::before,
+#content a[href$=".docx"]::before {
+	content:"\f1c2 ";
+	font-weight: 900;
+}
+
+#content a[href$=".ppt"]::before,
+#content a[href$=".pptx"]::before {
+	content:"\f1c4 ";
+	font-weight: 900;
+}
+
+#content a[href$=".pdf"]::after {
 	content: " / PDF";
-	color: rgba(0,0,0,0.5);
+	color: var(--hw-purple);
+	font-family: inherit;
+	padding-left: .5rem;
+	font-weight: 700;
 }
 
-#content a[href$=".doc"]:after,
-#content a[href$=".docx"]:after {
+#content a[href$=".doc"]::after,
+#content a[href$=".docx"]::after {
 	content: " / Word";
-	color: rgba(0,0,0,0.5);
+	color: var(--hw-purple);
+	font-family: inherit;
+	padding-left: .5rem;
+	font-weight: 700;
 }
 
-#content a[href$=".ppt"]:after,
-#content a[href$=".pptx"]:after {
+#content a[href$=".ppt"]::after,
+#content a[href$=".pptx"]::after {
 	content: " / PowerPoint";
-	color: rgba(0,0,0,0.5);
+	color: var(--hw-purple);
+	font-family: inherit;
+	padding-left: .5rem;
+	font-weight: 700;
 }
 
 #content a[href*="sharepoint"]:hover,
 #content a[href$=".pdf"]:hover,
+#content a[href$="test123"]:hover,
+#content a.btn-download:hover,
 #content a[href$=".doc"]:hover,
 #content a[href$=".docx"]:hover,
 #content a[href$=".pptx"]:hover,
 #content a[href*="sharepoint"]:focus,
 #content a[href$=".pdf"]:focus,
+#content a[href$="test123"]:focus,
+#content a.btn-download:focus,
 #content a[href$=".doc"]:focus,
 #content a[href$=".docx"]:focus,
 #content a[href$=".pptx"]:focus {
@@ -536,53 +580,35 @@ ul#local-services-selector li:last-child {
 	outline: none;
 }
 
-#content a[href*="sharepoint"]:hover:before,
-#content a[href$=".pdf"]:hover:before,
-#content a[href$=".doc"]:hover:before,
-#content a[href$=".docx"]:hover:before,
-#content a[href$=".pptx"]:hover:before,
-#content a[href*="sharepoint"]:hover:after,
-#content a[href$=".pdf"]:hover:after,
-#content a[href$=".doc"]:hover:after,
-#content a[href$=".docx"]:hover:after,
-#content a[href$=".pptx"]:hover:after,
-#content a[href*="sharepoint"]:focus:before,
-#content a[href$=".pdf"]:focus:before,
-#content a[href$=".doc"]:focus:before,
-#content a[href$=".docx"]:focus:before,
-#content a[href$=".pptx"]:focus:before,
-#content a[href*="sharepoint"]:focus:after,
-#content a[href$=".pdf"]:focus:after,
-#content a[href$=".doc"]:focus:after,
-#content a[href$=".docx"]:focus:after,
-#content a[href$=".pptx"]:focus:after,  {
-	color: white;
-}
-
-#content a[href*="sharepoint"]:before {
-	content: "\f381";
-	font-family: 'Font Awesome 5 Pro';
-	font-weight: 900;
-}
-
-a[href$=".pdf"]:before {
-	font-family: 'Font Awesome 5 Pro';
-	content:"\f1c1 ";
-	font-weight: 400;
-}
-
-a[href$=".doc"]:before,
-a[href$=".docx"]:before {
-	font-family: 'Font Awesome 5 Pro';
-	content:"\f1c2 ";
-	font-weight: 900;
-}
-
-a[href$=".ppt"]:before,
-a[href$=".pptx"]:before {
-	font-family: 'Font Awesome 5 Pro';
-	content:"\f1c4 ";
-	font-weight: 900;
+#content a[href*="sharepoint"]:hover::before,
+#content a[href$=".pdf"]:hover::before,
+#content a[href$="test123"]:hover::before,
+#content a.btn-download:hover::before,
+#content a[href$=".doc"]:hover::before,
+#content a[href$=".docx"]:hover::before,
+#content a[href$=".pptx"]:hover::before,
+#content a[href*="sharepoint"]:hover::after,
+#content a[href$=".pdf"]:hover::after,
+#content a[href$="test123"]:hover::after,
+#content a.btn-download:hover::after,
+#content a[href$=".doc"]:hover::after,
+#content a[href$=".docx"]:hover::after,
+#content a[href$=".pptx"]:hover::after,
+#content a[href*="sharepoint"]:focus::before,
+#content a[href$=".pdf"]:focus::before,
+#content a[href$="test123"]:focus::before,
+#content a.btn-download:focus::before,
+#content a[href$=".doc"]:focus::before,
+#content a[href$=".docx"]:focus::before,
+#content a[href$=".pptx"]:focus::before,
+#content a[href*="sharepoint"]:focus::after,
+#content a[href$=".pdf"]:focus::after,
+#content a[href$="test123"]:focus::after,
+#content a.btn-download:focus::after,
+#content a[href$=".doc"]:focus::after,
+#content a[href$=".docx"]:focus::after,
+#content a[href$=".pptx"]:focus::after  {
+	color: var(--hw-pale-grey);
 }
 
 /* Buttons
@@ -599,26 +625,55 @@ a[href$=".pptx"]:before {
 	white-space: normal;
 	font-size: 1.8rem;
 	font-weight: 700;
+	border: 2px solid;
+	padding: 1.2rem;
 }
 
-.btn:after {
+.btn::after {
 	content: " \f105";
 	font-family: 'Font Awesome 5 Pro';
 	padding-left: .5rem;
 	font-weight: 900;
+	font-size: 2rem;
 }
 
-.btn:hover:after {
+.btn:hover::after {
 	color: rgba(255,255,255,.6);
 }
 
 .btn-primary {
-	border-width: 1px;
-	border-style: solid;
 	letter-spacing: .05rem;
 	text-shadow: none;
 	font-family: inherit;
 	box-shadow: none;
+}
+
+.btn-download {
+	letter-spacing: 0rem;
+	font-size: inherit;
+}
+
+.btn.btn-download::after {
+  color: var(--hw-purple);
+}
+
+.btn.btn-cta {
+	color: #fff;
+	background: var(--hw-orange);
+	text-decoration: none;
+	letter-spacing: .05rem;
+}
+
+.btn.btn-cta:hover,
+.btn.btn-cta:focus {
+	color: var(--hw-orange);
+	background-color: #fff;
+	outline: none;
+	border-color: var(--hw-orange);
+}
+
+.btn.btn-cta:hover::after {
+	color: var(--hw-orange);
 }
 
 /* Agnosia Bootstrap Carousel by AuSoft
@@ -733,10 +788,15 @@ img.media-object {
 	padding: 1.2rem;
 	font-size: 2rem;
 	font-weight: 700;
+	border-radius: 0;
 }
 
 .alert button span {
 	font-weight: bold;
+}
+
+.alert a {
+	color: var(--hw-blue);
 }
 
 /* Clips
@@ -1017,6 +1077,7 @@ a.child-details:focus {
 	border-radius: 3px;
 	color: var(--hw-pink) !important;
 	text-decoration: none !important;
+	margin-bottom: 0.4rem;
 }
 
 .the-tags-archive a:hover,
