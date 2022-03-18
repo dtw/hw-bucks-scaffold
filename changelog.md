@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.9.1] - 2021-10-15
 ### Changed
 - link to comment moderation information
+- don't create an excerpt from content if blank
+- limited excerpt to 20 words
+- add formatting div to the_excerpt
+- update button styles for accessibility
 
 ## [1.9] - 2021-10-13
 ### Removed
