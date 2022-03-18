@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.8.1] - 2021-09-21
+### Removed
+- meta tags no longer set in theme
+
+## [1.8] - 2021-09-16
+### Added
+- data-nosnippet to #nav to try to stop SE showing our contact details at the top of service results.
+
+### Removed
+- CSS and classes for Bootstrap fixed navbar
+- CSS to support top fixed cookie-notice
+
 ## [1.7.9] - 2021-09-08
 ### Changed
 - add new id to scroll to form
