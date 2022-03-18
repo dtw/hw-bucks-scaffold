@@ -28,10 +28,6 @@
 	// ADMIN DASHBOARD modifications
 	require_once('functions/functions-dashboard.php');
 
-	// COMMENTS and COMMENT FORM modifications
-	require_once('functions/functions-comments.php');
-
-
 /* Add theme support
 ------------------------------------------------------------------------------ */
 
