@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.9] - 2021-10-13
+### Removed
+- move function-comments.php to child theme
+
 ## [1.8.4] - 2021-10-08
 ### Added
 - date to single posts (near bottom, above tags)
