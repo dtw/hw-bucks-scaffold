@@ -369,14 +369,17 @@ form#mc-embedded-subscribe-form input[type="email"] {
 
 form#mc-embedded-subscribe-form input[type="submit"] {
 	font-weight: 700;
-	background-color: #0F4F6B;
+	background-color: var(--hw-pink);
+	border: 2px solid var(--hw-pink);
 	font-size: 1.8rem;
 	letter-spacing: .1rem;
 	margin-left: 0;
+	padding: 0.8rem 1.5rem;
 }
 
 form#mc-embedded-subscribe-form input[type="submit"]:hover {
-	background-color: var(--hw-pink); /* pink */
+	background-color: white;
+	color: var(--hw-pink);
 }
 
 form#mc-embedded-subscribe-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -440,3 +443,20 @@ form#mc-embedded-subscribe-form :-moz-placeholder { /* Firefox 18- */
 *:focus::-moz-placeholder { opacity: 0; } /* FF 19-50 */
 *:focus:-ms-input-placeholder { opacity: 0; } /* IE 10+ */
 *:focus::placeholder { opacity: 0; } /* Modern Browsers */
+
+/* Survey Monkey embedded surveys */
+.smcx-embed {
+	max-width: 100% !important;
+	margin-bottom: 20px !important;
+	border: none !important;
+}
+
+.smcx-embed > .smcx-iframe-container {
+	max-width: 100% !important;
+}
+
+.smcx-widget-footer.smcx-embed-footer {
+	display: none !important;
+}
+
+#dummy {}

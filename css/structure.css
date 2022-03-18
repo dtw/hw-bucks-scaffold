@@ -381,7 +381,11 @@ iframe:hover {
 ----------------------------------- */
 
 .powerbi iframe {
-	border: 0px;
+	/* border: 0px; */
+}
+
+.powerbi .panel .panel-body img.alignnone {
+  margin: 0;
 }
 
 /* Bootstrap helper classes
