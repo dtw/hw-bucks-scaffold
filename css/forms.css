@@ -60,7 +60,7 @@ form input[type="submit"]:hover {
 
 /* embedded MC form */
 #mailchimp-container {
-	background-color: #0080a4;
+	background-color: var(--url-blue);
 	margin: 3rem auto;
 	border-radius: 5px;
 }
@@ -154,7 +154,7 @@ input#mc-embedded-subscribe.button {
 
 .widget_search,
 .home .widget_search {
-	background-color: #0080A4;
+	background-color: var(--url-blue);
 	padding: 2rem;
 	margin: 0 0 2rem 0;
 	border-style: none;
@@ -416,9 +416,9 @@ form#mc-embedded-subscribe-form :-moz-placeholder { /* Firefox 18- */
 #commentform a:focus,
 .comment-reply-link:hover,
 .comment-reply-link:focus {
-	color: #FAFAFA;
-	background-color: #23527c;
-	outline: 3px solid #23527c;
+	color: var(--hw-grey);
+	background-color: var(--hw-blue);
+	outline: 3px solid var(--hw-blue);
 }
 
 /* Enable disable forms */

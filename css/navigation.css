@@ -110,7 +110,7 @@
 
 .navbar-nav a:hover,
 .navbar-nav a:focus {
-	background-color: #0080A4 !important;
+	background-color: var(--url-blue) !important;
 	color: rgba(255,255,255,1.00);
 	text-decoration: none !important;
 }
@@ -235,12 +235,12 @@
 }
 
 .advanced-sidebar-menu a {
-	color: #23527c;
+	color: var(--hw-blue);
 }
 
 .advanced-sidebar-menu a:hover,
 .advanced-sidebar-menu a:focus {
-	color: #FAFAFA;
+	color: var(--hw-grey);
 }
 
 .advanced-sidebar-menu ul:first-child {
@@ -318,8 +318,8 @@ li.current_page_item.has_children ul.grandchild-sidebar-menu {
 .advanced-sidebar-menu ul li a:hover,
 .advanced-sidebar-menu ul li a:focus {
 	text-decoration: underline;
-	background-color: #23527c !important;
-	outline: 1px solid #23527c;
+	background-color: var(--hw-blue) !important;
+	outline: 1px solid var(--hw-blue);
 }
 
 .advanced-sidebar-menu ul ul li a{
@@ -350,14 +350,14 @@ div.child-nav-img {
 }
 
 #breadcrumbs a {
-	color: #23527c;
+	color: var(--hw-blue);
 }
 
 #breadcrumbs a:hover,
 #breadcrumbs a:focus {
-	color: #FAFAFA;
-	background-color:	#23527c;
-	outline: 3px solid #23527c;
+	color: var(--hw-grey);
+	background-color:	var(--hw-blue);
+	outline: 3px solid var(--hw-blue);
 }
 
 /* Pagination
@@ -372,5 +372,5 @@ div.child-nav-img {
 }
 
 .wp-paginate a {
-	background-color: #FAFAFA !important;
+	background-color: var(--hw-grey) !important;
 }
