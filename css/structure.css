@@ -388,6 +388,14 @@ iframe:hover {
   margin: 0;
 }
 
+.powerbi .panel {
+	margin-bottom: 0px !important;
+}
+
+.powerbi .panel.panel-default {
+	padding: 1.5rem;
+}
+
 /* Bootstrap helper classes
 ----------------------------------- */
 
