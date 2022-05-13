@@ -267,6 +267,20 @@ a:hover, a:focus {
 	outline-offset: 0px;
 }
 
+/* HW Hyperlink in the loop */
+
+.loop-default a {
+	color: var(--hw-hyperlink);
+}
+
+.loop-default a:hover, .loop-default a:focus {
+	background-color: var(--hw-hyperlink);
+	color: rgba(255,255,255,1.00);
+	outline: 3px solid var(--hw-hyperlink);
+	text-decoration: none;
+	outline-offset: 0px;
+}
+
 /* Don't override WP styles */
 #wpadminbar a:hover,
 #wpadminbar a:focus {
