@@ -26,7 +26,7 @@
 */
 .tagline {
 	font-size: 1.6rem;
-	font-family: Bitter;
+	font-family: inherit;
 	font-weight: 600;
 	color: white;
 	margin-bottom: 2rem;
@@ -118,8 +118,8 @@
 .navbar-nav > li > a {
 	text-shadow: none;
 	letter-spacing: .03rem;
-	font-family: Bitter, serif;
 	font-weight: 600;
+	font-family: inherit;
 	font-size: 1.7rem;
 	padding: 0.5rem 1rem;
 }
@@ -231,7 +231,7 @@
 ------------------------------------------- */
 
 .advanced-sidebar-menu {
-    font-family: "Bitter", serif;
+    font-family: inherit;
 }
 
 .advanced-sidebar-menu a {
