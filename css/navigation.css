@@ -27,7 +27,7 @@
 .tagline {
 	font-size: 1.6rem;
 	font-family: Bitter;
-	font-weight: 700;
+	font-weight: 600;
 	color: white;
 	margin-bottom: 2rem;
 	background-color: rgb(35, 82, 124);
@@ -118,8 +118,8 @@
 .navbar-nav > li > a {
 	text-shadow: none;
 	letter-spacing: .03rem;
-	font-weight: 700;
 	font-family: Bitter, serif;
+	font-weight: 600;
 	font-size: 1.7rem;
 	padding: 0.5rem 1rem;
 }
@@ -203,7 +203,7 @@
 ------------------------------------------- */
 
 #content a.child-link {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 #content a.child-link:after {
@@ -270,13 +270,13 @@
 }
 
 .advanced-sidebar-menu .current_page_parent {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /*.advanced-sidebar-menu .current_page_parent a:hover::after {
 	content: "\f077";
 	font-family: 'Font Awesome 5 Pro';
-	font-weight: 700;
+	font-weight: 600;
 	float: right;
 	opacity: .3;
 }*/
@@ -302,7 +302,7 @@ li.current_page_item.has_children ul.grandchild-sidebar-menu {
 }
 
 .advanced-sidebar-menu li.current_page_item a{
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .advanced-sidebar-menu li.current_page_item li a{
