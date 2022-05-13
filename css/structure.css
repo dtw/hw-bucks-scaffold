@@ -1078,12 +1078,13 @@ a.child-details:focus {
 .the-tags-archive a,
 .the-taxonomies-archive a,
 .the-tags p a {
-	background-color: white;
+	font-size: 1.6rem;
+	background-color: var(--hw-hyperlink);
 	border: 1px solid darkgray;
 	padding: 2px 8px;
 	display: inline-block;
 	border-radius: 3px;
-	color: var(--hw-pink) !important;
+	color: white !important;
 	text-decoration: none !important;
 	margin-bottom: 0.4rem;
 }
@@ -1094,8 +1095,8 @@ a.child-details:focus {
 .the-tags-archive a:focus,
 .the-taxonomies-archive a:focus,
 .the-tags p a:focus {
-	color: white !important;
-	background-color: var(--hw-pink) !important;
+	color: var(--hw-hyperlink) !important;
+	background-color: white !important;
 	outline: none !important;
 	text-decoration: none !important;
 }
