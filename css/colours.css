@@ -63,7 +63,7 @@ footer {
 .navbar-nav .current-menu-item a,
 .navbar-nav .current_page_item a,
 .navbar-nav .current-post-ancestor a {
-	color: var(--hw-pink);
+	color: var(--hw-hyperlink);
 }
 
 .navbar-nav .current-menu-item a:hover,
@@ -72,8 +72,8 @@ footer {
 .navbar-nav .current-post-ancestor a:focus,
 .navbar-nav .current_page_item a:hover,
 .navbar-nav .current_page_item a:focus {
-  background-color: var(--hw-pink) !important;
-  outline: 3px solid var(--hw-pink);
+  background-color: var(--hw-hyperlink) !important;
+  outline: 3px solid var(--hw-hyperlink);
   color: rgba(255,255,255,1.00);
 }
 
@@ -133,13 +133,13 @@ h1 {
 
 .call-to-action a,
 .call-to-action a:visited {
-	color:var(--hw-pink);
+	color:var(--hw-hyperlink);
 	font-weight:bold;
 	font-size: 1.2em;
 }
 
 .call-to-action:visited {
-	color:var(--hw-pink);
+	color:var(--hw-hyperlink);
 	font-weight:bold;
 	text-decoration:none;
 	font-size: 1.2em;
@@ -148,8 +148,8 @@ h1 {
 .call-to-action a:hover,
 .call-to-action a:focus {
 	text-decoration: none;
-	background-color: var(--hw-pink) !important;
-	outline: 3px solid var(--hw-pink);
+	background-color: var(--hw-hyperlink) !important;
+	outline: 3px solid var(--hw-hyperlink);
 	color: rgba(255,255,255,1.00);
 }
 
