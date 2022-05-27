@@ -6,11 +6,16 @@
 	--hw-green: #84BA00;
   --hw-purple: #a81563;
   --hw-orange: #E32A0D;
-  --hw-blue: #23527c;
+  --hw-blue: #004F6B;
   --hw-pale-grey: #fafafa;
   --hw-hyperlink: #a81563;
   --hw-teal: #00b38c;
+  --hw-yellow: #f9b93e;
   --hw-light-blue: #7fcbeb;
+  /* 50% Tints */
+  --hw-blue-50: #7fa7b5;
+  --hw-yellow-50: #fcdc9e;
+  --hw-light-blue-50: #bfe5f5;
 }
 
 /* White
