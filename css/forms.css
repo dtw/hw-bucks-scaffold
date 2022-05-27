@@ -408,17 +408,20 @@ form#mc-embedded-subscribe-form :-moz-placeholder { /* Firefox 18- */
 }
 
 #commentform a,
-.comment-reply-link {
-	color: var(--hw-blue);
+.comment-reply-link,
+.comment-body a {
+	color: var(--hw-hyperlink);
 }
 
 #commentform a:hover,
 #commentform a:focus,
 .comment-reply-link:hover,
-.comment-reply-link:focus {
+.comment-reply-link:focus,
+.comment-body a:hover,
+.comment-body a:focus {
 	color: var(--hw-pale-grey);
-	background-color: var(--hw-blue);
-	outline: 3px solid var(--hw-blue);
+	background-color: var(--hw-hyperlink);
+	outline: 3px solid var(--hw-hyperlink);
 }
 
 /* Enable disable forms */
