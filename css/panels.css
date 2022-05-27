@@ -1,0 +1,38 @@
+
+/* style.min.css | https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold-child/style.min.css */
+
+.home .panel-blue, .home .panel-blue .panel-icon-img {
+  /* border: rgba(252,219,214,.8)solid 2px !important; */
+  /* background-color: rgba(252,219,214,.8); */
+  border: var(--hw-yellow) solid 8px !important;
+  background-color: var(--hw-light-blue-50);
+}
+
+.home .panel h2 {
+  /* color: rgba(0,0,0,.6); */
+  /* font-size: 3.2rem; */
+  /* font-weight: 700 !important; */
+  color: var(--hw-blue);
+  font-size: 4rem;
+  font-weight: 900 !important;
+}
+
+.home .panel .title-link {
+  /* font-size: 2.5rem; */
+  font-size: 3rem;
+}
+
+.panel-blue .btn-primary {
+  /* background-color: var(--hw-orange); */
+  background-color: var(--hw-blue);
+}
+
+/* typography.css | https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold/css/typography.css */
+
+.home .panel p,
+.home .panel li {
+  /* font-size: 1.6rem; */
+  /* line-height: 2.4rem; */
+  font-size: 2rem;
+  line-height: 3rem;
+}
