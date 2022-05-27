@@ -54,6 +54,16 @@ body {
 	display: block;
 }
 
+#signposts-selector .signpost-container a {
+	color: white;
+}
+
+#signposts-selector .signpost-container a:hover,
+#signposts-selector .signpost-container a:focus {
+	background-color: rgb(35, 82, 124, 0.85);
+	outline: none;
+}
+
 #signpost-categories {
 	margin: 2rem 0;
 }
