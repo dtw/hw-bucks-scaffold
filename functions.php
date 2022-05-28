@@ -88,6 +88,7 @@ update_option('image_default_link_type','none');
 function remove_meta_boxes() {
 	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' );
 	remove_meta_box( 'trackbacksdiv' , 'page' , 'normal' );
+	remove_meta_box( 'postcustom' , 'local_services' , 'normal' );
 }
 add_action( 'admin_menu' , 'remove_meta_boxes' );
 
