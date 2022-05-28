@@ -84,7 +84,7 @@ $hwid = $_GET["hwid"]; ?>
 
 	<?php $args = array (
 	'posts_per_page' => 1,
-	'post_type' => 'Local_services',
+	'post_type' => 'local_services',
 	'orderby' => 'comment_count',
 	'p' => $hwid,
 	);
