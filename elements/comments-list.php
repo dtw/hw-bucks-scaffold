@@ -30,7 +30,7 @@ $total_comments = count($comments); ?>
 				$star_count = 0; ?>
 				<p class="star-rating p-rating">
 					<?php
-						echo feedbackstarrating($individual_rating,array('size' => 'fa-lg'));
+						echo hw_feedback_star_rating($individual_rating,array('size' => 'fa-lg'));
 						if ($individual_rating == 1) echo '<span class="screen-reader-text">'.$individual_rating.' star</span>';
 						else echo '<span class="screen-reader-text">'.$individual_rating.' stars</span>';
 					?>

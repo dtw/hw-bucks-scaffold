@@ -3,7 +3,7 @@
 <?php
 
 // returns an array containing the
-$rating = getrating($post);
+$rating = hw_feedback_get_rating($post);
 
 if ($rating['count'] == 0) {
 
@@ -30,7 +30,7 @@ if ($rating['count'] == 0) {
 
 <p>
 	<?php
-		echo feedbackstarrating($average_rating,array('size' => 'fa-lg'));
+		echo hw_feedback_star_rating($average_rating,array('size' => 'fa-lg'));
 	?>
 </p>
 <p>Rated <strong><?php echo $average_rating; ?></strong> out of 5 by <strong><?php echo $rating['count']; ?>
