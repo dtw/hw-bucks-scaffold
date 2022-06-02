@@ -67,7 +67,7 @@
 					<div class="col-lg-8 col-md-6 col-sm-8 col-xs-12 star-rating">
 						<p>
 						<?php $rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true );
-							echo feedbackstarrating($rating,array('colour' => 'green','size' => 'fa-lg'));
+							echo hw_feedback_star_rating($rating,array('colour' => 'green','size' => 'fa-lg'));
 							if ($rating == 1) echo '<span class="screen-reader-text">'.$rating.' star</span>';
 							else echo '<span class="screen-reader-text">'.$rating.' stars</span>';
 						?>
@@ -76,7 +76,7 @@
 				</div><!-- end of row -->
 				<?php }
 				// QUERY the COMMENTS for current single post
-				$rating = getrating($post);
+				$rating = hw_feedback_get_rating($post);
 
 				if ($rating['count'] != 0) {
 					$average_rating = $rating['average'];
@@ -87,7 +87,7 @@
 						<p><strong>Public rating:</strong></p>
 					</div><!-- end of col -->
 					<div class="col-lg-8 col-md-6 col-sm-8 col-xs-12 star-rating">
-						<p><?php echo feedbackstarrating($average_rating,array('size' => 'fa-lg')); ?></p>
+						<p><?php echo hw_feedback_star_rating($average_rating,array('size' => 'fa-lg')); ?></p>
 					</div><!-- end of col -->
 					<div class="col-lg-8 col-md-12 col-sm-8 col-xs-12 col-lg-offset-4 col-md-offset-0 col-sm-offset-4 rating-description">
 						<p>Rated <strong><?php echo $average_rating; ?></strong> out of 5 by <strong><?php echo $rating['count']; ?>
