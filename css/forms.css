@@ -123,6 +123,10 @@ input#mc-embedded-subscribe.button {
 
 /* Ajax autocompleting search form
 ----------------------------------- */
+.asp_w_container_3 {
+	width: 100% !important;
+}
+
 .widget_search {
 	background-color: rgb(238,238,238);
 	padding: 1rem;
