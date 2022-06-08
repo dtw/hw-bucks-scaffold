@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+// check the cqc_reg_status taxonomy
+if (has_term('Archived','cqc_reg_status')) {
+	get_header('archived');
+} else {
+	get_header();
+}
+?>
 
 <div class="container">
 	<div class="row no-gutter">
