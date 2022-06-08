@@ -52,7 +52,7 @@
 		$payload["url"] = "http://healthwatchbucks.co.uk/";
 		$payload["contactPoint"] = [
 			["@type" => "ContactPoint",
-				"telephone" => "01844 348839",
+				"telephone" => "01494 324832",
 				"email" => "info@healthwatchbucks.co.uk",
 				"contactType" => "info"
 			]
