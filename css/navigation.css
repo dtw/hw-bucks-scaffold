@@ -240,7 +240,7 @@
 
 .advanced-sidebar-menu a:hover,
 .advanced-sidebar-menu a:focus {
-	color: var(--hw-grey);
+	color: var(--hw-pale-grey);
 }
 
 .advanced-sidebar-menu ul:first-child {
@@ -355,7 +355,7 @@ div.child-nav-img {
 
 #breadcrumbs a:hover,
 #breadcrumbs a:focus {
-	color: var(--hw-grey);
+	color: var(--hw-pale-grey);
 	background-color:	var(--hw-blue);
 	outline: 3px solid var(--hw-blue);
 }
@@ -372,5 +372,5 @@ div.child-nav-img {
 }
 
 .wp-paginate a {
-	background-color: var(--hw-grey) !important;
+	background-color: var(--hw-pale-grey) !important;
 }

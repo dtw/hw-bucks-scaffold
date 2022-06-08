@@ -85,7 +85,7 @@ span.post-date {
 .google-maps-link a:focus,
 iframe .gm-style .place-card a:hover,
 iframe .gm-style .place-card a:focus {
- color: var(--hw-grey) !important;
+ color: var(--hw-pale-grey) !important;
  background-color: var(--hw-blue) !important;
  outline: 3px solid var(--hw-blue) !important;
 }

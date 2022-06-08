@@ -177,7 +177,7 @@ blockquote a {
 
 blockquote a:hover,
 blockquote a:focus {
-	color: var(--hw-grey);
+	color: var(--hw-pale-grey);
  	background-color: var(--hw-blue);
  	outline: 3px solid var(--hw-blue);
 }
@@ -279,7 +279,7 @@ a:hover, a:focus {
 
  .scaffold-warning-url:hover,
  .scaffold-warning-url:focus {
- 	color: var(--hw-grey);
+ 	color: var(--hw-pale-grey);
  	background-color: var(--hw-blue);
  	outline: 3px solid var(--hw-blue);
  }

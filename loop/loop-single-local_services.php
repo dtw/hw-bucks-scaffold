@@ -115,6 +115,7 @@
 
 			<p><i class="fas fa-calendar service-icon" aria-hidden="true" title="Date"></i> Visited <strong><?php echo get_post_meta( $id, 'hw_services_date_visited', true ); ?></strong><br />
 							</p>
+							<p><?php echo do_shortcode('[callout_expired]Please note that the information below may now be out of date.[/callout_expired]'); ?></p>
 						<?php } ?>
 
 
