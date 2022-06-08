@@ -9,6 +9,6 @@
 
 	<?php get_template_part('elements/nav'); ?>
 
-	<?php get_template_part('elements/page-title'); ?>
+	<?php get_template_part('elements/page-title-archived'); ?>
 
 	</div><!-- end of container-fluid -->

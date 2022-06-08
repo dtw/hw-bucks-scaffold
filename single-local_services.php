@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+// check the cqc_reg_status taxonomy
+if (has_term('Archived','cqc_reg_status')) {
+	get_header('archived');
+} else {
+	get_header();
+}
+?>
 
 <div class="container">
 	<div class="row no-gutter">
@@ -22,7 +29,7 @@
 				echo '</div>';
 			} ?>
 			<!-- Insert CQC WIDGET -->
-			<?php if (has_term('pharmacy','service_types') || get_post_meta(get_the_ID(),'hw_services_cqc_location',true) == '')  {
+			<?php if (has_term('Not registered','cqc_reg_status') || get_post_meta(get_the_ID(),'hw_services_cqc_location',true) == '')  {
 			} else { ?>
 				<div id="cqc-widget-container" class="col-xs-12 sidebar-container">
 					<h3>How does the Care Quality Commission rate <?php the_title(); ?>?</h3>
