@@ -22,7 +22,7 @@
 
 	<body <?php body_class( $class ); ?>>
 
-<!-- INCLUDE NAVIGATION -->
+  <!-- INCLUDE NAVIGATION -->
 
 	<?php get_template_part('elements/nav'); ?>
 
