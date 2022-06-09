@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.9.4] - 2022-06-09
+### Added
+- an "out of date" reminder to all pages with reviews
+- header-archived.php - customise local_services display based on cqc_reg_status
+
+### Changed
+- multiple CSS fixes
+- The Great Function Rename 2022 (renamed functions in line with plugin name)
+- fixed more phone numbers
+- moved code from header.php into elements/
+- CQC widget now checks cqc_reg_status
+
 ## [1.9.3] - 2022-03-19
 ### Changed
 - replace hex colours with var
