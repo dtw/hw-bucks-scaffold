@@ -51,6 +51,8 @@ function scaffold_add_theme_scripts() {
 
 	wp_enqueue_style( 'scaffold_widgets', get_template_directory_uri() . '/css/widgets.css');
 
+	wp_enqueue_style( 'scaffold_panels', get_template_directory_uri() . '/css/panels.css');
+
 	wp_enqueue_style( 'scaffold_icons', get_template_directory_uri() . '/css/icons.css?' .rand());
 
 //   wp_enqueue_style( 'scaffold_sidebar', get_template_directory_uri() . '/css/sidebar.css');
