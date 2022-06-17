@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-	font-family: 'Poppins','Bitter', serif;
+	font-family: Bitter, serif;
 }
 
 /* --- Headings --- */
@@ -265,6 +265,13 @@ a:hover, a:focus {
 	outline: 3px solid var(--hw-blue);
 	text-decoration: none;
 	outline-offset: 0px;
+}
+
+/* HW Headings in the loop */
+.loop-default h2,
+.loop-default h3,
+.loop-default h4 {
+	font-family: 'Poppins','Open Sans', sans-serif;
 }
 
 /* HW Hyperlink in the loop */
