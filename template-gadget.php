@@ -30,8 +30,8 @@
 			}
 
 		a.hw-title {
-            color: #e73e97; /* Core pink */
-			font-family: Bitter, serif;
+      color: #e73e97; /* Core pink */
+      font-family: Bitter, serif;
 			font-size: 1.2rem;
 			text-decoration: none;
 			font-weight: 700;
