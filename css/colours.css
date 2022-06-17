@@ -145,7 +145,7 @@ h1 {
 }
 
 .page-header .btn-primary {
-	background-color: var(--url-blue);
+	background-color: var(--hw-blue);
 	color: white;
 	background-image: none;
 	text-decoration: none;
@@ -153,8 +153,8 @@ h1 {
 
 .page-header .btn-primary:hover {
 	background-color: white;
-	color: var(--url-blue);
-	border-color: var(--url-blue);
+	color: var(--hw-blue);
+	border-color: var(--hw-blue);
 }
 
 .call-to-action	{

@@ -110,7 +110,7 @@ background-color: var(--hw-blue);
 
 .navbar-nav a:hover,
 .navbar-nav a:focus {
-	background-color: var(--url-blue) !important;
+	background-color: var(--hw-blue) !important;
 	color: rgba(255,255,255,1.00);
 	text-decoration: none !important;
 }

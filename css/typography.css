@@ -237,7 +237,7 @@ div.comment-content p:last-child:after {
 ----------------------------------- */
 
 a {
-	color:  var(--url-blue);
+	color:  var(--hw-blue);
 	text-decoration: underline;
 }
 
@@ -260,9 +260,9 @@ footer a:hover,
 }
 
 a:hover, a:focus {
-	background-color: var(--url-blue);
+	background-color: var(--hw-blue);
 	color: rgba(255,255,255,1.00);
-	outline: 3px solid var(--url-blue);
+	outline: 3px solid var(--hw-blue);
 	text-decoration: none;
 	outline-offset: 0px;
 }
