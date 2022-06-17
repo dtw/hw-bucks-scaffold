@@ -37,9 +37,41 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'description' => 'Upload an alternate logo to replace the default site name and description',
 	) );
 
+	// Create a new section in the Theme Customizer
+	$wp_customize->add_section( 'scaffold_org_identity_section' , array(
+		'title'       => __( 'Organisation Identity', 'scaffold' ),
+		'priority'    => 28,
+		'description' => 'Add static information about your organisation',
+	) );
+
+	// Create a new section in the Theme Customizer
+	$wp_customize->add_section( 'scaffold_org_social_media_section' , array(
+		'title'       => __( 'Organisation Socials', 'scaffold' ),
+		'priority'    => 29,
+		'description' => 'Add socials for your organisation',
+	) );
+
 	// Register the new setting
 	$wp_customize->add_setting( 'scaffold_logo' );
 	$wp_customize->add_setting( 'scaffold_logo_alt' );
+	// org identity
+	$wp_customize->add_setting( 'scaffold_org_name', array(
+	 'default'           => __( 'default text', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
+	$wp_customize->add_setting( 'scaffold_org_email', array(
+	 'default'           => __( 'default text', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
+	$wp_customize->add_setting( 'scaffold_org_telephone', array(
+	 'default'           => __( 'default text', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_telephone'
+ 	));
+	// socials
+	$wp_customize->add_setting( 'scaffold_org_twitter', array(
+	 'default'           => __( 'default text', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
 
 	// Tell Theme Customiser to let us use an image uploader
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'scaffold_logo', array(
@@ -54,6 +86,34 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'section'  => 'scaffold_logo_alt_section',
 		'settings' => 'scaffold_logo_alt',
 	) ) );
+
+	// Add org identity controls
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_name', array(
+		'label'    => __( 'Organisation Name', 'scaffold' ),
+		'section'  => 'scaffold_org_identity_section',
+		'settings' => 'scaffold_org_name',
+		'type'     => 'text'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_email', array(
+		'label'    => __( 'Email', 'scaffold' ),
+		'section'  => 'scaffold_org_identity_section',
+		'settings' => 'scaffold_org_email',
+		'type'     => 'text'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_telephone', array(
+		'label'    => __( 'Telephone', 'scaffold' ),
+		'section'  => 'scaffold_org_identity_section',
+		'settings' => 'scaffold_org_telephone',
+		'type'     => 'text'
+	) ) );
+	// Add Socials controls
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_twitter', array(
+		'label'    => __( 'Twitter', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_twitter',
+		'type'     => 'text'
+	) ) );
+
 }
 
 	add_action( 'customize_register', 'scaffold_theme_customizer' );

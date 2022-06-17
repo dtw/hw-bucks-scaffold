@@ -187,4 +187,32 @@ function hw_scaffold_nocache($headers)
 }
 add_filter('wp_headers', 'hw_scaffold_nocache');
 
+/* Sanitizers */
+
+// Function to sanitize_text
+function sanitize_text( $text ) {
+	return sanitize_text_field( $text );
+}
+
+// Function to sanitize_telephone
+function sanitize_telephone( $telno ) {
+	$telno = sanitize_text_field( $telno );
+	// No spaces - we'll use masks
+	$telno = str_replace(' ', '', $telno);
+	// CLean brackets
+	$telno = str_replace(')', '', $telno);
+	$telno = str_replace('(', '', $telno);
+	return $telno;
+}
+
+function format_telephone($telno) {
+	if (str_starts_with($telno,'020')) {
+		$mask = "%s%s%s %s%s%s%s %s%s%s%s";
+	} else {
+		$mask = "%s%s%s%s%s %s%s%s %s%s%s";
+	}
+	$telno = vsprintf($mask, str_split($telno));
+	return $telno;
+}
+
 ?>

@@ -11,18 +11,20 @@
   <div id="tagline" class="row tagline" data-nosnippet>
     <div class="row">
       <div class="hidden-lg col-md-12 col-sm-6 col-xs-12 phone">
-        <p>Call <a href="tel:+441494324832"><strong>01494 32 48 32</strong></a></p>
+        <? $telephone = get_theme_mod( 'scaffold_org_telephone');
+        echo '<p>Call <a href="tel:+44' . trim($telephone,'0') . '"><strong>' . format_telephone($telephone) . '</strong></a></p>'; ?>
       </div>
       <div class="hidden-lg hidden-md col-sm-6 hidden-xs email">
-        <p><strong><a href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
+        <?php $email = get_theme_mod( 'scaffold_org_email');
+        echo '<p><strong><a href="' . $email . '">' . $email . '</a></strong></p>' ?>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-6 hidden-md hidden-sm hidden-xs contact">
-        <p>Call <a href="tel:+441494324832"><strong>01494 32 48 32</strong></a><span class="separator">|</span><strong><a class="email" href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
+        <?php echo '<p>Call <a href="tel:+44' . trim($telephone,'0') . '"><strong>' . format_telephone($telephone) . '</strong></a><span class="separator">|</span><strong><a class="email" href="mailto:' . $email . '">' . $email . '</a></strong></p>'; ?>
       </div>
       <div class="hidden-lg col-md-4 hidden-sm col-xs-12 email">
-        <p><strong><a href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></strong></p>
+        <?php echo '<p><strong><a href=mailto:"' . $email . '">' . $email . '</a></strong></p>' ?>
       </div>
       <div class="col-lg-6 col-md-8 hidden-xs widget-beside-tagline-container">
         <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Beside Tagline')) : endif; ?>
