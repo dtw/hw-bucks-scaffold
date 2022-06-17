@@ -44,6 +44,13 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'description' => 'Add static information about your organisation',
 	) );
 
+	// Create a new section in the Theme Customizer
+	$wp_customize->add_section( 'scaffold_org_social_media_section' , array(
+		'title'       => __( 'Organisation Socials', 'scaffold' ),
+		'priority'    => 29,
+		'description' => 'Add socials for your organisation',
+	) );
+
 	// Register the new setting
 	$wp_customize->add_setting( 'scaffold_logo' );
 	$wp_customize->add_setting( 'scaffold_logo_alt' );
@@ -60,6 +67,11 @@ function scaffold_theme_customizer( $wp_customize ) {
 	 'default'           => __( 'default text', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_telephone'
  	));
+	// socials
+	$wp_customize->add_setting( 'scaffold_org_twitter', array(
+	 'default'           => __( 'default text', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
 
 	// Tell Theme Customiser to let us use an image uploader
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'scaffold_logo', array(
@@ -94,6 +106,14 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'settings' => 'scaffold_org_telephone',
 		'type'     => 'text'
 	) ) );
+	// Add Socials controls
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_twitter', array(
+		'label'    => __( 'Twitter', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_twitter',
+		'type'     => 'text'
+	) ) );
+
 }
 
 	add_action( 'customize_register', 'scaffold_theme_customizer' );
