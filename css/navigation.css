@@ -140,8 +140,8 @@ background-color: var(--hw-blue);
 
 .navbar-nav .current-menu-item a:hover,
 .navbar-nav .current-menu-item a:focus {
-	background-color: var(--hw-pink) !important;
-	outline: 3px solid var(--hw-pink);
+	background-color: var(--hw-hyperlink) !important;
+	outline: 3px solid var(--hw-hyperlink);
 	color: rgba(255,255,255,1.00);
 }
 
