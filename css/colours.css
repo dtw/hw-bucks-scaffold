@@ -122,25 +122,29 @@ h1 {
 	border-color: rgba(0,0,0,0.10);
 }
 
-.btn-primary {
-	background-color: var(--url-blue);
-	color: white;
+.btn:hover:after {
+	color: var(--hw-blue);
+}
+
+.btn-primary,
+.btn-cookie {
+	background-color: var(--hw-light-blue-50);
+	color: var(--hw-blue);
 	background-image: none;
 	text-decoration: none;
+	letter-spacing: .05rem;
 }
 
-.btn-primary:hover {
-	background-color: white;
-	border-color: var(--url-blue);
-	color: var(--url-blue);
-	outline: none;
+.btn-primary:hover,
+.btn-cookie:hover {
+	background-color: var(--hw-blue);
+	border-color: var(--hw-blue-70);
+	color: white;
+	outline: none !important;
 }
 
-.btn:hover:after {
-	color: var(--url-blue);
-}
-
-.btn-primary:hover:after {
+.btn-primary:hover:after,
+.btn-cookie:hover:after {
 	color: inherit;
 }
 
