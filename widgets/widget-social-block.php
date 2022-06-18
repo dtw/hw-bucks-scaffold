@@ -7,30 +7,30 @@ function init_scaffold_social_block() { return register_widget('scaffold_social_
 
 class scaffold_social_block extends WP_Widget {
 
-	/** constructor */
-	function __construct() {
-		parent::__construct( 'scaffold_social_block',
-  		$name = 'SF Social block',
-  		array(
-  			'classname'   => 'scaffold_widget_social_block',
-  			'description' => 'Display Socials from theme customiser'
-  		)
-  	);
-	}
+  /** constructor */
+  function __construct() {
+    parent::__construct( 'scaffold_social_block',
+      $name = 'SF Social block',
+      array(
+        'classname'   => 'scaffold_widget_social_block',
+        'description' => 'Display Socials from theme customiser'
+      )
+    );
+  }
 
-	function scaffold_social_block() {
-		self::__construct();
-	}
+  function scaffold_social_block() {
+    self::__construct();
+  }
 
-	/**
-	* This is our Widget
-	**/
+  /**
+  * This is our Widget
+  **/
 
-	function widget( $args, $instance ) {
-		extract($args);
+  function widget( $args, $instance ) {
+    extract($args);
 
-		// Widget options
-		$widget_option	 = $instance['widget_option']; // Text of the link
+    // Widget options
+    $widget_option   = $instance['widget_option']; // Text of the link
 
     // Output
 		echo $before_widget;
@@ -39,19 +39,19 @@ class scaffold_social_block extends WP_Widget {
 		echo $after_widget;
 	}
 
-	/** Widget control update */
-	function update( $new_instance, $old_instance ) {
-		$instance    = $old_instance;
+  /** Widget control update */
+  function update( $new_instance, $old_instance ) {
+    $instance    = $old_instance;
 
-		//Let's turn that array into something the Wordpress database can store
-		$instance['widget_option'] = strip_tags( $new_instance['widget_option'] );
-		return $instance;
-	}
+    //Let's turn that array into something the Wordpress database can store
+    $instance['widget_option'] = strip_tags( $new_instance['widget_option'] );
+    return $instance;
+  }
 
-	/**
-	* Widget settings
-	**/
-	function form( $instance ) {
+  /**
+  * Widget settings
+  **/
+  function form( $instance ) {
     // instance exist? if not set defaults
     if ( $instance ) {
       $widget_option = $instance['widget_option'];
@@ -66,8 +66,8 @@ class scaffold_social_block extends WP_Widget {
     <label for="<?php echo $this->get_field_id('widget_option'); ?>">Widget option</label>
     <input id="<?php echo $this->get_field_id('widget_option'); ?>" name="<?php echo $this->get_field_name('widget_option'); ?>" placeholder="" type="text" value="<?php echo $widget_option; ?>" class="widefat" />
   </p>
-	<?php
-	}
+  <?php
+  }
 } // class scaffold_bootstrap_button
 
 ?>
