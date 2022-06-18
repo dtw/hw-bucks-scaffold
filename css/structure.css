@@ -471,7 +471,7 @@ ul#local-services-selector li:last-child {
 ----------------------------------- */
 
 #content a, footer a {
-	font-weight: normal;
+	font-weight: 600;
 }
 
 #content h2 a {
