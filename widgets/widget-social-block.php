@@ -34,7 +34,7 @@ class scaffold_social_block extends WP_Widget {
 
     // Output
 		echo $before_widget;
-		echo "Output";
+		echo '<p>' . $widget_option . '</p>';
 		// echo widget closing tag
 		echo $after_widget;
 	}
