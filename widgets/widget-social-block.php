@@ -34,21 +34,21 @@ class scaffold_social_block extends WP_Widget {
 
     // Output
     echo $before_widget;
-    echo '<div class="social-icons">';
+    echo '<div class="social-icons social-icons-' . $widget_option . '">';
       if ( get_theme_mod( 'scaffold_org_facebook') ) {
-        echo '<a href="https://www.facebook.com/' . get_theme_mod( 'scaffold_org_facebook') . '/" aria-label="Facebook"><i aria-hidden="true" class="fab fa-2x fa-facebook"></i></a>';
+        echo '<a href="https://www.facebook.com/' . get_theme_mod( 'scaffold_org_facebook') . '/" aria-label="Facebook"><i aria-hidden="true" class="fab fa-' . $widget_option . ' fa-facebook-square"></i></a>';
       }
       if ( get_theme_mod( 'scaffold_org_twitter') ) {
-        echo '<a href="https://twitter.com/' . get_theme_mod( 'scaffold_org_twitter') . '" aria-label="Twitter"><i aria-hidden="true" class="fab fa-2x fa-twitter-square"></i></a>';
+        echo '<a href="https://twitter.com/' . get_theme_mod( 'scaffold_org_twitter') . '" aria-label="Twitter"><i aria-hidden="true" class="fab fa-' . $widget_option . ' fa-twitter-square"></i></a>';
       }
       if ( get_theme_mod( 'scaffold_org_linkedin') ) {
-        echo '<a href="https://www.linkedin.com/company/' . get_theme_mod( 'scaffold_org_linkedin') . '" aria-label="LinkedIn"><i aria-hidden="true" class="fab fa-2x fa-linkedin"></i></a>';
+        echo '<a href="https://www.linkedin.com/company/' . get_theme_mod( 'scaffold_org_linkedin') . '" aria-label="LinkedIn"><i aria-hidden="true" class="fab fa-' . $widget_option . ' fa-linkedin"></i></a>';
       }
       if ( get_theme_mod( 'scaffold_org_youtube') ) {
-        echo '<a href="https://www.youtube.com/channel/' . get_theme_mod( 'scaffold_org_youtube') . '" aria-label="YouTube"><i aria-hidden="true" class="fab fa-2x fa-youtube-square"></i></a>';
+        echo '<a href="https://www.youtube.com/channel/' . get_theme_mod( 'scaffold_org_youtube') . '" aria-label="YouTube"><i aria-hidden="true" class="fab fa-' . $widget_option . ' fa-youtube-square"></i></a>';
       }
       if ( get_theme_mod( 'scaffold_org_rss') ) {
-        echo '<a href="' . get_bloginfo('rss2_url') . '" aria-label="RSS feed"><i aria-hidden="true" class="fa fa-2x fa-rss"></i></a>';
+        echo '<a href="' . get_bloginfo('rss2_url') . '" aria-label="RSS feed"><i aria-hidden="true" class="fa fa-' . $widget_option . ' fa-rss-square"></i></a>';
       }
     echo '</div>';
     // echo widget closing tag
@@ -72,14 +72,14 @@ class scaffold_social_block extends WP_Widget {
     if ( $instance ) {
       $widget_option = $instance['widget_option'];
     } else {
-      //These are our defaults
-      $widget_option = '';
+      //These are our defaults: lg or 2x
+      $widget_option = 'lg';
     }
   // The widget form
   ?>
 
   <p>
-    <label for="<?php echo $this->get_field_id('widget_option'); ?>">Widget option</label>
+    <label for="<?php echo $this->get_field_id('widget_option'); ?>">Icon size (lg or 2x)</label>
     <input id="<?php echo $this->get_field_id('widget_option'); ?>" name="<?php echo $this->get_field_name('widget_option'); ?>" placeholder="" type="text" value="<?php echo $widget_option; ?>" class="widefat" />
   </p>
   <?php
