@@ -42,7 +42,7 @@ if (has_term('Archived','cqc_reg_status')) {
 					<?php
 					$aTitle = get_the_title();
 					$a1 = get_post_meta(get_the_ID(),'hw_services_address_line_1',true);
-					$a2 = get_post_meta(get_the_ID(),'hw_services_address_line_1',true);
+					$a2 = get_post_meta(get_the_ID(),'hw_services_address_line_2',true);
 					$aCity = get_post_meta(get_the_ID(),'hw_services_city',true);
 					$aCounty = get_post_meta(get_the_ID(),'hw_services_county',true);
 					$aPostcode = get_post_meta(get_the_ID(),'hw_services_postcode',true);
