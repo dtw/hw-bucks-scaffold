@@ -18,7 +18,6 @@ if (has_term('Archived','cqc_reg_status')) {
 				<p>Your name and email address and other identifying information will not be published and will be stored in accordance with our <a href="http://www.healthwatchbucks.co.uk/privacy/" target="_blank">privacy policy</a>. Required fields are marked with an asterisk. All comments are checked against our <a href="https://www.healthwatchbucks.co.uk/privacy/#comments" target="_blank">comments policy</a> before they are published. </p>
 				<?php include('elements/comments-form.php');
 			} ?>
-			<?php // echo do_shortcode("[wp_social_sharing social_options='facebook,twitter,googleplus,linkedin' twitter_username='HW_Bucks' facebook_text='Share on Facebook' twitter_text='Share on Twitter' googleplus_text='Share on Google+' linkedin_text='Share on Linkedin' pinterest_text='Share on Pinterest' xing_text='Share on Xing' icon_order='f,t,g,l,p,x' show_icons='1' before_button_text='Share this page' text_position='top' social_image='']"); ?>
 		</div><!-- end of content column -->
 		<div id="sidebar" class="col-md-4 col-xs-12">
 			<!-- Insert FEATURED IMAGE -->
