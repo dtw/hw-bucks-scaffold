@@ -23,24 +23,24 @@
 	width: auto;
 }
 
-.social-icons {
+.social-icons-2x {
 	text-align: right;
 }
 
-.social-icons a {
+.social-icons-2x a {
 	margin: 1rem 1.5rem 0 0;
 }
 
-.social-icons a:last-child {
+.social-icons-2x a:last-child {
 	margin-right: 0px;
 }
 
-.social-icons i:hover {
+.social-icons-2x i:hover {
 	border-bottom: 4px solid white;
 	margin-bottom: 0px;
 }
 
-.social-icons i {
+.social-icons-2x i {
 	margin-bottom: 4px;
 	padding-bottom: 2px;
 }

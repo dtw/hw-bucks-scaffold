@@ -56,16 +56,18 @@
 	display: inline-block;
 }
 
-.textwidget .newsletter-link {
+.textwidget .newsletter-link,
+.social-icons-lg .newsletter-link {
 	margin-left: 1rem;
 }
 
-.textwidget .newsletter-link a {
+.textwidget .newsletter-link a,
+.social-icons-lg .newsletter-link a {
 	color: white
 }
 
-.tagline .phone {
-	text-align: left;
+.social-icons-lg i {
+	margin-left: 0.5rem;
 }
 
 .tagline .email {
