@@ -35,19 +35,20 @@ background-color: var(--hw-blue);
 }
 
 .tagline p {
-	margin-bottom: 9px;
+	margin-bottom: 0px;
 }
 
 .tagline .widget-beside-tagline-container {
 	text-align: right;
+	margin-bottom: 9px;
 }
 
-.tagline .widget-beside-tagline .AjaxSearchProWidget {
+.tagline .widget-beside-tagline.AjaxSearchProWidget {
+	margin-left: 2rem;
 	display: inline-block;
 }
 
 .tagline .widget-beside-tagline {
-	margin-left: 2rem;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -56,20 +57,32 @@ background-color: var(--hw-blue);
 	display: inline-block;
 }
 
-.textwidget .newsletter-link {
+.textwidget .newsletter-link,
+.social-icons-lg .newsletter-link {
 	margin-left: 1rem;
 }
 
-.textwidget .newsletter-link a {
+.textwidget .newsletter-link a,
+.social-icons-lg .newsletter-link a {
 	color: white
 }
 
-.tagline .phone {
-	text-align: left;
+.social-icons-lg i {
+	margin-left: 0.5rem;
 }
 
+.scaffold_widget_social_block {
+	margin-top: 1px;
+}
+
+.tagline .contact {
+	margin-bottom: 9px;
+}
+
+.tagline .phone,
 .tagline .email {
 	text-align: left;
+	margin-bottom: 9px;
 }
 
 .tagline .email a,

@@ -28,6 +28,9 @@
 	// ADMIN DASHBOARD modifications
 	require_once('functions/functions-dashboard.php');
 
+	// WIDGETS
+	include('widgets/widget-social-block.php');
+
 /* Add theme support
 ------------------------------------------------------------------------------ */
 

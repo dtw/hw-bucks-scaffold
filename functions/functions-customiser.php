@@ -68,9 +68,24 @@ function scaffold_theme_customizer( $wp_customize ) {
 	 'sanitize_callback' => 'sanitize_telephone'
  	));
 	// socials
+	$wp_customize->add_setting( 'scaffold_org_facebook', array(
+	 'default'           => __( 'default text', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
 	$wp_customize->add_setting( 'scaffold_org_twitter', array(
 	 'default'           => __( 'default text', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_text'
+	));
+	$wp_customize->add_setting( 'scaffold_org_linkedin', array(
+	 'default'           => __( 'default text', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
+	$wp_customize->add_setting( 'scaffold_org_youtube', array(
+	 'default'           => __( 'default text', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
+	$wp_customize->add_setting( 'scaffold_org_rss', array(
+	 'default'           => true
 	));
 
 	// Tell Theme Customiser to let us use an image uploader
@@ -107,11 +122,35 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'type'     => 'text'
 	) ) );
 	// Add Socials controls
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_facebook', array(
+		'label'    => __( 'Facebook', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_facebook',
+		'type'     => 'text'
+	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_twitter', array(
 		'label'    => __( 'Twitter', 'scaffold' ),
 		'section'  => 'scaffold_org_social_media_section',
 		'settings' => 'scaffold_org_twitter',
 		'type'     => 'text'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_linkedin', array(
+		'label'    => __( 'LinkedIn (company ID)', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_linkedin',
+		'type'     => 'text'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_youtube', array(
+		'label'    => __( 'YouTube (channel ID)', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_youtube',
+		'type'     => 'text'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_rss', array(
+		'label'    => __( 'Show RSS feed link?', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_rss',
+		'type'     => 'checkbox'
 	) ) );
 
 }
