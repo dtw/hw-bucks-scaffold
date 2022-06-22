@@ -377,7 +377,10 @@ div.child-nav-img {
 ------------------------------------------------- */
 
 .wp-paginate .current {
-	background-color: #3F7188 !important;
+	background-color: var(--hw-teal) !important;
+	color: black !important;
+	text-align: center;
+	padding: 0px !important;
 }
 
 .wp-paginate .gap {
@@ -385,5 +388,43 @@ div.child-nav-img {
 }
 
 .wp-paginate a {
-	background-color: var(--hw-pale-grey) !important;
+	padding: 0px !important;
+}
+
+.wp-paginate .page,
+.wp-paginate .prev,
+.wp-paginate .next {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	vertical-align: middle;
+	line-height: 35px !important;
+	font-weight: 600;
+	color: #000;
+}
+
+ol.wp-paginate li {
+	/* line-height: 3em; */
+	padding-bottom: 0px !important;
+}
+
+
+.wp-paginate a:hover,
+.wp-paginate a:active {
+	background: var(--hw-teal-50) !important;
+	color: black !important;
+}
+
+.wp-paginate .page:hover,
+.wp-paginate .prev:hover,
+.wp-paginate .next:hover,
+.wp-paginate .page:focus,
+.wp-paginate .prev:focus,
+.wp-paginate .next:focus {
+	outline: 1px solid var(--hw-teal);
+	border-color: var(--hw-teal);
+}
+
+.wp-paginate .page.current:hover {
+	outline: none;
 }
