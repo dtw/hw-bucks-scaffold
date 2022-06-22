@@ -50,14 +50,9 @@ body, .navbar {
 	background-color: rgba(255,255,255,1.00);
 }
 
-footer p, footer a {
-	color: rgba(255,255,255,1.00);
-}
-
 h1,
 .page-header p,
 .page-header a,
-footer a:hover,
 #subfooter h2 {
 	color: white;
 }
@@ -67,12 +62,23 @@ footer a:hover,
 -------------------------------- */
 
 footer {
-	background-color: #3F7188;
+  /* background-color: #3F7188; */
+  background-color: var(--hw-yellow-30);
+  border-top: 10px solid var(--hw-pink);
 }
 
 #content footer {
 	background: none;
 	padding: 0px;
+}
+
+footer p, footer a {
+  /* color: rgba(255,255,255,1.00); */
+  color: var(--hw-blue);
+}
+
+footer a:hover {
+  color: var(--hw-blue);
 }
 
 /* Medium blue
