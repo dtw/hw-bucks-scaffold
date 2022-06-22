@@ -36,7 +36,8 @@
 }
 
 .social-icons-2x i:hover {
-	border-bottom: 4px solid white;
+	/* border-bottom: 4px solid white; */
+  border-bottom: 4px solid var(--hw-blue);
 	margin-bottom: 0px;
 }
 
