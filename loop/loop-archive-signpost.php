@@ -3,7 +3,7 @@
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <article>
-      <div id="archive-signpost-title">
+      <div class="archive-signpost-title">
         <h2>
           <?php the_title(); ?>
         </h2>

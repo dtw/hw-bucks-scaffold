@@ -109,6 +109,10 @@ body {
 	padding-top: 1.5rem;
 }
 
+.archive-signpost-title h2 {
+	margin-top: 20px;
+}
+
 /* Sidebar ---------------- */
 
 #sidebar {
@@ -1280,7 +1284,7 @@ background-color: var(--hw-blue);
 	/*border-bottom: #999 1px dashed;*/
 }
 
-#archive-signpost-title {
+.archive-signpost-title {
 	display: flex;
 	justify-content:space-between;
 }
