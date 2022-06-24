@@ -113,6 +113,19 @@ body {
 	margin-top: 20px;
 }
 
+.archive-signpost-title {
+	display: flex;
+	justify-content:space-between;
+}
+
+span.single-signpost-title {
+	font-weight: 400;
+}
+
+a.single-signpost-url {
+	text-decoration: underline;
+}
+
 /* Sidebar ---------------- */
 
 #sidebar {
@@ -1282,17 +1295,4 @@ background-color: var(--hw-blue);
 
 .loop-single-service {
 	/*border-bottom: #999 1px dashed;*/
-}
-
-.archive-signpost-title {
-	display: flex;
-	justify-content:space-between;
-}
-
-span.single-signpost-title {
-	font-weight: 400;
-}
-
-a.single-signpost-url {
-	text-decoration: underline;
 }
