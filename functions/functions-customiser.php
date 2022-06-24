@@ -123,13 +123,13 @@ function scaffold_theme_customizer( $wp_customize ) {
 	) ) );
 	// Add Socials controls
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_facebook', array(
-		'label'    => __( 'Facebook', 'scaffold' ),
+		'label'    => __( 'Facebook (page name)', 'scaffold' ),
 		'section'  => 'scaffold_org_social_media_section',
 		'settings' => 'scaffold_org_facebook',
 		'type'     => 'text'
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_twitter', array(
-		'label'    => __( 'Twitter', 'scaffold' ),
+		'label'    => __( 'Twitter (username, no @)', 'scaffold' ),
 		'section'  => 'scaffold_org_social_media_section',
 		'settings' => 'scaffold_org_twitter',
 		'type'     => 'text'
