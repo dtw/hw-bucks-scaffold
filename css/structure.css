@@ -1277,3 +1277,16 @@ background-color: var(--hw-blue);
 .loop-single-service {
 	/*border-bottom: #999 1px dashed;*/
 }
+
+#archive-signpost-title {
+	display: flex;
+	justify-content:space-between;
+}
+
+.single-signpost-title {
+	font-weight: 400;
+}
+
+.single-signpost-url {
+	text-decoration: underline;
+}
