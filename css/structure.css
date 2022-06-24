@@ -1,14 +1,6 @@
 /* Structure
 ----------------------------------- */
 
-.city h2 {
-	display: none;
-}
-
-.city h2:first-child {
-	display: block;
-}
-
 /*
 body {
 	padding-top: 135px;
