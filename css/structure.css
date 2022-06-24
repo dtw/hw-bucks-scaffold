@@ -97,12 +97,14 @@ body {
 	text-decoration: none;
 }
 
+.single-signposts article,
 .tax-signpost_categories article {
 	background-color: rgba(0,0,0,.02);
 	padding: .1rem 2rem 2rem 2rem;
 	margin-top: 3rem;
 }
 
+.single-signposts article h3,
 .tax-signpost_categories article h3 {
 	padding-top: 1.5rem;
 }
