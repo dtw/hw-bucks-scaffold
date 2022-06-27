@@ -12,7 +12,7 @@
     <div class="row">
       <div class="hidden-lg col-md-12 col-sm-6 col-xs-12 phone">
         <? $telephone = get_theme_mod( 'scaffold_org_telephone');
-        echo '<p>Call <a href="tel:+44' . trim($telephone,'0') . '"><strong>' . format_telephone($telephone) . '</strong></a></p>'; ?>
+        echo '<p>Call <a href="tel:+44' . ltrim($telephone,'0') . '"><strong>' . format_telephone($telephone) . '</strong></a></p>'; ?>
       </div>
       <div class="hidden-lg hidden-md col-sm-6 hidden-xs email">
         <?php $email = get_theme_mod( 'scaffold_org_email');
@@ -21,7 +21,7 @@
     </div>
     <div class="row">
       <div class="col-lg-6 hidden-md hidden-sm hidden-xs contact">
-        <?php echo '<p>Call <a href="tel:+44' . trim($telephone,'0') . '"><strong>' . format_telephone($telephone) . '</strong></a><span class="separator">|</span><strong><a class="email" href="mailto:' . $email . '">' . $email . '</a></strong></p>'; ?>
+        <?php echo '<p>Call <a href="tel:+44' . ltrim($telephone,'0') . '"><strong>' . format_telephone($telephone) . '</strong></a><span class="separator">|</span><strong><a class="email" href="mailto:' . $email . '">' . $email . '</a></strong></p>'; ?>
       </div>
       <div class="hidden-lg col-md-4 hidden-sm col-xs-12 email">
         <?php echo '<p><strong><a href=mailto:"' . $email . '">' . $email . '</a></strong></p>' ?>
