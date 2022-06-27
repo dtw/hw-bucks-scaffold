@@ -122,32 +122,37 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'label'    => __( 'Telephone', 'scaffold' ),
 		'section'  => 'scaffold_org_identity_section',
 		'settings' => 'scaffold_org_telephone',
-		'type'     => 'text'
+		'type'     => 'text',
+		'description' => 'Supports UK telephone numbers only.'
 	) ) );
 	// Add Socials controls
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_facebook', array(
-		'label'    => __( 'Facebook (page name)', 'scaffold' ),
+		'label'    => __( 'Facebook Page', 'scaffold' ),
 		'section'  => 'scaffold_org_social_media_section',
 		'settings' => 'scaffold_org_facebook',
-		'type'     => 'text'
+		'type'     => 'text',
+		'description' => 'Page name only, not full URL.'
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_twitter', array(
-		'label'    => __( 'Twitter (username, no @)', 'scaffold' ),
+		'label'    => __( 'Twitter', 'scaffold' ),
 		'section'  => 'scaffold_org_social_media_section',
 		'settings' => 'scaffold_org_twitter',
-		'type'     => 'text'
+		'type'     => 'text',
+		'description' => 'Username/handle only, not full URL.'
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_linkedin', array(
-		'label'    => __( 'LinkedIn (company ID)', 'scaffold' ),
+		'label'    => __( 'LinkedIn', 'scaffold' ),
 		'section'  => 'scaffold_org_social_media_section',
 		'settings' => 'scaffold_org_linkedin',
-		'type'     => 'text'
+		'type'     => 'text',
+		'description' => 'Company ID only, not full URL.'
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_youtube', array(
-		'label'    => __( 'YouTube (channel ID)', 'scaffold' ),
+		'label'    => __( 'YouTube', 'scaffold' ),
 		'section'  => 'scaffold_org_social_media_section',
 		'settings' => 'scaffold_org_youtube',
-		'type'     => 'text'
+		'type'     => 'text',
+		'description' => 'Channel ID only, not full URL.'
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_rss', array(
 		'label'    => __( 'Show RSS feed link?', 'scaffold' ),
