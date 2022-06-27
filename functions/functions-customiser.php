@@ -107,7 +107,10 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'label'    => __( 'Organisation Name', 'scaffold' ),
 		'section'  => 'scaffold_org_identity_section',
 		'settings' => 'scaffold_org_name',
-		'type'     => 'text'
+		'type'     => 'text',
+		'input_attrs' => array(
+		 'placeholder' => __( 'Your organisation name', 'scaffold' ),
+ 		)
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_email', array(
 		'label'    => __( 'Email', 'scaffold' ),
