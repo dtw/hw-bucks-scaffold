@@ -56,32 +56,32 @@ function scaffold_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'scaffold_logo_alt' );
 	// org identity
 	$wp_customize->add_setting( 'scaffold_org_name', array(
-	 'default'           => __( 'default text', 'scaffold' ),
+	 'default'           => __( '', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_text'
 	));
 	$wp_customize->add_setting( 'scaffold_org_email', array(
-	 'default'           => __( 'default text', 'scaffold' ),
+	 'default'           => __( '', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_text'
 	));
 	$wp_customize->add_setting( 'scaffold_org_telephone', array(
-	 'default'           => __( 'default text', 'scaffold' ),
+	 'default'           => __( '', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_telephone'
  	));
 	// socials
 	$wp_customize->add_setting( 'scaffold_org_facebook', array(
-	 'default'           => __( 'default text', 'scaffold' ),
+	 'default'           => __( '', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_text'
 	));
 	$wp_customize->add_setting( 'scaffold_org_twitter', array(
-	 'default'           => __( 'default text', 'scaffold' ),
+	 'default'           => __( '', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_text'
 	));
 	$wp_customize->add_setting( 'scaffold_org_linkedin', array(
-	 'default'           => __( 'default text', 'scaffold' ),
+	 'default'           => __( '', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_text'
 	));
 	$wp_customize->add_setting( 'scaffold_org_youtube', array(
-	 'default'           => __( 'default text', 'scaffold' ),
+	 'default'           => __( '', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_text'
 	));
 	$wp_customize->add_setting( 'scaffold_org_rss', array(
