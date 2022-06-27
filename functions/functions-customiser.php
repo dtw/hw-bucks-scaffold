@@ -74,7 +74,7 @@ function scaffold_theme_customizer( $wp_customize ) {
 	));
 	$wp_customize->add_setting( 'scaffold_org_twitter', array(
 	 'default'           => __( '', 'scaffold' ),
-	 'sanitize_callback' => 'sanitize_text'
+	 'sanitize_callback' => 'sanitize_twitter'
 	));
 	$wp_customize->add_setting( 'scaffold_org_linkedin', array(
 	 'default'           => __( '', 'scaffold' ),

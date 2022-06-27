@@ -208,6 +208,13 @@ function sanitize_telephone( $telno ) {
 	return $telno;
 }
 
+// Function to sanitize_twitter handles
+function sanitize_twitter( $handle ) {
+	$handle = sanitize_text_field( $handle );
+	$handle = trim($handle, '@');
+	return $handle;
+}
+
 function format_telephone($telno) {
 	if (str_starts_with($telno,'020')) {
 		$mask = "%s%s%s %s%s%s%s %s%s%s%s";
