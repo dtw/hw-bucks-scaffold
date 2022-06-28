@@ -35,15 +35,27 @@
 	margin-right: 0px;
 }
 
-.social-icons-2x i:hover {
-	/* border-bottom: 4px solid white; */
-  border-bottom: 4px solid var(--hw-blue);
-	margin-bottom: 0px;
+.social-icons-2x a:hover,
+.social-icons-2x a:active,
+.social-icons-2x a:focus {
+	background-color: inherit !important;
+	outline: none;
+	text-decoration: underline;
+	color: var(--hw-blue);
 }
 
 .social-icons-2x i {
 	margin-bottom: 4px;
 	padding-bottom: 2px;
+}
+
+.social-icons-2x i:hover,
+.social-icons-2x i:active,
+.social-icons-2x i:focus {
+  border-bottom: 4px solid var(--hw-blue);
+	margin-bottom: 0px;
+	background-color: inherit !important;
+	outline: none !important;
 }
 
 .mc-icons {
