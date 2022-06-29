@@ -96,6 +96,34 @@ function hw_remove_meta_boxes() {
 }
 add_action( 'admin_menu' , 'hw_remove_meta_boxes' );
 
+/* Add metaboxes in an order we like
+	postexcerpt
+	wpseo_meta
+	revisionsdiv
+*/
+function hw_reorder_meta_boxes( $order ) {
+	if (is_plugin_active( 'wordpress-seo/wp-seo.php' )) { // Yoast is installed
+		$meta_box_order = array (
+			'postexcerpt',
+			'wpseo_meta',
+			'revisionsdiv'
+		);
+	} else {
+		$meta_box_order = array (
+			'postexcerpt',
+			'revisionsdiv'
+		);
+	}
+	return array(
+		'normal' => join(
+			",",
+			$meta_box_order
+		),
+	);
+}
+add_filter( 'get_user_option_meta-box-order_post', 'hw_reorder_meta_boxes' );
+add_filter( 'get_user_option_meta-box-order_page', 'hw_reorder_meta_boxes' );
+
 
 // remove junk from head
 remove_action('wp_head', 'wp_generator');
