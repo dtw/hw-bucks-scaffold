@@ -15,7 +15,7 @@ else { ?>
 						<?php } else if (is_tag()) { ?>
 							Posts about topic: <?php single_cat_title(); ?>
 						<?php } else if (is_singular('signposts')) { ?>
-							<span style="font-weight: 400;">Your search found: </span><?php the_title(); ?>
+							<span class="single-signpost-title">Your search found: </span><?php the_title(); ?>
 						<?php } else if (is_category() || is_archive()) { ?>
 							<?php single_cat_title(); ?>
 						<?php } else if (is_404()) { ?>
@@ -33,7 +33,7 @@ else { ?>
 						<?php echo category_description(); ?>
 						<p>Choose a local service and leave your feedback</p>
 					<?php } else if (is_singular('signposts')) { ?>
-						<p><a style="text-decoration: underline;" href="https://www.healthwatchbucks.co.uk/signposting/">Search our signposts again &raquo;</a></p>
+						<p><a class="single-signpost-url" href="https://www.healthwatchbucks.co.uk/signposting/">Search our signposts again &raquo;</a></p>
 					<?php } else if (is_404()) { ?>
 
 					<?php } else if (is_category() || is_archive()) { ?>

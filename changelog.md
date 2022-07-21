@@ -6,11 +6,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [Released]
+## [2.0] - 2022-06-09
 
-## [1.9.4] - 2022-06-08
+**Plugin folder re-named from healthwatchfeedback to hw-feedback!**
+
+### Added
+- fields in the Theme Customizer to reduce hardcoding - can set Org Name, Email and Telephone
+- new section in Theme Customizer and new fields for social media identities
+- helper functions to clean and format/mask telephone numbers and twitter handles
+- widget to display new social media identities from customizer
+
 ### Changed
-- minor cosmetic tweaks and corrections
+- updated fonts and colours in-line with Healthwatch England rebrand
+- reformatted panels and signpost display
+- replaced old RGB colours with hex/vars
+- fixed syntax in jQuery JS files
+- some values from customizer now used in meta tags
+- pagination number formatting
+- restyled footer
+- moved some legacy inline CSS into files
+- now use site icon on login page rather than built-in
+- reorder default metabox display
+
+## [1.9.4] - 2022-06-09
+### Added
+- an "out of date" reminder to all pages with reviews
+- header-archived.php - customise local_services display based on cqc_reg_status
+
+### Changed
+- multiple CSS fixes
+- The Great Function Rename 2022 (renamed functions in line with plugin name)
+- fixed more phone numbers
+- moved code from header.php into elements/
+- CQC widget now checks cqc_reg_status
 
 ## [1.9.3] - 2022-03-19
 ### Changed

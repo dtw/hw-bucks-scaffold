@@ -1,12 +1,12 @@
 /* --- Fonts --- */
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins','Open Sans', sans-serif;
 	color: #111;
 }
 
 h1, h2, h3, h4 {
-	font-family: 'Bitter', serif;
+	font-family: Bitter, serif;
 }
 
 /* --- Headings --- */
@@ -15,7 +15,7 @@ h1 {
 	letter-spacing: .1rem;
 	font-size: 3rem;
 	line-height: 4rem;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 #subfooter h2 {
@@ -237,7 +237,7 @@ div.comment-content p:last-child:after {
 ----------------------------------- */
 
 a {
-	color:  var(--url-blue);
+	color:  var(--hw-blue);
 	text-decoration: underline;
 }
 
@@ -260,9 +260,30 @@ footer a:hover,
 }
 
 a:hover, a:focus {
-	background-color: var(--url-blue);
+	background-color: var(--hw-blue);
 	color: rgba(255,255,255,1.00);
-	outline: 3px solid var(--url-blue);
+	outline: 3px solid var(--hw-blue);
+	text-decoration: none;
+	outline-offset: 0px;
+}
+
+/* HW Headings in the loop */
+.loop-default h2,
+.loop-default h3,
+.loop-default h4 {
+	font-family: 'Poppins','Open Sans', sans-serif;
+}
+
+/* HW Hyperlink in the loop */
+
+.loop-default a {
+	color: var(--hw-hyperlink);
+}
+
+.loop-default a:hover, .loop-default a:focus {
+	background-color: var(--hw-hyperlink);
+	color: rgba(255,255,255,1.00);
+	outline: 3px solid var(--hw-hyperlink);
 	text-decoration: none;
 	outline-offset: 0px;
 }

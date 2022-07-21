@@ -25,7 +25,7 @@
 	}
 
 	if ( is_singular('local_services') ) {
-		$rating = getrating($post);
+		$rating = hw_feedback_get_rating($post);
 		if ( $rating['count'] > 2 ) {
 			$payload["@type"] = "Organization";
 			$payload["name"] = get_the_title();
@@ -52,8 +52,10 @@
 		$payload["url"] = "http://healthwatchbucks.co.uk/";
 		$payload["contactPoint"] = [
 			["@type" => "ContactPoint",
-				"telephone" => "01494 324832",
-				"email" => "info@healthwatchbucks.co.uk",
+        // get phone from theme customiser
+				"telephone" => get_theme_mod( 'scaffold_org_telephone'),
+        // get email from theme customiser
+				"email" => get_theme_mod( 'scaffold_org_email'),
 				"contactType" => "info"
 			]
 		];

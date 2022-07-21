@@ -76,4 +76,10 @@ function scaffold_google_fonts() {
 
 add_action('wp_enqueue_scripts', 'scaffold_google_fonts');
 
+function scaffold_google_fonts_2() {
+	// &family=Abril+Fatface
+   wp_enqueue_style( 'google_fonts_2', 'https://fonts.googleapis.com/css2?Bitter:wght@400,700&family=Poppins:wght@300;600&display=swap', false );
+  }
+
+add_action('wp_enqueue_scripts', 'scaffold_google_fonts_2');
 ?>

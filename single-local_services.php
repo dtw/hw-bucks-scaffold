@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+// check the cqc_reg_status taxonomy
+if (has_term('Archived','cqc_reg_status')) {
+	get_header('archived');
+} else {
+	get_header();
+}
+?>
 
 <div class="container">
 	<div class="row no-gutter">
@@ -11,7 +18,6 @@
 				<p>Your name and email address and other identifying information will not be published and will be stored in accordance with our <a href="http://www.healthwatchbucks.co.uk/privacy/" target="_blank">privacy policy</a>. Required fields are marked with an asterisk. All comments are checked against our <a href="https://www.healthwatchbucks.co.uk/privacy/#comments" target="_blank">comments policy</a> before they are published. </p>
 				<?php include('elements/comments-form.php');
 			} ?>
-			<?php // echo do_shortcode("[wp_social_sharing social_options='facebook,twitter,googleplus,linkedin' twitter_username='HW_Bucks' facebook_text='Share on Facebook' twitter_text='Share on Twitter' googleplus_text='Share on Google+' linkedin_text='Share on Linkedin' pinterest_text='Share on Pinterest' xing_text='Share on Xing' icon_order='f,t,g,l,p,x' show_icons='1' before_button_text='Share this page' text_position='top' social_image='']"); ?>
 		</div><!-- end of content column -->
 		<div id="sidebar" class="col-md-4 col-xs-12">
 			<!-- Insert FEATURED IMAGE -->
@@ -22,7 +28,7 @@
 				echo '</div>';
 			} ?>
 			<!-- Insert CQC WIDGET -->
-			<?php if (has_term('pharmacy','service_types') || get_post_meta(get_the_ID(),'hw_services_cqc_location',true) == '')  {
+			<?php if (has_term('Not registered','cqc_reg_status') || get_post_meta(get_the_ID(),'hw_services_cqc_location',true) == '')  {
 			} else { ?>
 				<div id="cqc-widget-container" class="col-xs-12 sidebar-container">
 					<h3>How does the Care Quality Commission rate <?php the_title(); ?>?</h3>
@@ -36,7 +42,7 @@
 					<?php
 					$aTitle = get_the_title();
 					$a1 = get_post_meta(get_the_ID(),'hw_services_address_line_1',true);
-					$a2 = get_post_meta(get_the_ID(),'hw_services_address_line_1',true);
+					$a2 = get_post_meta(get_the_ID(),'hw_services_address_line_2',true);
 					$aCity = get_post_meta(get_the_ID(),'hw_services_city',true);
 					$aCounty = get_post_meta(get_the_ID(),'hw_services_county',true);
 					$aPostcode = get_post_meta(get_the_ID(),'hw_services_postcode',true);
@@ -80,7 +86,7 @@
 					$individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true ); ?>
 					<?php if ($individual_rating) { ?>
 						<p class="star-rating p-rating">
-							<?php echo feedbackstarrating($individual_rating,array('size' => 'fa-lg'));
+							<?php echo hw_feedback_star_rating($individual_rating,array('size' => 'fa-lg'));
 							if ($individual_rating == 1) echo '<span class="screen-reader-text">'.$individual_rating.' star</span>';
 							else echo '<span class="screen-reader-text">'.$individual_rating.' stars</span>';
 							?>

@@ -37,9 +37,56 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'description' => 'Upload an alternate logo to replace the default site name and description',
 	) );
 
+	// Create a new section in the Theme Customizer
+	$wp_customize->add_section( 'scaffold_org_identity_section' , array(
+		'title'       => __( 'Organisation Identity', 'scaffold' ),
+		'priority'    => 28,
+		'description' => 'Add static information about your organisation',
+	) );
+
+	// Create a new section in the Theme Customizer
+	$wp_customize->add_section( 'scaffold_org_social_media_section' , array(
+		'title'       => __( 'Organisation Socials', 'scaffold' ),
+		'priority'    => 29,
+		'description' => 'Add socials for your organisation',
+	) );
+
 	// Register the new setting
 	$wp_customize->add_setting( 'scaffold_logo' );
 	$wp_customize->add_setting( 'scaffold_logo_alt' );
+	// org identity
+	$wp_customize->add_setting( 'scaffold_org_name', array(
+	 'default'           => __( '', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
+	$wp_customize->add_setting( 'scaffold_org_email', array(
+	 'default'           => __( '', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
+	$wp_customize->add_setting( 'scaffold_org_telephone', array(
+	 'default'           => __( '', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_telephone'
+ 	));
+	// socials
+	$wp_customize->add_setting( 'scaffold_org_facebook', array(
+	 'default'           => __( '', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
+	$wp_customize->add_setting( 'scaffold_org_twitter', array(
+	 'default'           => __( '', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_twitter'
+	));
+	$wp_customize->add_setting( 'scaffold_org_linkedin', array(
+	 'default'           => __( '', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
+	$wp_customize->add_setting( 'scaffold_org_youtube', array(
+	 'default'           => __( '', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
+	$wp_customize->add_setting( 'scaffold_org_rss', array(
+	 'default'           => true
+	));
 
 	// Tell Theme Customiser to let us use an image uploader
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'scaffold_logo', array(
@@ -54,6 +101,66 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'section'  => 'scaffold_logo_alt_section',
 		'settings' => 'scaffold_logo_alt',
 	) ) );
+
+	// Add org identity controls
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_name', array(
+		'label'    => __( 'Organisation Name', 'scaffold' ),
+		'section'  => 'scaffold_org_identity_section',
+		'settings' => 'scaffold_org_name',
+		'type'     => 'text',
+		'input_attrs' => array(
+		 'placeholder' => __( 'Your organisation name', 'scaffold' ),
+ 		)
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_email', array(
+		'label'    => __( 'Email', 'scaffold' ),
+		'section'  => 'scaffold_org_identity_section',
+		'settings' => 'scaffold_org_email',
+		'type'     => 'text'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_telephone', array(
+		'label'    => __( 'Telephone', 'scaffold' ),
+		'section'  => 'scaffold_org_identity_section',
+		'settings' => 'scaffold_org_telephone',
+		'type'     => 'text',
+		'description' => 'Supports UK telephone numbers only.'
+	) ) );
+	// Add Socials controls
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_facebook', array(
+		'label'    => __( 'Facebook Page', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_facebook',
+		'type'     => 'text',
+		'description' => 'Page name only, not full URL.'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_twitter', array(
+		'label'    => __( 'Twitter', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_twitter',
+		'type'     => 'text',
+		'description' => 'Username/handle only, not full URL.'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_linkedin', array(
+		'label'    => __( 'LinkedIn', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_linkedin',
+		'type'     => 'text',
+		'description' => 'Company ID only, not full URL.'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_youtube', array(
+		'label'    => __( 'YouTube', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_youtube',
+		'type'     => 'text',
+		'description' => 'Channel ID only, not full URL.'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_rss', array(
+		'label'    => __( 'Show RSS feed link?', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_rss',
+		'type'     => 'checkbox'
+	) ) );
+
 }
 
 	add_action( 'customize_register', 'scaffold_theme_customizer' );

@@ -44,7 +44,7 @@ if ($feedback_count > 0) {
 
 // If Healthwatch plugin not activated
 
-if ( is_plugin_active ( 'healthwatchfeedback/healthwatchfeedback.php' ) ) { } else {
+if ( is_plugin_active ( 'hw-feedback/healthwatchfeedback.php' ) ) { } else {
 	echo "<p class='text-danger'><i class='fas fa-exclamation-triangle text-danger' aria-hidden='true'></i> Ensure the <strong>Healthwatch Feedback</strong> plugin is installed and activated. <a class='scaffold-warning-url' href='" . get_bloginfo('url') . "/wp-admin/plugins.php'>See list of plugins &raquo;</a></p>";
 	}
 

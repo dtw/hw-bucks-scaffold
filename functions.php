@@ -28,6 +28,9 @@
 	// ADMIN DASHBOARD modifications
 	require_once('functions/functions-dashboard.php');
 
+	// WIDGETS
+	include('widgets/widget-social-block.php');
+
 /* Add theme support
 ------------------------------------------------------------------------------ */
 
@@ -85,11 +88,41 @@ update_option('image_default_link_type','none');
 ------------------------------------------------------------------------------ */
 
 // Remove meta boxes from Posts and Pages
-function remove_meta_boxes() {
+function hw_remove_meta_boxes() {
 	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' );
 	remove_meta_box( 'trackbacksdiv' , 'page' , 'normal' );
+	remove_meta_box( 'commentsdiv' , 'post' , 'normal');
+	remove_meta_box( 'commentsdiv' , 'page' , 'normal');
 }
-add_action( 'admin_menu' , 'remove_meta_boxes' );
+add_action( 'admin_menu' , 'hw_remove_meta_boxes' );
+
+/* Add metaboxes in an order we like
+	postexcerpt
+	wpseo_meta
+	revisionsdiv
+*/
+function hw_reorder_meta_boxes( $order ) {
+	if (is_plugin_active( 'wordpress-seo/wp-seo.php' )) { // Yoast is installed
+		$meta_box_order = array (
+			'postexcerpt',
+			'wpseo_meta',
+			'revisionsdiv'
+		);
+	} else {
+		$meta_box_order = array (
+			'postexcerpt',
+			'revisionsdiv'
+		);
+	}
+	return array(
+		'normal' => join(
+			",",
+			$meta_box_order
+		),
+	);
+}
+add_filter( 'get_user_option_meta-box-order_post', 'hw_reorder_meta_boxes' );
+add_filter( 'get_user_option_meta-box-order_page', 'hw_reorder_meta_boxes' );
 
 
 // remove junk from head
@@ -186,5 +219,40 @@ function hw_scaffold_nocache($headers)
 	}
 }
 add_filter('wp_headers', 'hw_scaffold_nocache');
+
+/* Sanitizers */
+
+// Function to sanitize_text
+function sanitize_text( $text ) {
+	return sanitize_text_field( $text );
+}
+
+// Function to sanitize_telephone
+function sanitize_telephone( $telno ) {
+	$telno = sanitize_text_field( $telno );
+	// No spaces - we'll use masks
+	$telno = str_replace(' ', '', $telno);
+	// CLean brackets
+	$telno = str_replace(')', '', $telno);
+	$telno = str_replace('(', '', $telno);
+	return $telno;
+}
+
+// Function to sanitize_twitter handles
+function sanitize_twitter( $handle ) {
+	$handle = sanitize_text_field( $handle );
+	$handle = trim($handle, '@');
+	return $handle;
+}
+
+function format_telephone($telno) {
+	if (str_starts_with($telno,'020')) {
+		$mask = "%s%s%s %s%s%s%s %s%s%s%s";
+	} else {
+		$mask = "%s%s%s%s%s %s%s%s %s%s%s";
+	}
+	$telno = vsprintf($mask, str_split($telno));
+	return $telno;
+}
 
 ?>

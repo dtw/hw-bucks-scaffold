@@ -30,8 +30,6 @@ yoast_breadcrumb('
 
     <?php comments_template(); ?>
 
-<?php // echo do_shortcode('[wp_social_sharing social_options="facebook,twitter,googleplus,linkedin" twitter_username="HW_Bucks" facebook_text="Share on Facebook" twitter_text="Share on Twitter" googleplus_text="Share on Google+" linkedin_text="Share on Linkedin" icon_order="f,t,g,l,p,x" show_icons="1" before_button_text="Share this page" text_position="top"]'); ?>
-
                   </div><!-- end of content column -->
 
 

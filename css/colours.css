@@ -1,13 +1,46 @@
 /* CSS Variables
 -------------------------------- */
 :root {
-  --hw-pink: #CC3A8E;
-	--url-blue: #0080A4;
-	--hw-green: #84bf41;
-  --hw-purple: #9B26B6;
+  --hw-pink: #E73E97;
+	--url-blue: #004F6B;
+	--hw-green: #84BA00;
+  --hw-purple: #a81563;
   --hw-orange: #E32A0D;
-  --hw-blue: #23527c;
+  --hw-blue: #004F6B;
+  --hw-dark-grey: #5c6670;
   --hw-pale-grey: #fafafa;
+  --hw-hyperlink: #a81563;
+  --hw-teal: #00b38c;
+  --hw-yellow: #f9b93e;
+  --hw-light-blue: #7fcbeb;
+  /* 70% Tints */
+  --hw-blue-70: #4c8397;
+  --hw-pink-70: #ee77b6;
+  --hw-green-70: #a8d04c;
+  --hw-yellow-70: #face77;
+  --hw-teal-70: #4cc9ae;
+  --hw-light-blue-70: #a5daf1;
+  /* 50% tints */
+  --hw-blue-50: #7fa7b5;
+  --hw-pink-50: #f39ecb;
+  --hw-green-50: #c1de7f;
+  --hw-yellow-50: #fcdc9e;
+  --hw-teal-50: #7fd9c5;
+  --hw-light-blue-50: #bfe5f5;
+  /* 30% tints */
+  --hw-blue-30: #b2cad2;
+  --hw-pink-30: #f7c5df;
+  --hw-green-30: #daebb2;
+  --hw-yellow-30: #fdeac5;
+  --hw-teal-30: #b2e8dc;
+  --hw-light-blue-30: #d8eff9;
+  /* 10% tints */
+  --hw-blue-10: #e5edf0;
+  --hw-pink-10: #fcebf4;
+  --hw-green-10: #f2f8e5;
+  --hw-yellow-10: #fef8eb;
+  --hw-teal-10: #e5f7f3;
+  --hw-light-blue-10: #f2f9fd;
 }
 
 /* White
@@ -17,14 +50,9 @@ body, .navbar {
 	background-color: rgba(255,255,255,1.00);
 }
 
-footer p, footer a {
-	color: rgba(255,255,255,1.00);
-}
-
 h1,
 .page-header p,
 .page-header a,
-footer a:hover,
 #subfooter h2 {
 	color: white;
 }
@@ -34,7 +62,9 @@ footer a:hover,
 -------------------------------- */
 
 footer {
-	background-color: #3F7188;
+  /* background-color: #3F7188; */
+  background-color: var(--hw-yellow-30);
+  border-top: 10px solid var(--hw-pink);
 }
 
 #content footer {
@@ -42,13 +72,22 @@ footer {
 	padding: 0px;
 }
 
+footer p, footer a {
+  /* color: rgba(255,255,255,1.00); */
+  color: var(--hw-blue);
+}
+
+footer a:hover {
+  color: var(--hw-blue);
+}
+
 /* Medium blue
 -------------------------------- */
 
 #subfooter {
-	background-color: #0F4F6B;
-  /* not sure if this gradient is accessible */
-	background: linear-gradient(#3F7188, #0F4F6B);
+	background-color: var(--hw-blue);
+  /* not sure if this gradient is accessible
+	background: linear-gradient(#3F7188, #0F4F6B);*/
 }
 
 /* Pink
@@ -60,7 +99,7 @@ footer {
 .navbar-nav .current-menu-item a,
 .navbar-nav .current_page_item a,
 .navbar-nav .current-post-ancestor a {
-	color: var(--hw-pink);
+	color: var(--hw-hyperlink);
 }
 
 .navbar-nav .current-menu-item a:hover,
@@ -69,8 +108,8 @@ footer {
 .navbar-nav .current-post-ancestor a:focus,
 .navbar-nav .current_page_item a:hover,
 .navbar-nav .current_page_item a:focus {
-  background-color: var(--hw-pink) !important;
-  outline: 3px solid var(--hw-pink);
+  background-color: var(--hw-hyperlink) !important;
+  outline: 3px solid var(--hw-hyperlink);
   color: rgba(255,255,255,1.00);
 }
 
@@ -89,30 +128,34 @@ h1 {
 	border-color: rgba(0,0,0,0.10);
 }
 
-.btn-primary {
-	background-color: var(--url-blue);
-	color: white;
+.btn:hover:after {
+	color: var(--hw-blue);
+}
+
+.btn-primary,
+.btn-cookie {
+	background-color: var(--hw-light-blue-50);
+	color: var(--hw-blue);
 	background-image: none;
 	text-decoration: none;
+	letter-spacing: .05rem;
 }
 
-.btn-primary:hover {
-	background-color: white;
-	border-color: var(--url-blue);
-	color: var(--url-blue);
-	outline: none;
+.btn-primary:hover,
+.btn-cookie:hover {
+	background-color: var(--hw-blue);
+	border-color: var(--hw-blue-70);
+	color: white;
+	outline: none !important;
 }
 
-.btn:hover:after {
-	color: var(--url-blue);
-}
-
-.btn-primary:hover:after {
+.btn-primary:hover:after,
+.btn-cookie:hover:after {
 	color: inherit;
 }
 
 .page-header .btn-primary {
-	background-color: var(--url-blue);
+	background-color: var(--hw-blue);
 	color: white;
 	background-image: none;
 	text-decoration: none;
@@ -120,8 +163,8 @@ h1 {
 
 .page-header .btn-primary:hover {
 	background-color: white;
-	color: var(--url-blue);
-	border-color: var(--url-blue);
+	color: var(--hw-blue);
+	border-color: var(--hw-blue);
 }
 
 .call-to-action	{
@@ -130,13 +173,13 @@ h1 {
 
 .call-to-action a,
 .call-to-action a:visited {
-	color:var(--hw-pink);
+	color:var(--hw-hyperlink);
 	font-weight:bold;
 	font-size: 1.2em;
 }
 
 .call-to-action:visited {
-	color:var(--hw-pink);
+	color:var(--hw-hyperlink);
 	font-weight:bold;
 	text-decoration:none;
 	font-size: 1.2em;
@@ -145,8 +188,8 @@ h1 {
 .call-to-action a:hover,
 .call-to-action a:focus {
 	text-decoration: none;
-	background-color: var(--hw-pink) !important;
-	outline: 3px solid var(--hw-pink);
+	background-color: var(--hw-hyperlink) !important;
+	outline: 3px solid var(--hw-hyperlink);
 	color: rgba(255,255,255,1.00);
 }
 

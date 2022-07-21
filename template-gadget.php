@@ -30,8 +30,8 @@
 			}
 
 		a.hw-title {
-            color: #e73e97; /* Core pink */
-			font-family: Bitter, serif;
+      color: #e73e97; /* Core pink */
+      font-family: Bitter, serif;
 			font-size: 1.2rem;
 			text-decoration: none;
 			font-weight: 700;
@@ -84,7 +84,7 @@ $hwid = $_GET["hwid"]; ?>
 
 	<?php $args = array (
 	'posts_per_page' => 1,
-	'post_type' => 'Local_services',
+	'post_type' => 'local_services',
 	'orderby' => 'comment_count',
 	'p' => $hwid,
 	);
@@ -123,7 +123,7 @@ $hwid = $_GET["hwid"]; ?>
 				// the_excerpt();
 
 
-				echo feedbackstarrating($individual_rating,array('colour' => 'green','size' => 'fa-lg'));
+				echo hw_feedback_star_rating($individual_rating,array('colour' => 'green','size' => 'fa-lg'));
         if ($individual_rating == 1) echo '<span class="screen-reader-text">'.$individual_rating.' star</span>';
         else echo '<span class="screen-reader-text">'.$individual_rating.' stars</span>';
 

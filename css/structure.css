@@ -1,14 +1,6 @@
 /* Structure
 ----------------------------------- */
 
-.city h2 {
-	display: none;
-}
-
-.city h2:first-child {
-	display: block;
-}
-
 /*
 body {
 	padding-top: 135px;
@@ -54,6 +46,16 @@ body {
 	display: block;
 }
 
+#signposts-selector .signpost-container a {
+	color: white;
+}
+
+#signposts-selector .signpost-container a:hover,
+#signposts-selector .signpost-container a:focus {
+	background-color: #004F6BD9;
+	outline: none;
+}
+
 #signpost-categories {
 	margin: 2rem 0;
 }
@@ -87,14 +89,33 @@ body {
 	text-decoration: none;
 }
 
+.single-signposts article,
 .tax-signpost_categories article {
 	background-color: rgba(0,0,0,.02);
 	padding: .1rem 2rem 2rem 2rem;
 	margin-top: 3rem;
 }
 
+.single-signposts article h3,
 .tax-signpost_categories article h3 {
 	padding-top: 1.5rem;
+}
+
+.archive-signpost-title h2 {
+	margin-top: 20px !important;
+}
+
+.archive-signpost-title {
+	display: flex;
+	justify-content:space-between;
+}
+
+span.single-signpost-title {
+	font-weight: 400;
+}
+
+a.single-signpost-url {
+	text-decoration: underline;
 }
 
 /* Sidebar ---------------- */
@@ -131,7 +152,7 @@ body {
 	border-top: #CCC 1px dotted;
 	margin: 4rem 0;
 	padding-top: 3rem;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 /*
@@ -461,7 +482,7 @@ ul#local-services-selector li:last-child {
 ----------------------------------- */
 
 #content a, footer a {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 #content h2 a {
@@ -546,7 +567,7 @@ ul#local-services-selector li:last-child {
 	color: var(--hw-purple);
 	font-family: inherit;
 	padding-left: .5rem;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 #content a[href$=".doc"]::after,
@@ -555,7 +576,7 @@ ul#local-services-selector li:last-child {
 	color: var(--hw-purple);
 	font-family: inherit;
 	padding-left: .5rem;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 #content a[href$=".ppt"]::after,
@@ -564,7 +585,7 @@ ul#local-services-selector li:last-child {
 	color: var(--hw-purple);
 	font-family: inherit;
 	padding-left: .5rem;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 #content a[href*="sharepoint"]:hover,
@@ -632,7 +653,7 @@ ul#local-services-selector li:last-child {
 	margin-bottom: 1.5rem;
 	white-space: normal;
 	font-size: 1.8rem;
-	font-weight: 700;
+	font-weight: 600;
 	border: 2px solid;
 	padding: 1.2rem;
 }
@@ -795,7 +816,7 @@ img.media-object {
 .alert {
 	padding: 1.2rem;
 	font-size: 2rem;
-	font-weight: 700;
+	font-weight: 600;
 	border-radius: 0;
 }
 
@@ -923,7 +944,8 @@ div.staff-member {
 .choice-container:hover .choice-details,
 .children-container:hover .child-details {
 	min-height: 50%;
-	background-color: rgb(35, 82, 124, 0.85);
+	/* D9 = 85% */
+	background-color: #004F6BD9;
 	transition: min-height 350ms linear;
 }
 
@@ -939,7 +961,8 @@ div.staff-member {
 a.signpost-details:focus,
 a.choice-details:focus,
 a.child-details:focus {
-	background-color: rgb(35, 82, 124, 0.85);
+	/* D9 = 85% */
+	background-color: #004F6BD9;
 	outline: none;
 }
 
@@ -968,7 +991,7 @@ a.child-details:focus {
 .signpost-details,
 .choice-details,
 .child-details {
-	background-color: rgb(35, 82, 124);
+background-color: var(--hw-blue);
 	min-height: 10%;
 	padding: 0.5rem;
 	display: flex;
@@ -1018,7 +1041,7 @@ a.child-details:focus {
 	transition: all 100ms linear;
 	overflow: hidden;
 	font-weight: normal;
-	color: rgb(35, 82, 124, 0.85);
+	color: #004F6BD9;
 }
 
 /* Improved tags and category links */
@@ -1071,19 +1094,20 @@ a.child-details:focus {
 .the-tags p a:hover,
 .the-tags p a:focus {
 	color: white !important;
-	background-color: rgb(35, 82, 124);
+background-color: var(--hw-blue);
 	text-decoration: none !important;
 }
 
 .the-tags-archive a,
 .the-taxonomies-archive a,
 .the-tags p a {
-	background-color: white;
+	font-size: 1.6rem;
+	background-color: var(--hw-hyperlink);
 	border: 1px solid darkgray;
 	padding: 2px 8px;
 	display: inline-block;
 	border-radius: 3px;
-	color: var(--hw-pink) !important;
+	color: white !important;
 	text-decoration: none !important;
 	margin-bottom: 0.4rem;
 }
@@ -1094,8 +1118,8 @@ a.child-details:focus {
 .the-tags-archive a:focus,
 .the-taxonomies-archive a:focus,
 .the-tags p a:focus {
-	color: white !important;
-	background-color: var(--hw-pink) !important;
+	color: var(--hw-hyperlink) !important;
+	background-color: white !important;
 	outline: none !important;
 	text-decoration: none !important;
 }
@@ -1122,7 +1146,7 @@ a.child-details:focus {
 
 .panel-default .panel-heading {
 	background-image: none;
-	background-color: rgb(35, 82, 124);
+background-color: var(--hw-blue);
 	transition: 400ms linear 100ms;
 }
 
@@ -1149,7 +1173,7 @@ a.child-details:focus {
 
 .panel-default .panel-heading.collapsed {
 	background-image: none;
-	background-color: rgb(35, 82, 124);
+background-color: var(--hw-blue);
 	opacity: 0.7;
 	transition: 400ms ease-out 100ms;
 }
