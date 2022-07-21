@@ -6,6 +6,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0] - 2022-06-09
+
+**Plugin folder re-named from healthwatchfeedback to hw-feedback!**
+
+### Added
+- fields in the Theme Customizer to reduce hardcoding - can set Org Name, Email and Telephone
+- new section in Theme Customizer and new fields for social media identities
+- helper functions to clean and format/mask telephone numbers and twitter handles
+- widget to display new social media identities from customizer
+
+### Changed
+- updated fonts and colours in-line with Healthwatch England rebrand
+- reformatted panels and signpost display
+- replaced old RGB colours with hex/vars
+- fixed syntax in jQuery JS files
+- some values from customizer now used in meta tags
+- pagination number formatting
+- restyled footer
+- moved some legacy inline CSS into files
+- now use site icon on login page rather than built-in
+- reorder default metabox display
+
 ## [1.9.4] - 2022-06-09
 ### Added
 - an "out of date" reminder to all pages with reviews
