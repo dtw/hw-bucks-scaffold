@@ -22,7 +22,4 @@ if ($rating['count'] == 0) {
 		</strong></p>
 	<?php }
 } // end count IF ?>
-
-<p><a href="<?php echo get_the_permalink(); ?>#response-header">Leave your own rating &raquo;</a></p>
-
 </div>
