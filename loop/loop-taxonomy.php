@@ -40,44 +40,16 @@ if (is_tax('service_types')) 	{ 												// If this is a taxonomy page
 
         <div class="col-md-10 col-sm-9 col-xs-8">
 
-            <h3><a href="<?php echo the_permalink(''); ?>"><?php the_title(); ?></a></h3>
+            <?php if (is_tax('service_types')) {
+							// if tax is a service get the city and add it to the title
+							$city = get_post_meta( $post->ID, 'hw_services_city', true );
+							$title_link_string = ($city) ? get_the_title() . ' ('.$city.')' : get_the_title();
+							echo '<h3><a class="title-link" href="' . get_the_permalink() . '" rel="bookmark">' . $title_link_string . '</a><h3>';
+						} else { ?>
+							<h3><a href="<?php echo the_permalink(''); ?>"><?php the_title(); ?></a></h3>
+						<?php }
 
-                <p>
-
-				<?php if (get_post_meta( get_the_ID(), 'hw_services_city', true )) { ?>
-
-
-                    <?php if (get_post_meta( get_the_ID(), 'hw_services_city', true )) { ?>
-                    <?php echo get_post_meta( get_the_ID(), 'hw_services_city', true ); } ?>
-
-
-
-
-							<?php } else { ?>
-
-
-                    <?php if (get_post_meta( get_the_ID(), 'hw_services_address_line_1', true )) { ?>
-                        <?php echo get_post_meta( get_the_ID(), 'hw_services_address_line_1', true ); } ?>
-
-                    <?php if (get_post_meta( get_the_ID(), 'hw_services_address_line_2', true )) { ?>
-                    , <?php echo get_post_meta( get_the_ID(), 'hw_services_address_line_2', true ); } ?>
-
-                    <?php if (get_post_meta( get_the_ID(), 'hw_services_city', true )) { ?>
-                    , <?php echo get_post_meta( get_the_ID(), 'hw_services_city', true ); } ?>
-
-                    <?php if (get_post_meta( get_the_ID(), 'hw_services_county', true )) { ?>
-                    , <?php echo get_post_meta( get_the_ID(), 'hw_services_county', true ); } ?>
-
-                    <?php if (get_post_meta( get_the_ID(), 'hw_services_postcode', true )) { ?>
-                     <?php echo get_post_meta( get_the_ID(), '_hw_services_postcode', true ); } ?>
-
-
-							<?php } ?>
-
-                            </p>
-
-
-    <?php if ( has_excerpt( $post->ID ) ) {
+  if ( has_excerpt( $post->ID ) ) {
 	the_excerpt();
 		} else { } ?>
 
