@@ -13,8 +13,8 @@
 			endif;
 		}
 		?>
-
-        <div class="col-md-2 col-sm-3 col-xs-4">
+		<!-- Start content for service -->
+		<div class="col-md-2 col-sm-3 col-xs-4">
 
 
 <?php														// Display icon for taxonomy term
@@ -97,7 +97,7 @@ if (is_tax()) 	{ 												// If this is a taxonomy page
 
 
 
-                    </div><!-- end of row / Post -->
+                    </div><!-- end of row / service -->
 
 
         <?php endwhile; ?>
