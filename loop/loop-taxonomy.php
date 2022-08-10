@@ -34,7 +34,7 @@ if (is_tax('service_types')) 	{ 												// If this is a taxonomy page
 		?>
 
 	<a href="<?php the_permalink(); ?>">
-    <img width="75" height="75" src="<?php echo $term_icon; ?>" alt="<?php the_title(); ?>" />
+    <img width="100%" src="<?php echo $term_icon; ?>" alt="<?php the_title(); ?>" />
     </a>
 
             </div><!-- end of 1st col -->
