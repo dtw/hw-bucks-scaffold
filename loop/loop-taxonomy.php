@@ -19,7 +19,7 @@
 
 <?php														// Display icon for taxonomy term
 
-if (is_tax()) 	{ 												// If this is a taxonomy page
+if (is_tax('service_types')) 	{ 												// If this is a taxonomy page
 	$term_id = get_queried_object_id();							// Get taxonomy ID
 	}
 
