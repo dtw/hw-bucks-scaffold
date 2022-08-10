@@ -8,7 +8,7 @@
 			foreach ( $service_types_terms as $service_types_term ) {
 				$service_types_classes[] = $service_types_term->slug;
 			}
-			$service_types_classes = join( ", ", $service_types_classes );
+			$service_types_classes = join( " ", $service_types_classes );
 		}
     ?>
 		<div  class="row post service-type <?php echo $service_types_classes; ?>">
