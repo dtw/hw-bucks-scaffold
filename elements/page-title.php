@@ -31,7 +31,6 @@ else { ?>
 						<p>Healthwatch Bucks is an independent organisation that gives you a voice. We talk to the people that run your health and social care services, including hospitals, dentists, GPs and care homes. We use your feedback and our independent reports to help shape health and social care services in Bucks.</p>
 					<?php } else if (is_tax('service_types')) { ?>
 						<?php echo category_description(); ?>
-						<p>Choose a local service and leave your feedback</p>
 					<?php } else if (is_singular('signposts')) { ?>
 						<p><a class="single-signpost-url" href="https://www.healthwatchbucks.co.uk/signposting/">Search our signposts again &raquo;</a></p>
 					<?php } else if (is_404()) { ?>
