@@ -46,9 +46,9 @@ if (is_tax('service_types')) 	{ 												// If this is a taxonomy page
 							// if tax is a service get the city and add it to the title
 							$city = get_post_meta( $post->ID, 'hw_services_city', true );
 							$title_link_string = ($city) ? get_the_title() . ' ('.$city.')' : get_the_title();
-							echo '<h3><a class="title-link" href="' . get_the_permalink() . '" rel="bookmark">' . $title_link_string . '</a><h3>';
+							echo '<h2><a class="title-link" href="' . get_the_permalink() . '" rel="bookmark">' . $title_link_string . '</a></h2>';
 						} else { ?>
-							<h3><a href="<?php echo the_permalink(''); ?>"><?php the_title(); ?></a></h3>
+							<h2><a href="<?php echo the_permalink(''); ?>"><?php the_title(); ?></a></h2>
 						<?php }
 
   if ( has_excerpt( $post->ID ) ) {
