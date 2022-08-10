@@ -15,7 +15,7 @@ query_posts(
 ?>
             <div class="container">
 
-	<div id="content" class="col-md-8 col-xs-12">
+	<div id="content" class="col-md-12 col-sm-12">
 
                 <div class="row"><h2>Choose a local service and leave your feedback</h2>
 

@@ -16,7 +16,7 @@
 		}
 		?>
 		<!-- Start content for service -->
-		<div class="col-md-2 col-sm-3 col-xs-4">
+		<div class="col-md-2 col-sm-3 hidden-xs">
 
 
 <?php														// Display icon for taxonomy term
@@ -40,7 +40,7 @@ if (is_tax('service_types')) 	{ 												// If this is a taxonomy page
             </div><!-- end of 1st col -->
 
 
-        <div class="col-md-10 col-sm-9 col-xs-8">
+        <div class="col-md-10 col-sm-9">
 
             <?php if (is_tax('service_types')) {
 							// if tax is a service get the city and add it to the title
