@@ -10,10 +10,10 @@
 			}
 			$service_types_classes = join( " ", $service_types_classes );
 		}
-    ?>
-		<div  class="row post service-type <?php echo $service_types_classes; ?>">
+		echo '<div class="row post service-type' . $service_types_classes. '">';
+		endif;
+		?>
 
-    <?php endif; ?>
 
         <div class="col-md-2 col-sm-3 col-xs-4">
 
