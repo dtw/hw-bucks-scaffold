@@ -9,11 +9,10 @@
 				$service_types_classes[] = $service_types_term->slug;
 			}
 			$service_types_classes = join( " ", $service_types_classes );
+			echo '<div class="row post service-type' . $service_types_classes. '">';
+			endif;
 		}
-		echo '<div class="row post service-type' . $service_types_classes. '">';
-		endif;
 		?>
-
 
         <div class="col-md-2 col-sm-3 col-xs-4">
 
