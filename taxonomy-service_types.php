@@ -17,7 +17,7 @@ query_posts(
 
 	<div id="content" class="col-md-12 col-sm-12">
 
-                <div class="row"><h2>Choose a local service and leave your feedback</h2>
+                <div class="row"><h2>Choose a local service and write a review</h2>
 
 
 				<?php include('loop/loop-taxonomy.php'); ?>
