@@ -89,7 +89,7 @@ if (is_tax('service_types')) 	{ 												// If this is a taxonomy page
 			</p>
 
 				<h2 class="text-center">Didn't find the local health service you were looking for?</h2>
-                <p class="text-center">You can still <a href="<?php bloginfo('url'); ?>/feedback/">send us feedback.</a></p>
+                <p class="text-center">You can still <a href="<?php bloginfo('url'); ?>/your-feedback/">send us feedback</a>.</p>
                 </div><!-- end of Jumbotron -->
 
                 <?php else: ?>
