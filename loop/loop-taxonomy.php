@@ -54,7 +54,7 @@
 <?php endif; ?>
 <div class="jumbotron col-sm-12">
 	<p class="text-center">
-		<i class="fas fa-4x fa-search"></i>
+		<i class="fas fa-2x fa-search"></i>
 	</p>
 	<p class="text-center">Didn't find the local health service you were looking for? You can still <a href="<?php bloginfo('url'); ?>/your-feedback/">send us feedback</a>.</p>
 </div><!-- end of Jumbotron -->
