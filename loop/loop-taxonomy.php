@@ -94,7 +94,7 @@ if (is_tax('service_types')) 	{ 												// If this is a taxonomy page
 
                 <?php else: ?>
 
-            <h2 class="text-center">Sorry, no local health services were found matching <strong><?php echo $s; ?></strong>.</h2>
+            <h2 class="text-center">Sorry, no services listed under <strong><?php single_cat_title(); ?></strong>.</h2>
 
 <div class="jumbotron">
 		<p class="text-center">

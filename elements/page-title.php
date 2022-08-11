@@ -11,7 +11,7 @@ else { ?>
 						<?php if (is_home()) { ?>
 							Tell us about health and social care services in Buckinghamshire
 						<?php } else if (is_tax('service_types')) { ?>
-							<?php get_template_part('elements/count-results'); ?><?php single_cat_title(); ?>
+							<?php single_cat_title(); ?> (<?php get_template_part('elements/count-results'); ?> services)
 						<?php } else if (is_tag()) { ?>
 							Posts about topic: <?php single_cat_title(); ?>
 						<?php } else if (is_singular('signposts')) { ?>
