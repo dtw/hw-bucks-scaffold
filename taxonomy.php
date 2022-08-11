@@ -8,7 +8,7 @@ query_posts(
 		array(
 		'order' => 'ASC',
 		'orderby'=>'title',
-		'posts_per_page' => '500',
+		'posts_per_page' => '300',
 		)
 	)
 );
