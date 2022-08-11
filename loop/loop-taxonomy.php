@@ -9,10 +9,10 @@
 				$service_types_classes[] = $service_types_term->slug;
 			}
 			$service_types_classes = join( " ", $service_types_classes );
-			echo '<div class="row post service-type ' . $service_types_classes. '">';
+			echo '<!-- start of row / service --><div class="row post service-type ' . $service_types_classes. '">';
 			endif;
 		} else {
-			echo '<div class="row post">';
+			echo '<!-- start of row / service --><div class="row post">';
 		}
 		?>
 		<!-- Start content for service -->
@@ -61,6 +61,7 @@
 		<p class="text-center">You can still <a href="<?php bloginfo('url'); ?>/your-feedback/">send us feedback</a>.</p>
 	</div><!-- end of Jumbotron -->
 <?php else: ?>
+<?php /* the query returned no posts */ else: ?>
 	<h2 class="text-center">Sorry, no services listed under <strong><?php single_cat_title(); ?></strong>.</h2>
 	<div class="jumbotron">
 		<p class="text-center">
