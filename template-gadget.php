@@ -6,14 +6,27 @@
     <meta charset="utf-8">
 
 <!-- Load Font Awesome -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c1c5370dea.js" crossorigin="anonymous"></script>
 
 <!-- Load Bitter font from Google Web Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://fonts.googleapis.com/css2?Bitter:wght@400,700&family=Poppins:wght@300;600&display=swap' rel='stylesheet'>
 
-<!-- a minimum of inline CSS -->
+<!-- get out site CSS -->
+<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold/css/structure.css' rel='stylesheet'>
+<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold/css/colours.css' rel='stylesheet'>
+<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold/css/typography.css' rel='stylesheet'>
+<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold-child/style.min.css' rel='stylesheet'>
+<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/plugins/hw-feedback/css/prefix-style.min.css' rel='stylesheet'>
 
 		<style>
+
+    body.healthwatch-gadget {
+	font-family: 'Poppins','Open Sans', sans-serif;
+	color: #111;
+}
 
 		div#hw-feedback {
 			text-align: center;
@@ -26,46 +39,17 @@
 
 		p.hw-p {
 			margin: 1.5rem 0;
-			font-family: serif;
+			font-family: open sans, sans-serif;
 			}
 
 		a.hw-title {
-      color: #e73e97; /* Core pink */
-      font-family: Bitter, serif;
-			font-size: 1.2rem;
-			text-decoration: none;
+      font-family: 'Poppins','Open Sans', sans-serif;
+			font-size: 1.9rem;
 			font-weight: 700;
 	        }
 
-        a.hw-button {
-            background-color: #004f6b; /* Core blue */
-			padding: .5rem .5rem;
-			font-size: .9rem;
-			color: #fff;
-			text-decoration: none;
-			text-shadow: #000 1px 1px 1px;
-			border-radius: 5px;
-        }
-
-        a.hw-button:hover {
-            background-color: #e73e97; /* Core pink */
-			}
-
-
-		.star-rating .fa {
-			color: #e73e97; /* Core pink */
-			}
-
-		a .fa {
+		a .fas {
 			padding-left: .3rem;
-			}
-
-		.fa-2x {
-			font-size: 1.2rem !important;
-			}
-
-		.fa.green {
-			color: green;
 			}
 
         </style>
