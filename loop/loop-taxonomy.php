@@ -53,21 +53,13 @@
 		get_template_part('elements/pagination');
 	}
 	wp_reset_query(); ?>
-	<div class="jumbotron">
-		<p class="text-center">
-			<i class="fas fa-4x fa-search"></i>
-		</p>
-		<h2 class="text-center">Didn't find the local health service you were looking for?</h2>
-		<p class="text-center">You can still <a href="<?php bloginfo('url'); ?>/your-feedback/">send us feedback</a>.</p>
-	</div><!-- end of Jumbotron -->
-<?php else: ?>
 <?php /* the query returned no posts */ else: ?>
 	<h2 class="text-center">Sorry, no services listed under <strong><?php single_cat_title(); ?></strong>.</h2>
-	<div class="jumbotron">
-		<p class="text-center">
-			<i class="fas fa-4x fa-search"></i>
-		</p>
-		<p class="text-center">Didn't find the local health service you were looking for? You can still <a href="<?php bloginfo('url'); ?>/your-feedback/">send us feedback</a>.</p>
-	</div><!-- end of Jumbotron -->
 <?php endif; ?>
+<div class="jumbotron">
+	<p class="text-center">
+		<i class="fas fa-4x fa-search"></i>
+	</p>
+	<p class="text-center">Didn't find the local health service you were looking for? You can still <a href="<?php bloginfo('url'); ?>/your-feedback/">send us feedback</a>.</p>
+</div><!-- end of Jumbotron -->
 </div><!-- end of Loop Taxonomy -->
