@@ -94,7 +94,7 @@ $hwid = $_GET["hwid"]; ?>
 
 	if ( have_posts() && $hwid ) : while ( have_posts() ) : the_post(); ?>
 
-        <p class="hw-p"><a target="_blank" href="<?php echo the_permalink(); ?>" class="hw-title"><?php the_title(); ?></a></p>
+        <h2><a target="_blank" href="<?php echo the_permalink(); ?>" class="hw-title"><?php the_title(); ?></a></h2>
 
 
 
@@ -102,26 +102,22 @@ $hwid = $_GET["hwid"]; ?>
 
 				if ($rating <>"") {
 
-				echo "<p>Our rating:</p>";
+				echo "<p>";
 
 				// the_excerpt();
 
 
-				echo hw_feedback_star_rating($individual_rating,array('colour' => 'green','size' => 'fa-lg'));
-        if ($individual_rating == 1) echo '<span class="screen-reader-text">'.$individual_rating.' star</span>';
-        else echo '<span class="screen-reader-text">'.$individual_rating.' stars</span>';
+				echo hw_feedback_star_rating($rating,array('colour' => 'green','size' => 'fa-lg'));
+        if ($rating == 1) echo '</p><span class="screen-reader-text">'.$rating.' star</span>';
+        else echo '<span class="screen-reader-text">'.$rating.' stars</span>'; ?>
+        <p>Rated <strong><?php echo $rating; ?></strong> out of 5 by <strong>Healthwatch Bucks</strong></p>
+        <?php				}
 
-				} else {
-
-					}
-					?>
-
-
-    <?php 	$gadget = "yes";
+        $gadget = "yes";
 			include('elements/comments-rating-average.php'); ?>
 
 
-    <p class="hw-p"><a target="_blank" class="hw-button" href="<?php echo the_permalink(); ?>">Leave feedback <i class="fas fa-caret-right"></i></a></p>
+    <p class="hw-p"><a target="_blank" class="btn btn-primary" href="<?php echo the_permalink(); ?>">Leave feedback</a></p>
 
     <?php endwhile; ?>
 
