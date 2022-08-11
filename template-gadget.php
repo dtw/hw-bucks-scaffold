@@ -98,19 +98,19 @@ $hwid = $_GET["hwid"]; ?>
 
 
 
-			<?php $rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true );
+			<?php $our_rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true );
 
-				if ($rating <>"") {
+				if ($our_rating <>"") {
 
 				echo "<p>";
 
 				// the_excerpt();
 
 
-				echo hw_feedback_star_rating($rating,array('colour' => 'green','size' => 'fa-lg'));
-        if ($rating == 1) echo '</p><span class="screen-reader-text">'.$rating.' star</span>';
-        else echo '<span class="screen-reader-text">'.$rating.' stars</span>'; ?>
-        <p>Rated <strong><?php echo $rating; ?></strong> out of 5 by <strong>Healthwatch Bucks</strong></p>
+				echo hw_feedback_star_rating($our_rating,array('colour' => 'green','size' => 'fa-lg'));
+        if ($our_rating == 1) echo '</p><span class="screen-reader-text">'.$our_rating.' star</span>';
+        else echo '<span class="screen-reader-text">'.$our_rating.' stars</span>'; ?>
+        <p>Rated <strong><?php echo $our_rating; ?></strong> out of 5 by <strong>Healthwatch Bucks</strong></p>
         <?php				}
 
         $gadget = "yes";
