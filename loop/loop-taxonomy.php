@@ -52,7 +52,7 @@
 <?php /* the query returned no posts */ else: ?>
 	<h2 class="text-center">Sorry, no services listed under <strong><?php single_cat_title(); ?></strong>.</h2>
 <?php endif; ?>
-<div class="jumbotron">
+<div class="jumbotron col-sm-12">
 	<p class="text-center">
 		<i class="fas fa-4x fa-search"></i>
 	</p>
