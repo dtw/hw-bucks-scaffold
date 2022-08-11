@@ -1,5 +1,3 @@
-<?php get_header(); ?>
-
 <?php
 global $wp_query;
 query_posts(
@@ -12,6 +10,8 @@ query_posts(
 		)
 	)
 );
+
+get_header();
 ?>
             <div class="container">
 
