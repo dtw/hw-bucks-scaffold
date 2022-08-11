@@ -47,9 +47,7 @@
 		</div><!-- end of 3rd col -->
 	</div><!-- end of row / service -->
 	<?php endwhile;
-	if(!is_home()) {
-		get_template_part('elements/pagination');
-	}
+	get_template_part('elements/pagination');
 	wp_reset_query(); ?>
 <?php /* the query returned no posts */ else: ?>
 	<h2 class="text-center">Sorry, no services listed under <strong><?php single_cat_title(); ?></strong>.</h2>
