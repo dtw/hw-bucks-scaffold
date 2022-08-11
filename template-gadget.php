@@ -140,7 +140,7 @@ $hwid = $_GET["hwid"]; ?>
         <?php endif; ?>
 
         <div id="logo" class="healthwatch-gadget-logo">
-            <p class="hw-p"><a target="_blank" href="<?php echo esc_url(site_url()); ?>/rate-a-service/"><img width="150" src='<?php echo esc_url( get_theme_mod( 'scaffold_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a></p>
+            <p class="hw-p"><img width="150" src='<?php echo esc_url( get_theme_mod( 'scaffold_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></p>
                     </div>
 
 		</div><!-- end of HW feedback -->
