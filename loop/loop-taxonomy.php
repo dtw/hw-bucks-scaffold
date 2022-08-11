@@ -53,7 +53,7 @@ if (is_tax('service_types')) 	{ 												// If this is a taxonomy page
 
   if ( has_excerpt( $post->ID ) ) {
 	the_excerpt();
-		} else { } ?>
+		} ?>
 
 
             </div><!-- end of 2nd col -->
