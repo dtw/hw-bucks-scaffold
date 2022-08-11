@@ -27,9 +27,7 @@
 			}
 			$term_icon = get_term_meta( $term_id, 'icon', true );	// Use it to get icon field
 			?>
-			<a href="<?php the_permalink(); ?>">
-				<img width="100%" src="<?php echo $term_icon; ?>" alt="<?php the_title(); ?>" />
-			</a>
+			<img width="100%" src="<?php echo $term_icon; ?>" alt="<?php the_title(); ?>" />
 		</div><!-- end of 1st col -->
   	<div class="col-md-10 col-sm-9">
 	    <?php if (is_tax('service_types')) {
