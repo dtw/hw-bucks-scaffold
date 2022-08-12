@@ -46,12 +46,14 @@
 					echo "<p class='review-excerpt'><i class='fas fa-quote-left'></i>" . get_the_excerpt() . "<i class='fas fa-quote-right'></i></p><p class='review-rating'>";
 					echo hw_feedback_star_rating($rating,array('colour' => 'green','size' => 'fa-lg'));
 					if ($rating == 1) echo '<span class="screen-reader-text">'.$rating.' star</span>';
-					else echo '<span class="screen-reader-text">'.$rating.' stars</span></p></div>';
+					else echo '<span class="screen-reader-text">'.$rating.' stars</span></p></div><div class="user-review-block">';
+					get_template_part('elements/comments-rating-average');
+					echo '</div>';
 				} else {
 					the_excerpt();
+					get_template_part('elements/comments-rating-average');
 				}
 			} ?>
-			<?php get_template_part('elements/comments-rating-average'); ?>
 		</div><!-- end of 2nd col -->
 	</div><!-- end of row / service -->
 	<?php endwhile;
