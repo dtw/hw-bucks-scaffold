@@ -19,7 +19,7 @@ get_header();
 
                 <div class="row">
 									<?php if (have_posts()) {
-										echo '<h2>Choose a local service and write a review</h2>';
+										echo '<h2>Find a service to rate and review</h2>';
 									}?>
 
 
