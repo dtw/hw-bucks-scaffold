@@ -13,7 +13,7 @@ if ($rating['count'] == 0) {
 } else {
 	$average_rating = $rating['average'];
 	$average_rating = round($average_rating,1);
-	if ( $gadget == "yes" && $rating['average'] >= 3 ) {  ?>
+	if ( $gadget == "yes" && $rating['average'] < 3 ) { return; } else { ?>
 		<p>
 			<?php echo hw_feedback_star_rating($average_rating,array('size' => 'fa-lg'));	?>
 		</p>
