@@ -39,12 +39,20 @@
 				<h2><a href="<?php echo the_permalink(''); ?>"><?php the_title(); ?></a></h2>
 			<?php }
 			if ( has_excerpt( $post->ID ) ) {
-				the_excerpt();
+				$rating = get_post_meta( $post->ID, 'hw_services_overall_rating', true );
+				if ($rating) {
+					$visit_date = get_post_meta( $post->ID, 'hw_services_date_visited', true );
+					echo "<div class='our-review-block'><p>Our review from <strong>" . $visit_date . "</strong>:</p>";
+					echo "<p class='review-excerpt'><i class='fas fa-quote-left'></i>" . get_the_excerpt() . "<i class='fas fa-quote-right'></i></p><p class='review-rating'>";
+					echo hw_feedback_star_rating($rating,array('colour' => 'green','size' => 'fa-lg'));
+					if ($rating == 1) echo '<span class="screen-reader-text">'.$rating.' star</span>';
+					else echo '<span class="screen-reader-text">'.$rating.' stars</span></p></div>';
+				} else {
+					the_excerpt();
+				}
 			} ?>
-		</div><!-- end of 2nd col -->
-		<div class="col-md-4 col-sm-4">
 			<?php get_template_part('elements/comments-rating-average'); ?>
-		</div><!-- end of 3rd col -->
+		</div><!-- end of 2nd col -->
 	</div><!-- end of row / service -->
 	<?php endwhile;
 	get_template_part('elements/pagination');

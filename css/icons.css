@@ -79,6 +79,20 @@
 	padding-left: 1px;
 }
 
+.fas.fa-comments {
+	color: var(--hw-blue);
+}
+
+.fas.fa-quote-left {
+  padding-right: 0.5rem;
+  vertical-align: top;
+}
+
+.fas.fa-quote-right {
+  padding-left: 0.5rem;
+  vertical-align: bottom;
+}
+
 /* Featured images
 ------------------------------------ */
 

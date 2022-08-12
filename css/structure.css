@@ -1288,3 +1288,20 @@ background-color: var(--hw-blue);
 .loop-single-service {
 	/*border-bottom: #999 1px dashed;*/
 }
+
+/* Taxonomy archives */
+
+/* Inline #33 | https://www.staging10.healthwatchbucks.co.uk/type/care-home/ */
+
+.our-review-block {
+  padding: 1rem 0.5rem 0 1rem;
+  background: ;
+  background-color: var(--hw-pale-grey);
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.star-rating {
+  padding-left: 1rem;
+}
