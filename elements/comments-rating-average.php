@@ -7,7 +7,7 @@ $rating = hw_feedback_get_rating($post);
 if ($rating['count'] == 0) {
 	if ($gadget <> "yes") {
 		if  ( is_tax() || is_page_template() ) { ?>
-			<p><a href="<?php echo the_permalink(); ?>#response-header"><i class="fas fa-comments" aria-hidden="true"></i> Write a review</a></p>
+			<p><i class="fas fa-comments fa-lg" aria-hidden="true"></i> <a href="<?php echo the_permalink(); ?>#response-header">Write the first review!</a></p>
 		<?php }
 	}
 } else {
