@@ -4,8 +4,8 @@ query_posts(
 	array_merge(
 		$wp_query->query,
 		array(
-		'order' => 'ASC',
-		'orderby'=>'title',
+		'order' => 'DSC',
+		'orderby'=>'published',
 		'posts_per_page' => '300',
 		)
 	)
