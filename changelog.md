@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1] - 2022-08-10
+### Changed
+- cleaned up display of taxonomy archives
+- review and tidied code
+- formatting of widget inline with HWE rebrand
+- removed link from gadget logo
+
 ## [2.0] - 2022-06-09
 
 **Plugin folder re-named from healthwatchfeedback to hw-feedback!**
