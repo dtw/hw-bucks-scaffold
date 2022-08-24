@@ -41,14 +41,14 @@
 
       <a id="navbar-brand" class="img-anchor navbar-brand" title="<?php bloginfo('name'); ?>" href="<?php echo esc_url( home_url() ); ?>">
       <?php if ( get_theme_mod( 'scaffold_logo' ) ) : ?>
-      <img src='<?php echo esc_url( get_theme_mod( 'scaffold_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
+      <?php echo wp_get_attachment_image( get_theme_mod( 'scaffold_logo' ), 'full', true, array( 'alt' => esc_attr( get_bloginfo( 'name', 'display' ) ) ) )?>
       <?php else : ?>
       <?php bloginfo('name'); ?>
       <?php endif; ?>
       </a>
       <a id="navbar-brand-alt" class="img-anchor navbar-brand" title="<?php bloginfo('name'); ?>" href="<?php echo esc_url( home_url() ); ?>">
       <?php if ( get_theme_mod( 'scaffold_logo_alt' ) ) : ?>
-      <img src='<?php echo esc_url( get_theme_mod( 'scaffold_logo_alt' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
+      <?php echo wp_get_attachment_image( get_theme_mod( 'scaffold_logo_alt' ), 'full', true, array( 'alt' => esc_attr( get_bloginfo( 'name', 'display' ) ) ) )?>
       <?php else : ?>
       <?php bloginfo('name'); ?>
       <?php endif; ?>
