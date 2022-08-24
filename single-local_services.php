@@ -58,9 +58,9 @@ if (has_term('Archived','cqc_reg_status')) {
 				$service_type = $term_list[0];
 				$args = array(
 					'status' => 'approve',
-					'posts_per_page' => '1000',
+					'posts_per_page' => '5',
 					'post_type' => 'local_services',
-					'number' => 1000,
+					'number' => 5,
 					'post__not_in' => get_the_id(),
 				);
 				// The Query
