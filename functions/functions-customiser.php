@@ -89,14 +89,16 @@ function scaffold_theme_customizer( $wp_customize ) {
 	));
 
 	// Tell Theme Customiser to let us use an image uploader
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'scaffold_logo', array(
+	$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'scaffold_logo', array(
+    'mime_type' => 'image',
 		'label'    => __( 'Upload logo - should be 280px wide', 'scaffold' ),
 		'section'  => 'scaffold_logo_section',
 		'settings' => 'scaffold_logo',
 	) ) );
 
 	// Tell Theme Customiser to let us use an image uploader
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'scaffold_logo_alt', array(
+	$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'scaffold_logo_alt', array(
+    'mime_type' => 'image',
 		'label'    => __( 'Upload logo - should be 280px wide', 'scaffold' ),
 		'section'  => 'scaffold_logo_alt_section',
 		'settings' => 'scaffold_logo_alt',
