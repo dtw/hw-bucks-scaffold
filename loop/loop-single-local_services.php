@@ -51,11 +51,7 @@
 			$term_name=  get_term_meta( $term_id, 'name', true );						// Get meta
 			?>
 			<div id="thumbnail-container-body" class="hidden-lg hidden-md col-sm-6 col-xs-12 text-center sidebar-container">
-				<img class="attachment-thumbnail size-thumbnail wp-post-image" src="
-				<?php echo str_replace('.png', '-150x150.png', $term_icon);?>
-				" alt="
-				<?php echo $term_name . ' icon'; ?>
-				"/>
+        <?php wp_get_attachment_image( $term_icon, 'medium', true, array( 'class' => 'attachment-thumbnail size-thumbnail wp-post-image', 'alt' => $term_name ) ); ?>
 			</div>
 		<?php } ?>
 			<div id="service-rating-details" class="col-md-7 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1">

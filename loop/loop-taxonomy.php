@@ -26,8 +26,8 @@
 				$term_id = $term_ids[0]->term_id;								// Get taxonomy ID
 			}
 			$term_icon = get_term_meta( $term_id, 'icon', true );	// Use it to get icon field
+      echo wp_get_attachment_image( $term_icon, 'thumbnail', true, array( 'alt' => get_the_title() ) );
 			?>
-			<img width="100%" src="<?php echo $term_icon; ?>" alt="<?php the_title(); ?>" />
 		</div><!-- end of 1st col -->
   	<div class="col-md-10 col-sm-9">
 	    <?php if (is_tax('service_types')) {

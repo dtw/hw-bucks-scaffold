@@ -26,7 +26,14 @@ if (has_term('Archived','cqc_reg_status')) {
 				echo '<div id="thumbnail-container-sidebar" class="col-md-12 hidden-sm hidden-xs sidebar-container">';
 				the_post_thumbnail();
 				echo '</div>';
-			} ?>
+			} else {
+        $term_ids = get_the_terms( $post->ID, 'service_types' );	// Find taxonomies
+        $term_id = $term_ids[0]->term_id;											// Get taxonomy ID
+        $term_icon = get_term_meta( $term_id, 'icon', true );						// Get meta
+        echo '<div id="thumbnail-container-sidebar" class="col-md-12 hidden-sm hidden-xs sidebar-container">';
+        echo wp_get_attachment_image( $term_icon, 'medium', false, array( 'alt' => $term_name ) );
+        echo '</div>';
+      }?>
 			<!-- Insert CQC WIDGET -->
 			<?php if (has_term('Not registered','cqc_reg_status') || get_post_meta(get_the_ID(),'hw_services_cqc_location',true) == '')  {
 			} else { ?>
