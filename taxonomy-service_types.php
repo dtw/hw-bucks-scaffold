@@ -4,9 +4,16 @@ query_posts(
 	array_merge(
 		$wp_query->query,
 		array(
-		'order' => 'DSC',
-		'orderby'=>'published',
-		'posts_per_page' => '300',
+  		'order' => 'DSC',
+  		'orderby'=>'published',
+  		'posts_per_page' => '300',
+      'tax_query' => array(
+        array(
+          'taxonomy' => 'cqc_reg_status',
+          'field'    => 'slug',
+          'terms'    => 'registered',
+        ),
+      ),
 		)
 	)
 );
