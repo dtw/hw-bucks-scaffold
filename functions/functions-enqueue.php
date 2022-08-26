@@ -15,7 +15,10 @@ function scaffold_add_theme_scripts() {
 
 	// wp_enqueue_script( 'scaffold_compact_on_scroll', get_template_directory_uri() . '/js/compact_on_scroll.js');
 
-	wp_enqueue_script( 'recaptcha_2', 'https://www.google.com/recaptcha/api.js');
+  // only load recaptcha on your-story
+  if ( is_page('your-story') ){ //Check if we are viewing your-story page
+    wp_enqueue_script( 'recaptcha_2', 'https://www.google.com/recaptcha/api.js');
+  }
 
 	// only on enqueue on local_services
 
