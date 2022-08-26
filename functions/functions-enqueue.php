@@ -66,20 +66,30 @@ add_action( 'wp_enqueue_scripts', 'scaffold_add_theme_scripts' );
 /* 8. Enqueue Google Fonts
 ------------------------------------------------------------------------------ */
 
-function scaffold_google_fonts() {
-	$query_args = array(
-		'family' => 'Open+Sans:400,600,700,800,400italic|Bitter:400,700',
-		'subset' => 'latin,latin-ext'
-		);
-	wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
+function webfonts_loader() {
+	// Include the file.
+	require_once get_theme_file_path( 'includes/wptt-webfont-loader.php' );
+  // build families
+  $font_families = array(
+  	'Poppins:wght@300;600',
+  	'Bitter:wght@400;700',
+    'Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400'
+  );
+
+  $fonts_url = add_query_arg( array(
+    	'family' => implode( '&family=', $font_families ),
+    	'display' => 'swap',
+    ), 'https://fonts.googleapis.com/css2' );
+
+  // Load the fonts.
+  wp_enqueue_style(
+    'gfonts_local',
+    wptt_get_webfont_url( esc_url_raw( $fonts_url ) ),
+    array(),
+    '1.0'
+  );
+  error_log('hw-feedback:'.$fonts_url);
 }
+add_action( 'wp_enqueue_scripts', 'webfonts_loader' );
 
-add_action('wp_enqueue_scripts', 'scaffold_google_fonts');
-
-function scaffold_google_fonts_2() {
-	// &family=Abril+Fatface
-   wp_enqueue_style( 'google_fonts_2', 'https://fonts.googleapis.com/css2?Bitter:wght@400,700&family=Poppins:wght@300;600&display=swap', false );
-  }
-
-add_action('wp_enqueue_scripts', 'scaffold_google_fonts_2');
 ?>
