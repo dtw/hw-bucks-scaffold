@@ -503,7 +503,6 @@ ul#local-services-selector li:last-child {
 	margin-top: 0px;
 }
 
-#content a[href*="sharepoint"],
 #content a[href$=".pdf"],
 #content a[href$="test123"],
 #content a.btn-download,
@@ -521,7 +520,6 @@ ul#local-services-selector li:last-child {
 	text-decoration: none;
 }
 
-#content a[href*="sharepoint"]::before,
 #content a[href$=".pdf"]::before,
 #content a[href$="test123"]::before,
 #content a.btn-download::before,
@@ -538,7 +536,6 @@ ul#local-services-selector li:last-child {
 	/*color: var(--hw-purple);*/
 }
 
-#content a[href*="sharepoint"]::before,
 #content a[href$="test123"]::before,
 #content a.btn-download::before {
 	content: "\f381";
@@ -588,14 +585,12 @@ ul#local-services-selector li:last-child {
 	font-weight: 600;
 }
 
-#content a[href*="sharepoint"]:hover,
 #content a[href$=".pdf"]:hover,
 #content a[href$="test123"]:hover,
 #content a.btn-download:hover,
 #content a[href$=".doc"]:hover,
 #content a[href$=".docx"]:hover,
 #content a[href$=".pptx"]:hover,
-#content a[href*="sharepoint"]:focus,
 #content a[href$=".pdf"]:focus,
 #content a[href$="test123"]:focus,
 #content a.btn-download:focus,
@@ -609,28 +604,24 @@ ul#local-services-selector li:last-child {
 	outline: none;
 }
 
-#content a[href*="sharepoint"]:hover::before,
 #content a[href$=".pdf"]:hover::before,
 #content a[href$="test123"]:hover::before,
 #content a.btn-download:hover::before,
 #content a[href$=".doc"]:hover::before,
 #content a[href$=".docx"]:hover::before,
 #content a[href$=".pptx"]:hover::before,
-#content a[href*="sharepoint"]:hover::after,
 #content a[href$=".pdf"]:hover::after,
 #content a[href$="test123"]:hover::after,
 #content a.btn-download:hover::after,
 #content a[href$=".doc"]:hover::after,
 #content a[href$=".docx"]:hover::after,
 #content a[href$=".pptx"]:hover::after,
-#content a[href*="sharepoint"]:focus::before,
 #content a[href$=".pdf"]:focus::before,
 #content a[href$="test123"]:focus::before,
 #content a.btn-download:focus::before,
 #content a[href$=".doc"]:focus::before,
 #content a[href$=".docx"]:focus::before,
 #content a[href$=".pptx"]:focus::before,
-#content a[href*="sharepoint"]:focus::after,
 #content a[href$=".pdf"]:focus::after,
 #content a[href$="test123"]:focus::after,
 #content a.btn-download:focus::after,
