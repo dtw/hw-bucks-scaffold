@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.2] - 2022-08-26
+### Changed
+- only show register services in local services taxonomy archives
+- switch to self-hosted Google fonts (uses wptt-webfont-loader.php from https://github.com/WPTT/webfont-loader)
+- only enqueue recaptcha on your-story page
+- remove auto-formatting of SharePoint anchors
+
+## [2.1.1] - 2022-08-24
+### Changed
+- check not admin before trying to output meta tags
+- support icons from media library on signposts and services
+- switch theme customiser logo to attachment ID not URL
+
 ## [2.1] - 2022-08-10
 ### Changed
 - cleaned up display of taxonomy archives
