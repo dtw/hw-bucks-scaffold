@@ -80,10 +80,6 @@ form input[type="submit"]:hover {
 	padding:0.5rem;
 }
 
-#mailchimp-form-inline {
-	padding: 0 2rem 2rem 2rem;
-}
-
 #mailchimp-form form#mc-embedded-subscribe-form input[type="email"] {
 	box-shadow: 0 10px 18px -13px #000;
 	font-family: 'Open Sans';
@@ -361,11 +357,8 @@ ul.gfield_checkbox li label {
 
 form#mc-embedded-subscribe-form input[type="email"] {
 	border: none;
-	box-shadow: #5593B0 2px 2px 2px inset;
-	color: #0F4F6B;
+	color: #000;
 	font-weight: 600;
-	background-color: rgba(255,255,255,.8);
-	letter-spacing: .1rem;
 	font-size: 1.8rem;
 	width: 300px;
 	max-width: 100%;
@@ -373,34 +366,47 @@ form#mc-embedded-subscribe-form input[type="email"] {
 
 form#mc-embedded-subscribe-form input[type="submit"] {
 	font-weight: 600;
-	background-color: var(--hw-pink);
-	border: 2px solid var(--hw-pink);
+  color: var(--hw-blue);
+	background-color: var(--hw-light-blue-50);
+	border: 2px solid rgba(0,0,0,0.10);
 	font-size: 1.8rem;
-	letter-spacing: .1rem;
+	letter-spacing: .05rem;
 	margin-left: 0;
-	padding: 0.8rem 1.5rem;
+	padding: 1.2rem;
 }
 
 form#mc-embedded-subscribe-form input[type="submit"]:hover {
-	background-color: white;
-	color: var(--hw-pink);
+	background-color: var(--hw-light-blue-10);
 }
 
 form#mc-embedded-subscribe-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #3F7188; }
+  color: #000; }
 form#mc-embedded-subscribe-form ::-moz-placeholder { /* Firefox 19+ */
-  color: #3F7188; }
+  color: #000; }
 form#mc-embedded-subscribe-form :-ms-input-placeholder { /* IE 10+ */
-  color: #3F7188; }
+  color: #000; }
 form#mc-embedded-subscribe-form :-moz-placeholder { /* Firefox 18- */
-  color: #3F7188; }
+  color: #000; }
 
-#mc_embed_signup_scroll p {
-	margin-top: 3rem;
+#mce-previous-newsletter {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+	line-height: 2.4rem;
 }
 
-#mc_embed_signup_scroll a {
+#mce-previous-newsletter a {
 	color: white;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+}
+
+#mc_embed_signup_scroll label {
+	color: white;
+	vertical-align: middle;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	font-family: 'Poppins','Open Sans', sans-serif;
+	padding-top: 0;
 }
 
  /* COMMENT FORM
