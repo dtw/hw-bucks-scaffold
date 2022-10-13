@@ -1138,7 +1138,7 @@ background-color: var(--hw-blue);
 
 .panel-default .panel-heading {
 	background-image: none;
-background-color: var(--hw-blue);
+background-color: black;
 	transition: 400ms linear 100ms;
 }
 
@@ -1165,13 +1165,12 @@ background-color: var(--hw-blue);
 
 .panel-default .panel-heading.collapsed {
 	background-image: none;
-background-color: var(--hw-blue);
-	opacity: 0.7;
+  background-color: var(--hw-yellow);
 	transition: 400ms ease-out 100ms;
 }
 
-.panel-default .panel-heading.collapsed:hover {
-	opacity: 1;
+.panel-default .panel-heading :hover {
+	text-decoration: underline;
 }
 
 .panel-heading {
@@ -1184,7 +1183,11 @@ background-color: var(--hw-blue);
 	padding-top: 0px;
 	line-height: 3rem;
 	font-size: 18px;
-	color: white;
+	color: var(--hw-yellow);
+}
+
+.panel-heading.collapsed h4 {
+	color: black;
 }
 
 .panel-body {
