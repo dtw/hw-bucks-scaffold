@@ -195,7 +195,7 @@ blockquote br {
 	padding: 2rem;
 	font-style: italic;
 	border-left: 3px solid rgb(35, 82, 124);
-	background: rgba(0,0,0,0.02);
+	background: var(--hw-pale-grey);
 }
 
 div.comment-content {

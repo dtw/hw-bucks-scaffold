@@ -215,14 +215,14 @@ footer ul li {
 .comment-list,
 .review {
 	padding: 1rem 0;
-	background-color: rgba(0,0,0,0.02);
+	background-color: var(--hw-pale-grey);
 	margin-top: 2rem;
 	border-radius: 5px;
 	border: 2px solid rgba(0,0,0,0.04);
 }
 
 .comment-body {
-	background-color: rgba(0,0,0,.02);
+	background-color: var(--hw-pale-grey);
 	padding: 1rem;
 	margin: 1rem 1rem 0 1rem;
 }
@@ -1242,7 +1242,7 @@ background-color: var(--hw-blue);
 #service-rating-details {
 	border: rgba(0,0,0,0.04) 2px solid;
 	border-radius: 5px;
-	background-color: rgba(0,0,0,0.02);
+	background-color: var(--hw-pale-grey);
 	padding: 1rem;
 }
 
