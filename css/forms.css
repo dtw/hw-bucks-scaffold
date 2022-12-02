@@ -372,7 +372,7 @@ form#mc-embedded-subscribe-form input[type="submit"] {
 	font-size: 1.8rem;
 	letter-spacing: .05rem;
 	margin-left: 0;
-	padding: 1.2rem;
+	padding: 0.9rem 1.2rem;
 }
 
 form#mc-embedded-subscribe-form input[type="submit"]:hover {
@@ -407,6 +407,11 @@ form#mc-embedded-subscribe-form :-moz-placeholder { /* Firefox 18- */
 	line-height: 2.4rem;
 	font-family: 'Poppins','Open Sans', sans-serif;
 	padding-top: 0;
+}
+
+#mailchimp-form-inline {
+	padding-left: 2rem;
+	padding-bottom: 2rem;
 }
 
  /* COMMENT FORM
