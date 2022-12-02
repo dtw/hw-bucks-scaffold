@@ -254,7 +254,7 @@ footer ul li {
 	padding: 2rem;
 	font-style: italic;
 	border-left: 3px solid var(--hw-pink);
-	background: rgba(0,0,0,0.02);
+	background: rgb(245, 245, 245);
 }
 
 .hw-reply-quote a {
@@ -1184,6 +1184,7 @@ background-color: black;
 	line-height: 3rem;
 	font-size: 18px;
 	color: var(--hw-yellow);
+  font-weight: bold;
 }
 
 .panel-heading.collapsed h4 {
