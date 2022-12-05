@@ -206,21 +206,17 @@ div.comment-content {
 blockquote p:first-child:before,
 div.comment-content p:first-child:before {
 	content:"\201C";
-	color:rgba(0,0,0,0.50);
 	margin-right: .5rem;
 	font-weight: bold;
-	font-family: Bitter;
-	font-style: italic;
+	font-family: "Poppins", "Open Sans", sans-serif;
 }
 
 blockquote p:last-child:after,
 div.comment-content p:last-child:after {
 	content:"\201D";
 	margin-left: .5rem;
-	color:rgba(0,0,0,0.50);
 	font-weight: bold;
-	font-family: Bitter;
-	font-style: italic;
+	font-family: "Poppins", "Open Sans", sans-serif;
 }
 
 .response blockquote:after,
