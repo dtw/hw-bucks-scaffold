@@ -91,7 +91,7 @@ function webfonts_loader() {
     array(),
     '1.0'
   );
-  error_log('hw-feedback:'.$fonts_url);
+  //error_log('hw-feedback:'.$fonts_url);
 }
 add_action( 'wp_enqueue_scripts', 'webfonts_loader' );
 
