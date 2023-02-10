@@ -67,6 +67,10 @@
 		min-height: 215px;
 	}
 
+	.compact-item {
+		transition: 400ms ease-out 100ms;
+	}
+
 	/* more padding on panels */
 	.home .panel {
 		padding: 3rem;
