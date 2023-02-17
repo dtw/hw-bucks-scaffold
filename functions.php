@@ -89,10 +89,12 @@ update_option('image_default_link_type','none');
 
 // Remove meta boxes from Posts and Pages
 function hw_remove_meta_boxes() {
-	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' );
-	remove_meta_box( 'trackbacksdiv' , 'page' , 'normal' );
-	remove_meta_box( 'commentsdiv' , 'post' , 'normal');
-	remove_meta_box( 'commentsdiv' , 'page' , 'normal');
+	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' ); // trackback metabox
+	remove_meta_box( 'trackbacksdiv' , 'page' , 'normal' ); // trackback metabox
+	remove_meta_box( 'commentsdiv' , 'post' , 'normal'); // comments metabox
+	remove_meta_box( 'commentsdiv' , 'page' , 'normal'); // comments metabox
+  remove_meta_box( 'postcustom' , 'post' , 'normal' ); // custom fields metabox
+  remove_meta_box( 'postcustom' , 'page' , 'normal' ); // custom fields metabox
 }
 add_action( 'admin_menu' , 'hw_remove_meta_boxes' );
 
