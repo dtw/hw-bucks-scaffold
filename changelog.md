@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.3] - 2023-02-17
+### Changed
+- many style changes to improve accessibility
+- added styles for new compact recent feedback widget
+
 ## [2.1.2] - 2022-08-26
 ### Changed
 - only show register services in local services taxonomy archives
