@@ -8,8 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.1.3] - 2023-02-17
 ### Changed
-- many style changes to improve accessibility
-- added styles for new compact recent feedback widget
+- styles to improve accessibility
+
+### Added
+- styles for new compact recent feedback widget
 
 ## [2.1.2] - 2022-08-26
 ### Changed
