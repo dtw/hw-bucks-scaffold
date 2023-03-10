@@ -75,17 +75,33 @@
 				$rating = hw_feedback_get_rating($post);
 
 				if ($rating['count'] != 0) {
-					$average_rating = $rating['average'];
-					$average_rating = round($average_rating,1); ?>
+					$average_rating = round($rating['average'],1); ?>
 
 				<div id="public-rating" class="row">
-					<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 rating-title">
-						<p><strong>Public rating:</strong></p>
+					<h3>Public ratings</h3>
+					<!-- recent average - if there is one -->
+						<?php if ($rating['recent_count'] != 0) {
+							$recent_average_rating = round($rating['recent_average'],1); ?>
+							<div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 rating-title">
+								<p><strong>Last 12 months:</strong></p>
+							</div><!-- end of col -->
+							<div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 star-rating">
+								<p><?php echo hw_feedback_star_rating($recent_average_rating,array('size' => 'fa-lg')); ?></p>
+							</div><!-- end of col -->
+							<div class="col-lg-8 col-md-12 col-sm-8 col-xs-12 col-lg-offset-5 col-md-offset-0 col-sm-offset-4 rating-description">
+								<p>Rated <strong><?php echo $recent_average_rating; ?></strong> out of 5 by <strong><?php echo $rating['recent_count']; ?>
+								<?php if ($rating['count'] <= 1) { echo " person"; } else { echo " people"; } ?>
+								</strong></p>
+							</div>
+						<?php } ?>
+					<!-- overall average - if there is one -->
+					<div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 rating-title">
+						<p><strong>Overall:</strong></p>
 					</div><!-- end of col -->
-					<div class="col-lg-8 col-md-6 col-sm-8 col-xs-12 star-rating">
+					<div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 star-rating">
 						<p><?php echo hw_feedback_star_rating($average_rating,array('size' => 'fa-lg')); ?></p>
 					</div><!-- end of col -->
-					<div class="col-lg-8 col-md-12 col-sm-8 col-xs-12 col-lg-offset-4 col-md-offset-0 col-sm-offset-4 rating-description">
+					<div class="col-lg-8 col-md-12 col-sm-8 col-xs-12 col-lg-offset-5 col-md-offset-0 col-sm-offset-4 rating-description">
 						<p>Rated <strong><?php echo $average_rating; ?></strong> out of 5 by <strong><?php echo $rating['count']; ?>
 						<?php if ($rating['count'] <= 1) { echo " person"; } else { echo " people"; } ?>
 						</strong></p>
