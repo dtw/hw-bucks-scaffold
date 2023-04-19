@@ -21,7 +21,15 @@ $total_comments = count($comments); ?>
 	// Check whether approved
 	$comment_id = '';
 	$status = wp_get_comment_status( $comment_id );
-	if ( $status == "approved" ) { ?>
+	if ( $status == "approved" ) {
+		// Add a collapse if more than 5 comments
+		if ( $comment_counter == 6 ) { ?>
+			<div class="collapse-button-container">
+				<a class="btn btn-primary bt-light-blue" data-toggle="collapse" href="#collapseComments" role="button" aria-expanded="false" aria-controls="collapseExample">
+					Show <?php echo $total_comments - $comment_counter ?> more reviews
+				</a>
+		</div>
+		<div class="collapse" id="collapseComments"><!-- start of collapse --> <?php } ?>
 		<div class="review">
 			<?php echo '<span class="screen-reader-text">Review '.$comment_counter.' of '.$total_comments.'</span>';
 			$individual_rating = get_comment_meta( $comment->comment_ID, 'feedback_rating', true );
@@ -86,6 +94,9 @@ $total_comments = count($comments); ?>
 
 
 <?php
+if ( $comment_counter === $total_comments && $total_comments > 5 ) {
+	echo '</div><!-- end of collapse --> ';
+}
 $comment_counter = ++$comment_counter;
 } //loop ends here
 unset($comment);
