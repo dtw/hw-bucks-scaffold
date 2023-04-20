@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.2] - 2023-04-20
+### Added
+- support for "recent averages" from hw-feedback
+- collapsing comments - if a service has more than 5 comments, the additional comments are collapsed
+
 ## [2.1.3] - 2023-02-17
 ### Changed
 - styles to improve accessibility
