@@ -15,7 +15,7 @@ if (has_term('Archived','cqc_reg_status')) {
 			<?php if (!is_user_logged_in()) { ?>
 				<hr />
 				<h2 id="response-header">Rate and review this service</h2>
-				<p>Your name and email address and other identifying information will not be published and will be stored in accordance with our <a href="http://www.healthwatchbucks.co.uk/privacy/" target="_blank">privacy policy</a>. Required fields are marked with an asterisk. All comments are checked against our <a href="https://www.healthwatchbucks.co.uk/privacy/#comments" target="_blank">comments policy</a> before they are published. </p>
+				<p>Your name and email address and other identifying information will not be published and will be stored in accordance with our <a href="<?php echo get_site_url() ?>/privacy/" target="_blank">privacy policy</a>. Required fields are marked with an asterisk. All comments are checked against our <a href="https://www.healthwatchbucks.co.uk/privacy/#comments" target="_blank">comments policy</a> before they are published. </p>
 				<?php include('elements/comments-form.php');
 			} ?>
 		</div><!-- end of content column -->

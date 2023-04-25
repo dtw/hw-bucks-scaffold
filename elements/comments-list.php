@@ -11,7 +11,7 @@ $total_comments = count($comments); ?>
 <?php if ( is_singular('local_services') ) {
 	if ($comments) { ?>
 		<hr /><h2>Public ratings and reviews</h2>
-		<p><small>If <?php the_title(); ?> would like to respond to any of the comments, email <a href="mailto:info@healthwatchbucks.co.uk">info@healthwatchbucks.co.uk</a></small></p>
+		<p><small>If <?php the_title(); ?> would like to respond to any of the comments, email <a href="mailto:<?php echo get_theme_mod( 'scaffold_org_email') ?>"><?php echo get_theme_mod( 'scaffold_org_email') ?></a></small></p>
 <?php }
 	}
 ?>

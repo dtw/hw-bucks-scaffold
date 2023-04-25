@@ -48,9 +48,9 @@
   	// We do all this separately so we keep the right things for organization together
   	if (is_front_page()) {
   		$payload["@type"] = "Organization";
-  		$payload["name"] = "Healthwatch Bucks";
+  		$payload["name"] = get_theme_mod( 'scaffold_org_name');
   		$payload["logo"] = "https://healthwatchbucks.co.uk/wp-content/uploads/2016/07/HW_BUCKS.png";
-  		$payload["url"] = "http://healthwatchbucks.co.uk/";
+  		$payload["url"] = get_site_url();
   		$payload["contactPoint"] = [
   			["@type" => "ContactPoint",
           // get phone from theme customiser
