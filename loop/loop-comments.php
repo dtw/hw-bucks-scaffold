@@ -33,7 +33,7 @@ if ( $comments ) {
 				if ($rating == 1) echo '<span class="screen-reader-text">'.$rating.' star</span>';
 				else echo '<span class="screen-reader-text">'.$rating.' stars</span>';
 			?>
-     <br />&mdash;
+     <span class="mdash">&mdash;</span>
        <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></strong></p>
 
 
