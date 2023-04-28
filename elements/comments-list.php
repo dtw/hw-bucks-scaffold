@@ -24,11 +24,9 @@ $total_comments = count($comments); ?>
 	if ( $status == "approved" ) {
 		// Add a collapse if more than 5 comments
 		if ( $comment_counter == 6 ) { ?>
-			<div class="collapse-button-container">
-				<a class="btn btn-primary bt-light-blue" data-toggle="collapse" href="#collapseComments" role="button" aria-expanded="false" aria-controls="collapseExample">
-					Show <?php echo ($total_comments - $comment_counter) + 1 ?> more reviews
-				</a>
-		</div>
+			<div class="collapse-comments-header collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseComments">
+				<h4 class="header-title"><i class="fas fa-caret-right" aria-hidden="true"></i>Show <?php echo ($total_comments - $comment_counter) + 1 ?> more reviews</h4>
+			</div>
 		<div class="collapse" id="collapseComments"><!-- start of collapse --> <?php } ?>
 		<div class="review">
 			<?php echo '<span class="screen-reader-text">Review '.$comment_counter.' of '.$total_comments.'</span>';
