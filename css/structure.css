@@ -767,7 +767,7 @@ ul#local-services-selector li:last-child {
 ------------------------------------- */
 
 .media {
-  background-color: rgba(0,0,0,:;);
+  background-color: rgba(0,0,0,.04);
 	padding: 2rem;
 	border-top: 5px solid rgba(0,0,0,0.06);
 }
@@ -895,11 +895,6 @@ div.staff-member {
 
 
 /* Signposts */
-#signposts-selector,
-#feedback-selector,
-#children-selector {
-	background-color: ;
-}
 
 #signposts-selector.row::before,
 #feedback-selector.row::before,
@@ -1138,7 +1133,7 @@ background-color: var(--hw-blue);
 
 .panel-default .panel-heading {
 	background-image: none;
-background-color: black;
+	background-color: black;
 	transition: 400ms linear 100ms;
 }
 
@@ -1289,7 +1284,6 @@ background-color: black;
 
 .our-review-block {
   padding: 1rem 0.5rem 0 1rem;
-  background: ;
   background-color: var(--hw-pale-grey);
   border: 1px solid rgba(0,0,0,.2);
   border-radius: 3px;
