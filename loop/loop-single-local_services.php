@@ -86,26 +86,32 @@
 								<p><strong>Last 12 months:</strong></p>
 							</div><!-- end of col -->
 							<div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 star-rating">
-								<p><?php echo hw_feedback_star_rating($recent_average_rating,array('size' => 'fa-lg')); ?></p>
+								<?php $recent_rating_string = "Rated " . $recent_average_rating . " out of 5 by " . $rating['recent_count'];
+								if ($rating['recent_count'] <= 1) {
+									$recent_rating_string .= " person";
+								} else {
+									$recent_rating_string .= " people"; } ?>
+								<p>
+									<a href="#" data-toggle="tooltip" data-placement="right" title="<?php echo $recent_rating_string; ?>" id="recent-feedback-tooltip"><?php echo hw_feedback_star_rating($recent_average_rating,array('size' => 'fa-lg')); ?></a>
+									<span class="screen-reader-text"><?php echo $recent_rating_string; ?></span>
+								</p>
 							</div><!-- end of col -->
-							<div class="col-lg-8 col-md-12 col-sm-8 col-xs-12 col-lg-offset-5 col-md-offset-0 col-sm-offset-4 rating-description">
-								<p>Rated <strong><?php echo $recent_average_rating; ?></strong> out of 5 by <strong><?php echo $rating['recent_count']; ?>
-								<?php if ($rating['count'] <= 1) { echo " person"; } else { echo " people"; } ?>
-								</strong></p>
-							</div>
 						<?php } ?>
 					<!-- overall average - if there is one -->
 					<div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 rating-title">
 						<p><strong>Overall:</strong></p>
 					</div><!-- end of col -->
 					<div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 star-rating">
-						<p><?php echo hw_feedback_star_rating($average_rating,array('size' => 'fa-lg')); ?></p>
+						<?php $overall_rating_string = "Rated " . $average_rating . " out of 5 by " . $rating['count'];
+						if ($rating['count'] <= 1) {
+							$overall_rating_string .= " person";
+						} else {
+							$overall_rating_string .= " people"; } ?>
+						<p>
+							<a href="#" data-toggle="tooltip" data-placement="right" title="<?php echo $overall_rating_string; ?>" id="overall-feedback-tooltip"><?php echo hw_feedback_star_rating($average_rating,array('size' => 'fa-lg')); ?></a>
+							<span class="screen-reader-text"><?php echo $overall_rating_string; ?></span>
+						</p>
 					</div><!-- end of col -->
-					<div class="col-lg-8 col-md-12 col-sm-8 col-xs-12 col-lg-offset-5 col-md-offset-0 col-sm-offset-4 rating-description">
-						<p>Rated <strong><?php echo $average_rating; ?></strong> out of 5 by <strong><?php echo $rating['count']; ?>
-						<?php if ($rating['count'] <= 1) { echo " person"; } else { echo " people"; } ?>
-						</strong></p>
-					</div>
 				</div><!-- end of row -->
 			<?php } ?>
 				<div id="rating-link" class="row">
