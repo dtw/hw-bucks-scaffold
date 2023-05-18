@@ -15,7 +15,28 @@ if (has_term('Archived','cqc_reg_status')) {
 			<?php if (!is_user_logged_in()) { ?>
 				<hr />
 				<h2 id="response-header">Rate and review this service</h2>
-				<p>Your name and email address and other identifying information will not be published and will be stored in accordance with our <a href="<?php echo get_site_url() ?>/privacy/" target="_blank">privacy policy</a>. Required fields are marked with an asterisk. All comments are checked against our <a href="https://www.healthwatchbucks.co.uk/privacy/#comments" target="_blank">comments policy</a> before they are published. </p>
+				<p>Your name and email address and other identifying information will not be published but will be stored in accordance with our <a href="<?php echo get_site_url() ?>/privacy/" target="_blank">privacy policy</a>. Required fields are marked with an asterisk.</p>
+					<div class="panel panel-default">
+						<div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#comment-policy">
+							<h4 class="panel-title"><i class="fas fa-caret-right" aria-hidden="true"></i>Show comments policy</h4>
+						</div>
+						<div id="comment-policy" class="panel-collapse collapse">
+							<div class="panel-body">
+								<p>All reviews are checked against our comments policy before they are published.</p>
+								<p>We may not publish reviews if they contain:</p>
+								<ol>
+									<li>information which may make the reviewer identifiable to the service. For example, sharing detailed health/case information.</li>
+									<li>information relating to a 3<sup>rd</sup> party where there is no explicit relationship to the reviewer</li>
+									<li>abusive, derogatory, or offensive language</li>
+									<li>criticism referencing a named individual</li>
+									<li>statements that could be potentially libellous such as an accusation of malpractice (e.g. misdiagnosis)</li>
+									<li>references to or criticism of other reviews</li>
+									<li>details of an obviously contentious situation or on-going complaint</li>
+								</ol>
+								<p><a href="https://www.healthwatchbucks.co.uk/privacy/#comments" target="_blank">More about how we handle comments and reviews</a></p>
+							</div>
+						</div>
+					</div>
 				<?php include('elements/comments-form.php');
 			} ?>
 		</div><!-- end of content column -->
