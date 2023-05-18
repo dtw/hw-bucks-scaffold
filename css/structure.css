@@ -1276,6 +1276,14 @@ background-color: var(--hw-blue);
   padding-left: 0px;
 }
 
+.star-rating.p-rating {
+	color: var(--hw-pink);
+}
+
+.mdash {
+	color: black;
+}
+
 .loop-single-service {
 	/*border-bottom: #999 1px dashed;*/
 }

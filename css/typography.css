@@ -314,3 +314,20 @@ a:hover, a:focus {
  	outline: none;
  	cursor: default;
  }
+
+a#recent-feedback-tooltip,
+a#overall-feedback-tooltip {
+	text-decoration: none;
+	color: var(--hw-pink);
+}
+
+a#recent-feedback-tooltip:hover,
+a#recent-feedback-tooltip:active,
+a#recent-feedback-tooltip:focus,
+a#overall-feedback-tooltip:hover,
+a#overall-feedback-tooltip:active,
+a#overall-feedback-tooltip:focus {
+	color: white;
+	background-color: var(--hw-pink);
+	outline: 3px solid var(--hw-pink);
+}
