@@ -23,9 +23,9 @@ if (has_term('Archived','cqc_reg_status')) {
 						<div id="comment-policy" class="panel-collapse collapse">
 							<div class="panel-body">
 								<p>All reviews are checked against our comments policy before they are published.</p>
+								<p><strong>Reviews are public and shared with the service. If you include names, dates or detailed health/case information the service may be able to identify the person receiving care.</strong></p>
 								<p>We may not publish reviews if they contain:</p>
 								<ol>
-									<li>information which may make the reviewer identifiable to the service. For example, sharing detailed health/case information.</li>
 									<li>information relating to a 3<sup>rd</sup> party where there is no explicit relationship to the reviewer</li>
 									<li>abusive, derogatory, or offensive language</li>
 									<li>criticism referencing a named individual</li>
