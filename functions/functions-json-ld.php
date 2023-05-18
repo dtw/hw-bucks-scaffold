@@ -14,10 +14,10 @@
   	// Stuff for specific pages
   	$category = get_the_category();
   	// get an image url
-  	if (!(wp_get_attachment_url(get_post_thumbnail_id($post->ID)))) {
+  	if (!(wp_get_attachment_url(get_post_thumbnail_id($post_data->ID)))) {
   		$post_thumb = "http://www.healthwatchbucks.co.uk/wp-content/uploads/2016/07/Patterned-Quotes.png";
   	} else {
-  		$post_thumb = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+  		$post_thumb = wp_get_attachment_url(get_post_thumbnail_id($post_data->ID));
   	}
   	// This gets the data for the user who wrote that particular item
   	if (is_single()) {
