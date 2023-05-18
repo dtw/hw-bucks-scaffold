@@ -125,7 +125,7 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'section'  => 'scaffold_org_identity_section',
 		'settings' => 'scaffold_org_telephone',
 		'type'     => 'text',
-		'description' => 'Supports UK telephone numbers only.'
+		'description' => 'Supports UK telephone numbers only'
 	) ) );
 	// Add Socials controls
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_facebook', array(
@@ -133,28 +133,28 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'section'  => 'scaffold_org_social_media_section',
 		'settings' => 'scaffold_org_facebook',
 		'type'     => 'text',
-		'description' => 'Page name only, not full URL.'
+		'description' => 'Page name only, not full URL'
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_twitter', array(
 		'label'    => __( 'Twitter', 'scaffold' ),
 		'section'  => 'scaffold_org_social_media_section',
 		'settings' => 'scaffold_org_twitter',
 		'type'     => 'text',
-		'description' => 'Username/handle only, not full URL.'
+		'description' => 'Username/handle only, not full URL'
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_linkedin', array(
 		'label'    => __( 'LinkedIn', 'scaffold' ),
 		'section'  => 'scaffold_org_social_media_section',
 		'settings' => 'scaffold_org_linkedin',
 		'type'     => 'text',
-		'description' => 'Company ID only, not full URL.'
+		'description' => 'Company ID only, not full URL'
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_youtube', array(
 		'label'    => __( 'YouTube', 'scaffold' ),
 		'section'  => 'scaffold_org_social_media_section',
 		'settings' => 'scaffold_org_youtube',
 		'type'     => 'text',
-		'description' => 'Channel ID only, not full URL.'
+		'description' => 'Channel ID only, not full URL'
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_rss', array(
 		'label'    => __( 'Show RSS feed link?', 'scaffold' ),
