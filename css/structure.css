@@ -1137,6 +1137,13 @@ background-color: var(--hw-blue);
 	transition: 400ms linear 100ms;
 }
 
+.collapse-comments-header {
+	background-image: none;
+	background-color: var(--hw-blue);
+	transition: 400ms linear 100ms;
+	margin-top: 2rem;
+}
+
 .panel-default .panel-heading .panel-title .fas.fa-caret-right {
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
@@ -1164,11 +1171,19 @@ background-color: var(--hw-blue);
 	transition: 400ms ease-out 100ms;
 }
 
-.panel-default .panel-heading :hover {
+.collapse-comments-header.collapsed {
+	background-image: none;
+	background-color: var(--hw-light-blue-50);
+	transition: 400ms ease-out 100ms;
+}
+
+.panel-default .panel-heading :hover,
+.collapse-comments-header :hover {
 	text-decoration: underline;
 }
 
-.panel-heading {
+.panel-heading,
+.collapse-comments-header {
     cursor: pointer;
 		border-radius: 3px;
 		padding: 8px 15px;
@@ -1182,8 +1197,22 @@ background-color: var(--hw-blue);
   font-weight: bold;
 }
 
-.panel-heading.collapsed h4 {
+.collapse-comments-header h4 {
+	padding-top: 0px;
+	line-height: 3rem;
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+
+.panel-heading.collapsed h4,
+.collapse-comments-header.collapsed h4 {
 	color: black;
+}
+
+.header-title {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .panel-body {
@@ -1300,4 +1329,34 @@ background-color: var(--hw-blue);
 
 .user-review-block {
   padding-left: 1rem;
+}
+
+/* Collapsing Comments */
+.collapse-comments-header .header-title .fas.fa-caret-right {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	/* padding rotates with element >< */
+	padding: 5px 0px 0px 5px;
+	transition: 200ms linear 100ms;
+}
+
+.collapse-comments-header.collapsed .header-title .fas.fa-caret-right {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	padding: 0px 5px 0px 0px;
+	transition: 200ms linear 100ms;
+}
+
+#comment-policy .panel-body ol {
+	padding-left: 2rem;
+}
+
+#comment-policy .panel-body li {
+	padding-left: 1rem;
 }
