@@ -12,7 +12,7 @@ if (has_term('Archived','cqc_reg_status')) {
 		<div id="content" class="col-md-8 col-xs-12">
 			<?php include('loop/loop-single-local_services.php'); ?>
 			<?php include('elements/comments-list.php'); ?>
-			<?php if (!is_user_logged_in()) { ?>
+			<?php if (!is_user_logged_in() && comments_open() ) { ?>
 				<hr />
 				<h2 id="response-header">Rate and review this service</h2>
 				<p>Your name and email address and other identifying information will not be published but will be stored in accordance with our <a href="<?php echo get_site_url() ?>/privacy/" target="_blank">privacy policy</a>. Required fields are marked with an asterisk.</p>

@@ -113,12 +113,14 @@
 						</p>
 					</div><!-- end of col -->
 				</div><!-- end of row -->
-			<?php } ?>
+			<?php } 
+			if ( comments_open() ) {?>
 				<div id="rating-link" class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12 text-right">
 						<p><a href="<?php echo get_the_permalink(); ?>#response-header">Write a review &raquo;</a></p>
 					</div>
 				</div>
+				<?php } ?>
 			</div><!-- end of col 2 service-rating-details -->
 		</div><!-- end of row -->
 
