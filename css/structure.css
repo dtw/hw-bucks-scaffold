@@ -1246,6 +1246,8 @@ background-color: var(--hw-blue);
 /* Rules for accessibility */
 
 .screen-reader-text {
+	/* doesn't need a font colour but stops accessibility tools complaining about it */
+	color: black;
 	border: 0px;
 	clip: rect(1px, 1px, 1px, 1px);
 	-webkit-clip-path: inset(50%);
@@ -1311,6 +1313,11 @@ background-color: var(--hw-blue);
 
 .mdash {
 	color: black;
+}
+
+.no-rating {
+	color: black;
+	font-weight: bold;
 }
 
 .loop-single-service {
