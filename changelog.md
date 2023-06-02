@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.3] - 2023-06-02
+### Added
+- collapsible accordion on comment for to display comment policy
+
+### Changed
+- styles to improve accessibility further
+- explainer for star rating on Local Services, now appears on hover rather than inline
+- text strings (these should be editable in future)
+- review link and preamble, no longer shown when comments are closed
+
 ## [2.2] - 2023-04-20
 ### Added
 - support for "recent averages" from hw-feedback
