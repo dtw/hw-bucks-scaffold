@@ -65,7 +65,9 @@
       'container_id'      => '',
       'menu_class'        => '',
       'items_wrap' 		=> '%3$s',
-      'walker'            => new wp_bootstrap_navwalker()
+      'walker'            => new wp_bootstrap_navwalker(),
+      'link_before' => '<span class="nav-underline">',
+      'link_after' => '</span>'
       )
       );
       ?>
