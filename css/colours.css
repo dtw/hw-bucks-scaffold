@@ -95,22 +95,8 @@ footer a:hover {
 
 #content a[rel="tag"],
 .text-danger, /* Helper class */
-.tagline,
-.navbar-nav .current-menu-item a,
-.navbar-nav .current_page_item a,
-.navbar-nav .current-post-ancestor a {
+.tagline {
 	color: var(--hw-hyperlink);
-}
-
-.navbar-nav .current-menu-item a:hover,
-.navbar-nav .current-menu-item a:focus,
-.navbar-nav .current-post-ancestor a:hover,
-.navbar-nav .current-post-ancestor a:focus,
-.navbar-nav .current_page_item a:hover,
-.navbar-nav .current_page_item a:focus {
-  background-color: var(--hw-hyperlink) !important;
-  outline: 3px solid var(--hw-hyperlink);
-  color: rgba(255,255,255,1.00);
 }
 
 /* Text shadow
