@@ -767,7 +767,6 @@ ul#local-services-selector li:last-child {
 ------------------------------------- */
 
 .media {
-  background-color: rgba(0,0,0,.04);
 	padding: 2rem;
 	border-top: 5px solid rgba(0,0,0,0.06);
 }
