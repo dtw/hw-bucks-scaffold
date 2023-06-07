@@ -22,7 +22,7 @@
 			if (is_tax('service_types')) 	{ 												// If this is a taxonomy page
 				$term_id = get_queried_object_id();							// Get taxonomy ID
 			} else 	{ 												// Or if this is a widget
-				$term_ids = get_the_terms( $get_the_ID , 'service_types' );		// Find taxonomies
+				$term_ids = get_the_terms( get_the_ID() , 'service_types' );		// Find taxonomies
 				$term_id = $term_ids[0]->term_id;								// Get taxonomy ID
 			}
 			$term_icon = get_term_meta( $term_id, 'icon', true );	// Use it to get icon field
