@@ -1,13 +1,21 @@
-<?php global $post;				// Count unapproved feedback
-						$feedback_count = get_comments( array(
-							'post_ID' => $post->ID,
-							'status' => 'hold',
-							'count' => true
-						) ); ?>
+<?php
+// runs outside loop so global $post not accessible
+//global $post;				// Count unapproved feedback
+if (! is_admin()) {
+	// Gets an array of post objects.  
+	// If this is the single post page (single.php template), this should be an
+	// array of length 1.
+	$post_data = get_posts();
+	$feedback_count = get_comments( array(
+		'post_ID' => $post_data[0]->ID,
+		'status' => 'hold',
+		'count' => true
+	) );
+}
 
-<?php include_once(ABSPATH.'wp-admin/includes/plugin.php'); // Required for is_plugin_active function ?>
+include_once(ABSPATH.'wp-admin/includes/plugin.php'); // Required for is_plugin_active function
 
-<?php if (											// Check if there are warnings:
+if (											// Check if there are warnings:
 is_singular( 'local_services' ) || 						// Is single local service page
 ($feedback_count > 0) ||								// There's unapproved feedback
  is_plugin_active( 'ajax-search-lite/ajax-search-lite.php' ) 	// Ajax Search Lite not installed
