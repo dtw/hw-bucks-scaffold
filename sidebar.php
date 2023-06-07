@@ -14,7 +14,7 @@
 <?php if ( is_archive() ) { ?>
 	<?php $this_cat = (get_query_var('cat')) ? get_query_var('cat') : 1; ?>
 	<?php $this_category = get_category($this_cat);
-	if ( $this_category->parent ) { $this_cat = $this_category->parent; } ?>
+	if ( isset ($this_category->parent) ) { $this_cat = $this_category->parent; } ?>
 	<?php // Check whether this category's parent has children
 	$term = get_queried_object();
 	$children = get_terms( $term->taxonomy, array(
