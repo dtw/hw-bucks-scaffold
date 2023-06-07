@@ -117,7 +117,7 @@ $hwid = $_GET["hwid"]; ?>
 			include('elements/comments-rating-average.php'); ?>
 
 
-    <p class="hw-p"><a target="_blank" class="btn btn-primary" href="<?php echo the_permalink(); ?>">Write a review</a></p>
+    <a target="_blank" class="btn btn-primary" href="<?php echo the_permalink(); ?>">Write a review</a>
 
     <?php endwhile; ?>
 
@@ -135,7 +135,7 @@ $hwid = $_GET["hwid"]; ?>
 
     <p class="hw-p">Rate and review your local health services</p>
 
-    <p class="hw-p"><a target="_blank" class="hw-button" href="<?php echo esc_url(site_url()); ?>/rate-a-service/">Write a review <i class="fas fa-caret-right"></i></a></p>
+    <a target="_blank" class="hw-button" href="<?php echo esc_url(site_url()); ?>/rate-a-service/">Write a review <i class="fas fa-caret-right"></i></a>
 
         <?php endif; ?>
 
