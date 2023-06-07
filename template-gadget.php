@@ -52,6 +52,12 @@
 			padding-left: .3rem;
 			}
 
+		.healthwatch-gadget-logo-img {
+			width: 150px;
+			margin-bottom: 1.5rem;
+			margin-top: 1rem;
+		}
+
         </style>
 
     </head>
@@ -140,8 +146,8 @@ $hwid = $_GET["hwid"]; ?>
         <?php endif; ?>
 
         <div id="logo" class="healthwatch-gadget-logo">
-            <p class="hw-p"><img width="150" src='<?php echo esc_url( get_theme_mod( 'scaffold_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></p>
-                    </div>
+					<?php echo wp_get_attachment_image( get_theme_mod( 'scaffold_logo' ), 'full', true, array( 'alt' => esc_attr( get_bloginfo( 'name', 'display' ) ), 'class' => 'healthwatch-gadget-logo-img') ) ?>
+				</div>
 
 		</div><!-- end of HW feedback -->
 
