@@ -1,28 +1,26 @@
 <?php
 // JSON-LD for WordPress Home Articles and Author Pages
 // From https://builtvisible.com/implementing-json-ld-wordpress/
- // Stuff for any page
- function get_post_data() {
-		global $post;
-		return $post;
-	}
+
+/* THIS RUNS OUTSIDE THE LOOP SO global $post cannot be used */
+
   if ( ! is_admin() ) {
   	// This has all the data of the post/page etc
   	$payload["@context"] = "http://schema.org/";
-  	// Stuff for any page, if it exists
-  	$post_data = get_post_data();
-  	// Stuff for specific pages
-  	$category = get_the_category();
-  	// get an image url
-  	if (!(wp_get_attachment_url(get_post_thumbnail_id($post_data->ID)))) {
-  		$post_thumb = "http://www.healthwatchbucks.co.uk/wp-content/uploads/2016/07/Patterned-Quotes.png";
-  	} else {
-  		$post_thumb = wp_get_attachment_url(get_post_thumbnail_id($post_data->ID));
-  	}
   	// This gets the data for the user who wrote that particular item
   	if (is_single()) {
-  		$author_data = get_userdata($post_data->post_author);
+			// Gets an array of post objects.  
+			// If this is the single post page (single.php template), this should be an
+			// array of length 1.
+			$post_data = get_posts();
+  		$author_data = get_userdata($post_data[0]->post_author);
   		$post_url = get_permalink();
+			// get an image url
+			if (!(wp_get_attachment_url(get_post_thumbnail_id($post_data[0]->ID)))) {
+				$post_thumb = "http://www.healthwatchbucks.co.uk/wp-content/uploads/2016/07/Patterned-Quotes.png";
+			} else {
+				$post_thumb = wp_get_attachment_url(get_post_thumbnail_id($post_data[0]->ID));
+			}
   	}
 
   	if ( is_singular('local_services') ) {
