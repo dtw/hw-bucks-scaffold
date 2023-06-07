@@ -113,7 +113,7 @@ $hwid = $_GET["hwid"]; ?>
         <p>Rated <strong><?php echo $our_rating; ?></strong> out of 5 by <strong>Healthwatch Bucks</strong></p>
         <?php				}
 
-        $gadget = "yes";
+        $gadget = true;
 			include('elements/comments-rating-average.php'); ?>
 
 
