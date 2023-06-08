@@ -123,9 +123,7 @@ background-color: var(--hw-blue);
 
 .navbar-nav a:hover,
 .navbar-nav a:focus {
-	background-color: var(--hw-blue) !important;
-	color: rgba(255,255,255,1.00);
-	text-decoration: none !important;
+	color: var(--hw-blue) !important;
 }
 
 .navbar-nav > li > a {
@@ -133,8 +131,10 @@ background-color: var(--hw-blue);
 	letter-spacing: .03rem;
 	font-weight: 600;
 	font-family: inherit;
-	font-size: 1.7rem;
+	font-size: 1.9rem;
 	padding: 0.5rem 1rem;
+	text-decoration: none !important;
+	outline-width: 0px !important;
 }
 
 .navbar-nav > li:first-child > a {
@@ -158,9 +158,26 @@ background-color: var(--hw-blue);
 .navbar-nav .current-post-ancestor a:focus,
 .navbar-nav .current_page_item a:hover,
 .navbar-nav .current_page_item a:focus {
-	background-color: var(--hw-hyperlink) !important;
-	outline: 3px solid var(--hw-hyperlink);
-	color: rgba(255,255,255,1.00);
+	background-color: none !important;
+}
+
+.nav-underline {
+	border-bottom: 2px solid transparent;
+}
+
+.nav-underline:hover {
+	border-bottom: 2px solid;
+}
+
+.nav-underline:focus {
+	background-color: var(--hw-pale-grey) !important;
+}
+
+.navbar-nav .current-menu-item a .nav-underline,
+.navbar-nav .current_page_item a .nav-underline,
+.navbar-nav .current-post-ancestor a .nav-underline {
+	border-bottom: 2px solid;
+	color: var(--hw-hyperlink);
 }
 
 /* Toggle Menu */
