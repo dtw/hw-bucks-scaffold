@@ -450,3 +450,14 @@ ol.wp-paginate li {
 .wp-paginate .page.current:hover {
 	outline: none;
 }
+
+
+.sf_custom_html_footer_url {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	font-size: 1.7rem;
+}
+
+.sf_custom_html_footer_container {
+	text-align: right;
+}
