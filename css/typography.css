@@ -183,7 +183,7 @@ blockquote a:focus {
 }
 
 blockquote br {
-	margin: 2rem;
+	margin: 1rem;
 	content: "";
 	display: block;
 }
