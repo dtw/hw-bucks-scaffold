@@ -24,6 +24,9 @@ if ($rating['count'] == 0) {
 		<p>Rated <strong><?php echo $average_rating; ?></strong> out of 5 by <strong>
 			<?php echo $rating['count']; if ($rating['count'] <= 1) { echo " person"; } else { echo " people"; } ?>
 		</strong></p>
+		<?php if ( comments_open($post->ID) ) { ?>
+			<p><i class="fas fa-comments fa-lg" aria-hidden="true"></i> <a href="<?php echo the_permalink(); ?>#response-header">Add a review</a></p>
+		<?php } ?>
 	<?php }
 } // end count IF ?>
 </div>
