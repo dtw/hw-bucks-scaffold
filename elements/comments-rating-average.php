@@ -6,9 +6,11 @@ $rating = hw_feedback_get_rating($post);
 
 if ($rating['count'] == 0) {
 	if ( !isset($gadget) ) {
-		if  ( is_tax() || is_page_template() ) { ?>
-			<p><i class="fas fa-comments fa-lg" aria-hidden="true"></i> <a href="<?php echo the_permalink(); ?>#response-header">Write the first review!</a></p>
+		if  ( is_tax() || is_page_template() ) {
+			if ( comments_open($post->ID) ) { ?>
+				<p><i class="fas fa-comments fa-lg" aria-hidden="true"></i> <a href="<?php echo the_permalink(); ?>#response-header">Write the first review!</a></p>
 		<?php }
+		}
 	}
 } else {
 	$average_rating = $rating['average'];
