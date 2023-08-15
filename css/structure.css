@@ -1310,6 +1310,10 @@ background-color: var(--hw-blue);
 	color: var(--hw-pink);
 }
 
+.archive-star-rating {
+	color: var(--hw-pink);
+}
+
 .mdash {
 	color: black;
 }

@@ -18,7 +18,7 @@ if ($rating['count'] == 0) {
 	if ( isset($gadget) && $gadget && $rating['average'] < 3 ) {
 		return;
 	} else { ?>
-		<p>
+		<p class="archive-star-rating">
 			<?php echo hw_feedback_star_rating($average_rating,array('size' => 'fa-lg'));	?>
 		</p>
 		<p>Rated <strong><?php echo $average_rating; ?></strong> out of 5 by <strong>
