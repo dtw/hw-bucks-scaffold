@@ -9,10 +9,10 @@
 				$service_types_classes[] = $service_types_term->slug;
 			}
 			$service_types_classes = join( " ", $service_types_classes );
-			echo '<!-- start of row / service --><div class="row post service-type ' . $service_types_classes. '">';
+			echo '<!-- start of service row --><div class="row post service-type ' . $service_types_classes. '">';
 			endif;
 		} else {
-			echo '<!-- start of row / service --><div class="row post">';
+			echo '<!-- start of row --><div class="row post">';
 		}
 		?>
 		<!-- Start content for service -->
