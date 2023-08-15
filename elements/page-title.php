@@ -11,7 +11,11 @@ else { ?>
 						<?php if (is_home()) { ?>
 							Tell us about health and social care services in Buckinghamshire
 						<?php } else if (is_tax('service_types')) { ?>
-							<?php single_cat_title(); ?> (<?php get_template_part('elements/count-results'); ?> services)
+							<?php single_term_title(); ?> (<?php get_template_part('elements/count-results'); ?> services)
+						<?php } else if (is_tax('cqc_reg_status')) { ?>
+							<?php single_term_title(); ?> (<?php get_template_part('elements/count-results'); ?> services)
+						<?php } else if (is_tax('cqc_inspection_category')) { ?>
+							<?php single_term_title(); ?> (<?php get_template_part('elements/count-results'); ?> services)
 						<?php } else if (is_tag()) { ?>
 							Posts about topic: <?php single_cat_title(); ?>
 						<?php } else if (is_singular('signposts')) { ?>
@@ -30,7 +34,11 @@ else { ?>
 					<?php if (is_home()) { ?>
 						<p>Healthwatch Bucks is an independent organisation that gives you a voice. We talk to the people that run your health and social care services, including hospitals, dentists, GPs and care homes. We use your feedback and our independent reports to help shape health and social care services in Bucks.</p>
 					<?php } else if (is_tax('service_types')) { ?>
-						<?php echo category_description(); ?>
+						<?php echo term_description(); ?>
+					<?php } else if (is_tax('cqc_reg_status')) { ?>
+						<?php echo term_description(); ?>
+					<?php } else if (is_tax('cqc_inspection_category')) { ?>
+						<?php echo term_description(); ?>
 					<?php } else if (is_singular('signposts')) { ?>
 						<p><a class="single-signpost-url" href="https://www.healthwatchbucks.co.uk/signposting/">Search our signposts again &raquo;</a></p>
 					<?php } else if (is_404()) { ?>
