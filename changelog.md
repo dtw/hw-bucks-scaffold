@@ -6,6 +6,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.4] - 2023-08-18
+### Changed
+- updated WP-Bootstrap-Navwalker
+- prep work to support nested main nav menu
+- syntax changes to suppress PHP Notices
+- polished appearance on the widget
+- fixed comment count on custom admin bar
+- fixed post images in meta (json-ld)
+- minor CSS tweaks
+- improved CTAs for reviewing
+- tweaked archive displays by taxonomy
+
+### Deleted
+- taxonomy-service_types.php - it does not work as expected
+
 ## [2.3] - 2023-06-02
 ### Added
 - collapsible accordion on comment for to display comment policy
