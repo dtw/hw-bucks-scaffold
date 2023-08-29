@@ -9,6 +9,7 @@
 
 .navbar {
 	border: none !important;
+	margin-bottom: 0px;
 }
 
 .navbar-compact #nav-spacer {
@@ -124,6 +125,7 @@ background-color: var(--hw-blue);
 .navbar-nav a:hover,
 .navbar-nav a:focus {
 	color: var(--hw-blue) !important;
+	background-color: #fff !important;
 }
 
 .navbar-nav > li > a {
@@ -211,6 +213,39 @@ background-color: var(--hw-blue);
 
 .navbar-toggle.collapsed {
 	transform: none;
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+	background-color: #fff !important;
+}
+
+.dropdown-toggle {
+	padding-bottom: 36px !important;
+}
+
+.dropdown-menu {
+	border-top: 1px solid var(--hw-dark-grey);
+	border-bottom: 4px solid var(--hw-blue);
+	min-width: 18em;
+}
+
+.dropdown-menu a {
+	text-decoration: none;
+	padding-left: 10px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	letter-spacing: .03rem;
+	font-weight: 600 !important;
+	font-family: inherit;
+	font-size: 1.7rem;
+	color: var(--hw-blue) !important;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+	outline: none !important;
 }
 
 /* Navigation current page and hover effects */
