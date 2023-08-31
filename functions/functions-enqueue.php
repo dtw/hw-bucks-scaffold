@@ -87,7 +87,7 @@ function webfonts_loader() {
   // Load the fonts.
   wp_enqueue_style(
     'gfonts_local',
-    wptt_get_webfont_url( esc_url_raw( $fonts_url ) ),
+    wptt_get_webfont_url( esc_url_raw( $fonts_url ), 'woff' ),
     array(),
     '1.0'
   );
