@@ -223,7 +223,7 @@ background-color: var(--hw-blue);
 
 .dropdown-menu {
 	border-top: 1px solid var(--hw-dark-grey);
-	border-bottom: 4px solid var(--hw-blue);
+	border-bottom: 4px solid var(--hw-pink);
 	min-width: 18em;
 }
 
