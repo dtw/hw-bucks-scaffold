@@ -171,10 +171,6 @@ background-color: var(--hw-blue);
 	border-bottom: 2px solid;
 }
 
-.nav-underline:focus {
-	background-color: var(--hw-pale-grey) !important;
-}
-
 .navbar-nav .current-menu-item a .nav-underline,
 .navbar-nav .current_page_item a .nav-underline,
 .navbar-nav .current-post-ancestor a .nav-underline {
