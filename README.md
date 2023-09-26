@@ -8,6 +8,12 @@ Unless otherwise specified, all the theme files, scripts and images are licensed
 The main exceptions to this license are as follows:
 - Twitter Bootstrap
 - Font Awesome
+- Google ReCaptcha
+- Google Fonts
 
 ## Dependencies
 This theme requires the Healthwatch Feedback plugin
+
+## Contributors
+
+Original code (circa 1.0.0) by jasoncharlesstuartking - former WordPress developer, now Google Ad Grant guru https://kingjason.co.uk/
