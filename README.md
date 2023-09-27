@@ -38,7 +38,7 @@ The main exceptions to this license are as follows:
 
 ## Dependencies
 
-Healthwatch Feedback (`hw-feedback`) plugin - https://github.com/dtw/hw-feedback
+* Healthwatch Feedback (`hw-feedback`) plugin - https://github.com/dtw/hw-feedback
 
 ### Recommended plugins
 
