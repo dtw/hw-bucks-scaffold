@@ -38,13 +38,13 @@ The main exceptions to this license are as follows:
 
 ## Dependencies
 
-Healthwatch Feedback (`hw-feedback`) plugin - https://github.com/dtw/hw-feedback
+* Healthwatch Feedback (`hw-feedback`) plugin - https://github.com/dtw/hw-feedback
 
 ### Recommended plugins
 
-WP-Paginate - https://en-gb.wordpress.org/plugins/wp-paginate/
-Cookie Notice & Compliance for GDPR / CCPA - https://en-gb.wordpress.org/plugins/cookie-notice/
-Yoast SEO (breadcrumbs) - https://en-gb.wordpress.org/plugins/wordpress-seo/
+* WP-Paginate - https://en-gb.wordpress.org/plugins/wp-paginate/
+* Cookie Notice & Compliance for GDPR / CCPA - https://en-gb.wordpress.org/plugins/cookie-notice/
+* Yoast SEO (breadcrumbs) - https://en-gb.wordpress.org/plugins/wordpress-seo/
 
 ## Contributors
 Original code (circa 1.0.0) by jasoncharlesstuartking - former WordPress developer, now Google Ad Grant guru https://kingjason.co.uk/
