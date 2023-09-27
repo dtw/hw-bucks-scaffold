@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.4.1] - 2023-09-27
+### Added
+
+### Fixed
+- removed the "zoom" property from some bootstrap .css because it was generating a warning
+- Added woff webfont type for IE support
+
+### Changed
+- Updated README
+- styling for dropdown nav menu
+
+### Removed
+- three old .php files - front-page.php, elements/{custom-fields-block.php,featured-image-medium.php}
+
 ## [2.4] - 2023-08-18
 ### Changed
 - updated WP-Bootstrap-Navwalker
@@ -18,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - improved CTAs for reviewing
 - tweaked archive displays by taxonomy
 
-### Deleted
+### Removed
 - taxonomy-service_types.php - it does not work as expected
 
 ## [2.3] - 2023-06-02
