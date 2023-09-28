@@ -38,10 +38,10 @@ The main exceptions to this license are as follows:
 
 ## Dependencies
 
+* Scaffold Widgets Tweaks (`scaffold-widgets-tweaks`) plugin - https://github.com/dtw/scaffold-widgets-tweaks
 * Healthwatch Feedback (`hw-feedback`) plugin - https://github.com/dtw/hw-feedback
 
 ### Recommended plugins
-
 * WP-Paginate - https://en-gb.wordpress.org/plugins/wp-paginate/
 * Cookie Notice & Compliance for GDPR / CCPA - https://en-gb.wordpress.org/plugins/cookie-notice/
 * Yoast SEO (breadcrumbs) - https://en-gb.wordpress.org/plugins/wordpress-seo/

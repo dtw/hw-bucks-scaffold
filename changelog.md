@@ -6,9 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [2.4.1] - 2023-09-27
-### Added
+## [2.4.2] - 2023-09-28
+### Changed
+- minor CSS
+- Updated README
 
+## [2.4.1] - 2023-09-27
 ### Fixed
 - removed the "zoom" property from some bootstrap .css because it was generating a warning
 - Added woff webfont type for IE support

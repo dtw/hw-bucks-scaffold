@@ -332,11 +332,13 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 
 	.rating-label,
 	.rating,
-	.rate-and-review-scores .star-rating {
+	.rate-and-review-scores .star-rating,
+	.healthwatch-review-scores .star-rating {
 		padding-right: 0px;
 	}
 
-	.rate-and-review-scores .star-rating {
+	.rate-and-review-scores .star-rating,
+	.healthwatch-review-scores .star-rating {
 		padding-left: 0.5rem;
 	}
 
@@ -350,7 +352,10 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 
 	.rate-and-review-scores .fa-star,
 	.rate-and-review-scores .fa-star-half-alt,
-	.rate-and-review-scores .fa-star-o {
+	.rate-and-review-scores .fa-star-o,
+	.healthwatch-review-scores .fa-star,
+	.healthwatch-review-scores .fa-star-half-alt,
+	.healthwatch-review-scores .fa-star-o {
 		font-size: 1.2em;
 	}
 
@@ -366,14 +371,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 /* 480px and below --- */
 
 @media (max-width: 480px) {
-	.tagline {
-		/* Phil did this
-		display: none;
-		font-size: 1.1rem;
-		line-height: 2rem;
-		text-align: left; */
-	}
-
 	.navbar-toggle {
 		font-size: 2rem;
 	}
