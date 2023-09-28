@@ -371,14 +371,6 @@ The point at which the nav menu COLLAPSES (vertically stacks)
 /* 480px and below --- */
 
 @media (max-width: 480px) {
-	.tagline {
-		/* Phil did this
-		display: none;
-		font-size: 1.1rem;
-		line-height: 2rem;
-		text-align: left; */
-	}
-
 	.navbar-toggle {
 		font-size: 2rem;
 	}
