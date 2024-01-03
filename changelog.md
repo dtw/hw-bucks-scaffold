@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.4.3] - 2024-01-03
+### Added
+- header for services with ods_status 'inactive' (and cqc_reg_status is 'Not applicable')
+
 ## [2.4.2] - 2023-09-28
 ### Changed
 - minor CSS
