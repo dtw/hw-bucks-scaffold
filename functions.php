@@ -96,6 +96,18 @@ function hw_bucks_remove_admin_bar_wp_menu()
 
 add_action('add_admin_bar_menus', 'hw_bucks_remove_admin_bar_wp_menu');
 
+// Remove link to Dashboard from Admin Bar for 
+function hw_bucks_remove_admin_bar_menu() {
+	
+	$current_user = wp_get_current_user();
+
+	if (!in_array('administrator', $current_user->roles) && !in_array('editor_plus', $current_user->roles)) {
+		global $wp_admin_bar;
+		$wp_admin_bar->remove_node('site-name');
+	}
+}
+add_action('wp_before_admin_bar_render', 'hw_bucks_remove_admin_bar_menu');
+
 // Remove meta boxes from Posts and Pages
 function hw_remove_meta_boxes() {
 	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' ); // trackback metabox
