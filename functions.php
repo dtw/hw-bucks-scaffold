@@ -156,6 +156,28 @@ function hw_bucks_redirect_to_home($redirect_to, $request, $user)
 
 add_filter('login_redirect', 'hw_bucks_redirect_to_home', 10, 3);
 
+/* Add link to Profile to Admin Bar
+
+function hw_bucks_custom_admin_bar_links()
+{
+
+	$current_user = wp_get_current_user();
+
+	if (!in_array('administrator', $current_user->roles) && !in_array('editor_plus', $current_user->roles)) {
+		global $wp_admin_bar;
+		$args = array(
+			'parent' => 'site-name',
+			'id' => 'hw-bucks-wp-profile',
+			'title' => 'Edit Profile',
+			'href' => 'https://www.staging18.healthwatchbucks.co.uk/wp-admin/profile.php'
+		);
+		$wp_admin_bar->add_node($args);
+	}
+}
+add_action('admin_bar_menu', 'hw_bucks_custom_admin_bar_links', 998);
+
+*/
+
 // Remove meta boxes from Posts and Pages
 function hw_remove_meta_boxes() {
 	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' ); // trackback metabox
