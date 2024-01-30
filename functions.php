@@ -139,6 +139,23 @@ function hw_bucks_remove_dashboard()
 }
 add_action('admin_menu', 'hw_bucks_remove_dashboard');
 
+// Redirect non-admin users to frontpage - https://wordpress.stackexchange.com/a/170670
+
+function hw_bucks_redirect_to_home($redirect_to, $request, $user)
+{
+	$current_user = wp_get_current_user();
+
+	if ( ! in_array('administrator', $current_user->roles) && ! in_array('editor_plus', $current_user->roles) ) {
+		//If user is not admin or editor_plus, redirect to home
+		return get_home_url();
+	} else {
+		//If user ID is not 6, leave WordPress handle the redirection as usual
+		return $redirect_to;
+	}
+}
+
+add_filter('login_redirect', 'hw_bucks_redirect_to_home', 10, 3);
+
 // Remove meta boxes from Posts and Pages
 function hw_remove_meta_boxes() {
 	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' ); // trackback metabox
