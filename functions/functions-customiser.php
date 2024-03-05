@@ -72,6 +72,10 @@ function scaffold_theme_customizer( $wp_customize ) {
 	 'default'           => __( '', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_text'
 	));
+	$wp_customize->add_setting( 'scaffold_org_instagram', array(
+	 'default'           => __( '', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
 	$wp_customize->add_setting( 'scaffold_org_twitter', array(
 	 'default'           => __( '', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_twitter'
@@ -81,6 +85,10 @@ function scaffold_theme_customizer( $wp_customize ) {
 	 'sanitize_callback' => 'sanitize_text'
 	));
 	$wp_customize->add_setting( 'scaffold_org_youtube', array(
+	 'default'           => __( '', 'scaffold' ),
+	 'sanitize_callback' => 'sanitize_text'
+	));
+	$wp_customize->add_setting( 'scaffold_org_mastodon', array(
 	 'default'           => __( '', 'scaffold' ),
 	 'sanitize_callback' => 'sanitize_text'
 	));
@@ -135,6 +143,13 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'type'     => 'text',
 		'description' => 'Page name only, not full URL'
 	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_instagram', array(
+		'label'    => __( 'Instagram Profile', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_instagram',
+		'type'     => 'text',
+		'description' => 'Username/handle only, not full URL'
+	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_twitter', array(
 		'label'    => __( 'Twitter', 'scaffold' ),
 		'section'  => 'scaffold_org_social_media_section',
@@ -155,6 +170,13 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'settings' => 'scaffold_org_youtube',
 		'type'     => 'text',
 		'description' => 'Channel ID only, not full URL'
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_mastodon', array(
+		'label'    => __( 'Mastodon', 'scaffold' ),
+		'section'  => 'scaffold_org_social_media_section',
+		'settings' => 'scaffold_org_mastodon',
+		'type'     => 'url',
+		'description' => 'Full URL (instance and username)'
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_rss', array(
 		'label'    => __( 'Show RSS feed link?', 'scaffold' ),
