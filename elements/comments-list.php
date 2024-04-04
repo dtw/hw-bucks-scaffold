@@ -54,18 +54,26 @@ $total_comments = count($comments); ?>
 <?php if ( is_singular('local_services') ) { ?>
 
 
-<?php if (get_comment_meta( $comment->comment_ID, 'feedback_response', true )) { ?>
+<?php if (get_comment_meta( $comment->comment_ID, 'feedback_response', true )) {
+  $raw_feedback_response = get_comment_meta($comment->comment_ID, 'feedback_response', true);
+  // replace consequtive newlines with one <br>
+  $formatted_feedback_response = str_replace(array("\r\n\r\n", "\r\r", "\n\n"), "<br>", $raw_feedback_response);
+?>
 	<div class="response provider">
 	<p><strong><?php the_title(); ?></strong> responded:</p>
-	<blockquote><em><?php echo get_comment_meta( $comment->comment_ID, 'feedback_response', true ); ?></em></blockquote>
+	<blockquote><p><?php echo $formatted_feedback_response ?></p></blockquote>
     </div>
 
 		<?php } ?>
 
-<?php if (get_comment_meta( $comment->comment_ID, 'feedback_hw_reply', true )) { ?>
+<?php if (get_comment_meta( $comment->comment_ID, 'feedback_hw_reply', true )) {
+  $raw_feedback_hw_reply = get_comment_meta($comment->comment_ID, 'feedback_hw_reply', true);
+  // replace consequtive newlines with one <br>
+  $formatted_feedback_hw_reply = str_replace(array("\r\n\r\n", "\r\r", "\n\n"), "<br>", $raw_feedback_hw_reply);
+  ?>
 	<div class="response hw-reply">
 	<p><strong>Healthwatch Bucks</strong> responded:</p>
-	<p class="hw-reply-quote"><?php echo get_comment_meta( $comment->comment_ID, 'feedback_hw_reply', true ); ?></p>
+	<p class="hw-reply-quote"><?php echo $formatted_feedback_hw_reply; ?></p>
     </div>
 
 		<?php } ?>
