@@ -8,7 +8,7 @@
 <!-- INCLUDE NAVIGATION -->
 
 <?php get_template_part('elements/nav'); ?>
-<?php get_template_part('elements/site-notice'); ?>
+<?php /* get_template_part('elements/site-notice'); */?>
 <?php get_template_part('elements/page-title'); ?>
 
 </div><!-- end of container-fluid -->
