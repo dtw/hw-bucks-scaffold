@@ -329,3 +329,21 @@ a#overall-feedback-tooltip:focus {
 	background-color: var(--hw-pink);
 	outline: 3px solid var(--hw-pink);
 }
+
+/* Emergency styles */
+
+/* Inline #35 | https://www.healthwatchbucks.co.uk/how-we-work/governance-and-policies/ */
+
+#hw-scaffold-site-wide-notice {
+  background: var(--hw-orange);
+}
+
+#hw-scaffold-site-wide-notice-content p {
+  color: white;
+  font-size: 2rem !important;
+  padding: 10px 0;
+  margin-bottom: 0 !important;
+  text-align: center;
+  font-weight: bold;
+  line-height: 3rem !important;
+}
