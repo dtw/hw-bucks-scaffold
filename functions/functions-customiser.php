@@ -37,6 +37,13 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'description' => 'Upload an alternate logo to replace the default site name and description',
 	) );
 
+  // Create a new section in the Theme Customizer
+  $wp_customize->add_section('scaffold_demographic_section', array(
+    'title'       => __('Demographic Collection', 'scaffold'),
+    'priority'    => 31,
+    'description' => 'Configure demographic collection',
+  ));
+
 	// Create a new section in the Theme Customizer
 	$wp_customize->add_section( 'scaffold_org_identity_section' , array(
 		'title'       => __( 'Organisation Identity', 'scaffold' ),
@@ -54,6 +61,11 @@ function scaffold_theme_customizer( $wp_customize ) {
 	// Register the new setting
 	$wp_customize->add_setting( 'scaffold_logo' );
 	$wp_customize->add_setting( 'scaffold_logo_alt' );
+  // demographic settings
+  $wp_customize->add_setting('scaffold_demographic_rate_review_url', array(
+    'default'           => __('', 'scaffold'),
+    'sanitize_callback' => 'sanitize_text'
+  ));
 	// org identity
 	$wp_customize->add_setting( 'scaffold_org_name', array(
 	 'default'           => __( '', 'scaffold' ),
@@ -111,6 +123,21 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'section'  => 'scaffold_logo_alt_section',
 		'settings' => 'scaffold_logo_alt',
 	) ) );
+
+  // Add demographic settings controls
+  $wp_customize->add_control(new WP_Customize_Control(
+    $wp_customize,
+    'scaffold_demographic_rate_review_url',
+    array(
+      'label'    => __('Rate & Review Survey URL', 'scaffold'),
+      'section'  => 'scaffold_demographic_section',
+      'settings' => 'scaffold_demographic_rate_review_url',
+      'type'     => 'text',
+      'input_attrs' => array(
+        'placeholder' => __('https://www.smartsurvey.co.uk/s/', 'scaffold'),
+      )
+    )
+  ));
 
 	// Add org identity controls
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'scaffold_org_name', array(
