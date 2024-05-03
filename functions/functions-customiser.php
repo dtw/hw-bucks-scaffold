@@ -38,9 +38,16 @@ function scaffold_theme_customizer( $wp_customize ) {
 	) );
 
   // Create a new section in the Theme Customizer
+  $wp_customize->add_section('scaffold_site_notice_section', array(
+    'title'       => __('Site notice', 'scaffold'),
+    'priority'    => 31,
+    'description' => 'Set a notice on every page',
+  ));
+  
+  // Create a new section in the Theme Customizer
   $wp_customize->add_section('scaffold_demographic_section', array(
     'title'       => __('Demographic Collection', 'scaffold'),
-    'priority'    => 31,
+    'priority'    => 32,
     'description' => 'Configure demographic collection',
   ));
 
@@ -61,6 +68,14 @@ function scaffold_theme_customizer( $wp_customize ) {
 	// Register the new setting
 	$wp_customize->add_setting( 'scaffold_logo' );
 	$wp_customize->add_setting( 'scaffold_logo_alt' );
+  // site notice settings
+  $wp_customize->add_setting('scaffold_site_notice_status', array(
+    'default'           => false
+  ));
+  $wp_customize->add_setting('scaffold_site_notice_text', array(
+    'default'           => __('', 'scaffold'),
+    'sanitize_callback' => 'sanitize_text'
+  ));
   // demographic settings
   $wp_customize->add_setting('scaffold_demographic_rate_review_url', array(
     'default'           => __('', 'scaffold'),
@@ -124,6 +139,29 @@ function scaffold_theme_customizer( $wp_customize ) {
 		'settings' => 'scaffold_logo_alt',
 	) ) );
 
+  // Add site notice controls
+  $wp_customize->add_control(
+    new WP_Customize_Control($wp_customize, 'scaffold_site_notice_status', array(
+      'label'    => __('Show site notice?', 'scaffold'),
+      'section'  => 'scaffold_site_notice_section',
+      'settings' => 'scaffold_site_notice_status',
+      'type'     => 'checkbox'
+    ))
+  );
+  $wp_customize->add_control(new WP_Customize_Control(
+    $wp_customize,
+    'scaffold_site_notice_text',
+    array(
+      'label'    => __('Site notice text', 'scaffold'),
+      'section'  => 'scaffold_site_notice_section',
+      'settings' => 'scaffold_site_notice_text',
+      'type'     => 'text',
+      'input_attrs' => array(
+        'placeholder' => __('Your message here...', 'scaffold'),
+      )
+    )
+  ));
+  
   // Add demographic settings controls
   $wp_customize->add_control(new WP_Customize_Control(
     $wp_customize,
