@@ -66,6 +66,14 @@ function scaffold_add_theme_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'scaffold_add_theme_scripts' );
 
+// Enqueue admin CSS
+
+function scaffold_enqueue_admin_css()
+{
+  wp_enqueue_style('scaffold_widgets', get_template_directory_uri() . '/css/admin.css');
+}
+add_action('admin_enqueue_scripts', 'scaffold_enqueue_admin_css');
+
 /* 8. Enqueue Google Fonts
 ------------------------------------------------------------------------------ */
 
