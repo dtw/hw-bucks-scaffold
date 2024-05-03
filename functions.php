@@ -96,12 +96,22 @@ function hw_bucks_remove_admin_bar_wp_menu()
 
 add_action('add_admin_bar_menus', 'hw_bucks_remove_admin_bar_wp_menu');
 
-// Remove link to Dashboard from Admin Bar for 
+// Remove link to Dashboard from Admin Bar for most users
+
 function hw_bucks_remove_admin_bar_menu() {
 	
 	$current_user = wp_get_current_user();
 
-	if (!in_array('administrator', $current_user->roles) && !in_array('editor_plus', $current_user->roles)) {
+  $exempt_roles_array = array(
+    'administrator',
+    'editor_plus',
+    'moderator'
+  );
+  
+  // this will be true if there is a match
+  $compare_roles = (bool) array_intersect($exempt_roles_array, $current_user->roles);
+  // but we want to check it's NOT a match
+	if ( ! $compare_roles ) {
 		global $wp_admin_bar;
 		$wp_admin_bar->remove_node('site-name');
 	}
@@ -115,7 +125,16 @@ function hw_bucks_remove_dashboard()
 	global $menu, $submenu;
 	$current_user = wp_get_current_user();
 
-	if (!in_array('administrator', $current_user->roles) && !in_array('editor_plus', $current_user->roles)) {
+  $exempt_roles_array = array(
+    'administrator',
+    'editor_plus',
+    'moderator'
+  );
+
+  // this will be true if there is a match
+  $compare_roles = (bool) array_intersect($exempt_roles_array, $current_user->roles);
+  // but we want to check it's NOT a match
+  if (!$compare_roles) {
 		reset($menu);
 		$page = key($menu);
 		while ((__('Dashboard') != $menu[$page][0]) && next($menu)) {
@@ -145,7 +164,16 @@ function hw_bucks_redirect_to_home($redirect_to, $request, $user)
 {
 	$current_user = wp_get_current_user();
 
-	if ( ! in_array('administrator', $current_user->roles) && ! in_array('editor_plus', $current_user->roles) ) {
+  $exempt_roles_array = array(
+    'administrator',
+    'editor_plus',
+    'moderator'
+  );
+
+  // this will be true if there is a match
+  $compare_roles = (bool) array_intersect($exempt_roles_array, $current_user->roles);
+  // but we want to check it's NOT a match
+  if (!$compare_roles) {
 		//If user is not admin or editor_plus, redirect to home
 		return get_home_url();
 	} else {
