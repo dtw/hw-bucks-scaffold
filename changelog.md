@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.5] - 2024-05-03
+### Added
+- site wide notice bar to highlight site issues (configured in Theme Customiser)
+- dynamically set demographic survey URL (configured in Theme Customiser)
+
+## [2.4.5] - 2024-04-04
+### Fixed
+- newline to <br> conversion in comment_meta
+
+## [2.4.4] - 2024-03-05
+### Added
+- mastodon and Instagram to Socials
+
 ## [2.4.4] - 2024-01-30
 ### Added
 - functions to clean up admin bar and login for non-admin users
