@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - site wide notice bar to highlight site issues (configured in Theme Customiser)
 - dynamically set demographic survey URL (configured in Theme Customiser)
+- admin.css for Theme Customiser styles
 
 ## [2.4.5] - 2024-04-04
 ### Fixed
