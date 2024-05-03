@@ -3,4 +3,6 @@ div.customize-section-description {
   font-size: 14px;
   margin-bottom: 4px;
   padding-left: 0px !important;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed black;
 }
