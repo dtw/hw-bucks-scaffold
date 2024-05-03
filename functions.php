@@ -87,6 +87,125 @@ update_option('image_default_link_type','none');
 /* 5. Tidy
 ------------------------------------------------------------------------------ */
 
+// Remove pointless WP menu for EVERYONE!
+
+function hw_bucks_remove_admin_bar_wp_menu()
+{
+	remove_action('admin_bar_menu', 'wp_admin_bar_wp_menu');
+};
+
+add_action('add_admin_bar_menus', 'hw_bucks_remove_admin_bar_wp_menu');
+
+// Remove link to Dashboard from Admin Bar for most users
+
+function hw_bucks_remove_admin_bar_menu() {
+	
+	$current_user = wp_get_current_user();
+
+  $exempt_roles_array = array(
+    'administrator',
+    'editor_plus',
+    'moderator'
+  );
+  
+  // this will be true if there is a match
+  $compare_roles = (bool) array_intersect($exempt_roles_array, $current_user->roles);
+  // but we want to check it's NOT a match
+	if ( ! $compare_roles ) {
+		global $wp_admin_bar;
+		$wp_admin_bar->remove_node('site-name');
+	}
+}
+add_action('wp_before_admin_bar_render', 'hw_bucks_remove_admin_bar_menu');
+
+// Hide dashboard page from most users - https://wordpress.stackexchange.com/a/52773
+
+function hw_bucks_remove_dashboard()
+{
+	global $menu, $submenu;
+	$current_user = wp_get_current_user();
+
+  $exempt_roles_array = array(
+    'administrator',
+    'editor_plus',
+    'moderator'
+  );
+
+  // this will be true if there is a match
+  $compare_roles = (bool) array_intersect($exempt_roles_array, $current_user->roles);
+  // but we want to check it's NOT a match
+  if (!$compare_roles) {
+		reset($menu);
+		$page = key($menu);
+		while ((__('Dashboard') != $menu[$page][0]) && next($menu)) {
+			$page = key($menu);
+		}
+		if (__('Dashboard') == $menu[$page][0]) {
+			unset($menu[$page]);
+		}
+		reset($menu);
+		$page = key($menu);
+		while ( ! $current_user->has_cap($menu[$page][1]) && next($menu)) {
+			$page = key($menu);
+		}
+		if (
+			preg_match('#wp-admin/?(index.php)?$#', $_SERVER['REQUEST_URI']) &&
+			('index.php' != $menu[$page][2])
+		) {
+			wp_redirect(get_option('siteurl') . '/wp-admin/profile.php');
+		}
+	}
+}
+add_action('admin_menu', 'hw_bucks_remove_dashboard');
+
+// Redirect non-admin users to frontpage - https://wordpress.stackexchange.com/a/170670
+
+function hw_bucks_redirect_to_home($redirect_to, $request, $user)
+{
+	$current_user = wp_get_current_user();
+
+  $exempt_roles_array = array(
+    'administrator',
+    'editor_plus',
+    'moderator'
+  );
+
+  // this will be true if there is a match
+  $compare_roles = (bool) array_intersect($exempt_roles_array, $current_user->roles);
+  // but we want to check it's NOT a match
+  if (!$compare_roles) {
+		//If user is not admin or editor_plus, redirect to home
+		return get_home_url();
+	} else {
+		//If user ID is not 6, leave WordPress handle the redirection as usual
+		return $redirect_to;
+	}
+}
+
+add_filter('login_redirect', 'hw_bucks_redirect_to_home', 10, 3);
+
+/* Add link to Profile to Admin Bar
+
+function hw_bucks_custom_admin_bar_links()
+{
+
+	$current_user = wp_get_current_user();
+
+	if (!in_array('administrator', $current_user->roles) && !in_array('editor_plus', $current_user->roles)) {
+		global $wp_admin_bar;
+		$args = array(
+			'parent' => 'site-name',
+			'id' => 'hw-bucks-wp-profile',
+			'title' => 'Edit Profile',
+			'href' => 'https://www.staging18.healthwatchbucks.co.uk/wp-admin/profile.php'
+		);
+		$wp_admin_bar->add_node($args);
+	}
+}
+add_action('admin_bar_menu', 'hw_bucks_custom_admin_bar_links', 998);
+
+*/
+
 // Remove meta boxes from Posts and Pages
 function hw_remove_meta_boxes() {
 	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' ); // trackback metabox

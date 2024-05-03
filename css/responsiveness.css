@@ -48,7 +48,9 @@
 	}
 
 	#nav-spacer {
-		padding-bottom: 0rem;
+		/* padding-bottom: 0rem; */
+    /* If there are sub items this must be set to 0 as above */
+    padding-bottom: 1.6rem;
 	}
 }
 

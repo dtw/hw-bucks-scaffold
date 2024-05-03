@@ -38,6 +38,9 @@ class scaffold_social_block extends WP_Widget {
       if ( get_theme_mod( 'scaffold_org_facebook') ) {
         echo '<a href="https://www.facebook.com/' . get_theme_mod( 'scaffold_org_facebook') . '/" aria-label="Facebook"><i aria-hidden="true" class="fab fa-' . $widget_option . ' fa-facebook-square"></i></a>';
       }
+      if (get_theme_mod('scaffold_org_instagram')) {
+        echo '<a href="https://instagram.com/' . get_theme_mod('scaffold_org_instagram') . '/" aria-label="Instagram"><i aria-hidden="true" class="fab fa-' . $widget_option . ' fa-instagram-square"></i></a>';
+      }
       if ( get_theme_mod( 'scaffold_org_twitter') ) {
         echo '<a href="https://twitter.com/' . get_theme_mod( 'scaffold_org_twitter') . '" aria-label="Twitter"><i aria-hidden="true" class="fab fa-' . $widget_option . ' fa-twitter-square"></i></a>';
       }
@@ -46,6 +49,9 @@ class scaffold_social_block extends WP_Widget {
       }
       if ( get_theme_mod( 'scaffold_org_youtube') ) {
         echo '<a href="https://www.youtube.com/channel/' . get_theme_mod( 'scaffold_org_youtube') . '" aria-label="YouTube"><i aria-hidden="true" class="fab fa-' . $widget_option . ' fa-youtube-square"></i></a>';
+      }
+      if (get_theme_mod('scaffold_org_mastodon')) {
+        echo '<a href="' . get_theme_mod('scaffold_org_mastodon') . '" aria-label="Mastodon"><i aria-hidden="true" class="fab fa-' . $widget_option . ' fa-mastodon"></i></a>';
       }
       if ( get_theme_mod( 'scaffold_org_rss') ) {
         echo '<a href="' . get_bloginfo('rss2_url') . '" aria-label="RSS feed"><i aria-hidden="true" class="fa fa-' . $widget_option . ' fa-rss-square"></i></a>';

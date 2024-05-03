@@ -1,7 +1,17 @@
 <?php
 // check the cqc_reg_status taxonomy
+// if the service is archived, display the archived header
 if (has_term('Archived','cqc_reg_status')) {
 	get_header('archived');
+	// the service was never registered with CQC
+} else if (has_term('Not applicable', 'cqc_reg_status')) {
+	// ... and it has been marked as inactive, display the inactive header
+	if (has_term('Inactive', 'ods_status')) {
+		get_header('inactive');
+	} else {
+		// otherwise
+		get_header();
+	}
 } else {
 	get_header();
 }
