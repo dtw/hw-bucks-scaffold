@@ -40,9 +40,9 @@ $total_comments = count($comments); ?>
 						if ($individual_rating == 1) echo '<span class="screen-reader-text">'.$individual_rating.' star</span>';
 						else echo '<span class="screen-reader-text">'.$individual_rating.' stars</span>';
 					?>
-				<span class="mdash">&mdash;</span> <a href="#" data-toggle="tooltip" data-placement="right" title="<?php echo get_comment_time('Y-m-d H:i'); ?>" class="date-tooltip"><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></a></p>
+				<span class="mdash">&mdash;</span> <a href="#" data-toggle="tooltip" data-placement="right" title="<?php echo get_comment_time('Y-m-d H:i'); ?>" class="date-tooltip"><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_datetime() ) ); ?></a></p>
 			<?php } else { // there is no rating ?>
-				<p class="star-rating p-rating"><span class="no-rating">No rating</span> <span class="mdash">&mdash;</span> <a href="#" data-toggle="tooltip" data-placement="right" title="<?php echo get_comment_time('Y-m-d H:i'); ?>" class="date-tooltip"><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?></a></p>
+				<p class="star-rating p-rating"><span class="no-rating">No rating</span> <span class="mdash">&mdash;</span> <a href="#" data-toggle="tooltip" data-placement="right" title="<?php echo get_comment_time('Y-m-d H:i'); ?>" class="date-tooltip"><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_datetime() ) ); ?></a></p>
 			<?php } ?>
 
 			<blockquote><?php comment_text(); ?></blockquote>
@@ -85,7 +85,7 @@ $total_comments = count($comments); ?>
 			echo($comment->comment_author);
 
 		echo "</cite> <span class='mdash'>&mdash;</span> ";
- 	printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) );
+ 	printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_datetime() ) );
 
 		echo "</p><br /><br />";
 	} ?>
