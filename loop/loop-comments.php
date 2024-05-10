@@ -34,7 +34,7 @@ if ( $comments ) {
 				else echo '<span class="screen-reader-text">'.$rating.' stars</span>';
 			?>
      <span class="mdash">&mdash;</span>
-       <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_datetime() ) ); ?></strong></p>
+       <strong><?php printf( '%s ago' , human_time_diff( get_comment_time( 'U' ), current_datetime()->getTimestamp() ) ); ?></strong></p>
 
 
 
