@@ -72,7 +72,7 @@
 				</div><!-- end of row -->
 				<?php }
 				// QUERY the COMMENTS for current single post
-				$rating = hw_feedback_get_rating($post);
+				$rating = hw_feedback_get_rating($post->ID);
 
 				if ($rating['count'] != 0) {
 					$average_rating = round($rating['average'],1); ?>
