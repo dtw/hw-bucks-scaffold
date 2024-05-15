@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [Released]
+
+## [2.5.1] - 2024-05-15
+### Changed
+- date handling to use DateTime objects
+- hw-feedback 3.2.1 support
 
 ## [2.5] - 2024-05-03
 ### Added
@@ -12,11 +17,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - dynamically set demographic survey URL (configured in Theme Customiser)
 - admin.css for Theme Customiser styles
 
-## [2.4.5] - 2024-04-04
+## [2.4.6] - 2024-04-04
 ### Fixed
 - newline to <br> conversion in comment_meta
 
-## [2.4.4] - 2024-03-05
+## [2.4.5] - 2024-03-05
 ### Added
 - mastodon and Instagram to Socials
 

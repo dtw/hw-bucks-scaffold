@@ -129,7 +129,7 @@ if (has_term('Archived','cqc_reg_status')) {
 							else echo '<span class="screen-reader-text">'.$individual_rating.' stars</span>';
 							?>
 						</p>
-						<p class="review-date"><strong><?php echo human_time_diff( strtotime($comment->comment_date), current_time( 'timestamp' ) ); ?> ago</strong></p>
+						<p class="review-date"><strong><?php echo human_time_diff( strtotime($comment->comment_date), current_datetime()->getTimestamp() ); ?> ago</strong></p>
 					<?php } // end of if there is a rating ?>
         		<?php echo wpautop(wp_strip_all_tags(mb_strimwidth($comment->comment_content,0,300," ...")), true); ?>
 				<!-- end review-container --></div>

@@ -2,7 +2,7 @@
 
 <?php
 // returns an array containing the
-$rating = hw_feedback_get_rating($post);
+$rating = hw_feedback_get_rating($post->ID);
 
 if ($rating['count'] == 0) {
 	if ( !isset($gadget) ) {

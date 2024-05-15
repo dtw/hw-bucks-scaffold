@@ -24,7 +24,7 @@
   	}
 
   	if ( is_singular('local_services') ) {
-  		$rating = hw_feedback_get_rating($post);
+  		$rating = hw_feedback_get_rating($post->ID);
   		if ( $rating['count'] > 2 ) {
   			$payload["@type"] = "Organization";
   			$payload["name"] = get_the_title();
