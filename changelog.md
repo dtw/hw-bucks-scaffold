@@ -12,11 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - dynamically set demographic survey URL (configured in Theme Customiser)
 - admin.css for Theme Customiser styles
 
-## [2.4.5] - 2024-04-04
+## [2.4.6] - 2024-04-04
 ### Fixed
 - newline to <br> conversion in comment_meta
 
-## [2.4.4] - 2024-03-05
+## [2.4.5] - 2024-03-05
 ### Added
 - mastodon and Instagram to Socials
 
