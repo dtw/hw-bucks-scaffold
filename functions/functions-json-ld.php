@@ -44,10 +44,24 @@
       // if no match just leave it as MedicalOrganization
       $schema_org_type = ! empty($mapped_subtype[$cqc_inspection_category_tax_terms[0]]) ? $mapped_subtype[$cqc_inspection_category_tax_terms[0]] : "MedicalOrganization";
       error_log("hw-scaffold: category ". $cqc_inspection_category_tax_terms[0] . " " . $mapped_subtype[$cqc_inspection_category_tax_terms[0]]);
+      // build the address
+      if ( get_post_meta( $post->ID, 'hw_services_address_line_2', true ) ) {
+        $street_address = get_post_meta( $post->ID, 'hw_services_address_line_1', true ) . " " . get_post_meta($post->ID, 'hw_services_address_line_2', true);
+      } else {
+        $street_address = get_post_meta($post->ID, 'hw_services_address_line_1', true);
+      }
 
       $payload["@type"] = "MedicalOrganization";
       $payload["name"] = get_the_title();
       $payload["description"] = get_the_excerpt();
+      $payload["address"] = [
+      "streetAddress" => $street_address,
+      // city / town
+      "addressLocality" => get_post_meta($post->ID, 'hw_services_city', true),
+      // county
+      "addressRegion" => get_post_meta($post->ID, 'hw_services_county', true),
+      "postalCode" => get_post_meta($post->ID, 'hw_services_postcode', true),
+      ];
   		if ( $rating['count'] > 2 ) {
   			$payload["aggregateRating"] = [
   				["@type" => "AggregateRating",
