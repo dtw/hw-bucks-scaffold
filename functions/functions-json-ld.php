@@ -45,10 +45,10 @@
       $schema_org_type = ! empty($mapped_subtype[$cqc_inspection_category_tax_terms[0]]) ? $mapped_subtype[$cqc_inspection_category_tax_terms[0]] : "MedicalOrganization";
       error_log("hw-scaffold: category ". $cqc_inspection_category_tax_terms[0] . " " . $mapped_subtype[$cqc_inspection_category_tax_terms[0]]);
 
+      $payload["@type"] = "MedicalOrganization";
+      $payload["name"] = get_the_title();
+      $payload["description"] = get_the_excerpt();
   		if ( $rating['count'] > 2 ) {
-  			$payload["@type"] = "MedicalOrganization";
-  			$payload["name"] = get_the_title();
-  			$payload["description"] = get_the_excerpt();
   			$payload["aggregateRating"] = [
   				["@type" => "AggregateRating",
   				"ratingValue" => round($rating['average'],1),
