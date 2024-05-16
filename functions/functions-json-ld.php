@@ -70,7 +70,17 @@
   				"itemReviewed" => [
   					["@type" => $schema_org_type,
   					"name" => get_the_title(),
-  					"image" => $post_thumb
+  					"image" => $post_thumb,
+            "address" => [
+              "streetAddress" => $street_address,
+              // city / town
+              "addressLocality" => get_post_meta($post->ID, 'hw_services_city', true),
+              // county
+              "addressRegion" => get_post_meta($post->ID, 'hw_services_county', true),
+              "postalCode" => get_post_meta($post->ID, 'hw_services_postcode', true),
+              // just to make Google happy - we're GB, not UK in ISO_3166-1
+              "addressCountry" => "GB"
+            ]
   					]
   				]
   			]
