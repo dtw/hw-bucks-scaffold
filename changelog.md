@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [2.5.2] - 2024-05-17
+### Added
+- Organization and itemReviewed address to schema meta data 
+### Changed
+- schema meta data
+    - type is now MedicalOrganization by default
+    - subtype is set based on CQC Primary Inspection categories
+    - always outputs name, type, description and address
+
 ## [2.5.1] - 2024-05-15
 ### Changed
 - date handling to use DateTime objects
