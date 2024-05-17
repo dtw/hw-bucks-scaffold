@@ -25,10 +25,7 @@
 							<?php } ?>
 				</p>
 				<?php if ( get_post_meta( $post->ID, 'hw_services_phone', true ) )  {
-					$hw_services_phone_tmp = get_post_meta( $post->ID, 'hw_services_phone', true );
-					$hw_services_phone_tmp = str_replace(' ', '', $hw_services_phone_tmp);
-					$mask = "%s%s%s%s%s %s%s%s %s%s%s";
-					$hw_services_phone_tmp = vsprintf($mask, str_split($hw_services_phone_tmp));
+					$hw_services_phone_tmp = format_telephone(sanitize_telephone(get_post_meta( $post->ID, 'hw_services_phone', true )));
 					?>
 				<p><i class="fas fa-phone service-icon" aria-hidden="true" title="Telephone"></i>
 					<strong><?php echo $hw_services_phone_tmp; ?></strong><br />
