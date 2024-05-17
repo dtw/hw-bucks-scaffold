@@ -25,18 +25,62 @@
 
   	if ( is_singular('local_services') ) {
   		$rating = hw_feedback_get_rating($post->ID);
+      // get the CQC Primary Inspection Category
+      $cqc_inspection_category_tax_terms = wp_get_post_terms($post->ID, 'cqc_inspection_category', array('fields' => 'names'));
+      // match inspection categories to Schema.org subtypes:  https://schema.org/MedicalOrganization
+      $mapped_subtype = array(
+        'P1' => 'Dentist',
+        'P2' => 'Physician',
+        'P3' => 'MedicalClinic',
+        'P4' => 'MedicalClinic',
+        'P6' => 'MedicalClinic',
+        'P7' => 'Physician',
+        'S3' => 'Hospital',
+        'H1' => 'Hospital',
+        'H2' => 'Hospital',
+        'H3' => 'Hospital',
+        'H6' => 'MedicalClinic'
+      );
+      // if no match just leave it as MedicalOrganization
+      $schema_org_type = ! empty($mapped_subtype[$cqc_inspection_category_tax_terms[0]]) ? $mapped_subtype[$cqc_inspection_category_tax_terms[0]] : "MedicalOrganization";
+      error_log("hw-scaffold: category ". $cqc_inspection_category_tax_terms[0] . " " . $mapped_subtype[$cqc_inspection_category_tax_terms[0]]);
+      // build the address
+      if ( get_post_meta( $post->ID, 'hw_services_address_line_2', true ) ) {
+        $street_address = get_post_meta( $post->ID, 'hw_services_address_line_1', true ) . " " . get_post_meta($post->ID, 'hw_services_address_line_2', true);
+      } else {
+        $street_address = get_post_meta($post->ID, 'hw_services_address_line_1', true);
+      }
+
+      $payload["@type"] = "MedicalOrganization";
+      $payload["name"] = get_the_title();
+      $payload["description"] = get_the_excerpt();
+      $payload["address"] = [
+      "streetAddress" => $street_address,
+      // city / town
+      "addressLocality" => get_post_meta($post->ID, 'hw_services_city', true),
+      // county
+      "addressRegion" => get_post_meta($post->ID, 'hw_services_county', true),
+      "postalCode" => get_post_meta($post->ID, 'hw_services_postcode', true),
+      ];
   		if ( $rating['count'] > 2 ) {
-  			$payload["@type"] = "Organization";
-  			$payload["name"] = get_the_title();
-  			$payload["description"] = get_the_excerpt();
   			$payload["aggregateRating"] = [
   				["@type" => "AggregateRating",
   				"ratingValue" => round($rating['average'],1),
   				"ratingCount" => $rating['count'],
   				"itemReviewed" => [
-  					["@type" => "Hospital",
+  					["@type" => $schema_org_type,
   					"name" => get_the_title(),
-  					"image" => $post_thumb
+  					"image" => $post_thumb,
+            "address" => [
+              "streetAddress" => $street_address,
+              // city / town
+              "addressLocality" => get_post_meta($post->ID, 'hw_services_city', true),
+              // county
+              "addressRegion" => get_post_meta($post->ID, 'hw_services_county', true),
+              "postalCode" => get_post_meta($post->ID, 'hw_services_postcode', true),
+              // just to make Google happy - we're GB, not UK in ISO_3166-1
+              "addressCountry" => "GB"
+            ]
   					]
   				]
   			]
