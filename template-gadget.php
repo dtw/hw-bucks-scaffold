@@ -14,12 +14,12 @@
 <link href='https://fonts.googleapis.com/css2?Bitter:wght@400,700&family=Poppins:wght@300;600&display=swap' rel='stylesheet'>
 
 <!-- get out site CSS -->
-<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
-<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold/css/structure.css' rel='stylesheet'>
-<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold/css/colours.css' rel='stylesheet'>
-<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold/css/typography.css' rel='stylesheet'>
-<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/themes/scaffold-child/style.min.css' rel='stylesheet'>
-<link href='https://www.staging10.healthwatchbucks.co.uk/wp-content/plugins/hw-feedback/css/prefix-style.min.css' rel='stylesheet'>
+<link href='https://www.healthwatchbucks.co.uk/wp-content/themes/scaffold/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://www.healthwatchbucks.co.uk/wp-content/themes/scaffold/css/structure.css' rel='stylesheet'>
+<link href='https://www.healthwatchbucks.co.uk/wp-content/themes/scaffold/css/colours.css' rel='stylesheet'>
+<link href='https://www.healthwatchbucks.co.uk/wp-content/themes/scaffold/css/typography.css' rel='stylesheet'>
+<link href='https://www.healthwatchbucks.co.uk/wp-content/themes/scaffold-child/style.min.css' rel='stylesheet'>
+<link href='https://www.healthwatchbucks.co.uk/wp-content/plugins/hw-feedback/css/prefix-style.min.css' rel='stylesheet'>
 
 		<style>
 
