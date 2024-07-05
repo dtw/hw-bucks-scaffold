@@ -43,7 +43,7 @@
       );
       // if no match just leave it as MedicalOrganization
       $schema_org_type = ! empty($mapped_subtype[$cqc_inspection_category_tax_terms[0]]) ? $mapped_subtype[$cqc_inspection_category_tax_terms[0]] : "MedicalOrganization";
-      error_log("hw-scaffold: category ". $cqc_inspection_category_tax_terms[0] . " " . $mapped_subtype[$cqc_inspection_category_tax_terms[0]]);
+      error_log("hw-scaffold: category ". $cqc_inspection_category_tax_terms[0] . " " . $schema_org_type);
       // build the address
       if ( get_post_meta( $post->ID, 'hw_services_address_line_2', true ) ) {
         $street_address = get_post_meta( $post->ID, 'hw_services_address_line_1', true ) . " " . get_post_meta($post->ID, 'hw_services_address_line_2', true);
